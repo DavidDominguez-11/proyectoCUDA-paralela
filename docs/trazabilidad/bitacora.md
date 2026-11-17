@@ -282,6 +282,72 @@ git diff --check
   numérica de una implementación GPU ni rendimiento. No se repiten mediciones CPU.
 - Siguiente fase pendiente: paso 4, diseño del algoritmo paralelo; no iniciada.
 
+## BIT-007 — Paso4: diseño CUDA completo como propuesta
+
+- Fecha:2026-11-17 UTC. Instantes de inspección registrados22:08:47 y22:17:26;
+  cierre/validación indicado al finalizar. Responsable:Codex, solicitud del usuario.
+- REQ-05/12; PROC-01/02/12; DEC-017/018/019/020; CAM-005. Sin EXP/RUN nuevos.
+- Antes de modificar: lectura de AGENTS.md, README de trazabilidad, decisiones,
+  bitácora, requisitos, cambios, procedimientos, análisis/mediciones previas y
+  estrategia. Árbol limpio en commit2a14000a54fb38bc72dc9a45d5438ca726ae76bf.
+- Inspección del notebook como JSON, celdas24/31–34; fuentes Keras locales Adam
+  y BN; NPZ inicial CNN-B con allow_pickle=False. Lectura de página3 del PDF y
+  contraste con apartados3–5 de página2. No se ejecutó el notebook ni entrenamiento.
+- Se consultaron fuentes técnicas primarias NVIDIA/Numba/Keras/NumPy para
+  APIs y modelo de ejecución. URLs y límites en la evidencia de inspección.
+- Consulta nvidia-smi identifica GTX1650,4096MiB,sm_75,driver591.59. Metadatos
+  PCUDA confirman que numba-cuda/numba/cuda-python no están instalados. No se
+  reinstalan dependencias ni se descargan datos; lock compatible pendiente de
+  admisión en paso5, sin certificar compatibilidad por el inventario.
+- Cálculos derivados: arquitectura2245245parámetros entrenables y960BN móvil,
+  arenas679.698MiB, gradientes parciales≤9MiB, payload por época y grids de ejemplo.
+  NPZ80arreglos detecta cuatro estados RNG que deben preservarse como procedencia.
+- Procedimiento de diseño: fijar contrato CNN-B; descomponer forward/backward;
+  asignar salidas únicas, tiles16×16, particiones/reducciones; definir vida de
+  buffers, transferencias y stream; fijar generación compartida de máscaras y
+  secuencias; definir CPU pareada, validaciónCPU, pruebas/tolerancias y cronometraje.
+- Errores conservados: una búsqueda de fuente BN con str.index sobre cadena
+  inexistente devolvió ValueError; consulta corregida terminó0, sin cambios.
+  Se rechazaron parches documentales con contextos inexistentes sin aplicar;
+  se corrigieron por archivo y comprobó su contenido. Una búsqueda rg con glob
+  de ruta Windows no expandido produjo error123; se corrigió usando filtro -g.
+  No son fallos experimentales y no alteraron fuentes ni evidencia sellada.
+- Artefactos: [diseño](diseno-paralelo.md), [kernels](diseno-kernels-cuda.md),
+  [validación/medición](diseno-validacion-cuda.md) y
+  [evidencia](../../resultados/diseno/paso-4-inspeccion.md), con comandos de
+  inventario, resultados estáticos, identidades previas y fuentes consultadas.
+- Decisiones: propuesta numba-cuda explícita, CPU para preparación/validación;
+  nuevo EXP pareado necesario al implementar por cambio de control aleatorio y
+  alcance. No usar el total histórico de14fases como baseline de una sola CNN.
+- Petición complementaria del usuario: contrastar presentación Semana15 externa.
+  Se leyó y copió por bytes con creación exclusiva a docs/referencias; hash
+  acce03142813c9aca0bf4329000639bb2bb986f92e2810bd1c291774e73fab26.
+  [Contraste](contraste-semana-15.md) con11temas de clase, equivalencias de API
+  y precisiones. Se refina R(L,C) a32×8 para canales contiguos, sin cambiar
+  presupuesto; su efecto de rendimiento queda sin medir. DEC-020.
+- Comprobación aritmética estática: ty+8j con ty0..7,j0..255 cubre0..2047 una
+  sola vez;16×16=32×8=256; shared2048/1024bytes según familia; parámetrosNPZ,
+  1440pasos y95×128+20=12180 verificados. Copia de clase idéntica por bytes.
+- Se actualizan REQ-05 y estado documental, manteniendo pendientes REQ-06/07/08/09
+  en lo relativo a implementación, pruebas y resultados GPU.
+- Comandos finales desde la raíz, PCUDA existente:
+
+```powershell
+.\PCUDA\Scripts\python.exe -X utf8 scripts/verificar_preparacion.py
+git diff --check
+git status --short
+```
+
+- Resultado final: aprobado a2026-11-17T22:29:58 UTC, salida0;252enlaces válidos
+  en40Markdown,19originales con bytes/SHA-256 coincidentes,68esquemas CSV y125filas
+  experimentales consistentes;56fuentes en captura temporal verificadas.
+  git diff --check terminó0, solo avisos de conversión LF/CRLF.
+  [Reporte mutable](../../resultados/preparacion/verificacion-preparacion.md).
+  Límite: valida documentación, hashes, esquemas y sintaxis de scripts existentes;
+  no compila kernels, ejecuta benchmarks ni prueba corrección/rendimiento CUDA.
+- Siguiente paso:implementación paso5 cuando se solicite. No se inicia en esta
+  actividad. Commit y revisión humana pendientes.
+
 ## Plantilla para cada actividad
 
 ```markdown
