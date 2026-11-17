@@ -7,7 +7,8 @@ páginas. Ante una diferencia, prevalece ese PDF sobre cualquier otro archivo.
 Las convenciones de esta carpeta son acuerdos internos para satisfacerlo;
 no deben presentarse como instrucciones adicionales del docente.
 
-Estado: **pasos 1, 2 y 3 completados; cinco corridas CPU EXP-002; diseño e implementación CUDA pendientes**.
+Estado: **pasos 1–4 documentados; diseño DIS-CUDA-001 completo como propuesta;
+cinco corridas CPU EXP-002; implementación y validación CUDA pendientes**.
 Fecha de apertura: 2026-11-17, zona de trabajo America/Guatemala.
 Las [instrucciones del repositorio](../../AGENTS.md) mantienen estas convenciones
 para trabajos posteriores.
@@ -24,7 +25,12 @@ para trabajos posteriores.
 | [Procedimientos](procedimientos.md) | Pasos desde la preparación hasta la entrega. |
 | [Decisiones](decisiones.md) | Alternativas, justificación, estado e impactos. |
 | [Oportunidades de paralelización](oportunidades-paralelizacion.md) | Paso 3: selección, justificación, dependencias y límites a partir del análisis y tiempos CPU. |
-| [Estrategia de paralelización](estrategia-paralelizacion.md) | Selección del paso 3 y ficha pendiente del diseño CUDA del paso 4. |
+| [Diseño del algoritmo paralelo](diseno-paralelo.md) | Paso4: arquitectura, contratos, reparto, flujo y memoria. |
+| [Catálogo de kernels](diseno-kernels-cuda.md) | Threads/blocks/grids, índices, reducciones y backward por operación. |
+| [Validación y medición CUDA](diseno-validacion-cuda.md) | Aleatoriedad, pruebas, tolerancias, CPU pareada y cronometraje previstos. |
+| [Contraste con Semana15](contraste-semana-15.md) | Correspondencia con clase, precisiones y refinamiento de coalescencia; fuente conservada. |
+| [Inspección del diseño](../../resultados/diseno/paso-4-inspeccion.md) | Inventario GPU, fuentes locales, hashes y presupuestos derivados; sin ejecutar kernels. |
+| [Estrategia de paralelización](estrategia-paralelizacion.md) | Índice de selección y fichas del diseño vigente. |
 | [Cambios](cambios.md) | Alcance y consecuencias de cada modificación. |
 | [Bitácora](bitacora.md) | Actividades, responsables y evidencias por paso. |
 | [Entrega](entrega.md) | Criterios para cerrar el proyecto y producir el informe PDF. |
@@ -78,6 +84,12 @@ no se logró en todas las redes y se documenta como límite observado.
 El [paso 3](oportunidades-paralelizacion.md) selecciona como prioridad la matemática
 del entrenamiento CNN-B, sustentada en su 71.94% de la referencia común CPU.
 La preparación permanece en CPU. La selección no constituye diseño ni validación GPU.
+
+El [paso4](diseno-paralelo.md) desarrolla esa selección para CNN-B base, con
+kernels Python explícitos propuestos mediante NVIDIA numba-cuda. Se consultó
+inventario GTX1650 de4GiB y se diseñó el presupuesto; no se ejecutaron kernels.
+El control compartido de lotes/Dropout requiere una nueva referencia CPU pareada
+en paso5; los tiempos históricos se preservan como antecedentes.
 
 No existe aún versión CUDA, validación GPU, speedup ni informe PDF final. La
 reconstrucción completa del entorno en otra máquina no se ha certificado.
