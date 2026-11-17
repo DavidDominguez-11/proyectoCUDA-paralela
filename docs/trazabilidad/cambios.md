@@ -93,6 +93,38 @@
 - Validación: verificador documental y diff registrados en BIT-006; no requiere
   entrenamiento. Commit de incorporación pendiente de realizar por el equipo.
 
+## CAM-005 — Diseño completo DIS-CUDA-001, sin implementación
+
+- Fecha:2026-11-17 UTC. Responsable:Codex; revisión humana pendiente.
+- Solicitud:paso4 completo y cauteloso; REQ-05/12; PROC-12;
+  DEC-017/018/019/020; BIT-007. Paso5 no iniciado.
+- Identidad previa: commit limpio
+  `2a14000a54fb38bc72dc9a45d5438ca726ae76bf`; estrategia previa SHA-256
+  `8e1a250ade67268cce47898e7b8442d0d3c9b25d74c048242e360c358ae7ccc3`.
+  El notebook mantiene su identidad inicial, no se modifica código.
+- Antes: selección del paso3, sin reparto concreto. Ahora: diseño principal,
+  catálogo K01–K19, validación/medición e inspección de evidencia. Se especifican
+  arquitectura, índices, grids/blocks/threads, barreras/reducciones, gradientes,
+  Adam/BN, máscaras, memoria, transferencias y condiciones de aceptación.
+- Stack propuesto numba-cuda/CUDA Python; consulta de inventario GTX1650,4GiB,
+  sm_75. No se instalan paquetes ni se prueba capacidad de ejecutar kernels.
+- Diseño requiere entrenamiento CNN-B base y futura CPU pareada con orden y
+  máscaras explícitos. Las modificaciones de código y creación de EXP quedan
+  reservadas al paso5; no se editan configuraciones o evidencias EXP-002.
+- Archivos: seis Markdown nuevos, incluida copia exacta de la clase y contraste;
+  índices raíz/trazabilidad/resultados,
+  requisitos, estrategia, reproducibilidad, decisiones, procedimientos, cambios
+  y bitácora. Verificador actualiza su reporte mutable fuera de RUN sellados.
+- Impacto observado: documental e inventario; no hay tiempos ni speedup nuevos.
+  Presupuesto de679.698MiB es derivado, no reserva/consumo real observado.
+- Validación: revisión cruzada de fórmulas y lectura del estado NPZ, más verificador
+  documental y git diff --check registrados en BIT-007. GPU permanece sin validar.
+- Commit de incorporación pendiente del equipo. No sustituye el paso3 ni borra
+  sus decisiones históricas; desarrolla su selección para el alcance CNN-B.
+- Petición adicional: contrastar Semana15 como fuente complementaria. Se preserva
+  el archivo externo por bytes, se añade matriz de correspondencia y precisiones;
+  se refina R(L,C) a32×8 para lectura contigua de canales, sin variar presupuesto.
+
 ## Plantilla de cambio
 
 ```markdown
