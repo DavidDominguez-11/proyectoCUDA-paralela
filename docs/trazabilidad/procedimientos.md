@@ -17,6 +17,7 @@ Registrar responsable, UTC, comando, entrada, salida, errores y decisión siguie
 | PROC-09 | Analizar resultados | RUN cerrados y comparables | Validar exclusiones/equivalencia; estadísticas; speedup; gráficas reproducibles; causas y limitaciones |
 | PROC-10 | Reproducir y entregar | Código, entorno, manifiestos y resultados | Reproducción desde cero; auditoría de enlaces/hashes; informe PDF y paquete final |
 | PROC-11 | Identificar oportunidades CUDA, paso 3 | PDF, análisis original y mediciones CPU cerradas | Revisar independencia/reducciones/dependencias; priorizar fases; justificar selección y exclusiones; registrar DEC/CAM/BIT sin diseñar ni implementar |
+| PROC-12 | Diseñar algoritmo CUDA, paso4, sin implementar | PDF, paso3, código original, CPU medida e inventario | Fijar alcance/semántica; formas, kernels y jerarquía; memoria/copias; aleatoriedad, pruebas y medición; registrar límites de entorno y DEC/CAM/BIT |
 
 ## Registro de comandos
 
