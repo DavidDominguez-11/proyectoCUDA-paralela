@@ -9,6 +9,7 @@ las ramas adaptativas; no se mezclan como si fueran una única carga fija.
 |---|---|
 | [inventario-inicial.csv](inventario-inicial.csv) | Identidad de la consigna, notebook, dependencias y fotos al preparar trazabilidad |
 | [analisis-original/revision-estatica.md](analisis-original/revision-estatica.md) | Evidencia del paso 1: código y salidas históricas extraídos sin ejecutar el modelo |
+| [diseno/paso-4-inspeccion.md](diseno/paso-4-inspeccion.md) | Inventario y cálculos del diseño; sin kernels ni benchmark GPU |
 | [preparacion](preparacion/README.md) | Comprobaciones documentales y de herramientas; no son benchmarks |
 | [secuencial](secuencial/README.md) | Resultados detallados CPU y corridas originales |
 | [paralelo](paralelo/README.md) | Resultados detallados CUDA, transferencias y recursos |
