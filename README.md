@@ -9,6 +9,8 @@ La versión Markdown de la consigna es material explicativo secundario.
 - [Análisis del algoritmo original](docs/trazabilidad/analisis-original.md).
 - [Reproducibilidad y protocolo experimental](docs/trazabilidad/reproducibilidad.md).
 - [Resultados y artefactos](resultados/README.md).
+- [Paso 2: mediciones CPU, tablas y gráficas](resultados/secuencial/EXP-002/resultados.md).
 
-El laboratorio original está en `LAB3-DATASCIENCE/`. La preparación documental
-no constituye una implementación CUDA ni evidencia de nuevas ejecuciones.
+El laboratorio original está en `LAB3-DATASCIENCE/` y permanece intacto. Se
+completaron cinco corridas CPU en PCUDA; se separan las fases comunes y las
+ramas adaptativas. La implementación y medición CUDA siguen pendientes.

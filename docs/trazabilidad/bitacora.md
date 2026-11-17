@@ -93,6 +93,147 @@ python -X utf8 scripts/verificar_preparacion.py
   diseñar y ejecutar la referencia CPU del paso 2 bajo su protocolo.
 - Commit de incorporación: pendiente de realizar por el equipo.
 
+## BIT-005 — Medición secuencial CPU (paso 2)
+
+- Fecha de apertura UTC: 2026-11-17. Responsable: Codex por instrucción del usuario.
+- Estado: completada con cinco corridas EXP-002 y alcance revisado DEC-015.
+  Los apartados siguientes conservan la secuencia histórica, incluido EXP-001.
+- REQ-03/07/12; DAT-01-v1/03-EXP-001/04/05; PROC-03/04/05/06;
+  DEC-011/012/013; CAM-003; EXP-001.
+- Entorno PCUDA verificado: Python 3.14.3, TensorFlow 2.22.0rc0, CPU visible,
+  sin GPU visible. No se reinstalaron dependencias.
+- Caché indicada por el usuario verificada:87,000 imágenes en 29 clases y 28 oficiales.
+  La selección congelada tiene 17,400 archivos; hashes verificados, sin grupos
+  de contenido duplicado dentro de la selección. No se descargó el dataset.
+- Incidente de preparación: CIM denegó acceso dentro del sandbox; consulta de
+  CPU repetida con elevación autorizada. No afectó datos ni tiempos experimentales.
+- Preparación: lectura de protocolos; revisión de APIs del entorno instalado;
+  selección explícita de carga/repeticiones antes de medir; creación de
+  manifiestos/configuración; validación sintáctica de los scripts.
+- Comandos desde la raíz:
+
+```powershell
+.\PCUDA\Scripts\python.exe -X utf8 scripts/benchmark_cpu.py prepare --dataset "C:\Users\David\.cache\kagglehub\datasets\grassknoted\asl-alphabet\versions\1"
+.\PCUDA\Scripts\python.exe -X utf8 scripts/benchmark_cpu.py run
+.\PCUDA\Scripts\python.exe -X utf8 scripts/resumir_cpu.py
+```
+
+- El comando prepare terminó con código 0. Configuración original congelada
+  SHA-256: `c05dac5f7cf90104f6db2f68601f9a054eee3610a6e36b837b04dd8aa7350d74`.
+- Al abrir el registro, los comandos run/análisis estaban pendientes; sus
+  resultados efectivos y revisiones se documentan en el cierre de esta entrada.
+- Artefactos: resultados/secuencial/EXP-001 y configuraciones/EXP-001.json.
+- Warmup, imports y guardado fuera del total; validación de fit anidada;
+  no mezclar con tiempos históricos ni declarar speedup GPU.
+- Siguiente previsto al abrir: ejecutar serie, revisar variabilidad e informe.
+
+### Incidente y corrección de BIT-005
+
+- EXP-001/RUN-20261117T171504Z-cpu-01 se interrumpió: el monitor mostraba
+  RSS de unos 4 MiB y CPU 0% mientras se entrenaba. Se comprobó que PCUDA utiliza
+  un lanzador Windows con otro intérprete hijo; el monitor estaba siguiendo solo
+  el lanzador. No se usará esa corrida parcial en estadísticas.
+- Se conservaron stdout/stderr, recursos, tiempos parciales, salida no cero y
+  `incidencia-monitor.md`. El controlador registró EXP-001 como fallida.
+- Corrección: monitorizar el árbol completo de procesos, conservar PIDs y sumar
+  su CPU/RSS. El RSS agregado puede contar páginas compartidas más de una vez;
+  esa limitación se declara, no se confunde con memoria privada exclusiva.
+- Comprobación independiente de la corrección: intérprete PCUDA hijo que
+  reserva 24 MiB y consume CPU durante 3 s; se detectaron dos PIDs,97.6% CPU y
+  40,837,120 bytes RSS agregados. No es timing del algoritmo ASL.
+- La corrección genera EXP-002, sin sobrescribir EXP-001. Mantiene carga, semillas,
+  particiones y política de repeticiones. Nuevo hash de configuración congelada:
+  `6e6ffcb7deacc075bbb30224bd6503621cbe83b36297140fda4ff83ad9a60070`.
+- Comandos efectivos de la nueva serie desde la raíz:
+
+```powershell
+.\PCUDA\Scripts\python.exe -X utf8 scripts/benchmark_cpu.py prepare --experimento EXP-002 --dataset "C:\Users\David\.cache\kagglehub\datasets\grassknoted\asl-alphabet\versions\1"
+.\PCUDA\Scripts\python.exe -X utf8 scripts/benchmark_cpu.py run --experimento EXP-002
+.\PCUDA\Scripts\python.exe -X utf8 scripts/resumir_cpu.py --experimento EXP-002
+```
+
+- Preparación EXP-002 completada con código 0; la continuación y cierre constan
+  en los apartados cronológicos siguientes.
+
+### Primeras dos corridas completas de EXP-002
+
+- RUN-20261117T171942Z-cpu-01 y RUN-20261117T175407Z-cpu-02 terminaron con
+  código 0; cada una completó 75 épocas. Media provisional del pipeline:
+  2,006.823s; semiancho relativo IC t95%:2.7046%. No es el cierre de la serie.
+- Coinciden los hashes de estados iniciales de las seis candidatas, los tensores
+  y el inventario de paquetes. Ambas seleccionaron CNN-B, RF-B y CNN-B como
+  mejor CNN, bosque y modelo final, respectivamente.
+- Se observó diferencia de accuracy de CNN-B (0.96168584 frente a0.98888886)
+  y CNN-B+aug (0.95325673 frente a0.86743295). CNN-A, FC-A, FC-B y RF-B
+  conservaron sus métricas finales en estas dos corridas.
+- No se alcanza la tolerancia numérica 1e-6 para esas dos redes, aun con seeds,
+  flags y estados iniciales registrados. No se atribuye una causa concreta sin
+  un experimento de diagnóstico; no se afirma reproducibilidad bit a bit.
+- Se conservan ambas observaciones y se mantiene el protocolo de tiempos. El
+  análisis separa equivalencia de datos/carga de repetibilidad de la trayectoria
+  de aprendizaje. No se cambió el entorno para forzar coincidencia de resultados.
+- Se añadió sellar_corridas_cpu.py para cerrar registros/manifiestos de corridas
+  completas; comando: PCUDA\\Scripts\\python.exe -X utf8 scripts/sellar_corridas_cpu.py --experimento EXP-002.
+- Auditoría adicional en el checkpoint CNN-A de la primera corrida: contador
+  Adam 1440, coincidente con 96 lotes×15 épocas y sin sumar las 2 actualizaciones de
+  warmup. La auditoría final verificará todos los checkpoints neuronales.
+
+
+### Cierre de BIT-005 — Cinco corridas y resultados auditados
+
+- Las cinco salidas de trabajadores fueron 0. La medición terminó el
+  2026-11-17; el supervisor cerró la serie a 19:59:24.152376 UTC.
+- Se ejecutaron 25 entrenamientos neuronales,375 épocas y36,000 actualizaciones
+  Adam. Se comprobaron los 25 checkpoints finales: 1440 actualizaciones cada uno.
+- Tensores, estados iniciales, fotos y paquetes coinciden entre las cinco
+  corridas. Se verificaron los binarios iniciales, no solo sus metadatos, y la
+  integridad de archivos sellados. No hay procesos benchmark activos al cerrar.
+- Hallazgo en corrida 4: CNN-B obtuvo 0.928736 y CNN-A 0.930651; el programa seleccionó
+  CNN-A+aug. Las otras cuatro seleccionaron CNN-B+aug. Eso cambia la carga total.
+- DEC-015 se adoptó antes del resultado de la quinta corrida. Se conservaron las
+  cinco observaciones y se estratificaron fases/ramas; no se excluyó la rápida.
+- El supervisor cerró el controlador tras cinco salidas correctas. Se conserva
+  serie-antes-cierre.json. La extensión06 únicamente preparó invocación/contexto;
+  no produjo stdout, recursos ni tiempos de trabajador. Su registro explica por
+  qué no es una sexta observación. No se alteró el benchmark congelado.
+- Referencia común: suma de 14 intervalos medidos, no solapados, con las mismas
+  cuatro redes base/PCA/dos bosques. Media 1119.9275623s; DE muestral 2.7231840s;
+  CV 0.243157%; IC t95% nominal [1116.546283,1123.308842]s. Semiancho relativo 0.301919%.
+- Total continuo adaptativo: media 1858.61650026s; DE 314.366s; CV 16.91%; rango
+  1296.610–2011.095s. Es descriptivo de ramas distintas; no un baseline fijo GPU.
+- La regla original de estrechar el IC global se suspendió por heterogeneidad,
+  no se declaró cumplida. Se aplicó la referencia común descrita en DEC-015;
+  la revisión de alcance es exploratoria y está revelada en el informe.
+- Repetibilidad del aprendizaje no alcanzada en todas las redes con tolerancia
+  1e-6; causa específica sin aislar. No se modificó PCUDA ni se instalaron paquetes.
+- Postproceso ejecutado desde la raíz, después de terminar mediciones:
+
+```powershell
+.\PCUDA\Scripts\python.exe -X utf8 scripts/sellar_corridas_cpu.py --experimento EXP-002
+.\PCUDA\Scripts\python.exe -X utf8 scripts/preservar_datos_cpu.py --experimento EXP-002
+.\PCUDA\Scripts\python.exe -X utf8 scripts/resumir_cpu.py --experimento EXP-002
+.\PCUDA\Scripts\python.exe -X utf8 scripts/verificar_preparacion.py
+```
+
+- El supervisor de cierre se ejecutó en paralelo al controlador mediante
+  PCUDA/scripts/cerrar_serie_cpu.py --experimento EXP-002; se registra el comando
+  correcto con separadores de Windows en la [guía](reproducir-exp-002.md).
+- Los scripts de sellado, archivado y análisis terminaron con código 0. La
+  verificación documental final se registra en
+  [verificacion-preparacion.md](../../resultados/preparacion/verificacion-preparacion.md).
+- Copia local de 17,400 archivos:224,125,103 bytes, ZIP verificado y SHA-256
+  `6af5baba0a6049b489263f5b6e159375f1e281ff4c23b61a950d91f557e1c23d`;
+  fuente preservada sin descargar y fuera del intervalo medido.
+- Cuatro gráficas renderizadas e inspeccionadas: referencia común, total
+  adaptativo por rama, fases estratificadas y recursos CPU/RAM. Se ajustó la
+  leyenda de recursos para no tapar el pico observado.
+- [Informe definitivo](../../resultados/secuencial/EXP-002/resultados.md),
+  datos crudos por RUN, CSV de estadísticas y scripts de regeneración disponibles.
+  La guía de reproducción y su preparador no crean otra medición automáticamente;
+  su entrada CLI se comprobó con --help. No se probó una máquina limpia.
+- Paso2 completado con límites explícitos. Paso3, GPU, transferencias, speedup e
+  informe PDF final siguen pendientes. Commit/revisión humana: pendientes.
+
 ## Plantilla para cada actividad
 
 ```markdown

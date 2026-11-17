@@ -7,7 +7,7 @@ páginas. Ante una diferencia, prevalece ese PDF sobre cualquier otro archivo.
 Las convenciones de esta carpeta son acuerdos internos para satisfacerlo;
 no deben presentarse como instrucciones adicionales del docente.
 
-Estado: **paso 1 completado (análisis del original); sin nuevas mediciones CPU/GPU**.
+Estado: **pasos 1 y 2 completados; cinco corridas CPU EXP-002; GPU pendiente**.
 Fecha de apertura: 2026-11-17, zona de trabajo America/Guatemala.
 Las [instrucciones del repositorio](../../AGENTS.md) mantienen estas convenciones
 para trabajos posteriores.
@@ -20,6 +20,7 @@ para trabajos posteriores.
 | [Análisis original](analisis-original.md) | Flujo, funciones, operaciones repetitivas y antecedentes. |
 | [Datos](datos.md) | Procedencia, versiones, manifiestos, particiones y transformaciones. |
 | [Reproducibilidad](reproducibilidad.md) | Entorno, semillas, equivalencia, medición y recuperación. |
+| [Reproducir EXP-002](reproducir-exp-002.md) | Comandos concretos, manifiestos congelados y recuperación sin descarga. |
 | [Procedimientos](procedimientos.md) | Pasos desde la preparación hasta la entrega. |
 | [Decisiones](decisiones.md) | Alternativas, justificación, estado e impactos. |
 | [Estrategia de paralelización](estrategia-paralelizacion.md) | Operaciones candidatas, memoria y diseño CUDA pendiente. |
@@ -66,8 +67,12 @@ artefactos que la sostienen. Un nombre de archivo sin versión no identifica dat
 
 ## Situación actual
 
-Existe el laboratorio original con salidas históricas. No existen todavía una
-versión CUDA propia, un entorno GPU validado, mediciones repetidas comparables,
-capturas nuevas ni el informe final. El paso 1 está documentado con sus dos
-tablas y evidencia de lectura estática; el paso 2 (medición CPU) sigue pendiente.
-No se certifica reproducibilidad hasta ejecutar y verificar los procedimientos.
+Existe el laboratorio original, su análisis y cinco ejecuciones CPU verificadas.
+El [informe del paso 2](../../resultados/secuencial/EXP-002/resultados.md) contiene
+tiempos, cuatro gráficas y análisis de variabilidad. La referencia común suma
+14 fases equivalentes; el total adaptativo se presenta por separado porque una
+corrida cambió la CNN seleccionada. La repetibilidad numérica del entrenamiento
+no se logró en todas las redes y se documenta como límite observado.
+
+No existe aún versión CUDA, validación GPU, speedup ni informe PDF final. La
+reconstrucción completa del entorno en otra máquina no se ha certificado.

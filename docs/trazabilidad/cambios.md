@@ -37,6 +37,41 @@
   selección de operaciones CUDA del paso 3. No crea corridas experimentales.
 - Commit de incorporación: pendiente de realizar por el equipo.
 
+## CAM-003 — Instrumentación y medición CPU del paso 2
+
+- Fecha: 2026-11-17. Responsable: Codex; solicitud del usuario para ejecutar CPU.
+- Estado: completado con cinco corridas EXP-002; EXP-001 conserva el intento
+  interrumpido por el monitor inicial. Resultados en resultados/secuencial/EXP-002.
+- REQ-03/07/12; PROC-03/04/05/06; DEC-011/012/013; BIT-005.
+- Se añade benchmark_cpu.py: extrae por AST las funciones originales, congela
+  selección/particiones, instrumenta fases, lanza procesos nuevos y monitoriza
+  CPU/RAM. El notebook permanece intacto.
+- Cambios de control experimental: seeds explícitas,15 épocas fijas sin parada
+  temprana y número de hilos documentado; se preservan arquitecturas y operaciones.
+- Se añade resumir_cpu.py para reconstruir estadísticas, tablas y figuras desde
+  tiempos crudos, con intervalos t95%, variabilidad y revisión de equivalencia.
+- No hay reinstalación ni descarga. Datos grandes/checkpoints locales en data/,
+  ignorados por Git; manifiestos, hashes, configuraciones y evidencia en resultados/.
+- Criterio de cierre: corridas completas, hashes/tensores/estados iniciales
+  equivalentes, informe y gráficas revisados. Los errores se conservan.
+- Resultados observados: referencia común 1119.928 ± 2.723 s (DE muestral,
+  n=5); total adaptativo 1858.617 ± 314.366 s. Una selección cambió a CNN-A+aug;
+  se estratifican ramas y se documenta el alcance común mediante DEC-014/015.
+- El controlador original congelado no se editó después de preparar EXP-002.
+  Un supervisor cerró la serie tras cinco salidas correctas; su estado anterior
+  se conserva. La extensión06 solo preparó contexto y no produjo una medición.
+- Se añadieron utilidades de cierre, sellado y preservación, y una guía/script
+  para preparar otra identidad con los mismos manifiestos sin volver a muestrear.
+- Auditoría: checkpoints iniciales/finales y manifiestos íntegros; 25 contadores
+  Adam de 1440; tensores/paquetes/fotos/estados iniciales coincidentes. La tolerancia
+  de accuracy 1e-6 no se alcanzó en CNN-B/variante aumentada; limitación explícita.
+- Copia local determinista de 17,400 imágenes en data/EXP-002/fuente-seleccionada.zip,
+  fuera de Git, con identidad en preservacion-datos.json/.md. No hubo descarga.
+- Cuatro gráficas renderizadas e inspeccionadas. Verificación documental y límites
+  en resultados/preparacion/verificacion-preparacion.md y BIT-005.
+- No es optimización CUDA ni medición de speedup; no se generó el informe PDF final.
+
+
 ## Plantilla de cambio
 
 ```markdown

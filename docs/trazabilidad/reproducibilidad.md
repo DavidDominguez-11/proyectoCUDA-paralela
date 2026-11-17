@@ -1,8 +1,12 @@
 # Reproducibilidad y protocolo experimental
 
-Estado: protocolo interno propuesto; parámetros experimentales pendientes.
+Estado: protocolo aplicado a cinco corridas CPU EXP-002; GPU pendiente.
 Fuente: REQ-03, REQ-07, REQ-08 y REQ-09 del [PDF](../Proyecto%203%20CUDA.pdf).
-No se ha certificado un entorno GPU ni ejecutado este protocolo.
+No se ha certificado un entorno GPU. Las decisiones DEC-011/012/013 concretan
+la carga y el procedimiento inicial. DEC-014/015 registran la variación del
+aprendizaje y la estratificación necesaria al cambiar la arquitectura seleccionada.
+La referencia de 14 fases comunes está medida; el total adaptativo no es una
+carga fija. [Comandos de reproducción y límites](reproducir-exp-002.md).
 
 ## Entorno y código
 
