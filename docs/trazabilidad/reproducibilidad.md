@@ -8,6 +8,11 @@ aprendizaje y la estratificación necesaria al cambiar la arquitectura seleccion
 La referencia de 14 fases comunes está medida; el total adaptativo no es una
 carga fija. [Comandos de reproducción y límites](reproducir-exp-002.md).
 
+El [diseño del paso4](diseno-paralelo.md) y su
+[plan de validación/medición](diseno-validacion-cuda.md) especifican la comparación
+futura CNN-B con orden/máscaras compartidos. Requiere un EXP y referencia CPU
+pareada nuevos; no modifica el protocolo ni evidencia histórica EXP-002.
+
 ## Entorno y código
 
 Por cada RUN, conservar:
