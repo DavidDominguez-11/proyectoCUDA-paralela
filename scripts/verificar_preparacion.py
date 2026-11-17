@@ -63,12 +63,21 @@ def verify() -> list[str]:
         if any(len(row) != len(rows[0]) for row in rows[1:]):
             raise ValueError(f"Inconsistent CSV width: {path}")
         csv_count += 1
+    measured_rows = 0
     for name in ("secuencial/tiempos.csv", "paralelo/tiempos.csv",
                  "comparacion/resumen.csv", "comparacion/speedup.csv"):
         with (ROOT / "resultados" / name).open(encoding="utf-8", newline="") as handle:
-            if len(list(csv.reader(handle))) != 1:
-                raise ValueError(f"Preparation must not invent benchmark data: {name}")
-    results.append(f"CSV: {csv_count} esquemas consistentes; tablas experimentales sin observaciones.")
+            observations = list(csv.DictReader(handle))
+        measured_rows += len(observations)
+        if name.endswith("tiempos.csv"):
+            for row in observations:
+                if row["estado"] == "completada":
+                    if float(row["duracion_s"]) < 0 or not row["run_id"]:
+                        raise ValueError(f"Invalid measured observation: {name}")
+                    if not (ROOT / row["evidencia"]).is_file():
+                        raise ValueError(f"Missing evidence for measured observation: {name}")
+    results.append(f"CSV: {csv_count} esquemas consistentes; {measured_rows} filas en indices experimentales; "
+                   "las observaciones completas de tiempos apuntan a evidencia existente.")
 
     for path in sorted((ROOT / "scripts").glob("*.py")):
         ast.parse(path.read_text(encoding="utf-8"), filename=str(path))
@@ -125,8 +134,9 @@ def main() -> int:
     text += "python -X utf8 scripts/verificar_preparacion.py\n```\n\n"
     text += f"Interprete: `{sys.executable}`. Python: {sys.version.split()[0]}.\n\n"
     text += "\n".join(f"- {item}" for item in results)
-    text += "\n\nNo se ejecuto el notebook, entrenamiento, benchmark, descarga de datos "
-    text += "ni comprobacion de hardware GPU. La captura de prueba se elimino al cerrar "
+    text += "\n\nDurante este comando de verificacion no se ejecuto el notebook, entrenamiento, "
+    text += "benchmark, descarga de datos ni comprobacion de hardware GPU. Las ejecuciones "
+    text += "experimentales existentes se documentan por separado. La captura de prueba se elimino al cerrar "
     text += "el directorio temporal; se conserva este resultado y el script para repetirla.\n"
     text += "\nEste informe de preparacion se actualiza al repetir el comando. Los RUN "
     text += "experimentales se conservan por separado sin sobrescribir.\n"
