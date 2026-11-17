@@ -221,3 +221,6 @@ __marimo__/
 
 # Preserve experimental console/monitor logs as project evidence.
 !/resultados/**/*.log
+
+# Reconstructible tensors and model checkpoints; identities stay in resultados/.
+/data/
