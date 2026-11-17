@@ -1,0 +1,30 @@
+{
+  "es_plantilla": true,
+  "experimento_id": null,
+  "pregunta": null,
+  "responsable": null,
+  "requisitos": ["REQ-03", "REQ-05", "REQ-06", "REQ-07", "REQ-08", "REQ-09"],
+  "decisiones": [],
+  "codigo": {"commit": null, "fuentes_sha256": null},
+  "datos": {
+    "dataset_id": null,
+    "version": null,
+    "manifest_fuente_sha256": null,
+    "manifest_splits_sha256": null,
+    "label_mapping_sha256": null,
+    "tensores_sha256": {},
+    "conteos_por_split": null,
+    "transformaciones": {"rgb": null, "tamano": null, "dtype": null, "normalizacion": null, "resize": null, "exif": null},
+    "augmentation": {"habilitado": null, "dispositivo": null, "parametros": null}
+  },
+  "modelo": {"nombre": null, "arquitectura_sha256": null, "pesos_iniciales_sha256": null, "optimizador": null, "estado_inicial_optimizador_sha256": null, "loss": null},
+  "carga": {"epocas_fijas": null, "pasos_por_epoca": null, "batch_size": null, "descartar_ultimo_batch": null, "early_stopping": null, "validacion": null},
+  "aleatoriedad": {"python": null, "numpy": null, "framework": null, "augmentation": null, "shuffle": null, "workers": null, "semillas_por_repeticion": null},
+  "precision": {"dtype": null, "mixed_precision": null, "tf32": null, "xla": null, "determinismo": null},
+  "entorno": {"plataforma": null, "python": null, "lock_sha256": null, "framework": null, "driver": null, "cuda_efectivo": null, "cudnn_efectivo": null},
+  "cpu": {"modelo": null, "hilos_matematicos": null, "workers_preparacion": null, "afinidad": null},
+  "gpu": {"modelo": null, "vram_bytes": null, "api_cuda": null, "configuracion_kernels": null},
+  "medicion": {"repeticiones": null, "warmups": null, "orden_dispositivos": null, "procesos_nuevos": null, "politica_cache": null, "restauracion_post_warmup": null, "temporizador": null, "sincronizacion": null, "metodo_h2d_d2h": null, "solapamiento": null, "fases_incluidas_total": null, "monitorizacion": null, "exclusiones_predefinidas": null},
+  "validacion": {"metodo": null, "atol": null, "rtol": null, "tolerancia_metrica": null},
+  "comandos": {"directorio": null, "cpu": null, "gpu": null, "analisis": null}
+}
