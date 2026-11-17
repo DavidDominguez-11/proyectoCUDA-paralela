@@ -6,6 +6,7 @@ cabeceras; no contienen resultados cero ni observaciones ficticias.
 | Carpeta / archivo | Uso |
 |---|---|
 | [inventario-inicial.csv](inventario-inicial.csv) | Identidad de la consigna, notebook, dependencias y fotos al preparar trazabilidad |
+| [analisis-original/revision-estatica.md](analisis-original/revision-estatica.md) | Evidencia del paso 1: código y salidas históricas extraídos sin ejecutar el modelo |
 | [preparacion](preparacion/README.md) | Comprobaciones documentales y de herramientas; no son benchmarks |
 | [secuencial](secuencial/README.md) | Resultados detallados CPU y corridas originales |
 | [paralelo](paralelo/README.md) | Resultados detallados CUDA, transferencias y recursos |
