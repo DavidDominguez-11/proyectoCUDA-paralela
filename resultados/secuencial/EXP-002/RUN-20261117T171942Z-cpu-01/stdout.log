@@ -1,0 +1,201 @@
+[2026-11-17T17:20:03.105949+00:00] inicializacion_y_warmup {'modelo': 'CNN-A'}
+[2026-11-17T17:20:05.039629+00:00] inicializacion_y_warmup {'modelo': 'CNN-B'}
+[2026-11-17T17:20:09.774035+00:00] inicializacion_y_warmup {'modelo': 'FC-A'}
+[2026-11-17T17:20:11.653534+00:00] inicializacion_y_warmup {'modelo': 'FC-B'}
+[2026-11-17T17:20:14.133554+00:00] inicializacion_y_warmup {'modelo': 'CNN-A+aug'}
+[2026-11-17T17:20:16.570466+00:00] inicializacion_y_warmup {'modelo': 'CNN-B+aug'}
+[2026-11-17T17:20:22.026571+00:00] preparacion_cpu {}
+RESULTADO preparacion_cpu: 17.963012 s
+[2026-11-17T17:20:39.998875+00:00] entrenamiento_CNN-A {}
+[2026-11-17T17:20:40.202822+00:00] entrenamiento {'modelo': 'CNN-A', 'epoca': 1}
+EPOCH CNN-A 1/15 {'accuracy': 0.17233169078826904, 'loss': 2.941843032836914, 'val_accuracy': 0.40306514501571655, 'val_loss': 2.09909987449646}
+[2026-11-17T17:20:50.008896+00:00] entrenamiento {'modelo': 'CNN-A', 'epoca': 2}
+EPOCH CNN-A 2/15 {'accuracy': 0.4241379201412201, 'loss': 1.8811553716659546, 'val_accuracy': 0.6061302423477173, 'val_loss': 1.3572086095809937}
+[2026-11-17T17:20:58.649875+00:00] entrenamiento {'modelo': 'CNN-A', 'epoca': 3}
+EPOCH CNN-A 3/15 {'accuracy': 0.575123131275177, 'loss': 1.3412971496582031, 'val_accuracy': 0.6885057687759399, 'val_loss': 1.035756230354309}
+[2026-11-17T17:21:06.858539+00:00] entrenamiento {'modelo': 'CNN-A', 'epoca': 4}
+EPOCH CNN-A 4/15 {'accuracy': 0.6681445240974426, 'loss': 1.0448646545410156, 'val_accuracy': 0.7915709018707275, 'val_loss': 0.7451919913291931}
+[2026-11-17T17:21:15.000100+00:00] entrenamiento {'modelo': 'CNN-A', 'epoca': 5}
+EPOCH CNN-A 5/15 {'accuracy': 0.7407224774360657, 'loss': 0.8007563948631287, 'val_accuracy': 0.8149425387382507, 'val_loss': 0.6377832889556885}
+[2026-11-17T17:21:23.057260+00:00] entrenamiento {'modelo': 'CNN-A', 'epoca': 6}
+EPOCH CNN-A 6/15 {'accuracy': 0.7953202128410339, 'loss': 0.6427780985832214, 'val_accuracy': 0.8432950377464294, 'val_loss': 0.5291434526443481}
+[2026-11-17T17:21:31.388884+00:00] entrenamiento {'modelo': 'CNN-A', 'epoca': 7}
+EPOCH CNN-A 7/15 {'accuracy': 0.8205254673957825, 'loss': 0.5483670830726624, 'val_accuracy': 0.8647509813308716, 'val_loss': 0.4448176324367523}
+[2026-11-17T17:21:40.049662+00:00] entrenamiento {'modelo': 'CNN-A', 'epoca': 8}
+EPOCH CNN-A 8/15 {'accuracy': 0.8463054299354553, 'loss': 0.463250994682312, 'val_accuracy': 0.8862069249153137, 'val_loss': 0.38523074984550476}
+[2026-11-17T17:21:48.935352+00:00] entrenamiento {'modelo': 'CNN-A', 'epoca': 9}
+EPOCH CNN-A 9/15 {'accuracy': 0.867898166179657, 'loss': 0.4117748439311981, 'val_accuracy': 0.9072796702384949, 'val_loss': 0.3127465844154358}
+[2026-11-17T17:21:57.662791+00:00] entrenamiento {'modelo': 'CNN-A', 'epoca': 10}
+EPOCH CNN-A 10/15 {'accuracy': 0.8841543793678284, 'loss': 0.35299956798553467, 'val_accuracy': 0.9214559197425842, 'val_loss': 0.2687704563140869}
+[2026-11-17T17:22:05.789871+00:00] entrenamiento {'modelo': 'CNN-A', 'epoca': 11}
+EPOCH CNN-A 11/15 {'accuracy': 0.8981116414070129, 'loss': 0.3070234954357147, 'val_accuracy': 0.9176245331764221, 'val_loss': 0.2768755853176117}
+[2026-11-17T17:22:13.929968+00:00] entrenamiento {'modelo': 'CNN-A', 'epoca': 12}
+EPOCH CNN-A 12/15 {'accuracy': 0.9098522067070007, 'loss': 0.2820821702480316, 'val_accuracy': 0.9279693365097046, 'val_loss': 0.23625826835632324}
+[2026-11-17T17:22:22.432462+00:00] entrenamiento {'modelo': 'CNN-A', 'epoca': 13}
+EPOCH CNN-A 13/15 {'accuracy': 0.9189655184745789, 'loss': 0.25208917260169983, 'val_accuracy': 0.9279693365097046, 'val_loss': 0.23088699579238892}
+[2026-11-17T17:22:31.994111+00:00] entrenamiento {'modelo': 'CNN-A', 'epoca': 14}
+EPOCH CNN-A 14/15 {'accuracy': 0.9192939400672913, 'loss': 0.24102050065994263, 'val_accuracy': 0.9314176440238953, 'val_loss': 0.20777447521686554}
+[2026-11-17T17:22:40.783655+00:00] entrenamiento {'modelo': 'CNN-A', 'epoca': 15}
+EPOCH CNN-A 15/15 {'accuracy': 0.9324302077293396, 'loss': 0.21133781969547272, 'val_accuracy': 0.9367815852165222, 'val_loss': 0.2017156183719635}
+RESULTADO entrenamiento_CNN-A: 129.077673 s
+RESULTADO validacion_anidada_CNN-A: 8.299906 s
+[2026-11-17T17:22:49.082716+00:00] evaluacion_CNN-A {}
+RESULTADO evaluacion_CNN-A: 0.904451 s
+[2026-11-17T17:22:49.994196+00:00] entrenamiento_CNN-B {}
+[2026-11-17T17:22:50.142822+00:00] entrenamiento {'modelo': 'CNN-B', 'epoca': 1}
+EPOCH CNN-B 1/15 {'accuracy': 0.2495894879102707, 'loss': 2.776747226715088, 'val_accuracy': 0.22452107071876526, 'val_loss': 7.6706132888793945}
+[2026-11-17T17:23:44.970989+00:00] entrenamiento {'modelo': 'CNN-B', 'epoca': 2}
+EPOCH CNN-B 2/15 {'accuracy': 0.5480295419692993, 'loss': 1.489393949508667, 'val_accuracy': 0.5295019149780273, 'val_loss': 2.5049519538879395}
+[2026-11-17T17:24:38.253435+00:00] entrenamiento {'modelo': 'CNN-B', 'epoca': 3}
+EPOCH CNN-B 3/15 {'accuracy': 0.747454822063446, 'loss': 0.8384207487106323, 'val_accuracy': 0.6593869924545288, 'val_loss': 1.420508861541748}
+[2026-11-17T17:25:31.132612+00:00] entrenamiento {'modelo': 'CNN-B', 'epoca': 4}
+EPOCH CNN-B 4/15 {'accuracy': 0.84425288438797, 'loss': 0.5214405059814453, 'val_accuracy': 0.8505747318267822, 'val_loss': 0.5528051257133484}
+[2026-11-17T17:26:25.908180+00:00] entrenamiento {'modelo': 'CNN-B', 'epoca': 5}
+EPOCH CNN-B 5/15 {'accuracy': 0.8961412310600281, 'loss': 0.3486868441104889, 'val_accuracy': 0.8701149225234985, 'val_loss': 0.46158015727996826}
+[2026-11-17T17:27:18.896639+00:00] entrenamiento {'modelo': 'CNN-B', 'epoca': 6}
+EPOCH CNN-B 6/15 {'accuracy': 0.9332512021064758, 'loss': 0.23052652180194855, 'val_accuracy': 0.9314176440238953, 'val_loss': 0.24714334309101105}
+[2026-11-17T17:28:12.707759+00:00] entrenamiento {'modelo': 'CNN-B', 'epoca': 7}
+EPOCH CNN-B 7/15 {'accuracy': 0.9499179124832153, 'loss': 0.18110892176628113, 'val_accuracy': 0.9448275566101074, 'val_loss': 0.2205030471086502}
+[2026-11-17T17:29:05.916572+00:00] entrenamiento {'modelo': 'CNN-B', 'epoca': 8}
+EPOCH CNN-B 8/15 {'accuracy': 0.959770143032074, 'loss': 0.14190246164798737, 'val_accuracy': 0.9490421414375305, 'val_loss': 0.1641562581062317}
+[2026-11-17T17:29:59.854102+00:00] entrenamiento {'modelo': 'CNN-B', 'epoca': 9}
+EPOCH CNN-B 9/15 {'accuracy': 0.9741379022598267, 'loss': 0.10045796632766724, 'val_accuracy': 0.9766283631324768, 'val_loss': 0.08301762491464615}
+[2026-11-17T17:30:52.875987+00:00] entrenamiento {'modelo': 'CNN-B', 'epoca': 10}
+EPOCH CNN-B 10/15 {'accuracy': 0.9814450144767761, 'loss': 0.07733011990785599, 'val_accuracy': 0.9881225824356079, 'val_loss': 0.04922077804803848}
+[2026-11-17T17:31:46.152282+00:00] entrenamiento {'modelo': 'CNN-B', 'epoca': 11}
+EPOCH CNN-B 11/15 {'accuracy': 0.9839080572128296, 'loss': 0.06282281130552292, 'val_accuracy': 0.9137930870056152, 'val_loss': 0.25544264912605286}
+[2026-11-17T17:32:39.907118+00:00] entrenamiento {'modelo': 'CNN-B', 'epoca': 12}
+EPOCH CNN-B 12/15 {'accuracy': 0.9869458079338074, 'loss': 0.054157231003046036, 'val_accuracy': 0.9785440564155579, 'val_loss': 0.07062290608882904}
+[2026-11-17T17:33:33.299068+00:00] entrenamiento {'modelo': 'CNN-B', 'epoca': 13}
+EPOCH CNN-B 13/15 {'accuracy': 0.9878489375114441, 'loss': 0.04736320674419403, 'val_accuracy': 0.9199233651161194, 'val_loss': 0.2423291653394699}
+[2026-11-17T17:34:26.696522+00:00] entrenamiento {'modelo': 'CNN-B', 'epoca': 14}
+EPOCH CNN-B 14/15 {'accuracy': 0.9899835586547852, 'loss': 0.04146179184317589, 'val_accuracy': 0.9452107548713684, 'val_loss': 0.1428045630455017}
+[2026-11-17T17:35:20.040386+00:00] entrenamiento {'modelo': 'CNN-B', 'epoca': 15}
+EPOCH CNN-B 15/15 {'accuracy': 0.9926108121871948, 'loss': 0.03344832733273506, 'val_accuracy': 0.9601532816886902, 'val_loss': 0.11917834728956223}
+RESULTADO entrenamiento_CNN-B: 803.847403 s
+RESULTADO validacion_anidada_CNN-B: 31.305076 s
+[2026-11-17T17:36:13.845952+00:00] evaluacion_CNN-B {}
+RESULTADO evaluacion_CNN-B: 2.444951 s
+[2026-11-17T17:36:16.294225+00:00] diagnostico_cnn {}
+RESULTADO diagnostico_cnn: 2.546739 s
+[2026-11-17T17:36:18.887065+00:00] entrenamiento_FC-A {}
+[2026-11-17T17:36:19.022431+00:00] entrenamiento {'modelo': 'FC-A', 'epoca': 1}
+EPOCH FC-A 1/15 {'accuracy': 0.08218390494585037, 'loss': 4.152613639831543, 'val_accuracy': 0.07586207240819931, 'val_loss': 3.2913665771484375}
+[2026-11-17T17:36:22.880764+00:00] entrenamiento {'modelo': 'FC-A', 'epoca': 2}
+EPOCH FC-A 2/15 {'accuracy': 0.1310344785451889, 'loss': 3.1408960819244385, 'val_accuracy': 0.15402299165725708, 'val_loss': 3.0917515754699707}
+[2026-11-17T17:36:26.121243+00:00] entrenamiento {'modelo': 'FC-A', 'epoca': 3}
+EPOCH FC-A 3/15 {'accuracy': 0.1589490920305252, 'loss': 2.9552221298217773, 'val_accuracy': 0.21149425208568573, 'val_loss': 2.8379244804382324}
+[2026-11-17T17:36:29.202753+00:00] entrenamiento {'modelo': 'FC-A', 'epoca': 4}
+EPOCH FC-A 4/15 {'accuracy': 0.18472906947135925, 'loss': 2.815849781036377, 'val_accuracy': 0.2540229856967926, 'val_loss': 2.584153652191162}
+[2026-11-17T17:36:32.363606+00:00] entrenamiento {'modelo': 'FC-A', 'epoca': 5}
+EPOCH FC-A 5/15 {'accuracy': 0.20730705559253693, 'loss': 2.690429449081421, 'val_accuracy': 0.2816092073917389, 'val_loss': 2.4021661281585693}
+[2026-11-17T17:36:35.555588+00:00] entrenamiento {'modelo': 'FC-A', 'epoca': 6}
+EPOCH FC-A 6/15 {'accuracy': 0.22750410437583923, 'loss': 2.5692784786224365, 'val_accuracy': 0.31915709376335144, 'val_loss': 2.278627872467041}
+[2026-11-17T17:36:38.771662+00:00] entrenamiento {'modelo': 'FC-A', 'epoca': 7}
+EPOCH FC-A 7/15 {'accuracy': 0.24778325855731964, 'loss': 2.479750871658325, 'val_accuracy': 0.3340996205806732, 'val_loss': 2.1646840572357178}
+[2026-11-17T17:36:41.950614+00:00] entrenamiento {'modelo': 'FC-A', 'epoca': 8}
+EPOCH FC-A 8/15 {'accuracy': 0.2590312063694, 'loss': 2.407608985900879, 'val_accuracy': 0.37432950735092163, 'val_loss': 2.0454258918762207}
+[2026-11-17T17:36:45.043225+00:00] entrenamiento {'modelo': 'FC-A', 'epoca': 9}
+EPOCH FC-A 9/15 {'accuracy': 0.2816912829875946, 'loss': 2.311532497406006, 'val_accuracy': 0.3816092014312744, 'val_loss': 1.965322732925415}
+[2026-11-17T17:36:48.236877+00:00] entrenamiento {'modelo': 'FC-A', 'epoca': 10}
+EPOCH FC-A 10/15 {'accuracy': 0.29926109313964844, 'loss': 2.21978497505188, 'val_accuracy': 0.4356321692466736, 'val_loss': 1.8268053531646729}
+[2026-11-17T17:36:51.417727+00:00] entrenamiento {'modelo': 'FC-A', 'epoca': 11}
+EPOCH FC-A 11/15 {'accuracy': 0.31551724672317505, 'loss': 2.137589693069458, 'val_accuracy': 0.45095786452293396, 'val_loss': 1.7391629219055176}
+[2026-11-17T17:36:54.606101+00:00] entrenamiento {'modelo': 'FC-A', 'epoca': 12}
+EPOCH FC-A 12/15 {'accuracy': 0.33990147709846497, 'loss': 2.0625159740448, 'val_accuracy': 0.4716475009918213, 'val_loss': 1.6864820718765259}
+[2026-11-17T17:36:57.714962+00:00] entrenamiento {'modelo': 'FC-A', 'epoca': 13}
+EPOCH FC-A 13/15 {'accuracy': 0.34663382172584534, 'loss': 2.028991460800171, 'val_accuracy': 0.4850574731826782, 'val_loss': 1.6325489282608032}
+[2026-11-17T17:37:00.892979+00:00] entrenamiento {'modelo': 'FC-A', 'epoca': 14}
+EPOCH FC-A 14/15 {'accuracy': 0.3615763485431671, 'loss': 1.9647537469863892, 'val_accuracy': 0.5061302781105042, 'val_loss': 1.587450385093689}
+[2026-11-17T17:37:04.131209+00:00] entrenamiento {'modelo': 'FC-A', 'epoca': 15}
+EPOCH FC-A 15/15 {'accuracy': 0.3766830861568451, 'loss': 1.914350986480713, 'val_accuracy': 0.5291187763214111, 'val_loss': 1.5362921953201294}
+RESULTADO entrenamiento_FC-A: 48.520110 s
+RESULTADO validacion_anidada_FC-A: 2.303337 s
+[2026-11-17T17:37:07.413130+00:00] evaluacion_FC-A {}
+RESULTADO evaluacion_FC-A: 0.377605 s
+[2026-11-17T17:37:07.797393+00:00] entrenamiento_FC-B {}
+[2026-11-17T17:37:07.920932+00:00] entrenamiento {'modelo': 'FC-B', 'epoca': 1}
+EPOCH FC-B 1/15 {'accuracy': 0.0517241396009922, 'loss': 5.050939559936523, 'val_accuracy': 0.05363984778523445, 'val_loss': 3.348174810409546}
+[2026-11-17T17:37:15.318339+00:00] entrenamiento {'modelo': 'FC-B', 'epoca': 2}
+EPOCH FC-B 2/15 {'accuracy': 0.07495895028114319, 'loss': 3.3826398849487305, 'val_accuracy': 0.11762452125549316, 'val_loss': 3.2416882514953613}
+[2026-11-17T17:37:21.987519+00:00] entrenamiento {'modelo': 'FC-B', 'epoca': 3}
+EPOCH FC-B 3/15 {'accuracy': 0.1069786548614502, 'loss': 3.1733758449554443, 'val_accuracy': 0.15632183849811554, 'val_loss': 3.0324954986572266}
+[2026-11-17T17:37:28.598846+00:00] entrenamiento {'modelo': 'FC-B', 'epoca': 4}
+EPOCH FC-B 4/15 {'accuracy': 0.12266010046005249, 'loss': 3.0571274757385254, 'val_accuracy': 0.19655172526836395, 'val_loss': 2.8383285999298096}
+[2026-11-17T17:37:35.218300+00:00] entrenamiento {'modelo': 'FC-B', 'epoca': 5}
+EPOCH FC-B 5/15 {'accuracy': 0.14064039289951324, 'loss': 2.9291293621063232, 'val_accuracy': 0.20842911303043365, 'val_loss': 2.6961073875427246}
+[2026-11-17T17:37:41.837880+00:00] entrenamiento {'modelo': 'FC-B', 'epoca': 6}
+EPOCH FC-B 6/15 {'accuracy': 0.1588670015335083, 'loss': 2.827861785888672, 'val_accuracy': 0.2501915693283081, 'val_loss': 2.552922487258911}
+[2026-11-17T17:37:48.453703+00:00] entrenamiento {'modelo': 'FC-B', 'epoca': 7}
+EPOCH FC-B 7/15 {'accuracy': 0.17931035161018372, 'loss': 2.712491750717163, 'val_accuracy': 0.28429117798805237, 'val_loss': 2.4089784622192383}
+[2026-11-17T17:37:55.135172+00:00] entrenamiento {'modelo': 'FC-B', 'epoca': 8}
+EPOCH FC-B 8/15 {'accuracy': 0.20303776860237122, 'loss': 2.6328558921813965, 'val_accuracy': 0.3053639829158783, 'val_loss': 2.278836250305176}
+[2026-11-17T17:38:01.831278+00:00] entrenamiento {'modelo': 'FC-B', 'epoca': 9}
+EPOCH FC-B 9/15 {'accuracy': 0.20837438106536865, 'loss': 2.544663429260254, 'val_accuracy': 0.3206896483898163, 'val_loss': 2.161579132080078}
+[2026-11-17T17:38:08.481803+00:00] entrenamiento {'modelo': 'FC-B', 'epoca': 10}
+EPOCH FC-B 10/15 {'accuracy': 0.23169130086898804, 'loss': 2.449802875518799, 'val_accuracy': 0.3647509515285492, 'val_loss': 2.0997698307037354}
+[2026-11-17T17:38:15.153592+00:00] entrenamiento {'modelo': 'FC-B', 'epoca': 11}
+EPOCH FC-B 11/15 {'accuracy': 0.24047619104385376, 'loss': 2.388260841369629, 'val_accuracy': 0.3662835359573364, 'val_loss': 2.0545992851257324}
+[2026-11-17T17:38:21.828699+00:00] entrenamiento {'modelo': 'FC-B', 'epoca': 12}
+EPOCH FC-B 12/15 {'accuracy': 0.2586206793785095, 'loss': 2.327876567840576, 'val_accuracy': 0.3934865891933441, 'val_loss': 1.925100326538086}
+[2026-11-17T17:38:28.546764+00:00] entrenamiento {'modelo': 'FC-B', 'epoca': 13}
+EPOCH FC-B 13/15 {'accuracy': 0.2734811305999756, 'loss': 2.2553763389587402, 'val_accuracy': 0.39118772745132446, 'val_loss': 1.8425259590148926}
+[2026-11-17T17:38:35.175683+00:00] entrenamiento {'modelo': 'FC-B', 'epoca': 14}
+EPOCH FC-B 14/15 {'accuracy': 0.2851395606994629, 'loss': 2.176637649536133, 'val_accuracy': 0.41494253277778625, 'val_loss': 1.795507788658142}
+[2026-11-17T17:38:41.865653+00:00] entrenamiento {'modelo': 'FC-B', 'epoca': 15}
+EPOCH FC-B 15/15 {'accuracy': 0.29917898774147034, 'loss': 2.1153972148895264, 'val_accuracy': 0.44214558601379395, 'val_loss': 1.7575657367706299}
+RESULTADO entrenamiento_FC-B: 100.825253 s
+RESULTADO validacion_anidada_FC-B: 3.912955 s
+[2026-11-17T17:38:48.626955+00:00] evaluacion_FC-B {}
+RESULTADO evaluacion_FC-B: 0.510281 s
+[2026-11-17T17:38:49.142153+00:00] pca {}
+RESULTADO pca: 4.024576 s
+[2026-11-17T17:38:53.168988+00:00] entrenamiento_RF-A {}
+RESULTADO entrenamiento_RF-A: 2.742576 s
+[2026-11-17T17:38:55.913880+00:00] validacion_RF-A {}
+RESULTADO validacion_RF-A: 0.053494 s
+[2026-11-17T17:38:55.970614+00:00] entrenamiento_RF-B {}
+RESULTADO entrenamiento_RF-B: 8.321992 s
+[2026-11-17T17:39:04.294832+00:00] validacion_RF-B {}
+RESULTADO validacion_RF-B: 0.137423 s
+[2026-11-17T17:39:04.435493+00:00] evaluacion_RF {}
+RESULTADO evaluacion_RF: 0.140072 s
+[2026-11-17T17:39:04.581424+00:00] entrenamiento_CNN-B+aug {}
+[2026-11-17T17:39:04.780254+00:00] entrenamiento {'modelo': 'CNN-B+aug', 'epoca': 1}
+EPOCH CNN-B+aug 1/15 {'accuracy': 0.1667487621307373, 'loss': 3.1161551475524902, 'val_accuracy': 0.12413793057203293, 'val_loss': 7.48199987411499}
+[2026-11-17T17:40:01.405762+00:00] entrenamiento {'modelo': 'CNN-B+aug', 'epoca': 2}
+EPOCH CNN-B+aug 2/15 {'accuracy': 0.373399019241333, 'loss': 2.1103758811950684, 'val_accuracy': 0.3766283392906189, 'val_loss': 3.999126672744751}
+[2026-11-17T17:40:56.944852+00:00] entrenamiento {'modelo': 'CNN-B+aug', 'epoca': 3}
+EPOCH CNN-B+aug 3/15 {'accuracy': 0.5381773114204407, 'loss': 1.4844331741333008, 'val_accuracy': 0.5547892451286316, 'val_loss': 1.8608310222625732}
+[2026-11-17T17:41:54.093505+00:00] entrenamiento {'modelo': 'CNN-B+aug', 'epoca': 4}
+EPOCH CNN-B+aug 4/15 {'accuracy': 0.6648604273796082, 'loss': 1.0602697134017944, 'val_accuracy': 0.611494243144989, 'val_loss': 1.424546480178833}
+[2026-11-17T17:42:50.511225+00:00] entrenamiento {'modelo': 'CNN-B+aug', 'epoca': 5}
+EPOCH CNN-B+aug 5/15 {'accuracy': 0.7380131483078003, 'loss': 0.8328357338905334, 'val_accuracy': 0.6819923520088196, 'val_loss': 1.06716787815094}
+[2026-11-17T17:43:45.985659+00:00] entrenamiento {'modelo': 'CNN-B+aug', 'epoca': 6}
+EPOCH CNN-B+aug 6/15 {'accuracy': 0.7926929593086243, 'loss': 0.6505012512207031, 'val_accuracy': 0.6796934604644775, 'val_loss': 1.178475260734558}
+[2026-11-17T17:44:41.762135+00:00] entrenamiento {'modelo': 'CNN-B+aug', 'epoca': 7}
+EPOCH CNN-B+aug 7/15 {'accuracy': 0.8300492763519287, 'loss': 0.5294070839881897, 'val_accuracy': 0.7632184028625488, 'val_loss': 0.7129658460617065}
+[2026-11-17T17:45:37.500782+00:00] entrenamiento {'modelo': 'CNN-B+aug', 'epoca': 8}
+EPOCH CNN-B+aug 8/15 {'accuracy': 0.8642036318778992, 'loss': 0.4326658546924591, 'val_accuracy': 0.8720306754112244, 'val_loss': 0.37249282002449036}
+[2026-11-17T17:46:33.423421+00:00] entrenamiento {'modelo': 'CNN-B+aug', 'epoca': 9}
+EPOCH CNN-B+aug 9/15 {'accuracy': 0.8782430291175842, 'loss': 0.3787227272987366, 'val_accuracy': 0.8704980611801147, 'val_loss': 0.3865448236465454}
+[2026-11-17T17:47:28.890126+00:00] entrenamiento {'modelo': 'CNN-B+aug', 'epoca': 10}
+EPOCH CNN-B+aug 10/15 {'accuracy': 0.8964695930480957, 'loss': 0.3226383924484253, 'val_accuracy': 0.9264367818832397, 'val_loss': 0.21852943301200867}
+[2026-11-17T17:48:24.891769+00:00] entrenamiento {'modelo': 'CNN-B+aug', 'epoca': 11}
+EPOCH CNN-B+aug 11/15 {'accuracy': 0.9125615954399109, 'loss': 0.26870861649513245, 'val_accuracy': 0.8521072864532471, 'val_loss': 0.4909682869911194}
+[2026-11-17T17:49:22.846696+00:00] entrenamiento {'modelo': 'CNN-B+aug', 'epoca': 12}
+EPOCH CNN-B+aug 12/15 {'accuracy': 0.9239737391471863, 'loss': 0.24196378886699677, 'val_accuracy': 0.9103448390960693, 'val_loss': 0.28043332695961}
+[2026-11-17T17:50:18.876465+00:00] entrenamiento {'modelo': 'CNN-B+aug', 'epoca': 13}
+EPOCH CNN-B+aug 13/15 {'accuracy': 0.9336617588996887, 'loss': 0.21051375567913055, 'val_accuracy': 0.9731800556182861, 'val_loss': 0.10506296902894974}
+[2026-11-17T17:51:14.794879+00:00] entrenamiento {'modelo': 'CNN-B+aug', 'epoca': 14}
+EPOCH CNN-B+aug 14/15 {'accuracy': 0.9394909739494324, 'loss': 0.1897570788860321, 'val_accuracy': 0.9582375288009644, 'val_loss': 0.12386105209589005}
+[2026-11-17T17:52:10.603484+00:00] entrenamiento {'modelo': 'CNN-B+aug', 'epoca': 15}
+EPOCH CNN-B+aug 15/15 {'accuracy': 0.9419540166854858, 'loss': 0.17604385316371918, 'val_accuracy': 0.9513409733772278, 'val_loss': 0.13292577862739563}
+RESULTADO entrenamiento_CNN-B+aug: 841.752938 s
+RESULTADO validacion_anidada_CNN-B+aug: 32.222992 s
+[2026-11-17T17:53:06.339341+00:00] evaluacion_CNN-B+aug {}
+RESULTADO evaluacion_CNN-B+aug: 2.382894 s
+[2026-11-17T17:53:08.726867+00:00] inferencia_grupo {}
+RESULTADO inferencia_grupo: 44.391995 s
+RESULTADO pipeline_total: 2011.094900 s
+[2026-11-17T17:54:04.018264+00:00] completada {'pipeline_s': 2011.0948999}

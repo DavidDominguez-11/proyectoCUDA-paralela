@@ -1,0 +1,44 @@
+ M .gitignore
+ M docs/trazabilidad/bitacora.md
+ M docs/trazabilidad/cambios.md
+ M docs/trazabilidad/decisiones.md
+ M scripts/verificar_preparacion.py
+?? configuraciones/EXP-001.json
+?? configuraciones/EXP-002.json
+?? resultados/secuencial/EXP-001/RUN-20261117T171504Z-cpu-01/configuracion.json
+?? resultados/secuencial/EXP-001/RUN-20261117T171504Z-cpu-01/contexto-captura.log
+?? resultados/secuencial/EXP-001/RUN-20261117T171504Z-cpu-01/contexto/artefactos.csv
+?? resultados/secuencial/EXP-001/RUN-20261117T171504Z-cpu-01/contexto/comandos-contexto.txt
+?? resultados/secuencial/EXP-001/RUN-20261117T171504Z-cpu-01/contexto/contexto.json
+?? resultados/secuencial/EXP-001/RUN-20261117T171504Z-cpu-01/contexto/fuentes.csv
+?? resultados/secuencial/EXP-001/RUN-20261117T171504Z-cpu-01/contexto/fuentes.zip
+?? resultados/secuencial/EXP-001/RUN-20261117T171504Z-cpu-01/contexto/git-status.txt
+?? resultados/secuencial/EXP-001/RUN-20261117T171504Z-cpu-01/contexto/paquetes-instalados.txt
+?? resultados/secuencial/EXP-001/RUN-20261117T171504Z-cpu-01/estado.json
+?? resultados/secuencial/EXP-001/RUN-20261117T171504Z-cpu-01/estados-iniciales.json
+?? resultados/secuencial/EXP-001/RUN-20261117T171504Z-cpu-01/hardware.json
+?? resultados/secuencial/EXP-001/RUN-20261117T171504Z-cpu-01/incidencia-monitor.md
+?? resultados/secuencial/EXP-001/RUN-20261117T171504Z-cpu-01/invocacion.json
+?? resultados/secuencial/EXP-001/RUN-20261117T171504Z-cpu-01/recursos.csv
+?? resultados/secuencial/EXP-001/RUN-20261117T171504Z-cpu-01/salida.json
+?? resultados/secuencial/EXP-001/RUN-20261117T171504Z-cpu-01/stderr.log
+?? resultados/secuencial/EXP-001/RUN-20261117T171504Z-cpu-01/stdout.log
+?? resultados/secuencial/EXP-001/RUN-20261117T171504Z-cpu-01/tiempos.csv
+?? resultados/secuencial/EXP-001/RUN-20261117T171504Z-cpu-01/warmup.json
+?? resultados/secuencial/EXP-001/configuracion.json
+?? resultados/secuencial/EXP-001/label_mapping.json
+?? resultados/secuencial/EXP-001/manifest_fuente.csv
+?? resultados/secuencial/EXP-001/manifest_splits.csv
+?? resultados/secuencial/EXP-001/plan-energia.txt
+?? resultados/secuencial/EXP-001/serie.json
+?? resultados/secuencial/EXP-001/validacion_datos.json
+?? resultados/secuencial/EXP-002/RUN-20261117T171942Z-cpu-01/invocacion.json
+?? resultados/secuencial/EXP-002/configuracion.json
+?? resultados/secuencial/EXP-002/label_mapping.json
+?? resultados/secuencial/EXP-002/manifest_fuente.csv
+?? resultados/secuencial/EXP-002/manifest_splits.csv
+?? resultados/secuencial/EXP-002/plan-energia.txt
+?? resultados/secuencial/EXP-002/serie.json
+?? resultados/secuencial/EXP-002/validacion_datos.json
+?? scripts/benchmark_cpu.py
+?? scripts/resumir_cpu.py

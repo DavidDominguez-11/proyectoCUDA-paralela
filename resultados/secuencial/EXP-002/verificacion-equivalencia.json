@@ -1,0 +1,29 @@
+{
+  "tensors_identical": true,
+  "initial_states_identical": true,
+  "packages_identical": true,
+  "photos_identical": true,
+  "selection_identical": false,
+  "accuracy_within_declared_tolerance": false,
+  "training_architecture_selection_identical": false,
+  "final_effective_architecture_identical": false,
+  "common_reference_load_equivalent": true,
+  "common_reference_phases": [
+    "preparacion_cpu",
+    "entrenamiento_CNN-A",
+    "evaluacion_CNN-A",
+    "entrenamiento_CNN-B",
+    "evaluacion_CNN-B",
+    "entrenamiento_FC-A",
+    "evaluacion_FC-A",
+    "entrenamiento_FC-B",
+    "evaluacion_FC-B",
+    "pca",
+    "entrenamiento_RF-A",
+    "validacion_RF-A",
+    "entrenamiento_RF-B",
+    "validacion_RF-B"
+  ],
+  "global_adaptive_pipeline_load_equivalent": false,
+  "accuracy_tolerance": 1e-06
+}

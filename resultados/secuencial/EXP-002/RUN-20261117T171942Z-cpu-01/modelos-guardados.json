@@ -1,0 +1,30 @@
+{
+  "CNN-A": {
+    "ruta": "data/EXP-002/RUN-20261117T171942Z-cpu-01/CNN-A.keras",
+    "sha256": "8fe9c5b51b6736634a000bdd326e1d96dd1b4605c38ff62748e6e14b921052d4"
+  },
+  "CNN-B": {
+    "ruta": "data/EXP-002/RUN-20261117T171942Z-cpu-01/CNN-B.keras",
+    "sha256": "b1874e211110403057dc91098954fe78b842fc2ee7b4ee62a064ded3437b52f9"
+  },
+  "FC-A": {
+    "ruta": "data/EXP-002/RUN-20261117T171942Z-cpu-01/FC-A.keras",
+    "sha256": "2045f18a4e423c48fe910484c2067f9f7c3ae0fd894572b88bb09173d6d087e9"
+  },
+  "FC-B": {
+    "ruta": "data/EXP-002/RUN-20261117T171942Z-cpu-01/FC-B.keras",
+    "sha256": "4d5a7e7f81a9ad6971e268e8d1a0a428ccfa9e6d4256a3f6fa2313f12fcfd689"
+  },
+  "CNN-B+aug": {
+    "ruta": "data/EXP-002/RUN-20261117T171942Z-cpu-01/CNN-B+aug.keras",
+    "sha256": "0b94b642bc882d4909c03d3a1f45a35db086f625d79bf0bacfcca815bb92ea1e"
+  },
+  "RF-B": {
+    "ruta": "data/EXP-002/RUN-20261117T171942Z-cpu-01/RF-B.joblib",
+    "sha256": "61f53a4b637e6d633922ad118f896e1f05a0fc41a7805f0f9f72870f8e98c760"
+  },
+  "PCA": {
+    "ruta": "data/EXP-002/RUN-20261117T171942Z-cpu-01/PCA.joblib",
+    "sha256": "740d3ee5007ad4548fda43310a9b80e16fe789290afbed4514df176129ee2209"
+  }
+}

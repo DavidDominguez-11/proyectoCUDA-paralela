@@ -1,0 +1,2 @@
+experimento_id,run_id,dispositivo,repeticion,fase,tipo_medicion,duracion_s,inicio_utc,fin_utc,epocas,pasos,muestras,batch_size,incluido_resumen,estado,configuracion_sha256,datos_sha256,evidencia,motivo
+EXP-001,RUN-20261117T171504Z-cpu-01,cpu,1,preparacion_cpu,pared,18.3803925,2026-11-17T17:15:52.214882+00:00,2026-11-17T17:16:10.595282+00:00,,,17400,,true,completada,c05dac5f7cf90104f6db2f68601f9a054eee3610a6e36b837b04dd8aa7350d74,0b3cbeaf82c00ef4274b723bb3a4f81483e8e78de3cff5df8a3828009c19c26a,resultados/secuencial/EXP-001/RUN-20261117T171504Z-cpu-01/tiempos.csv,

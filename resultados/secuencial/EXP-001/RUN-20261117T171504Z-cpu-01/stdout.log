@@ -1,0 +1,24 @@
+[2026-11-17T17:15:31.956137+00:00] inicializacion_y_warmup {'modelo': 'CNN-A'}
+[2026-11-17T17:15:34.638832+00:00] inicializacion_y_warmup {'modelo': 'CNN-B'}
+[2026-11-17T17:15:39.560498+00:00] inicializacion_y_warmup {'modelo': 'FC-A'}
+[2026-11-17T17:15:41.340141+00:00] inicializacion_y_warmup {'modelo': 'FC-B'}
+[2026-11-17T17:15:43.730755+00:00] inicializacion_y_warmup {'modelo': 'CNN-A+aug'}
+[2026-11-17T17:15:46.406217+00:00] inicializacion_y_warmup {'modelo': 'CNN-B+aug'}
+[2026-11-17T17:15:52.214831+00:00] preparacion_cpu {}
+RESULTADO preparacion_cpu: 18.380392 s
+[2026-11-17T17:16:10.605892+00:00] entrenamiento_CNN-A {}
+[2026-11-17T17:16:10.805562+00:00] entrenamiento {'modelo': 'CNN-A', 'epoca': 1}
+EPOCH CNN-A 1/15 {'accuracy': 0.17233169078826904, 'loss': 2.941843032836914, 'val_accuracy': 0.40306514501571655, 'val_loss': 2.09909987449646}
+[2026-11-17T17:16:21.778729+00:00] entrenamiento {'modelo': 'CNN-A', 'epoca': 2}
+EPOCH CNN-A 2/15 {'accuracy': 0.4241379201412201, 'loss': 1.8811553716659546, 'val_accuracy': 0.6061302423477173, 'val_loss': 1.3572086095809937}
+[2026-11-17T17:16:31.656166+00:00] entrenamiento {'modelo': 'CNN-A', 'epoca': 3}
+EPOCH CNN-A 3/15 {'accuracy': 0.575123131275177, 'loss': 1.3412971496582031, 'val_accuracy': 0.6885057687759399, 'val_loss': 1.035756230354309}
+[2026-11-17T17:16:41.580846+00:00] entrenamiento {'modelo': 'CNN-A', 'epoca': 4}
+EPOCH CNN-A 4/15 {'accuracy': 0.6681445240974426, 'loss': 1.0448646545410156, 'val_accuracy': 0.7915709018707275, 'val_loss': 0.7451919913291931}
+[2026-11-17T17:16:51.574009+00:00] entrenamiento {'modelo': 'CNN-A', 'epoca': 5}
+EPOCH CNN-A 5/15 {'accuracy': 0.7407224774360657, 'loss': 0.8007563948631287, 'val_accuracy': 0.8149425387382507, 'val_loss': 0.6377832889556885}
+[2026-11-17T17:17:01.446931+00:00] entrenamiento {'modelo': 'CNN-A', 'epoca': 6}
+EPOCH CNN-A 6/15 {'accuracy': 0.7953202128410339, 'loss': 0.6427780985832214, 'val_accuracy': 0.8432950377464294, 'val_loss': 0.5291434526443481}
+[2026-11-17T17:17:10.781411+00:00] entrenamiento {'modelo': 'CNN-A', 'epoca': 7}
+EPOCH CNN-A 7/15 {'accuracy': 0.8205254673957825, 'loss': 0.5483670830726624, 'val_accuracy': 0.8647509813308716, 'val_loss': 0.4448176324367523}
+[2026-11-17T17:17:20.095104+00:00] entrenamiento {'modelo': 'CNN-A', 'epoca': 8}

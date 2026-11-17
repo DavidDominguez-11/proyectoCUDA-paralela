@@ -1,0 +1,17 @@
+{
+  "comando": [
+    "C:\\Users\\David\\Documents\\2026\\S2\\PARALELA\\CUDA\\PROYECTO-CUDA\\proyectoCUDA-paralela\\PCUDA\\Scripts\\python.exe",
+    "-X",
+    "utf8",
+    "C:\\Users\\David\\Documents\\2026\\S2\\PARALELA\\CUDA\\PROYECTO-CUDA\\proyectoCUDA-paralela\\scripts\\benchmark_cpu.py",
+    "worker",
+    "--directorio",
+    "C:\\Users\\David\\Documents\\2026\\S2\\PARALELA\\CUDA\\PROYECTO-CUDA\\proyectoCUDA-paralela\\resultados\\secuencial\\EXP-002\\RUN-20261117T192509Z-cpu-05",
+    "--repeticion",
+    "5",
+    "--experimento",
+    "EXP-002"
+  ],
+  "directorio": "C:\\Users\\David\\Documents\\2026\\S2\\PARALELA\\CUDA\\PROYECTO-CUDA\\proyectoCUDA-paralela",
+  "inicio_utc": "2026-11-17T19:25:09.236964+00:00"
+}

@@ -1,0 +1,14 @@
+ M .gitignore
+ M docs/trazabilidad/bitacora.md
+ M docs/trazabilidad/cambios.md
+ M docs/trazabilidad/decisiones.md
+?? configuraciones/EXP-001.json
+?? resultados/secuencial/EXP-001/RUN-20261117T171504Z-cpu-01/invocacion.json
+?? resultados/secuencial/EXP-001/configuracion.json
+?? resultados/secuencial/EXP-001/label_mapping.json
+?? resultados/secuencial/EXP-001/manifest_fuente.csv
+?? resultados/secuencial/EXP-001/manifest_splits.csv
+?? resultados/secuencial/EXP-001/serie.json
+?? resultados/secuencial/EXP-001/validacion_datos.json
+?? scripts/benchmark_cpu.py
+?? scripts/resumir_cpu.py

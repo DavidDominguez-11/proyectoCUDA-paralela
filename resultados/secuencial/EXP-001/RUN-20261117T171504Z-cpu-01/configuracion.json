@@ -1,0 +1,129 @@
+{
+  "es_plantilla": false,
+  "experimento_id": "EXP-001",
+  "creado_utc": "2026-11-17T17:14:17.430793+00:00",
+  "pregunta": "Tiempo CPU de las operaciones de procesamiento del laboratorio original completo, con carga fija.",
+  "responsable": "Codex, por solicitud del usuario; revision humana pendiente",
+  "requisitos": [
+    "REQ-03",
+    "REQ-07",
+    "REQ-12"
+  ],
+  "decisiones": [
+    "DEC-011",
+    "DEC-012",
+    "DEC-013"
+  ],
+  "codigo": {
+    "commit": "8b8bdec34aadbb91d9b412da12cd8388193427fd",
+    "notebook_sha256": "ce8824e860ae7e02684bf702fd6865b7d87cc9eb71917f56bfb0ee8d9ccb8e8a",
+    "benchmark_sha256": "f90a12830b0701c6eeb859222eab90a0af63a9a4278c864f3c284db50c6b5380"
+  },
+  "datos": {
+    "dataset_id": "DAT-01-v1",
+    "version": 1,
+    "ruta": "C:\\Users\\David\\.cache\\kagglehub\\datasets\\grassknoted\\asl-alphabet\\versions\\1",
+    "manifest_fuente_sha256": "ad9b594ec04ac653ea6c81450e7297097e76bdf95ecbc4266e3018b88674dab8",
+    "manifest_splits_sha256": "0b3cbeaf82c00ef4274b723bb3a4f81483e8e78de3cff5df8a3828009c19c26a",
+    "label_mapping_sha256": "726e71d3436eb0dec26bdfed80ddd2b541d54bd515dd7f9c0ad7c7179fff9a1d",
+    "samples_per_class": 600,
+    "splits": {
+      "train": 12180,
+      "val": 2610,
+      "test": 2610
+    },
+    "transformaciones": {
+      "rgb": true,
+      "tamano": [
+        64,
+        64
+      ],
+      "dtype": "float32",
+      "etiquetas": "int64",
+      "normalizacion": "/255.0",
+      "resize": "Pillow RGB default BICUBIC; original unchanged",
+      "exif": "no transpose; original behavior"
+    },
+    "augmentation": "Original layers inside CPU model; selected CNN architecture; not CUDA design"
+  },
+  "modelos": [
+    "CNN-A",
+    "CNN-B",
+    "FC-A",
+    "FC-B",
+    "mejor CNN + augmentation",
+    "PCA+RF-A",
+    "PCA+RF-B"
+  ],
+  "carga": {
+    "epocas_fijas": 15,
+    "pasos_por_epoca": 96,
+    "batch_size": 128,
+    "descartar_ultimo_batch": false,
+    "early_stopping": false,
+    "validacion": "2610 samples each epoch; nested timing retained"
+  },
+  "aleatoriedad": {
+    "seed": 42,
+    "semillas_modelos": {
+      "CNN-A": 42,
+      "CNN-B": 43,
+      "FC-A": 44,
+      "FC-B": 45,
+      "CNN-A+aug": 46,
+      "CNN-B+aug": 47
+    },
+    "shuffle": true,
+    "determinismo": true
+  },
+  "precision": {
+    "dtype": "float32",
+    "mixed_precision": false,
+    "xla": false,
+    "oneDNN": true,
+    "tf32": "no_aplica_CPU"
+  },
+  "cpu": {
+    "modelo": "AMD Ryzen 5 4600H with Radeon Graphics",
+    "nucleos_fisicos": 6,
+    "nucleos_logicos": 12,
+    "ram_bytes": 16558346240,
+    "hilos_matematicos": 6,
+    "intra_op": 6,
+    "inter_op": 1,
+    "workers_preparacion": 1,
+    "afinidad": "sin restriccion adicional",
+    "gpu_visible": false
+  },
+  "medicion": {
+    "repeticiones_iniciales": 5,
+    "extensiones": [
+      7,
+      9
+    ],
+    "criterio": "At n=5 and n=7 extend if Student-t 95% relative half-width of pipeline_total exceeds 5%; cap n=9, disclose if unmet.",
+    "warmup": "Each candidate model: fit 148 train +128 val, 1 epoch, batch128; restore ALL model/optimizer variables and seeds.",
+    "procesos_nuevos": true,
+    "temporizador": "time.perf_counter_ns; CPU synchronous results",
+    "cache": "OS page cache not flushed; manifests pre-read all selected files; no cold-disk claim",
+    "exclusiones": "No timing outlier removal; failed processes retained and reported",
+    "total": "Continuous wall time from measured preparation to completion of group inference; excludes imports, model construction/warmup, hashes, checkpoint writes and plots",
+    "nested": "Validation callback durations are nested inside each fit; do not add twice",
+    "monitorizacion": "psutil from controller at 1-second intervals, same policy for all runs"
+  },
+  "validacion": {
+    "shapes": true,
+    "finite": true,
+    "input_hashes": true,
+    "initial_state_hashes": true,
+    "accuracy_tolerance_across_repetitions": 1e-06,
+    "atol_futuro_gpu": 1e-05,
+    "rtol_futuro_gpu": 0.0001
+  },
+  "comandos": {
+    "directorio": "C:\\Users\\David\\Documents\\2026\\S2\\PARALELA\\CUDA\\PROYECTO-CUDA\\proyectoCUDA-paralela",
+    "preparar": ".\\PCUDA\\Scripts\\python.exe -X utf8 scripts/benchmark_cpu.py prepare --dataset \"C:\\Users\\David\\.cache\\kagglehub\\datasets\\grassknoted\\asl-alphabet\\versions\\1\"",
+    "cpu": ".\\PCUDA\\Scripts\\python.exe -X utf8 scripts/benchmark_cpu.py run",
+    "analisis": ".\\PCUDA\\Scripts\\python.exe -X utf8 scripts/resumir_cpu.py"
+  }
+}

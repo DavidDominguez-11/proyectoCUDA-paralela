@@ -1,0 +1,2 @@
+fase,n,media_s,mediana_s,desviacion_muestral_s,min_s,max_s,cv_pct,ic95_inferior_s,ic95_superior_s,semiancho_relativo_ic95_pct,anidada
+referencia_comun,5,1119.9275622999999,1119.7507971,2.7231840356073445,1116.3892196,1122.8687608,0.24315715830894724,1116.546282722503,1123.3088418774967,0.30191948937775304,False

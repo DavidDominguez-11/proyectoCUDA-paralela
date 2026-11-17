@@ -1,0 +1,41 @@
+{
+  "train": {
+    "shape": [
+      12180,
+      64,
+      64,
+      3
+    ],
+    "dtype": "float32",
+    "images_sha256": "266ba8ca1cffb35dea04beea3f6dda3683b6ab3eb33e2a2cef0e543b02997be4",
+    "labels_sha256": "71cc0861806c907823b853bc596542ece8b481b12e23d2a6b50b107b5daecba3",
+    "min": 0.0,
+    "max": 1.0
+  },
+  "val": {
+    "shape": [
+      2610,
+      64,
+      64,
+      3
+    ],
+    "dtype": "float32",
+    "images_sha256": "f14771b692aa401450dd6c7e2067d88519b00343bf6ae990f4cd2de6e1935d73",
+    "labels_sha256": "9a7e2a8feb527b18aa82e4e810aa81d28b3b6b925edc1c7bbba2e87ca16ce6a2",
+    "min": 0.0,
+    "max": 1.0
+  },
+  "test": {
+    "shape": [
+      2610,
+      64,
+      64,
+      3
+    ],
+    "dtype": "float32",
+    "images_sha256": "89d5d47ebdc6b172870f1ebb8e5ec1ac65de6547defb0f2d9297551fd7d4ce7f",
+    "labels_sha256": "d594f12e2a74e612a88dd970efd10a74bb007b15f832f7afaea8887c8003211d",
+    "min": 0.0,
+    "max": 1.0
+  }
+}

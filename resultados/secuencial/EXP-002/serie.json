@@ -1,0 +1,21 @@
+{
+  "estado": "completada_alcance_comun_5",
+  "runs": [
+    "RUN-20261117T171942Z-cpu-01",
+    "RUN-20261117T175407Z-cpu-02",
+    "RUN-20261117T182835Z-cpu-03",
+    "RUN-20261117T190250Z-cpu-04",
+    "RUN-20261117T192509Z-cpu-05"
+  ],
+  "media_s": 1858.61650026,
+  "semiancho_relativo_ic95": 0.2100145710237472,
+  "fin_utc": "2026-11-17T19:59:24.152376+00:00",
+  "cierre_por_revision": "DEC-015: global precision rule inapplicable to mixed adaptive architectures; five common-work repetitions retained",
+  "criterio_precision_cumplido": false,
+  "criterio_global_aplicable": false,
+  "pids_control_detenidos": [
+    11652,
+    2936
+  ],
+  "workers_adicionales_interrumpidos": []
+}

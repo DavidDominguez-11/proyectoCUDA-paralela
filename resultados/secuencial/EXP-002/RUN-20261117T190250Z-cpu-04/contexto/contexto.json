@@ -1,0 +1,75 @@
+{
+  "capturado_utc": "2026-11-17T19:02:50.815622+00:00",
+  "tipo_evidencia": "captura_estatica_sin_ejecucion_del_modelo",
+  "commit": "8b8bdec34aadbb91d9b412da12cd8388193427fd",
+  "arbol_limpio": false,
+  "directorio_repositorio": "C:\\Users\\David\\Documents\\2026\\S2\\PARALELA\\CUDA\\PROYECTO-CUDA\\proyectoCUDA-paralela",
+  "directorio_invocacion": "C:\\Users\\David\\Documents\\2026\\S2\\PARALELA\\CUDA\\PROYECTO-CUDA\\proyectoCUDA-paralela",
+  "comando_captura": [
+    "C:\\Users\\David\\Documents\\2026\\S2\\PARALELA\\CUDA\\PROYECTO-CUDA\\proyectoCUDA-paralela\\scripts\\capturar_contexto.py",
+    "--destino",
+    "C:\\Users\\David\\Documents\\2026\\S2\\PARALELA\\CUDA\\PROYECTO-CUDA\\proyectoCUDA-paralela\\resultados\\secuencial\\EXP-002\\RUN-20261117T190250Z-cpu-04\\contexto"
+  ],
+  "python": {
+    "ejecutable": "C:\\Users\\David\\Documents\\2026\\S2\\PARALELA\\CUDA\\PROYECTO-CUDA\\proyectoCUDA-paralela\\PCUDA\\Scripts\\python.exe",
+    "version": "3.14.3 (tags/v3.14.3:323c59a, Feb  3 2026, 16:04:56) [MSC v.1944 64 bit (AMD64)]"
+  },
+  "sistema": {
+    "plataforma": "Windows-11-10.0.26200-SP0",
+    "maquina": "AMD64",
+    "procesadores_logicos": 12
+  },
+  "variables_permitidas": {
+    "CUDA_VISIBLE_DEVICES": null,
+    "OMP_NUM_THREADS": null,
+    "MKL_NUM_THREADS": null,
+    "TF_NUM_INTRAOP_THREADS": null,
+    "TF_NUM_INTEROP_THREADS": null,
+    "TF_DETERMINISTIC_OPS": null,
+    "CUBLAS_WORKSPACE_CONFIG": null
+  },
+  "pendiente_validar_en_ejecucion": [
+    "CPU y RAM efectivos",
+    "GPU y VRAM",
+    "driver, CUDA y cuDNN efectivos",
+    "dispositivos usados por fase",
+    "entorno reconstruido desde lock",
+    "comando del experimento y resultados"
+  ],
+  "alcance_fuentes": "archivos Git y nuevos no ignorados en roots/extensiones permitidos",
+  "directorios_fuente_permitidos": [
+    "LAB3-DATASCIENCE",
+    "configuraciones",
+    "cuda",
+    "docs",
+    "notebooks",
+    "scripts",
+    "src",
+    "tests"
+  ],
+  "extensiones_fuente_permitidas": [
+    ".cpp",
+    ".csv",
+    ".cu",
+    ".cuh",
+    ".h",
+    ".ipynb",
+    ".jpeg",
+    ".jpg",
+    ".json",
+    ".lock",
+    ".md",
+    ".pdf",
+    ".png",
+    ".ps1",
+    ".py",
+    ".sh",
+    ".toml",
+    ".txt",
+    ".yaml",
+    ".yml"
+  ],
+  "exclusiones": "resultados, datos grandes, entornos, secretos por nombre; revisar selección antes de compartir",
+  "fuentes_count": 47,
+  "nota_paquetes": "Inventario instalado del interprete; no sustituye lock, wheels ni prueba de reinstalacion."
+}

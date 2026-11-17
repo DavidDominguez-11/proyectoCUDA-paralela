@@ -1,7 +1,9 @@
 # Resultados y evidencias
 
-Estado inicial: **sin mediciones experimentales CPU/GPU**. Los CSV solo tienen
-cabeceras; no contienen resultados cero ni observaciones ficticias.
+Estado actual: **cinco corridas CPU EXP-002 completadas; GPU pendiente**.
+Los valores crudos se conservan por RUN y el índice CPU está consolidado.
+El [informe CPU](secuencial/EXP-002/resultados.md) separa las fases comunes de
+las ramas adaptativas; no se mezclan como si fueran una única carga fija.
 
 | Carpeta / archivo | Uso |
 |---|---|
