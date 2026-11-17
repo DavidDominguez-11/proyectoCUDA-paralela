@@ -1,6 +1,6 @@
 # Verificacion de la preparacion
 
-Fecha UTC: 2026-11-17T16:56:33.544538+00:00.
+Fecha UTC: 2026-11-17T21:50:35.117392+00:00.
 
 Estado: comprobaciones aprobadas. Tipo: evidencia de preparacion.
 
@@ -12,13 +12,13 @@ python -X utf8 scripts/verificar_preparacion.py
 
 Interprete: `C:\Python314\python.exe`. Python: 3.14.3.
 
-- Enlaces locales: 50 validos en 22 Markdown.
+- Enlaces locales: 187 validos en 34 Markdown.
 - JSON valido y marcado como plantilla pendiente, sin experimento ficticio.
 - Inventario inicial: 19 archivos con bytes y SHA-256 coincidentes.
-- CSV: 6 esquemas consistentes; tablas experimentales sin observaciones.
+- CSV: 68 esquemas consistentes; 125 filas en indices experimentales; las observaciones completas de tiempos apuntan a evidencia existente.
 - Scripts Python: sintaxis valida por analisis AST, sin importar el modelo.
-- Captura temporal: 41 fuentes archivadas y hashes verificados; contexto/paquetes registrados; destino existente rechazado sin cambios.
+- Captura temporal: 50 fuentes archivadas y hashes verificados; contexto/paquetes registrados; destino existente rechazado sin cambios.
 
-No se ejecuto el notebook, entrenamiento, benchmark, descarga de datos ni comprobacion de hardware GPU. La captura de prueba se elimino al cerrar el directorio temporal; se conserva este resultado y el script para repetirla.
+Durante este comando de verificacion no se ejecuto el notebook, entrenamiento, benchmark, descarga de datos ni comprobacion de hardware GPU. Las ejecuciones experimentales existentes se documentan por separado. La captura de prueba se elimino al cerrar el directorio temporal; se conserva este resultado y el script para repetirla.
 
 Este informe de preparacion se actualiza al repetir el comando. Los RUN experimentales se conservan por separado sin sobrescribir.
