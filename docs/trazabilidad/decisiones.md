@@ -28,6 +28,24 @@ evaluada. Al sustituir una decisión, conservar la anterior y enlazar la nueva.
   pendientes explícitos; resultados históricos identificados.
 - Cambio: CAM-001. Evidencia: esta estructura; REQ-12.
 
+## DEC-010 — Alcance y conteo del análisis original (paso 1)
+
+- Estado: aplicada para esta revisión documental, conforme al paso solicitado.
+- Fecha: 2026-11-17. Responsable: asistente Codex; revisión humana pendiente.
+- Contexto: el notebook incluye entrenamiento, recarga e inferencia, contiene
+  paralelismo interno y conserva salidas de diferentes sesiones.
+- Alternativas: describir únicamente inferencia o una sola CNN; describir el
+  programa completo. Se adopta la segunda para cubrir la solución existente.
+- Decisión: usar índices de celda desde cero, preservar el original y distinguir
+  cantidades configuradas, fórmulas derivadas y épocas visibles históricamente.
+  Documentar entrenamiento completo y el recorrido de inferencia de fotos propias.
+- Fundamento: PDF páginas 1–2, REQ-02; lectura del código y salidas guardadas.
+- Consecuencia: las cantidades no se presentan como mediciones nuevas; no se
+  supone que «secuencial» significa monohilo ni que se haya validado CUDA.
+- Evidencia: [análisis original](analisis-original.md) y
+  [extracción estática](../../resultados/analisis-original/revision-estatica.md).
+- PROC-01/02; CAM-002; BIT-004. No se selecciona todavía modelo ni stack CUDA.
+
 ## Decisiones técnicas abiertas
 
 | ID | Pregunta | Alternativas a evaluar | Evidencia necesaria | Estado |

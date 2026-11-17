@@ -7,7 +7,7 @@ páginas. Ante una diferencia, prevalece ese PDF sobre cualquier otro archivo.
 Las convenciones de esta carpeta son acuerdos internos para satisfacerlo;
 no deben presentarse como instrucciones adicionales del docente.
 
-Estado: **preparación documental; sin nuevas mediciones CPU/GPU**.
+Estado: **paso 1 completado (análisis del original); sin nuevas mediciones CPU/GPU**.
 Fecha de apertura: 2026-11-17, zona de trabajo America/Guatemala.
 Las [instrucciones del repositorio](../../AGENTS.md) mantienen estas convenciones
 para trabajos posteriores.
@@ -64,9 +64,10 @@ artefactos que la sostienen. Un nombre de archivo sin versión no identifica dat
 7. No guardar contraseñas, tokens, archivos `.env` ni volcados de variables de entorno.
    Los artefactos deben contener solo información necesaria para reproducir.
 
-## Situación inicial
+## Situación actual
 
 Existe el laboratorio original con salidas históricas. No existen todavía una
 versión CUDA propia, un entorno GPU validado, mediciones repetidas comparables,
-capturas nuevas ni el informe final. Esta carpeta prepara su registro y no
-certifica reproducibilidad hasta ejecutar y verificar los procedimientos.
+capturas nuevas ni el informe final. El paso 1 está documentado con sus dos
+tablas y evidencia de lectura estática; el paso 2 (medición CPU) sigue pendiente.
+No se certifica reproducibilidad hasta ejecutar y verificar los procedimientos.

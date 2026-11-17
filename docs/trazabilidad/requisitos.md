@@ -7,7 +7,7 @@ no la mera creación de una plantilla.
 | ID | Página | Requisito | Documento / trabajo | Evidencia de cierre | Estado |
 |---|---|---|---|---|---|
 | REQ-01 | 1 | Tres integrantes y contribuciones en repositorio compartido | Bitácora y commits | Nombres, responsabilidades y contribuciones verificables de los tres | Pendiente completar equipo |
-| REQ-02 | 1–2 | Descomponer solución original y registrar operaciones repetitivas, datos y repeticiones | analisis-original.md | Tablas contrastadas con el código y carga definitiva | Análisis estático inicial |
+| REQ-02 | 1–2 | Descomponer solución original y registrar operaciones repetitivas, datos y repeticiones | [analisis-original.md](analisis-original.md) | Dos tablas solicitadas, referencias de celdas y [extracción estática del original](../../resultados/analisis-original/revision-estatica.md) | Completado: paso 1 por revisión estática; benchmark posterior pendiente |
 | REQ-03 | 2 | Varias ejecuciones CPU equivalentes y tiempo promedio | reproducibilidad.md; resultados/secuencial | RUN, configuración, tiempos crudos y resumen | Pendiente ejecutar |
 | REQ-04 | 2 | Seleccionar y justificar oportunidades de paralelización | estrategia-paralelizacion.md; decisiones.md | Selección sustentada en análisis y mediciones | Candidatos identificados |
 | REQ-05 | 2 | Diseñar distribución entre hilos, bloques y grids | estrategia-paralelizacion.md | Diseño concreto ligado a operaciones y código | Pendiente diseñar |
