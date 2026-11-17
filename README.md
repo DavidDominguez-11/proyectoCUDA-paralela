@@ -11,7 +11,9 @@ La versión Markdown de la consigna es material explicativo secundario.
 - [Resultados y artefactos](resultados/README.md).
 - [Paso 2: mediciones CPU, tablas y gráficas](resultados/secuencial/EXP-002/resultados.md).
 - [Paso 3: identificación de oportunidades de paralelización](docs/trazabilidad/oportunidades-paralelizacion.md).
+- [Paso 4: diseño completo del algoritmo CUDA](docs/trazabilidad/diseno-paralelo.md).
 
 El laboratorio original está en `LAB3-DATASCIENCE/` y permanece intacto. Se
 completaron cinco corridas CPU en PCUDA; se separan las fases comunes y las
-ramas adaptativas. La implementación y medición CUDA siguen pendientes.
+ramas adaptativas. DIS-CUDA-001 especifica el diseño CNN-B, sus kernels,
+memoria, equivalencia y medición. La implementación y medición CUDA siguen pendientes.
