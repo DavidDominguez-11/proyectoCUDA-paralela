@@ -1,0 +1,1 @@
+experimento_id,run_id,dispositivo,repeticion,fase,tipo_medicion,duracion_s,inicio_utc,fin_utc,epocas,pasos,muestras,batch_size,incluido_resumen,estado,configuracion_sha256,datos_sha256,evidencia,motivo
