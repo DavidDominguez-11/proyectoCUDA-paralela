@@ -234,6 +234,54 @@ python -X utf8 scripts/verificar_preparacion.py
 - Paso2 completado con límites explícitos. Paso3, GPU, transferencias, speedup e
   informe PDF final siguen pendientes. Commit/revisión humana: pendientes.
 
+## BIT-006 — Paso 3: oportunidades de paralelización
+
+- Fecha UTC: 2026-11-17; consulta de identidades/cálculos a las 21:57:28 UTC.
+  Responsable: Codex por solicitud del usuario; revisión humana pendiente.
+- REQ-04/12; PROC-01/02/11; DEC-003/016; CAM-004. No genera EXP/RUN.
+- Directorio de trabajo: raíz del repositorio. Se revisaron README de trazabilidad,
+  decisiones abiertas, bitácora, requisitos, cambios y procedimientos antes de
+  modificar. Se contrastó el texto normativo del paso 3 con el PDF, página 2.
+- Entradas: notebook/PDF con sus hashes del inventario inicial; análisis estático
+  del paso 1 y CSV de medias EXP-002. Identidades exactas en el documento del paso 3.
+- Procedimiento: revisión del flujo y de las repeticiones; identificación de
+  salidas independientes, reducciones y dependencias; priorización por tiempo CPU;
+  selección de nueve familias y análisis de operaciones no seleccionadas.
+- Lectura normativa realizada con Python del sistema, sin ejecutar el notebook:
+
+```powershell
+python -X utf8 -c "from pypdf import PdfReader; print(PdfReader('docs/Proyecto 3 CUDA.pdf').pages[1].extract_text())"
+```
+
+- Cálculos reproducibles: leer `media_s` de resumen.csv y dividir cada fase entre
+  `media_s` de resumen_referencia_comun.csv, multiplicando por 100. Las cuatro
+  fases entrenamiento_CNN-A/B y entrenamiento_FC-A/B suman 96.760341%; CNN-B
+  representa 71.937664%. Se ejecutó esta derivación con csv de la biblioteca
+  estándar en PCUDA; no se ejecutaron entrenamientos ni scripts de experimentos.
+- Se comprobó SHA-256 con hashlib sobre PDF, notebook, los dos CSV y estrategia
+  previa. El paso 3 conserva las identidades de entradas y CAM-004 la previa.
+- Resultado: documento con selección principal CNN-B, operaciones complementarias,
+  oportunidades secundarias y exclusiones. Se conserva preparación CPU según PDF.
+  No se asignan hilos/bloques/grids ni se eligen kernels, librería o memoria.
+- Artefacto: [oportunidades-paralelizacion.md](oportunidades-paralelizacion.md).
+  Se actualizan índices, REQ-04, DEC-003/016 y PROC-11; no se alteran fuentes,
+  configuraciones ni evidencia experimental sellada.
+- Comandos de comprobación documental desde la raíz:
+
+```powershell
+.\PCUDA\Scripts\python.exe -X utf8 scripts/verificar_preparacion.py
+git diff --check
+```
+
+- Resultado de comprobación: aprobado a las 22:00:06 UTC, salida 0: 206 enlaces
+  válidos en 35 Markdown, 19 archivos originales con bytes/SHA-256 coincidentes,
+  68 esquemas CSV consistentes y 125 filas experimentales enlazadas. `git diff
+  --check` finalizó con salida 0; solo avisos de conversión LF/CRLF de Git.
+  Evidencia en el [reporte de preparación](../../resultados/preparacion/verificacion-preparacion.md).
+  Límite: verifica documentación e integridad, no compatibilidad CUDA, corrección
+  numérica de una implementación GPU ni rendimiento. No se repiten mediciones CPU.
+- Siguiente fase pendiente: paso 4, diseño del algoritmo paralelo; no iniciada.
+
 ## Plantilla para cada actividad
 
 ```markdown

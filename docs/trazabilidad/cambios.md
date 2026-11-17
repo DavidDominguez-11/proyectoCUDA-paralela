@@ -72,6 +72,27 @@
 - No es optimización CUDA ni medición de speedup; no se generó el informe PDF final.
 
 
+## CAM-004 — Identificación documental de oportunidades CUDA, paso 3
+
+- Fecha UTC: 2026-11-17. Responsable: Codex; revisión humana pendiente.
+- REQ-04/12; PROC-11; DEC-003/016; BIT-006.
+- Identidad previa: notebook SHA-256
+  `ce8824e860ae7e02684bf702fd6865b7d87cc9eb71917f56bfb0ee8d9ccb8e8a`,
+  intacto; estrategia previa SHA-256
+  `c68471b1ba561f40b26bacd399c385836236b1258e4d0652447eaccc48e9c10f`.
+- Antes: candidatos genéricos sin selección sustentada tras la medición CPU.
+  Ahora: [paso 3](oportunidades-paralelizacion.md) con nueve oportunidades,
+  independencia, dependencias, prioridad CNN-B y exclusiones justificadas.
+- Archivos: nuevo documento; índices raíz/trazabilidad, requisitos, estrategia,
+  decisiones, procedimientos, cambios y bitácora. La comprobación documental
+  actualiza su reporte mutable en resultados/preparacion.
+- Datos y procedimiento experimental: sin cambios; reutiliza resultados EXP-002
+  con identidad, sin nuevas corridas ni modificaciones de evidencias selladas.
+- Impacto: completa REQ-04; no diseña distribución CUDA ni modifica código.
+  Los porcentajes por fase son cálculos derivados, no speedup ni perfil por kernel.
+- Validación: verificador documental y diff registrados en BIT-006; no requiere
+  entrenamiento. Commit de incorporación pendiente de realizar por el equipo.
+
 ## Plantilla de cambio
 
 ```markdown

@@ -16,6 +16,7 @@ Registrar responsable, UTC, comando, entrada, salida, errores y decisión siguie
 | PROC-08 | Medir versión GPU | Mismo EXP y DAT | Confirmar CUDA real; warmup/restauración; sincronizar; medir H2D/cómputo/D2H/total; capturar recursos |
 | PROC-09 | Analizar resultados | RUN cerrados y comparables | Validar exclusiones/equivalencia; estadísticas; speedup; gráficas reproducibles; causas y limitaciones |
 | PROC-10 | Reproducir y entregar | Código, entorno, manifiestos y resultados | Reproducción desde cero; auditoría de enlaces/hashes; informe PDF y paquete final |
+| PROC-11 | Identificar oportunidades CUDA, paso 3 | PDF, análisis original y mediciones CPU cerradas | Revisar independencia/reducciones/dependencias; priorizar fases; justificar selección y exclusiones; registrar DEC/CAM/BIT sin diseñar ni implementar |
 
 ## Registro de comandos
 

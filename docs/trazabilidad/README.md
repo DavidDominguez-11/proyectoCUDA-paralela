@@ -7,7 +7,7 @@ páginas. Ante una diferencia, prevalece ese PDF sobre cualquier otro archivo.
 Las convenciones de esta carpeta son acuerdos internos para satisfacerlo;
 no deben presentarse como instrucciones adicionales del docente.
 
-Estado: **pasos 1 y 2 completados; cinco corridas CPU EXP-002; GPU pendiente**.
+Estado: **pasos 1, 2 y 3 completados; cinco corridas CPU EXP-002; diseño e implementación CUDA pendientes**.
 Fecha de apertura: 2026-11-17, zona de trabajo America/Guatemala.
 Las [instrucciones del repositorio](../../AGENTS.md) mantienen estas convenciones
 para trabajos posteriores.
@@ -23,7 +23,8 @@ para trabajos posteriores.
 | [Reproducir EXP-002](reproducir-exp-002.md) | Comandos concretos, manifiestos congelados y recuperación sin descarga. |
 | [Procedimientos](procedimientos.md) | Pasos desde la preparación hasta la entrega. |
 | [Decisiones](decisiones.md) | Alternativas, justificación, estado e impactos. |
-| [Estrategia de paralelización](estrategia-paralelizacion.md) | Operaciones candidatas, memoria y diseño CUDA pendiente. |
+| [Oportunidades de paralelización](oportunidades-paralelizacion.md) | Paso 3: selección, justificación, dependencias y límites a partir del análisis y tiempos CPU. |
+| [Estrategia de paralelización](estrategia-paralelizacion.md) | Selección del paso 3 y ficha pendiente del diseño CUDA del paso 4. |
 | [Cambios](cambios.md) | Alcance y consecuencias de cada modificación. |
 | [Bitácora](bitacora.md) | Actividades, responsables y evidencias por paso. |
 | [Entrega](entrega.md) | Criterios para cerrar el proyecto y producir el informe PDF. |
@@ -73,6 +74,10 @@ tiempos, cuatro gráficas y análisis de variabilidad. La referencia común suma
 14 fases equivalentes; el total adaptativo se presenta por separado porque una
 corrida cambió la CNN seleccionada. La repetibilidad numérica del entrenamiento
 no se logró en todas las redes y se documenta como límite observado.
+
+El [paso 3](oportunidades-paralelizacion.md) selecciona como prioridad la matemática
+del entrenamiento CNN-B, sustentada en su 71.94% de la referencia común CPU.
+La preparación permanece en CPU. La selección no constituye diseño ni validación GPU.
 
 No existe aún versión CUDA, validación GPU, speedup ni informe PDF final. La
 reconstrucción completa del entorno en otra máquina no se ha certificado.

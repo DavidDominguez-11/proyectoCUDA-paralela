@@ -156,11 +156,37 @@ evaluada. Al sustituir una decisión, conservar la anterior y enlazar la nueva.
 - REQ-03/07/12; PROC-06/09; CAM-003; BIT-005. La selección final para CUDA sigue
   pendiente del paso 3; estas observaciones no prueban speedup.
 
-## Decisiones técnicas abiertas
+## DEC-016 — Selección de oportunidades del paso 3 (resuelve DEC-003)
+
+- Fecha UTC: 2026-11-17; responsable: Codex por solicitud del usuario.
+- Estado: adoptada para la propuesta documental; revisión humana pendiente.
+- Contexto: las cinco corridas CPU permiten priorizar por coste observado,
+  mientras el usuario limita esta fase a identificar y justificar oportunidades.
+- Alternativas: preparación CUDA, PCA/Random Forest, todas las redes o foco CNN-B.
+  Se selecciona la matemática del entrenamiento CNN-B: 805.650 s, 71.94% de la
+  referencia común; las otras redes son oportunidades secundarias.
+- Operaciones: convoluciones, Dense y sus gradientes como principales; ReLU,
+  pooling, BatchNormalization, softmax/pérdida, Adam y Dropout como complementarias
+  del mismo entrenamiento. No se prescribe cómo implementarlas.
+- Preparación de imágenes en CPU conforme al PDF; cualquier traslado futuro de
+  augmentation fuera del modelo exige equivalencia, aún pendiente de diseño.
+- Se descartan del objetivo actual PCA/RF por menor prioridad y alcance diferente,
+  no por imposibilidad de paralelización. No se seleccionan épocas independientes
+  ni entrenamiento concurrente de modelos como sustituto de acelerar operaciones.
+- Evidencia y límites: [paso 3](oportunidades-paralelizacion.md), análisis original,
+  resumen.csv y referencia común EXP-002; no hay perfil por operador ni speedup GPU.
+- Consecuencia: se resuelve la selección conceptual DEC-003; stack, diseño,
+  memoria, compatibilidad y mediciones GPU siguen pendientes. La equivalencia de
+  carga no permite usar el total de todas las fases como baseline de una sola CNN.
+- Revisión: si evidencia posterior de hardware, compatibilidad o perfil operativo
+  cambia la conveniencia, documentar una decisión nueva sin borrar esta selección.
+- REQ-04/12; PROC-11; CAM-004; BIT-006. Sin cambios de código, datos ni EXP-002.
+
+## Estado de decisiones técnicas
 
 | ID | Pregunta | Alternativas a evaluar | Evidencia necesaria | Estado |
 |---|---|---|---|---|
-| DEC-003 | ¿Qué modelo y operaciones se aceleran? | CNN-A, CNN-B u otro alcance justificado del laboratorio | Coste CPU, representatividad y complejidad | Pendiente |
+| DEC-003 | ¿Qué modelo y operaciones se aceleran? | CNN-A, CNN-B u otro alcance justificado del laboratorio | Paso 3 y DEC-016: matemática del entrenamiento CNN-B prioritaria | Resuelta como selección propuesta; diseño y validación pendientes |
 | DEC-004 | ¿Qué stack satisface CUDA Python y diseño explícito? | APIs CUDA Python / herramientas compatibles; backend de framework con alcance documentado | Cumplimiento REQ-05/06, hardware, compatibilidad y prueba mínima | Pendiente |
 | DEC-005 | ¿Cuál será la carga experimental? | Tamaño de muestra, batch, épocas/pasos, repeticiones, warmup, orden | DEC-011/013, configuración y serie EXP-002 | Resuelta para CPU; equivalencia GPU pendiente |
 | DEC-006 | ¿Cómo preparar imágenes con CPU? | Bucle original, workers de hilos/procesos u otro mecanismo explícito | Tiempo, uso por núcleo, orden determinista y memoria | Pendiente |
