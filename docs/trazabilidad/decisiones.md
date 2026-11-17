@@ -182,16 +182,99 @@ evaluada. Al sustituir una decisión, conservar la anterior y enlazar la nueva.
   cambia la conveniencia, documentar una decisión nueva sin borrar esta selección.
 - REQ-04/12; PROC-11; CAM-004; BIT-006. Sin cambios de código, datos ni EXP-002.
 
+## DEC-017 — Kernels Python explícitos y reparto CUDA (paso 4)
+
+- Estado: propuesta técnica adoptada para DIS-CUDA-001; sin implementar.
+- Fecha:2026-11-17 UTC; responsable:Codex, solicitud del usuario.
+- Contexto: REQ-05 exige threads/blocks/grids y REQ-06 CUDA Python; CNN-B es el
+  objetivo seleccionado. Inventario identifica GTX1650,4GiB,sm_75,driver591.59.
+- Alternativas: backend TensorFlow GPU oculta configuración; CUDA C desde Python
+  cambia el lenguaje de kernels; numba-cuda permite kernels Python y reparto
+  explícito. Se propone NVIDIA numba-cuda con bindings CUDA Python y un stream.
+- Diseño: GEMM implícito tiled16×16, dW particionado2048 con reducción posterior,
+  vectores/reducciones256threads, softmax32threads, sin atómicos flotantes;
+  pooling gather, BN poblacional y Adam fiel al fuente local. FP32, NHWC,
+  sin Tensor Cores/TF32/mixed precision; tope768MiB de buffers propios.
+- Evidencia: [diseño principal](diseno-paralelo.md), [catálogo](diseno-kernels-cuda.md)
+  y [consulta de inventario](../../resultados/diseno/paso-4-inspeccion.md).
+- Consecuencia: DEC-004 se resuelve a nivel de stack propuesto; lock y admisión
+  binaria siguen por verificar. PCUDA no tiene el stack instalado; no modificar
+  sus paquetes para forzar compatibilidad. No se afirma que el algoritmo sea
+  óptimo ni que supere CPU sin mediciones. Cambiar backend requiere DEC/CAM nuevos.
+- REQ-05/06; PROC-12; CAM-005; BIT-007. Revisión humana pendiente.
+
+## DEC-018 — Equivalencia explícita y CPU pareada nueva
+
+- Estado: contrato adoptado para comparación futura, sin ejecuciones nuevas.
+- Fecha:2026-11-17 UTC; responsable:Codex.
+- Problema: compartir una seed entre generadores distintos no iguala máscaras
+  Dropout ni orden; EXP-002 además contiene varias arquitecturas y ramas adaptativas.
+- Se fija CNN-B base15épocas, batch128, último20, sin augmentation ni selección
+  por test. Importar estado inicial preservado; orden PCG64/SeedSequence por época
+  y máscaras CPU por capa/paso/repetición, comunes en ambos dispositivos.
+- Preparación CPU6workers acotados, misma salida exacta; validación y evaluación
+  final en CPU para mantener CUDA restringido al entrenamiento conforme al PDF.
+  D2H de modelo por época y generación de máscaras se incluyen en el tiempo total.
+- Alternativa: usar RNG distinto y comparar históricos directamente; rechazada
+  porque no iguala control aleatorio ni alcance. Igualar distribución no reproduce
+  trayectoria; conservar como procedencia los cuatro estados RNG del NPZ antiguo.
+- Consecuencia: futura implementación de adaptador CPU y nuevos RUN CPU/GPU bajo
+  EXP nuevo congelado. EXP-002 queda intacto y solo justifica la prioridad.
+- DEC-005 mantiene referencia histórica; DEC-006 se resuelve como6workers
+  propuestos y DEC-007 como augmentation excluido del alcance base.
+- Evidencia: [contratos y validación](diseno-validacion-cuda.md); REQ-07/12;
+  CAM-005; BIT-007. Calidad y repetibilidad quedan pendientes de prueba.
+
+## DEC-019 — Temporización completa y aceptación previa
+
+- Estado: protocolo propuesto, sin tiempos GPU observados.
+- Fecha:2026-11-17 UTC; responsable:Codex.
+- Se elige un stream sin solapamiento para trazabilidad; tiempo Host sincronizado
+  como principal y eventos por grupos con alcance explícito. Publicar copias,
+  staging, flags, validaciónCPU y administración, sin sumar intervalos anidados.
+- Cinco parejas CPU/GPU, orden alternado fijo y extensión a7/9 si semiancho
+  ICt95% supera5%; no seleccionar repeticiones por un resultado favorable.
+- Puertas de integridad/entorno/memoria/operadores/pasos/calidad, tolerancias
+  numéricas previas y capturas/logs durante carga. Fallos se conservan; no se
+  reduce batch, se cambia dtype, desactiva TDR o activa fallbackCPU silencioso.
+- Alternativas: contar solo lanzamiento/kernel o esconder copias; no cubren REQ-07.
+  Perfilar todo en el timing principal alteraría el coste; profiling separado.
+- DEC-008 resuelta como diseño; DEC-009 conserva pendiente la verificación del
+  entorno CUDA y lock real. No se confunde inventarioGPU con evidencia de uso.
+- Evidencia: [plan de validación/medición](diseno-validacion-cuda.md).
+- REQ-05/07/08/09/12; PROC-12; CAM-005; BIT-007.
+
+## DEC-020 — Contraste con Semana15 y coalescencia de reducciones
+
+- Fecha:2026-11-17 UTC; responsable:Codex por solicitud complementaria del usuario.
+- Estado: incorporada a DIS-CUDA-001 revisión1, aún sin implementar.
+- Fuente complementaria: [copia exacta de clase](../referencias/semana-15-programacion-cuda.md),
+  SHA-256 acce03142813c9aca0bf4329000639bb2bb986f92e2810bd1c291774e73fab26.
+  Conserva precedencia absoluta del PDF. [Contraste](contraste-semana-15.md).
+- Hallazgo: el reparto inicial de reducciones1D por canal leía filas NHWC con
+  strideC entre lanes. Se cambia R(L,C) a block32×8, manteniendo256threads y2048
+  filas por partición: cada warp lee32canales contiguos; suma local por ty y
+  árbol compartido sobre las ocho filas del block. RF final conserva block256.
+- Alternativas: mantener1D, transponer tensores o cambiar layout completo. Se
+  adopta32×8 para mejorar el patrón de lectura sin buffers grandes adicionales.
+  El coste serial por thread y el redondeo deben validarse; no es mejora medida.
+- Se mantienen tiles16×16,32threads softmax,control1 y stream único. Las reglas
+  256/512de clase se usan como orientación, no como garantía de máxima ocupación.
+  Se distinguen SIMT, predicación, memoria local y registros con fuentes NVIDIA.
+- Consecuencia: actualizar catálogo/tabla/ejemplos manteniendo presupuesto,
+  parámetros, pasos y payload. Ninguna corrida o código de EXP-002 cambia.
+- REQ-05/12; PROC-12; CAM-005; BIT-007. Sin instalación ni experimentos.
+
 ## Estado de decisiones técnicas
 
 | ID | Pregunta | Alternativas a evaluar | Evidencia necesaria | Estado |
 |---|---|---|---|---|
 | DEC-003 | ¿Qué modelo y operaciones se aceleran? | CNN-A, CNN-B u otro alcance justificado del laboratorio | Paso 3 y DEC-016: matemática del entrenamiento CNN-B prioritaria | Resuelta como selección propuesta; diseño y validación pendientes |
-| DEC-004 | ¿Qué stack satisface CUDA Python y diseño explícito? | APIs CUDA Python / herramientas compatibles; backend de framework con alcance documentado | Cumplimiento REQ-05/06, hardware, compatibilidad y prueba mínima | Pendiente |
+| DEC-004 | ¿Qué stack satisface CUDA Python y diseño explícito? | DEC-017: NVIDIA numba-cuda, kernels Python explícitos y bindings CUDA Python | Contratos y jerarquía DIS-CUDA-001; lock/prueba mínima pendientes | Resuelta como propuesta; compatibilidad sin certificar |
 | DEC-005 | ¿Cuál será la carga experimental? | Tamaño de muestra, batch, épocas/pasos, repeticiones, warmup, orden | DEC-011/013, configuración y serie EXP-002 | Resuelta para CPU; equivalencia GPU pendiente |
-| DEC-006 | ¿Cómo preparar imágenes con CPU? | Bucle original, workers de hilos/procesos u otro mecanismo explícito | Tiempo, uso por núcleo, orden determinista y memoria | Pendiente |
-| DEC-007 | ¿Cómo tratar augmentation? | Excluir del experimento base o ejecutar preparación en CPU | Comparación equivalente y separación exigida por PDF | Pendiente |
-| DEC-008 | ¿Cómo medir transferencias y cómputo? | Eventos/profiler/temporizador sincronizado según stack | Límites claros, solapamiento y sobrecosto | Pendiente |
+| DEC-006 | ¿Cómo preparar imágenes con CPU? | DEC-018:6workers,12pendientes, coordinador escribe orden fijo | Igualdad de tensores y rendimiento por verificar | Resuelta como diseño, sin implementar |
+| DEC-007 | ¿Cómo tratar augmentation? | DEC-018: fuera del alcance CNN-B base; preparación siempre CPU si se amplía | Separación del PDF y equivalencia futura | Resuelta para DIS-CUDA-001 |
+| DEC-008 | ¿Cómo medir transferencias y cómputo? | DEC-019: pared sincronizada y eventos de grupos, stream único | Validación/medición DIS-CUDA-001 | Resuelta como diseño, sin medición GPU |
 | DEC-009 | ¿Cómo fijar entorno y precisión? | Plataforma, versiones compatibles, dtype, determinismo | DEC-012: PCUDA existente; hardware.json y contexto de cada RUN | Fijada para CPU; reconstrucción y GPU pendientes |
 
 ## Plantilla para resolver una decisión
