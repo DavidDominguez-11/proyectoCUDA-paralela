@@ -1,8 +1,15 @@
 # Estrategia de paralelización
 
-Estado: **análisis de candidatos; diseño final pendiente de evidencia CPU**.
+Estado: **paso 3 completado; diseño del paso 4 pendiente, sin implementar**.
 Relaciones: REQ-04, REQ-05, REQ-06; DEC-003/004/006/007/008.
 No se ha elegido librería ni se ha implementado un kernel.
+
+La selección vigente y su evidencia se detallan en el
+[paso 3](oportunidades-paralelizacion.md): prioridad a la matemática del
+entrenamiento de CNN-B (71.94% de la referencia común CPU), con operaciones
+análogas de otras redes como oportunidades secundarias. DEC-003/016, CAM-004.
+Las secciones siguientes conservan el inventario conceptual y la plantilla
+vacía para una fase posterior; no constituyen un diseño aprobado.
 
 ## Separación de responsabilidades
 
@@ -21,15 +28,15 @@ H2D → tensores Device → forward/backward/actualización → D2H → resultad
 
 | Operación | Paralelismo potencial | Dependencia / riesgo | Selección actual |
 |---|---|---|---|
-| Convoluciones | Batch, salida espacial y filtros | Reducción por canales/kernel, reutilización y límites | Candidata |
-| Multiplicaciones densas | Filas/columnas/tiles | Reducción interna y memoria compartida | Candidata |
+| Convoluciones | Muestras, salida espacial y filtros | Reducción por canales/kernel y dependencia entre capas | Seleccionada en CNN-B |
+| Multiplicaciones densas | Muestras y unidades de salida | Reducción sobre entradas | Seleccionada en CNN-B |
 | Activaciones | Elementos independientes | Ancho de banda y coste de lanzamiento | Candidata como parte de entrenamiento |
 | Pooling | Ventanas/salidas | Bordes, índices para backward y empates | Candidata |
 | Loss/softmax | Muestras/clases con reducciones | Estabilidad numérica y sincronización | Candidata |
 | Gradientes y Adam | Parámetros/elementos | Estado del optimizador y orden de actualización | Candidata |
 | BatchNormalization | Canales/elementos | Reducciones y estadísticas móviles | Candidata si el modelo la usa |
 | Preparación de imágenes | Archivos independientes | I/O, workers, orden y etiquetas | CPU según PDF |
-| PCA / Random Forest | Conservados como antecedente | No sustituyen entrenamiento neuronal CUDA | Fuera del alcance base por decidir |
+| PCA / Random Forest | Álgebra matricial / árboles | Menor prioridad temporal; RF ya solicita paralelismo CPU | Fuera del objetivo CUDA seleccionado |
 
 Las épocas y las actualizaciones sucesivas dependen de los pesos anteriores.
 No describirlas como tareas completamente independientes. Identificar qué

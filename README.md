@@ -10,6 +10,7 @@ La versión Markdown de la consigna es material explicativo secundario.
 - [Reproducibilidad y protocolo experimental](docs/trazabilidad/reproducibilidad.md).
 - [Resultados y artefactos](resultados/README.md).
 - [Paso 2: mediciones CPU, tablas y gráficas](resultados/secuencial/EXP-002/resultados.md).
+- [Paso 3: identificación de oportunidades de paralelización](docs/trazabilidad/oportunidades-paralelizacion.md).
 
 El laboratorio original está en `LAB3-DATASCIENCE/` y permanece intacto. Se
 completaron cinco corridas CPU en PCUDA; se separan las fases comunes y las
