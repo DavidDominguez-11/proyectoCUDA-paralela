@@ -1,5 +1,10 @@
 # Configuraciones de experimentos
 
+| Configuración | Estado / alcance |
+|---|---|
+| [EXP-001](EXP-001.json) | Intento CPU interrumpido por monitorización del lanzador; preservado, sin promedio válido |
+| [EXP-002](EXP-002.json) | Cinco corridas CPU completadas; monitor corregido; referencia común y ramas separadas mediante DEC-015 |
+
 `experimento.plantilla.json` describe los campos que deberán completarse al
 definir un EXP; no es consumida por el notebook actual ni habilita CUDA.
 
