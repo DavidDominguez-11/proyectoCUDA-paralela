@@ -1,8 +1,9 @@
 # Reproducibilidad y protocolo experimental
 
-Estado: protocolo aplicado a cinco corridas CPU EXP-002; GPU pendiente.
+Estado: protocolo aplicado a cinco corridas CPU EXP-002 y cinco CUDA EXP-003.
 Fuente: REQ-03, REQ-07, REQ-08 y REQ-09 del [PDF](../Proyecto%203%20CUDA.pdf).
-No se ha certificado un entorno GPU. Las decisiones DEC-011/012/013 concretan
+El entorno GPU local pasó admisión y ejecución;no se certifica reconstrucción
+limpia en otra máquina. Las decisiones DEC-011/012/013 concretan
 la carga y el procedimiento inicial. DEC-014/015 registran la variación del
 aprendizaje y la estratificación necesaria al cambiar la arquitectura seleccionada.
 La referencia de 14 fases comunes está medida; el total adaptativo no es una
@@ -10,8 +11,10 @@ carga fija. [Comandos de reproducción y límites](reproducir-exp-002.md).
 
 El [diseño del paso4](diseno-paralelo.md) y su
 [plan de validación/medición](diseno-validacion-cuda.md) especifican la comparación
-futura CNN-B con orden/máscaras compartidos. Requiere un EXP y referencia CPU
-pareada nuevos; no modifica el protocolo ni evidencia histórica EXP-002.
+propuesta inicial CNN-B con orden/máscaras compartidos. DEC-021/022/023 la revisaron
+por instrucción posterior:se reutilizó CPU histórica compatible,sin otra campaña,
+y se midió CUDA en EXP-003. [Protocolo aplicado](implementacion-cuda.md) y
+[reproducción CUDA](reproducir-cuda.md). EXP-002 permanece intacto.
 
 ## Entorno y código
 
