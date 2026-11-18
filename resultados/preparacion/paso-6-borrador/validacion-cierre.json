@@ -1,0 +1,37 @@
+{
+  "estado": "aprobado",
+  "fecha_utc": "2026-11-18T03:14:17.549904+00:00",
+  "verificados": {
+    "artefactos.csv": 13,
+    "fuentes.csv": 27
+  },
+  "porcentajes_suman_100": true,
+  "graficas": [
+    {
+      "archivo": "01_tiempos_por_fase.png",
+      "tamano": [
+        2108,
+        1473
+      ]
+    },
+    {
+      "archivo": "02_speedup_por_fase.png",
+      "tamano": [
+        1928,
+        1010
+      ]
+    },
+    {
+      "archivo": "03_desglose_entrenamiento.png",
+      "tamano": [
+        2018,
+        974
+      ]
+    }
+  ],
+  "revision_visual": "tres PNG legibles; ejes, leyendas y textos completos",
+  "sin_pdf_nuevo": true,
+  "sin_entrenar": true,
+  "script_preliminar_preservado": true,
+  "manifiesto_derivados_sha256": "06a459c79c1b23fcd8060272a05f7a7b419b24ed72e1ef33fbff8c6114114087"
+}
