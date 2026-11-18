@@ -558,6 +558,112 @@ git diff --check
   Siguiente trabajo autorizado aquí termina en paso6Markdown;informefinal/PDF/equipo
   y entrega pendientes de otra actividad. No se editan fuentes congeladas ni RUN.
 
+## BIT-012 — Composición y revisión del informe final editable
+
+- Fecha:2026-11-18UTC,17noviembre local. Responsable:Codex por solicitud del usuario;
+  DEC-025;CAM-010;REQ-01/02/03/04/05/06/07/08/09/10/11/12.
+- Usuario confirmó portada:David Domínguez23712,Jonathan Diaz23873,Luis Padilla23663.
+  No se infieren contribuciones individuales ni se crean commits ajenos.
+- Se releyó PDFcompleto y evidencias/documentación. Se verificaron referencias
+  públicas primariasNVIDIA/ASL,y se compusieron seis apartados autónomos,con datos
+  reales. No se citan rutasMarkdown en el cuerpo del informe.
+- Herramientas:python-docx1.2.0,Word16.0,pywin32/PyMuPDF existentes en Python3.14.3
+  del sistema. PCUDA intacto. Habilidad preview aplicada con revisiónWord al no
+  existir comando/preview;figure-style para revisar gráficas ya conservadas.
+- Versión inicial03:41:47UTC:13páginas,12tablas,7figuras. Iteraciones siguientes
+  mejoraron espaciado tipográfico/unidades,APA7 y agrupación de miles. No cambiaron
+  datos,gráficas ni capturas. Se preservó cada versión y fuente previa.
+- Versión entregada03:46:44UTC,en informe-final-v02. Word abrió en lectura,
+  repaginó y exportó soloXPS para13PNG de revisión;SHA del DOCX no cambió.
+  13páginas coherentes con los seis pasos;ninguna tabla cortada. Se inspeccionaron
+  contacto general y páginas de operaciones,diseño,evidencias,comparación y referencias.
+- 03:47:37UTC:verificador aprobado,títulos exactos,autores/carnés,12tablas,
+  7imágenes embebidas incluyendo ambosPNGoriginales intactos,33fuentes conSHA,
+  tres preguntas técnicas,ausencia de rutas internas y dePDFnuevo. LogsCPU/GPU
+  son extractos reales;no se recrea una captura faltante del fitCPUhistórico.
+- Comandos finales desde raíz:
+
+```powershell
+python -X utf8 scripts/crear_informe_docx.py --destino entregables/informe-final-v02
+python -X utf8 scripts/revisar_docx_word.py --entrada entregables/informe-final-v02/Informe_Proyecto_3_CUDA.docx --destino resultados/preparacion/informe-docx-revision-entrega
+python -X utf8 scripts/verificar_informe_docx.py --carpeta entregables/informe-final-v02 --revision resultados/preparacion/informe-docx-revision-entrega/revision.json --salida resultados/preparacion/informe-docx-revision-entrega/validacion.json
+Copy-Item -LiteralPath entregables/informe-final-v02/Informe_Proyecto_3_CUDA.docx -Destination entregables/Informe_Proyecto_3_CUDA.docx
+.\PCUDA\Scripts\python.exe -X utf8 scripts/verificar_preparacion.py
+git diff --check
+```
+
+- Los comandos de las versiones previas usan sus destinos nuevos homónimos
+  (informe-rendimiento-v01,informe-rendimiento-v02,informe-final);exactos en
+  generacion.json/revision.json de cada carpeta. No sobrescribir esos destinos.
+- Cierre:archivo principal691092bytes,SHA c1fa886f3bf4b747c1dbb17937dc193eabf645a088e3cabd46c2edea802a22c7,
+  idéntico a la fuente entregada. [Cobertura por página](informe-final.md),
+  [DOCX](../../entregables/Informe_Proyecto_3_CUDA.docx) y
+  [validación](../../resultados/preparacion/informe-docx-revision-entrega/validacion.json).
+- UsoCPU/GPU acreditado;saturaciónVRAM/ocupaciónSM no certificadas,como se explica
+  dentro del informe. CPUhistórica/RNG/workers y fallosglobales permanecen como
+  límites. PDFfinal a cargo del usuario por instrucción explícita;no exportado.
+- Verificación documental final registrada en preparación. No hubo nuevos
+  entrenamientos,descargas de dataset,instalaciones ni cambios de modelos/RUN.
+
+## BIT-013 — Dos notebooks separados con ejecución real por celdas (completado)
+
+- Responsable:Codex por solicitud del usuario;DEC-026;CAM-011. Usuario pidió
+  recomendar la opción más correcta para revisión docente. Se comunicó una
+  ejecución nueva por variante,con salidas nativas,sin repetir cinco campañas.
+- Primer generador añadió constantes insuficientes para definiciones originales:
+  EXP-004CPUfalló porSEED antes de entrenar. EXP-005CUDApreparado,sin ejecutar.
+  Tras añadirSEED/IMG_SIZE/NUM_CLASSES,EXP-006CPUfalló por importdatetime antes
+  del primerwarmup/entrenamiento. EXP-007CUDAno iniciado. Todos preservados.
+- Se automatizó inclusión de imports de módulo originales. Nuevas identidades
+  EXP-008CPU/EXP-009CUDA,plantillasv03 congeladas. Expansión AST del worker en
+  fases;threadpool6 activo entre celdas;modelos originales ykernels visibles.
+- Controlador vigentePID64924,separado de la conexión del agente. InicioCPU
+  2026-11-18T04:11:34UTC. A04:14:47UTCterminóCNN-A15épocas y comenzóCNN-B.
+  Salidas.ipynb se guardan tras cada celda;los logs y tiempos actuales por fase
+  se escriben durante el cálculo. No se declaran completadas corridas futuras.
+- CapturaCPUreal inicial04:14:49UTC,entrenamientoCNN-Bépoca1,CPU105.0%,GPU0%.
+  Se prepara otra captura en régimen sostenido;las dos son originales. El
+  capturador se abre brevemente solo al detectar la fase objetivo.
+- Se observó huella diferente en una copia histórica notebooks/Lab3_ASL_CUDA.ipynb;
+  no se restaura ni modifica. Los módulos/original se conservan;los nuevosEXP
+  congelan sus propias plantillas en vez de depender de una vista histórica.
+- Los tiempos fit/evaluate mantienen frontera. Los totales continuos de notebook
+  incluyen presentación entre fases;no sustituyen los totales históricos ni se
+  agregan a sus medias. Precisión completa en notebooks-entrega.md.
+- Comandos/contratos actuales en resultados/preparacion/notebooks-entrega-v03,
+  contexto porRUN y scripts/preparar_notebooks_entrega.py/ejecutar_notebooks_entrega.py.
+  Estado de cierre y validación se registrarán cuando terminen ambos notebooks.
+- Cierre:CPU04:11:34.029502–04:45:55.298663UTC;CUDA04:45:57.461086–04:53:50.421783UTC,
+  18nov2026(17local). Ambos código0,ejecución sucesiva sin solapamientoCPU/GPU.
+  CPU37celdas de código,75épocas,10PNG;CUDA31celdas,15épocas,4PNG;0errores.
+- Se conservaron originales nativos y luego se anexaron únicamente Markdown
+  de alcance y diagnóstico nativo completo del kernel(17161/11657caracteres).
+  Código,contadores y salidas de cada celda no cambiaron. Hashes anteriores y
+  finales en cierre-documental.json,con originales en notebooks-nativos.
+- Validación04:54:13UTC aprobó fuentes iguales a plantillas,contadores1..N,
+  épocas75/15,modelos5/1 conAdam1440,hashesX/y,reproducción literal de10logs
+  históricos por notebook y capturasPNGembebidas sin alterar. Se comprobó además
+  igualdad de los seis fingerprints inicialesCPU con la referencia histórica.
+- Se inspeccionaron las14imágenes en contactos:cinco curvasCPU,curvaCUDA,
+  muestras de datos,confusión,recursos y tres capturas nuevas. CPU507.3%/GPU0%
+  en carga sostenida;GPU91%/VRAM1213MiB durante la faseCUDA. Sin afirmar ocupaciónSM.
+- La validación confirmó184artefactosEXP-003 y DOCX inalterados. Como n=1 adicional:
+  CNN-Bfit818.1088875sCPU/418.9302988sCUDA;accuracy0.982375503/0.986206889.
+  No se mezclan con las cinco repeticiones del informe.
+- Comandos de cierre:
+
+```powershell
+.\PCUDA\Scripts\python.exe -X utf8 scripts/finalizar_notebooks_entrega.py --revision notebooks-entrega-v03
+.\PCUDA\Scripts\python.exe -X utf8 scripts/verificar_notebooks_entrega.py --revision notebooks-entrega-v03
+.\PCUDA\Scripts\python.exe -X utf8 scripts/verificar_preparacion.py
+git diff --check
+```
+
+- Verificación documental04:58:02UTC aprobó467enlaces en51Markdown,19originales,
+  146esquemasCSV y98fuentes archivadas. Git diff --check0,solo avisosLF/CRLF.
+  No implica otra ejecución de los modelos. Entrega:dos notebooks separados,
+  con salidas completas;[detalle](notebooks-entrega.md). PDF no generado.
+
 ## Plantilla para cada actividad
 
 ```markdown

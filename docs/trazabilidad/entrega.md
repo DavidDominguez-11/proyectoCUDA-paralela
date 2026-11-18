@@ -3,22 +3,29 @@
 El PDF oficial exige código documentado e informe PDF. Los Markdown son la
 fuente de documentación del proyecto; no sustituyen ese informe final.
 
+**Entrega actual:**[DOCX final](../../entregables/Informe_Proyecto_3_CUDA.docx),
+13páginas revisadas,con12tablas,7figuras y los seis apartados en orden. Por
+instrucción explícita del usuario,no se exporta aPDF:él realizará la conversión.
+[Cobertura y validación](informe-final.md). La saturaciónGPU literal y las
+contribuciones verificables del equipo no se certifican mediante el informe.
+
 ## Comprobaciones de cierre
 
 - [ ] REQ-01 a REQ-12 tienen evidencia y enlaces válidos.
 - [ ] Los tres integrantes tienen contribuciones identificables.
-- [ ] Código original preservado y versión CUDA documentada.
-- [ ] Preparación en CPU y entrenamiento con CUDA claramente separados.
-- [ ] Diseño de hilos/bloques/grids y gestión de memoria sustentado.
-- [ ] DAT identifica todos los archivos, versiones, splits y transformaciones.
+- [x] Código original preservado y versión CUDA documentada.
+- [x] Preparación en CPU y entrenamiento con CUDA claramente separados.
+- [x] Diseño de hilos/bloques/grids y gestión de memoria sustentado.
+- [x] DAT identifica todos los archivos, versiones, splits y transformaciones.
 - [ ] Entorno reconstruible y comandos completos por plataforma usada.
-- [ ] Configuración común CPU/GPU y trabajo equivalente verificados.
-- [ ] Repeticiones, warmup, restauración de estado y exclusiones documentados.
-- [ ] Tiempos crudos, promedios y transferencias disponibles.
-- [ ] Capturas/logs demuestran uso de recursos durante las fases.
-- [ ] Corrección numérica/calidad evaluadas con tolerancias declaradas.
-- [ ] Tablas y gráficas pueden regenerarse desde los datos conservados.
-- [ ] Reproducción desde cero registrada, o limitaciones explícitas sin certificarla.
+- [x] Trabajo equivalente CPU/GPU verificado;diferencias de condiciones documentadas.
+- [x] Repeticiones, warmup, restauración de estado y exclusiones documentados.
+- [x] Tiempos crudos, promedios y transferencias disponibles.
+- [x] Capturas/logs demuestran uso de recursos durante las fases;no saturación literal.
+- [x] Corrección numérica/calidad evaluadas con tolerancias y límites declarados.
+- [x] Tablas y gráficas pueden regenerarse desde los datos conservados.
+- [x] Reproducción desde cero no ejecutada;limitaciones explícitas sin certificarla.
+- [x] Informe final DOCX revisado en Word,con autores confirmados y evidencias incrustadas.
 - [ ] Informe final exportado a PDF, revisado y vinculado con código/resultados.
 
 ## Contenido del informe final

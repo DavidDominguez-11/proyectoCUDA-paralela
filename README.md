@@ -6,6 +6,9 @@ La versión Markdown de la consigna es material explicativo secundario.
 
 - [Trazabilidad y estado del proyecto](docs/trazabilidad/README.md).
 - [Requisitos y evidencias](docs/trazabilidad/requisitos.md).
+- [Informe final editable DOCX](entregables/Informe_Proyecto_3_CUDA.docx).
+- [Notebook secuencial: ejecución completa y salidas](entregables/notebooks/ASL_Secuencial.ipynb).
+- [Notebook CUDA: ejecución completa y salidas](entregables/notebooks/ASL_CUDA.ipynb).
 - [Verificación de pasos 1–5 y reservas antes del paso 6](docs/trazabilidad/revision-pasos-1-5.md).
 - [Análisis del algoritmo original](docs/trazabilidad/analisis-original.md).
 - [Reproducibilidad y protocolo experimental](docs/trazabilidad/reproducibilidad.md).
@@ -30,4 +33,5 @@ CPU; el original permanece intacto. El alcance medido es CNN-B, no todo el noteb
 
 El paso 6 analiza el speedup y sus posibles causas con las cinco observaciones
 por variante y los límites de la revisión previa. Se conserva en Markdown con
-CSV y tres gráficas reproducibles; el informe final y su PDF siguen pendientes.
+CSV y tres gráficas reproducibles. El informe final DOCX está disponible con
+13páginas,12tablas y7figuras;la exportación PDF queda a cargo del usuario.

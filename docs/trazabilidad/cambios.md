@@ -231,6 +231,86 @@
 - Se actualizan índices y requisitos del paso6;informe/PDFfinal,equipo y entrega
   global siguen pendientes. No se alteran notebooks ni evidencias selladas.
 
+## CAM-010 — Informe final DOCX con evidencias reales
+
+- Solicitud:informe final editable,con seis pasos en orden,tablas,gráficas,
+  capturas/logs,discusión y APA7,sin rutasMarkdown en su cuerpo y sin exportarPDF.
+  DEC-025;BIT-012. Autores/carnés confirmados por respuesta del usuario.
+- Entrega nueva:entregables/Informe_Proyecto_3_CUDA.docx. Versión vigente y fuentes
+  en entregables/informe-final-v02;iteraciones previas preservadas como borradores.
+  No existía un DOCX previo al comenzar esta actividad.
+- Identidades previas de documentos ajustados:
+
+| Documento | SHA-256 previo |
+|---|---|
+| README raíz | ec5dc1cd7934a3159e608e94c1228fa15160e6ede4d86ce330053be7a57bf4e1 |
+| README trazabilidad | a560e4ecd4879b51c312adc4fea29469ce1ef78dbc496358c616e622cf32b7b0 |
+| requisitos.md | 7d0a7d145adc7a78e75d600a7a3ebd9237f01c5a24228ec2fb933b0958aa5482 |
+| entrega.md | 6fbd6c311cbea7cc5d48e8b951874e160189bb0a7ab407c06b9575177c1d7598 |
+| README resultados | fe33d7b567c6ad54917b914b65f7a2c9b7aa73cb4d281fa780f663ff813b9c41 |
+
+- Se añaden generadorDOCX,visorWord/XPS/PNG y validador estático. Python del
+  sistema ya contenía python-docx1.2.0,pywin32 y PyMuPDF;no se instaló nada ni se
+  modificó PCUDA. Fuentes/entorno/comandos y hashes por versión preservados.
+- Maquetación:13páginas,12tablas y7figuras,con capturas originalesCPU/GPU incrustadas
+  sin alterar bytes. Seis títulos exactos y preguntas técnicas verificadas. APA7
+  en cuerpo/bibliografía;sin rutas internas. Tres revisiones previas conservaron
+  composición original y mejoraron solo espaciado,unidades y presentaciónAPA.
+- DOCX inicialSHA dd5b6a5e45cf9dab0ecfd4e8b02dfa48fd1ca4b2332ed79f61783f76159d3a25;
+  fuente iniciald530e744f037087bb5c7705e146f83da6f82556b1e98fd55a7d8164c3201f08f
+  archivada en informe-rendimiento-v01/crear_informe_docx.version-01.py.
+  Las fuentes de v02/v03 también se conservaron antes de ajustar la tipografía.
+- DOCX finalSHA c1fa886f3bf4b747c1dbb17937dc193eabf645a088e3cabd46c2edea802a22c7.
+  Word16.0repaginó sin modificar el archivo;13PNG de XPS para revisión,sinPDF.
+  Validador aprobó33fuentes,12tablas sin corte,7imágenes,autores,títulos y preguntas.
+- REQ-11 queda con DOCX final listo y PDFporusuario pendiente. REQ-01 identifica
+  integrantes sin inventar aportes/commits. REQ-07/09 conservan sus reservas de
+  condiciones/saturación. No cambia implementación,mediciones ni notebook.
+
+## CAM-011 — Separar notebooks y producir salidas nativas completas (completado)
+
+- Solicitud posterior a DOCX:dos notebooks separados,secuencial yCUDA,con código,
+  salidas,métricas,tablas,gráficas,logs y recursos. DEC-026;BIT-013.
+- Se decidió una corrida adicional directa por notebook,conservando las campañas
+  históricas y el informe. Las configuraciones nuevas no sustituyen EXP-002/003.
+- Nuevos archivos:preparar_notebooks_entrega.py,ejecutar_notebooks_entrega.py,
+  registro_notebook.py,capturar_notebook_real.py,finalizar_notebooks_entrega.py,
+  verificar_notebooks_entrega.py. No tenían identidad previa en el proyecto.
+  Sus revisiones de arranque se conservan en fuentes.zip porRUN y plantillas.
+- Se extrae AST de controladores sin alterar matemática. Se expanden operaciones
+  por fases y se mantiene threadpool6. CódigoCUDA completo como módulos ejecutados
+  desde celdas;la versiónCUDA no incluye el pipelineCPUcompleto.
+- Dos intentosCPU previos fallaron antes de entrenar por dependencias globales de
+  la extracción(SEED/IMG_SIZE;datetime/timezone). EXP-004/006 preservados con
+  notebooks fallidos,traceback y logs. EXP-005/007solo preparados,no ejecutados.
+  Se automatizaron imports originales;vigentes EXP-008CPU/EXP-009CUDA.
+- Cada notebook contiene su nueva ejecución y luego cinco registros históricos
+  íntegros explícitamente separados. Las tablas no se truncan. La adquisición de
+  imágenes permaneceCPU;matemática de entrenamientoCUDA enGPU,validación/testCPU.
+- Los totales continuos adicionales incluyen presentación entre fases;no son
+  intercambiables con los totales históricos. Se documenta esta precisión sin
+  modificar configuraciones congeladas. Los fit/evaluate mantienen fronteras.
+- Se conserva capturaCPUde arranque y una segunda en carga sostenida,sin editar
+  PNG previos. El capturador añade etiqueta/sostenido con fuente anterior guardada
+  en resultados/preparacion/notebooks-entrega-v03/capturar_notebook_real.inicial.py.
+  El mismo mecanismo queda preparado para capturarGPUdurante la corrida nueva.
+- Al cierre se verificarán código/celdas/épocas/checkpoints/hashes y se archivarán
+  originales nativos antes de añadir anexosMarkdown de stderr nativo del kernel.
+  No se reescriben código ni salidas de las celdas al añadir esos anexos.
+- Cierre observado:EXP-008CPU yEXP-009CUDA completados con código0,37/31celdas de
+  código,75/15épocas nuevas,10/4PNG. Cinco checkpointsCPU y unoCUDA con contador
+  real1440. X/y coinciden con las referencias;cada notebook incluye los diez
+  stdout/stderr históricos completos y capturas nuevas(CPU2,CUDA1).
+- Originales nativos conservados en notebooks-entrega-v03/notebooks-nativos:
+  CPUca6a0b9df6ec794f3f06e6afcde93cd63637f10e94dae38f068b4fcc8165257d;
+  CUDAa4a20af206977736b87a9dd48196512950934ba5f7c475066ef9e883401e8a04.
+  Tras añadir solo anexosMarkdown,entregas:
+  CPU201e6dff41312e2b921349ba5c066ca3abd9d25dcae7fb7206a2fd5d29646692;
+  CUDA89c14f3184c36f7b63a53016dc20427c6b131ccc9196849d5e36ee0163e39595.
+- Validación final aprobada,originales/184evidencias históricas/DOCX intactos;
+  fuentes de celdas iguales a plantillas y contadores consecutivos reales.
+  No se modifican promedios del informe ni se exporta PDF.
+
 ## Plantilla de cambio
 
 ```markdown

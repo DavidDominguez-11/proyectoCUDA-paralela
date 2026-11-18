@@ -8,7 +8,7 @@ Las convenciones de esta carpeta son acuerdos internos para satisfacerlo;
 no deben presentarse como instrucciones adicionales del docente.
 
 Estado: **pasos 1–6 documentados para CNN-B; cinco corridas CPU EXP-002 y cinco
-CUDA EXP-003; paso 6 en Markdown; informe final y entrega global pendientes**.
+CUDA EXP-003; informe final DOCX revisado; PDF por usuario y entrega global pendientes**.
 Fecha de apertura: 2026-11-17, zona de trabajo America/Guatemala.
 Las [instrucciones del repositorio](../../AGENTS.md) mantienen estas convenciones
 para trabajos posteriores.
@@ -34,11 +34,13 @@ para trabajos posteriores.
 | [Implementación CUDA](implementacion-cuda.md) | Paso5: código, revisiones del diseño, ejecución real, tiempos y límites. |
 | [Análisis y conclusiones](../../resultados/comparacion/paso-6-revision-02/analisis-y-conclusiones.md) | Paso6: comparación por fase, speedup, dispersión, transferencias, causas y conclusiones; sin informe final/PDF. |
 | [Notebook con salidas reales](../../notebooks/Lab3_ASL_CUDA_con_salidas.ipynb) | Última corrida:15épocas,tablas,métricas,tiempos y gráficas incrustados,sin entrenar otra vez. |
+| [Dos notebooks finales separados](notebooks-entrega.md) | Ejecuciones nuevas directas CPU/CUDA,75/15épocas,37/31celdas de código,10/4imágenes y cero errores. |
 | [Reproducir CUDA](reproducir-cuda.md) | Consultar sin repetir corridas o preparar otra identidad con datos/estado preservados. |
 | [Estrategia de paralelización](estrategia-paralelizacion.md) | Índice de selección y fichas del diseño vigente. |
 | [Cambios](cambios.md) | Alcance y consecuencias de cada modificación. |
 | [Bitácora](bitacora.md) | Actividades, responsables y evidencias por paso. |
 | [Entrega](entrega.md) | Criterios para cerrar el proyecto y producir el informe PDF. |
+| [Informe final DOCX](informe-final.md) | Cobertura por página,autores confirmados,12tablas/7figuras,validación Word y exportaciónPDF pendiente por usuario. |
 | [Plantilla de ejecución](plantillas/ejecucion.md) | Registro detallado de una ejecución. |
 | [Resultados](../../resultados/README.md) | Corridas CPU/GPU, tiempos, logs, imágenes y comparación. |
 
@@ -110,4 +112,6 @@ El [paso 6](../../resultados/comparacion/paso-6-revision-02/analisis-y-conclusio
 analiza los datos conservados sin entrenar otra vez: ahorro de387.042s en
 entrenamiento (48.041%),preparación mejorada enCPU y test sin mejora observada.
 Incluye tres gráficas nuevas y sus CSV/PNG/SVG. Las reservas REQ-07/09 y de
-corrección permanecen explícitas; todavía no se produce el informe final ni PDF.
+corrección permanecen explícitas. El [informe final DOCX](../../entregables/Informe_Proyecto_3_CUDA.docx)
+integra seis pasos,12tablas,7figuras y referenciasAPA7 en13páginas revisadas con
+Word;la exportaciónPDF queda a cargo del usuario,según su instrucción.

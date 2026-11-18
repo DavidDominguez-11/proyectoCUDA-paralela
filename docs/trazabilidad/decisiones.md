@@ -345,6 +345,50 @@ evaluada. Al sustituir una decisión, conservar la anterior y enlazar la nueva.
 - Guardar Markdown,CSV,PNG/SVG,fuentes,versiones,comando y manifiesto de derivados.
   Estas salidas son análisis posprocesado,por lo que no crean EXP/RUN nuevos.
 
+## DEC-025 — Informe final editable DOCX, sin exportación PDF
+
+- Fecha:2026-11-18UTC. Responsable:Codex,por solicitud explícita del usuario;
+  CAM-010;BIT-012. La exportación PDF queda a cargo del usuario y no se ejecuta.
+- Portada confirmada por el usuario:David Domínguez23712,Jonathan Diaz23873,
+  Luis Padilla23663. Identificar integrantes no prueba aportes individuales/commits.
+- Mantener seis apartados principales con los títulos/orden de la guía. Integrar
+  datos/procedimiento,tablas de operaciones/repeticiones,CPU,oportunidades,diseño,
+  implementación,evidencias de hardware,comparación,speedup y tres preguntas técnicas.
+- Evidencia prioritaria:capturas originales CPU/GPU seleccionadas,logs reales y
+  monitorización archivada. Distinguir captura de gráfica derivada. No recrear ni
+  inventar una captura faltante de CPUhistórica ni certificar saturación literal.
+- Informe autónomo,sin rutas/referencias a Markdown internos. Citas externas APA7
+  verificadas en fuentes primarias;trazabilidad interna se conserva fuera del DOCX.
+- Crear con python-docx ya instalado en Python del sistema,sin cambiar PCUDA.
+  Revisar estructura y maquetación con Word local;si se renderiza para inspección,
+  usar XPS/PNG y no generar PDF. No repetir experimentos ni cambiar evidencias.
+
+## DEC-026 — Notebooks separados y completos para revisión de ejecución
+
+- Solicitud posterior:entregar únicamente dos notebooks principales,secuencial y
+  CUDA,con código por fases y todas las salidas disponibles. CAM-011;BIT-013.
+- Usar últimas corridas completas CPU05(EXP-002) yGPU05(EXP-003) como recorrido
+  principal;incorporar cinco pruebas completas como registros adicionales.
+  No mezclar código del pipelineCPUcompleto dentro del notebookCUDA.
+- Desplegar código de los controladores realmente medidos por fase mediante AST,
+  preservando semántica de las operaciones y mostrando la separación CPU/GPU.
+  Guardar logs íntegros,tablas sin truncar,gráficas y evidencias dentro del ipynb.
+- Modo predeterminado:consultar registros originales,celdas de presentación
+  ejecutadas realmente conPCUDA. Identificar explícitamente que entrenamientos
+  son históricos;no inventar contadores/salidas ni atribuirles ejecución actual.
+- Modo opcional de cálculo nuevo requiere activar bandera y carpeta nueva;su
+  recorrido inline no se considera medido ni validado experimentalmente por
+  haber reconstruido la presentación. Conservar intactos originales yEXPcerrados.
+- Se propuso opcionalmente al usuario reutilizar registros o repetir unaCPU/unaGPU.
+  Sin respuesta,se continúa con la opción recomendada de reutilización para
+  evitar repetir las campañas solo por el empaquetado de salidas.
+- Resolución posterior antes de ejecutar:el usuario pidió elegir lo más correcto
+  para la revisión detallada del docente. Se decidió y comunicó **ejecutar una
+  corrida nueva CPU y unaCUDA directamente en sus notebooks**,con salidas nativas
+  junto al código de cada fase. Sustituye la modalidad histórica predeterminada
+  descrita arriba. No se repiten las campañas de5ni se recalculan sus promedios.
+  NuevosEXP/RUN para estas ejecuciones adicionales;originales/evidencias intactos.
+
 ## Estado de decisiones técnicas
 
 | ID | Pregunta | Alternativas a evaluar | Evidencia necesaria | Estado |

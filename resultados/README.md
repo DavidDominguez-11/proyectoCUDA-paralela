@@ -1,6 +1,9 @@
 # Resultados y evidencias
 
 Estado actual: **cinco corridas CPU EXP-002 y cinco CUDA EXP-003 completadas**.
+El [informe final DOCX](../entregables/Informe_Proyecto_3_CUDA.docx) integra los
+seis pasos y evidencias;[revisión y cobertura](../docs/trazabilidad/informe-final.md).
+No se exportó un PDF final:el usuario realizará ese paso.
 Los valores crudos se conservan por RUN y el índice CPU está consolidado.
 El [informe CPU](secuencial/EXP-002/resultados.md) separa las fases comunes de
 las ramas adaptativas; no se mezclan como si fueran una única carga fija.
