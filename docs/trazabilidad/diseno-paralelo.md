@@ -1,5 +1,11 @@
 # Paso 4. Diseño del algoritmo paralelo CUDA
 
+**Revisión de implementación posterior:** DEC-021/022/023 y
+[paso5](implementacion-cuda.md) sustituyen la exigencia de CPU pareada nueva,
+adoptan im2col/SGEMM cuBLAS para productos grandes y el presupuesto actualizado.
+La revisión1 siguiente se conserva como antecedente, no como afirmación de lo
+ejecutado. Las mediciones reales identifican la revisión y fuentes efectivas.
+
 Versión documental: **DIS-CUDA-001, revisión 1**. Estado: **propuesta de diseño
 completa para el alcance CNN-B; implementación y validación pendientes**.
 Responsable: Codex por solicitud del usuario; revisión humana pendiente.
