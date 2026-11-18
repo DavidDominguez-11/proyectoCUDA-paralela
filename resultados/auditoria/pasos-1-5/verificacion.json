@@ -1,0 +1,51 @@
+{
+  "inicio_utc": "2026-11-18T02:49:40.811217+00:00",
+  "tipo": "verificacion_estatica_y_recalculo_sobre_evidencias",
+  "entrenamiento_ejecutado": false,
+  "controles": [
+    {
+      "control": "cinco_procesos_gpu_completos",
+      "aprobado": true
+    },
+    {
+      "control": "resultados/paralelo/EXP-003/artefactos-experimento.csv",
+      "aprobado": true,
+      "entradas": 184,
+      "fallos": []
+    },
+    {
+      "control": "resultados/secuencial/EXP-002/RUN-20261117T171942Z-cpu-01/artefactos.csv",
+      "aprobado": true,
+      "entradas": 28,
+      "fallos": []
+    },
+    {
+      "control": "resultados/secuencial/EXP-002/RUN-20261117T175407Z-cpu-02/artefactos.csv",
+      "aprobado": true,
+      "entradas": 28,
+      "fallos": []
+    },
+    {
+      "control": "resultados/secuencial/EXP-002/RUN-20261117T182835Z-cpu-03/artefactos.csv",
+      "aprobado": true,
+      "entradas": 28,
+      "fallos": []
+    },
+    {
+      "control": "resultados/secuencial/EXP-002/RUN-20261117T190250Z-cpu-04/artefactos.csv",
+      "aprobado": true,
+      "entradas": 28,
+      "fallos": []
+    },
+    {
+      "control": "resultados/secuencial/EXP-002/RUN-20261117T192509Z-cpu-05/artefactos.csv",
+      "aprobado": true,
+      "entradas": 28,
+      "fallos": []
+    }
+  ],
+  "estado": "error_auditoria",
+  "error": "KeyError('ruta_relativa')",
+  "fin_utc": "2026-11-18T02:49:41.592756+00:00",
+  "script_sha256": "58928b025cc1a31a9cd00991f1038826bd730062de7ff270e531589e1c807e56"
+}
