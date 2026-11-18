@@ -323,6 +323,28 @@ evaluada. Al sustituir una decisión, conservar la anterior y enlazar la nueva.
   resultados/preparacion/cuda. La serie real aún exige hashes/datos/pasos completos,
   finitud, checkpoints y medición honesta con validación y transferencias.
 
+## DEC-024 — Análisis del paso 6 sobre evidencias cerradas
+
+- Fecha:2026-11-18UTC. Responsable:Codex por solicitud del usuario;CAM-009;BIT-011.
+- Alcance:comparación CNN-B de5CPU EXP-002 y5CUDA EXP-003;sin nuevas ejecuciones
+  experimentales,sin informe final y sin exportar PDF.
+- Fuentes:CSV originales por RUN,configuraciones y evidencias selladas;reservas
+  de revision-pasos-1-5.md. Crear derivados en resultados/comparacion/paso-6,
+  conservando todos los artefactos previos y registrando sus hashes.
+- Métrica principal:media de pared entrenamiento con transferencias,staging y
+  validaciónCPU;speedup=cociente de medias. Diferencia de medias en segundos y
+  reducción porcentual se informan aparte. No emparejar artificialmente RUN
+  históricos por número ni calcular una media de cocientes pareados.
+- Preparación1→6workers se identifica como mejora CPU;test sigue CPU. Suma de
+  tres fases comparables se declara derivada;no es todo el notebook ni beneficio
+  exclusivo del dispositivo. H2D/D2H no tienen speedup sin fase CPU equivalente.
+- Mostrar observaciones individuales y DE muestral en gráficas;ICt95% nominal
+  solo con supuestos explícitos,sin inferir significancia o generalización.
+- Distinguir medición,cálculo e hipótesis causal. No reinterpretar fallos de
+  corrección global,saturaciónGPU ni condiciones históricas como validaciones.
+- Guardar Markdown,CSV,PNG/SVG,fuentes,versiones,comando y manifiesto de derivados.
+  Estas salidas son análisis posprocesado,por lo que no crean EXP/RUN nuevos.
+
 ## Estado de decisiones técnicas
 
 | ID | Pregunta | Alternativas a evaluar | Evidencia necesaria | Estado |
