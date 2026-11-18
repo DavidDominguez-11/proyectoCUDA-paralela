@@ -201,6 +201,36 @@
   evidencias selladas CPU/GPU. No hay nuevas métricas experimentales. Las
   reservas documentadas no se convierten en validaciones completas.
 
+## CAM-009 — Paso 6: análisis y conclusiones sin informe final
+
+- Solicitud explícita del usuario;DEC-024;PROC-09;BIT-011;REQ-08/10/12.
+- Se añade scripts/analizar_paso_6.py y derivados en
+  resultados/comparacion/paso-6-revision-02:Markdown,CSV,3PNG,3SVG,procedencia y
+  manifiestos. No se modifica implementación ni mediciones ni se exporta PDF.
+- Identidades previas SHA-256 de documentos ajustados:
+
+| Archivo | SHA-256 previo |
+|---|---|
+| README raíz | 270533eebeafb7620721cf166a2cc06ddc0495c60d7c6af75820d1d8bd7a5add |
+| README trazabilidad | 7428b570c45f01fb069c1095bdfbc1dbf08cc58c22fab82fd64c62d8424a867 |
+| requisitos.md | 027923347b16247ae6cdfe746b075158842b3bdebe437417d7eb3f841cde6186 |
+| README resultados | 024347b50e5a1badaefda152a054d6618322f56e92e5aaa81db376f74b62143e |
+| README comparación | 662ead6b67b8643d0f10b0d4ebfb8145868f03197a74bb31235dafc35b4698d9 |
+
+- Se conserva primera revisión en resultados/comparacion/paso-6. Revisión visual
+  detectó nota inferior recortada en figura2;se retiró esa nota redundante y se
+  ajustó bbox,padding y precisión del texto sobre residuo/eventos y condiciones.
+  No cambian cifras. Fuente previa0b8c825b4e416a2eb942d72c64a728e19528e91f28ad46cac38936ddc1f92e51
+  conservada en resultados/preparacion/paso-6-borrador/analizar_paso_6.py.
+- Fuente finalafc0895763f9dbdb746ece077fe6cfd80843bd93bc365d8cdb589ddb2fb43ed2.
+  Manifiesto final de13derivados06a459c79c1b23fcd8060272a05f7a7b419b24ed72e1ef33fbff8c6114114087;
+  27entradas fuente verificadas. Segunda revisión es la vista vigente.
+- Análisis conserva límites:CPUhistórica/RNG/workers;alcanceCNN-B,transferencias
+  anidadas,fallosglobales y saturación no demostrada. Hipótesis causales se
+  distinguen de observaciones y cálculos. REQ-07/09 mantienen sus reservas.
+- Se actualizan índices y requisitos del paso6;informe/PDFfinal,equipo y entrega
+  global siguen pendientes. No se alteran notebooks ni evidencias selladas.
+
 ## Plantilla de cambio
 
 ```markdown
