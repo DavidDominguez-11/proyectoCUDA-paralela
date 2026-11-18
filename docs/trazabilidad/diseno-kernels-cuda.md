@@ -1,5 +1,10 @@
 # DIS-CUDA-001. Catálogo de kernels y jerarquía de ejecución
 
+**Antecedente revisión1.** En [paso5](implementacion-cuda.md), DEC-022 conserva
+la variante tiled como referencia y usa cuBLAS para productos grandes con
+im2col/col2im explícitos. Las jerarquías propias y las del backend se distinguen
+en código,lanzamientos.json y reporte; no se atribuye a cuBLAS el grid16×16 propuesto.
+
 Parte del [diseño del paso 4](diseno-paralelo.md), revisión1. **Especificación,
 sin implementar ni ejecutar**. Los nombres K01–K19 identifican contratos futuros,
 no funciones existentes. Se cubren OP-P01..OP-P09 del paso3.
