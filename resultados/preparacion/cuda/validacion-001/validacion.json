@@ -1,0 +1,335 @@
+{
+  "tipo": "validacion_cuda_pequena_no_benchmark",
+  "inicio": "2026-11-17T22:52:41.209829+00:00",
+  "pruebas": [
+    {
+      "nombre": "smoke_copia_17",
+      "shape": [
+        17
+      ],
+      "atol": 0,
+      "rtol": 0,
+      "max_abs": 0.0,
+      "relativo_l2": 0.0,
+      "aprobado": true
+    },
+    {
+      "nombre": "pool_negativos_empates",
+      "shape": [
+        1,
+        2,
+        2,
+        1
+      ],
+      "atol": 0,
+      "rtol": 0,
+      "max_abs": 0.0,
+      "relativo_l2": 0.0,
+      "aprobado": true
+    },
+    {
+      "nombre": "pool_backward_empates",
+      "shape": [
+        1,
+        4,
+        4,
+        1
+      ],
+      "atol": 0,
+      "rtol": 0,
+      "max_abs": 0.0,
+      "relativo_l2": 0.0,
+      "aprobado": true
+    },
+    {
+      "nombre": "b2_forward_0_conv",
+      "shape": [
+        2,
+        64,
+        64,
+        32
+      ],
+      "atol": 5e-05,
+      "rtol": 0.0005,
+      "max_abs": 0.0,
+      "relativo_l2": 0.0,
+      "aprobado": true
+    },
+    {
+      "nombre": "b2_forward_1_bn",
+      "shape": [
+        2,
+        64,
+        64,
+        32
+      ],
+      "atol": 5e-05,
+      "rtol": 0.0005,
+      "max_abs": 1.7642974853515625e-05,
+      "relativo_l2": 1.7044154837492859e-06,
+      "aprobado": true
+    },
+    {
+      "nombre": "b2_forward_2_conv",
+      "shape": [
+        2,
+        64,
+        64,
+        32
+      ],
+      "atol": 5e-05,
+      "rtol": 0.0005,
+      "max_abs": 6.22868537902832e-06,
+      "relativo_l2": 1.7228377758082665e-06,
+      "aprobado": true
+    },
+    {
+      "nombre": "b2_forward_3_pool",
+      "shape": [
+        2,
+        32,
+        32,
+        32
+      ],
+      "atol": 5e-05,
+      "rtol": 0.0005,
+      "max_abs": 6.198883056640625e-06,
+      "relativo_l2": 1.3835391753175233e-06,
+      "aprobado": true
+    },
+    {
+      "nombre": "b2_forward_4_drop",
+      "shape": [
+        2,
+        32,
+        32,
+        32
+      ],
+      "atol": 5e-05,
+      "rtol": 0.0005,
+      "max_abs": 8.344650268554688e-06,
+      "relativo_l2": 1.3809555576807517e-06,
+      "aprobado": true
+    },
+    {
+      "nombre": "b2_forward_5_conv",
+      "shape": [
+        2,
+        32,
+        32,
+        64
+      ],
+      "atol": 5e-05,
+      "rtol": 0.0005,
+      "max_abs": 6.198883056640625e-06,
+      "relativo_l2": 1.3688514102346843e-06,
+      "aprobado": true
+    },
+    {
+      "nombre": "b2_forward_6_bn",
+      "shape": [
+        2,
+        32,
+        32,
+        64
+      ],
+      "atol": 5e-05,
+      "rtol": 0.0005,
+      "max_abs": 5.4836273193359375e-05,
+      "relativo_l2": 2.5481315578768526e-06,
+      "aprobado": true
+    },
+    {
+      "nombre": "b2_forward_7_conv",
+      "shape": [
+        2,
+        32,
+        32,
+        64
+      ],
+      "atol": 5e-05,
+      "rtol": 0.0005,
+      "max_abs": 1.2516975402832031e-05,
+      "relativo_l2": 2.61670700648047e-06,
+      "aprobado": true
+    },
+    {
+      "nombre": "b2_forward_8_pool",
+      "shape": [
+        2,
+        16,
+        16,
+        64
+      ],
+      "atol": 5e-05,
+      "rtol": 0.0005,
+      "max_abs": 1.2516975402832031e-05,
+      "relativo_l2": 2.0721764684077244e-06,
+      "aprobado": true
+    },
+    {
+      "nombre": "b2_forward_9_drop",
+      "shape": [
+        2,
+        16,
+        16,
+        64
+      ],
+      "atol": 5e-05,
+      "rtol": 0.0005,
+      "max_abs": 1.6689300537109375e-05,
+      "relativo_l2": 2.0712066342031324e-06,
+      "aprobado": true
+    },
+    {
+      "nombre": "b2_forward_10_conv",
+      "shape": [
+        2,
+        16,
+        16,
+        128
+      ],
+      "atol": 5e-05,
+      "rtol": 0.0005,
+      "max_abs": 1.239776611328125e-05,
+      "relativo_l2": 2.2375955056415636e-06,
+      "aprobado": true
+    },
+    {
+      "nombre": "b2_forward_11_bn",
+      "shape": [
+        2,
+        16,
+        16,
+        128
+      ],
+      "atol": 5e-05,
+      "rtol": 0.0005,
+      "max_abs": 8.487701416015625e-05,
+      "relativo_l2": 3.906284543047275e-06,
+      "aprobado": true
+    },
+    {
+      "nombre": "b2_forward_12_pool",
+      "shape": [
+        2,
+        8,
+        8,
+        128
+      ],
+      "atol": 5e-05,
+      "rtol": 0.0005,
+      "max_abs": 8.487701416015625e-05,
+      "relativo_l2": 3.767618408881369e-06,
+      "aprobado": true
+    },
+    {
+      "nombre": "b2_forward_13_drop",
+      "shape": [
+        2,
+        8,
+        8,
+        128
+      ],
+      "atol": 5e-05,
+      "rtol": 0.0005,
+      "max_abs": 0.00012111663818359375,
+      "relativo_l2": 3.753678371481091e-06,
+      "aprobado": true
+    },
+    {
+      "nombre": "b2_forward_14_dense",
+      "shape": [
+        2,
+        256
+      ],
+      "atol": 5e-05,
+      "rtol": 0.0005,
+      "max_abs": 3.528594970703125e-05,
+      "relativo_l2": 3.473835624438413e-06,
+      "aprobado": true
+    },
+    {
+      "nombre": "b2_forward_15_bn",
+      "shape": [
+        2,
+        256
+      ],
+      "atol": 5e-05,
+      "rtol": 0.0005,
+      "max_abs": 6.860494613647461e-05,
+      "relativo_l2": 5.87742277398992e-06,
+      "aprobado": true
+    },
+    {
+      "nombre": "b2_forward_16_drop",
+      "shape": [
+        2,
+        256
+      ],
+      "atol": 5e-05,
+      "rtol": 0.0005,
+      "max_abs": 0.00011438131332397461,
+      "relativo_l2": 6.806425873570458e-06,
+      "aprobado": true
+    },
+    {
+      "nombre": "b2_forward_17_dense",
+      "shape": [
+        2,
+        29
+      ],
+      "atol": 5e-05,
+      "rtol": 0.0005,
+      "max_abs": 1.9431114196777344e-05,
+      "relativo_l2": 7.582002473472434e-06,
+      "aprobado": true
+    },
+    {
+      "nombre": "b2_loss",
+      "shape": [
+        2
+      ],
+      "atol": 0.0005,
+      "rtol": 0.002,
+      "max_abs": 9.059906005859375e-06,
+      "relativo_l2": 1.657905084093869e-06,
+      "aprobado": true
+    },
+    {
+      "nombre": "b2_grad_0",
+      "shape": [
+        3,
+        3,
+        3,
+        32
+      ],
+      "atol": 0.0001,
+      "rtol": 0.001,
+      "max_abs": 0.1893301010131836,
+      "relativo_l2": 0.012520597672840571,
+      "aprobado": false
+    }
+  ],
+  "hardware": {
+    "name": "NVIDIA GeForce GTX 1650",
+    "compute_capability": [
+      7,
+      5
+    ],
+    "free_bytes": 3454795776,
+    "total_bytes": 4294639616,
+    "max_threads_per_block": 1024,
+    "max_shared_memory_per_block": 49152,
+    "simulator": false
+  },
+  "buffers_bytes": 603145320,
+  "estado": "fallido",
+  "error": "Traceback (most recent call last):\n  File \"C:\\Users\\David\\Documents\\2026\\S2\\PARALELA\\CUDA\\PROYECTO-CUDA\\proyectoCUDA-paralela\\scripts\\validar_cuda.py\", line 105, in main\n    check(f\"b{b}_grad_{i}\", p[\"grad\"].copy_to_host().reshape(grad.shape), grad.numpy(), 1e-4, 1e-3, 1e-3)\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\David\\Documents\\2026\\S2\\PARALELA\\CUDA\\PROYECTO-CUDA\\proyectoCUDA-paralela\\scripts\\validar_cuda.py\", line 37, in check\n    raise AssertionError(f\"Failed {name}\")\nAssertionError: Failed b2_grad_0\n",
+  "fin": "2026-11-17T22:53:04.183038+00:00",
+  "fuentes": {
+    "src/asl_cuda/kernels.py": "2d77bdbc9c5cc280c377ee9da212ac87e5ba9317a9c41fcd8cd578c3c177022c",
+    "src/asl_cuda/model.py": "f7431868f7ca6c3b623cadce135ae30027dbde5b5831f76e631ec066545d054a",
+    "scripts/validar_cuda.py": "d9026e5125259e92ed2cab2f5799651d7492069f44f519f452e72225c97b8f4e"
+  }
+}

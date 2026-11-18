@@ -1,0 +1,22 @@
+{
+  "anteriores_sin_cambios": 75,
+  "modificados": [],
+  "nuevos": {
+    "attrs": "26.1.0",
+    "cuda-bindings": "13.5.0",
+    "cuda-core": "1.2.2",
+    "cuda-pathfinder": "1.9.0",
+    "cuda-python": "13.5.0",
+    "fastjsonschema": "2.22.3",
+    "jsonschema": "4.26.0",
+    "jsonschema-specifications": "2025.9.1",
+    "llvmlite": "0.49.0",
+    "nbclient": "0.10.4",
+    "nbformat": "5.10.4",
+    "numba": "0.67.0",
+    "numba-cuda": "0.30.4",
+    "referencing": "0.37.0",
+    "rpds-py": "2026.9.1"
+  },
+  "pip_excluido_por_freeze": "25.3, ya existente: pip install --dry-run lo informo antes de instalar"
+}
