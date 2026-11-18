@@ -1,6 +1,12 @@
 # Resultados detallados paralelos / CUDA
 
-Estado: pendiente diseñar, implementar y ejecutar PROC-07/08.
+Estado: **CNN-B implementada y ejecutada; cinco corridas reales EXP-003**.
+
+[Informe detallado](EXP-003/resultados.md), [PDF](EXP-003/informe-paso-5.pdf),
+[notebook ejecutado](EXP-003/notebook-validado.ipynb) y
+[capturas](../evidencias/EXP-003/README.md). Media entrenamiento418.608s,
+incluyendo transferencias y validaciónCPU; speedup1.925× respecto a CPU histórica
+compatible, sin repetir su campaña. El alcance es una CNN-B, no todo el notebook.
 
 Por cada EXP publicar un `resultados.md` con:
 
@@ -16,5 +22,5 @@ Por cada EXP publicar un `resultados.md` con:
 9. Fallos, límites de tamaño, sobrecostes y datos fuente de gráficas.
 
 Usar [la plantilla de ejecución](../../docs/trazabilidad/plantillas/ejecucion.md).
-El CSV consolidado comienza vacío. Un mensaje de dispositivo detectado no
+El CSV consolidado contiene las observaciones reales de los cinco RUN. Un mensaje de dispositivo detectado no
 demuestra ejecución de la matemática en GPU.
