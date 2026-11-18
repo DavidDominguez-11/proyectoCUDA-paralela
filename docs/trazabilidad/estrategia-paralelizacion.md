@@ -1,18 +1,23 @@
 # Estrategia de paralelización
 
-Estado: **pasos 3 y 4 documentados; diseño DIS-CUDA-001 completo como propuesta;
-implementación y validación pendientes**.
-Relaciones: REQ-04/05/06; DEC-003/004/006/007/008/017/018/019.
-Stack propuesto: NVIDIA numba-cuda con kernels Python explícitos, sin instalar.
+Estado: **CNN-B implementada y medida:cinco corridas CUDA EXP-003**.
+Relaciones: REQ-04/05/06; DEC-017..023.
+Stack aplicado: NVIDIA numba-cuda0.30.4 + cuBLAS SGEMM FP32,toolkit13.1,PCUDA.
+La [implementación](implementacion-cuda.md) y los
+[resultados](../../resultados/paralelo/EXP-003/resultados.md) describen la revisión
+ejecutada. Las fichas siguientes conservan la revisión1 de diseño como antecedente;
+cuBLAS sustituyó el tiled16×16 en los productos grandes,con grids internos NVIDIA.
 
-## Diseño vigente
+## Propuesta inicial y revisión aplicada
 
 La propuesta completa está en [diseno-paralelo.md](diseno-paralelo.md), el
 [catálogo de kernels](diseno-kernels-cuda.md) y el
 [plan de validación/medición](diseno-validacion-cuda.md).
 La [inspección](../../resultados/diseno/paso-4-inspeccion.md) registra hardware,
 fuentes locales e identidades. CAM-005, BIT-007. Los tamaños son propuestos,
-no configuraciones ejecutadas ni óptimos medidos.
+no deben confundirse con los recursos realmente registrados en lanzamientos.json.
+El código numba tiled se conserva como referencia;la serie usa im2col/col2im
+propios y SGEMM. El presupuesto aplicado es1408MiB,con workspace576MiB.
 
 La selección vigente y su evidencia se detallan en el
 [paso 3](oportunidades-paralelizacion.md): prioridad a la matemática del
