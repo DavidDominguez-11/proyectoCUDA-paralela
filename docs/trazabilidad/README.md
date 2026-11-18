@@ -7,8 +7,8 @@ páginas. Ante una diferencia, prevalece ese PDF sobre cualquier otro archivo.
 Las convenciones de esta carpeta son acuerdos internos para satisfacerlo;
 no deben presentarse como instrucciones adicionales del docente.
 
-Estado: **pasos 1–4 documentados; diseño DIS-CUDA-001 completo como propuesta;
-cinco corridas CPU EXP-002; implementación y validación CUDA pendientes**.
+Estado: **pasos 1–5 documentados; cinco corridas CPU EXP-002 y cinco CUDA EXP-003;
+CNN-B implementada/medida, informe PDF disponible; entrega global pendiente de revisión**.
 Fecha de apertura: 2026-11-17, zona de trabajo America/Guatemala.
 Las [instrucciones del repositorio](../../AGENTS.md) mantienen estas convenciones
 para trabajos posteriores.
@@ -18,6 +18,7 @@ para trabajos posteriores.
 | Documento | Contenido |
 |---|---|
 | [Requisitos](requisitos.md) | Relación entre páginas del PDF, trabajo y pruebas de cumplimiento. |
+| [Revisión antes del paso 6](revision-pasos-1-5.md) | Auditoría contra el PDF: 80 controles, validez de datos/tiempos y reservas de comparación, corrección y saturación GPU. |
 | [Análisis original](analisis-original.md) | Flujo, funciones, operaciones repetitivas y antecedentes. |
 | [Datos](datos.md) | Procedencia, versiones, manifiestos, particiones y transformaciones. |
 | [Reproducibilidad](reproducibilidad.md) | Entorno, semillas, equivalencia, medición y recuperación. |
@@ -30,6 +31,9 @@ para trabajos posteriores.
 | [Validación y medición CUDA](diseno-validacion-cuda.md) | Aleatoriedad, pruebas, tolerancias, CPU pareada y cronometraje previstos. |
 | [Contraste con Semana15](contraste-semana-15.md) | Correspondencia con clase, precisiones y refinamiento de coalescencia; fuente conservada. |
 | [Inspección del diseño](../../resultados/diseno/paso-4-inspeccion.md) | Inventario GPU, fuentes locales, hashes y presupuestos derivados; sin ejecutar kernels. |
+| [Implementación CUDA](implementacion-cuda.md) | Paso5: código, revisiones del diseño, ejecución real, tiempos y límites. |
+| [Notebook con salidas reales](../../notebooks/Lab3_ASL_CUDA_con_salidas.ipynb) | Última corrida:15épocas,tablas,métricas,tiempos y gráficas incrustados,sin entrenar otra vez. |
+| [Reproducir CUDA](reproducir-cuda.md) | Consultar sin repetir corridas o preparar otra identidad con datos/estado preservados. |
 | [Estrategia de paralelización](estrategia-paralelizacion.md) | Índice de selección y fichas del diseño vigente. |
 | [Cambios](cambios.md) | Alcance y consecuencias de cada modificación. |
 | [Bitácora](bitacora.md) | Actividades, responsables y evidencias por paso. |
@@ -88,8 +92,15 @@ La preparación permanece en CPU. La selección no constituye diseño ni validac
 El [paso4](diseno-paralelo.md) desarrolla esa selección para CNN-B base, con
 kernels Python explícitos propuestos mediante NVIDIA numba-cuda. Se consultó
 inventario GTX1650 de4GiB y se diseñó el presupuesto; no se ejecutaron kernels.
-El control compartido de lotes/Dropout requiere una nueva referencia CPU pareada
-en paso5; los tiempos históricos se preservan como antecedentes.
+DEC-021 retiró la campaña CPU pareada obligatoria por instrucción posterior del
+usuario. Se reutilizan fases compatibles históricas; máscaras/orden internos
+no son idénticos, aunque sí arquitectura,datos,pasos,precisión y distribución.
 
-No existe aún versión CUDA, validación GPU, speedup ni informe PDF final. La
-reconstrucción completa del entorno en otra máquina no se ha certificado.
+El [paso5](implementacion-cuda.md) ejecutó cinco corridas reales CNN-B con
+Numba-CUDA/cuBLAS:418.608±1.916s frente a805.650±2.723s CPU, aceleración1.925×
+(media±DE). Incluye H2D/D2H,CPUstaging y validaciónCPU; test98.62%. Hay
+[tablas/gráficas](../../resultados/paralelo/EXP-003/resultados.md),
+[capturas](../../resultados/evidencias/EXP-003/README.md) e
+[informe PDF](../../resultados/paralelo/EXP-003/informe-paso-5.pdf).
+La reconstrucción limpia en otra máquina, contribuciones del equipo y revisión
+de entrega global no se han certificado. No se promete identidad numérica CPU/GPU.
