@@ -1,0 +1,26 @@
+{
+  "fecha_utc": "2026-11-18T03:46:44.675261+00:00",
+  "comando": [
+    "C:\\Python314\\python.exe",
+    "scripts/crear_informe_docx.py",
+    "--destino",
+    "entregables/informe-final-v02"
+  ],
+  "cwd": "C:\\Users\\David\\Documents\\2026\\S2\\PARALELA\\CUDA\\PROYECTO-CUDA\\proyectoCUDA-paralela",
+  "python": "3.14.3 (tags/v3.14.3:323c59a, Feb  3 2026, 16:04:56) [MSC v.1944 64 bit (AMD64)]",
+  "python_docx": "1.2.0",
+  "responsable": "Codex por solicitud del usuario",
+  "autores_confirmados": [
+    "David Domínguez23712",
+    "Jonathan Diaz23873",
+    "Luis Padilla23663"
+  ],
+  "docx_sha256": "c1fa886f3bf4b747c1dbb17937dc193eabf645a088e3cabd46c2edea802a22c7",
+  "tablas": 12,
+  "figuras": 7,
+  "secciones_obligatorias": 6,
+  "entrenamiento_ejecutado": false,
+  "pdf_generado": false,
+  "etapa": "generacion; revision visual Word posterior",
+  "fuentes": 33
+}
