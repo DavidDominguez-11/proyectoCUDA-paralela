@@ -265,17 +265,75 @@ evaluada. Al sustituir una decisión, conservar la anterior y enlazar la nueva.
   parámetros, pasos y payload. Ninguna corrida o código de EXP-002 cambia.
 - REQ-05/12; PROC-12; CAM-005; BIT-007. Sin instalación ni experimentos.
 
+## DEC-021 — Reutilizar CPU histórica y adaptar entorno disponible
+
+- Fecha:2026-11-17 UTC; responsable:Codex por instrucción posterior del usuario.
+- Estado: aplicada como revisión del diseño antes de implementar/medir GPU.
+- Sustituye la obligación de CPU pareada y máscaras compartidas de DEC-018/019.
+  No invalida las mediciones históricas ni exige repetir otras redes/PCA/RF.
+- Misma arquitectura CNN-B, datos/particiones/estado inicial,15épocas,batch128 y
+  último20; Dropout con distribución original y seed documentada. Igualdad exacta
+  de máscaras se reserva para pruebas pequeñas de corrección.
+- Comparación de tiempos solo si fronteras y trabajo coinciden; diferencias
+  temporales/térmicas de una referencia histórica se revelan. Si cambia carga,
+  no calcular speedup falso ni ejecutar otra campaña CPU sin necesidad concreta.
+- PCUDA existente; añadir únicamente dependencias ausentes sin cambiar NumPy,
+  TensorFlow u otros paquetes ya instalados. Usar toolkit13.1 disponible en vez
+  del12.x propuesto, con smoke real y versiones/hashes archivados.
+- CAM-006; BIT-008; [registro del paso5](implementacion-cuda.md).
+
+## DEC-022 — Revisión de productos matriciales por evidencia de admisión
+
+- Estado: implementada antes de congelar mediciones completas. CAM-006; BIT-008.
+- Ensayo sintético b128, n=1 por backend, no resultado final: versión tiled
+  explícita0.6014s/lote; im2col/SGEMM0.2577s/lote. No se usa como speedup definitivo.
+- Se conserva la variante Python tiled como referencia verificable y se usa
+  cuBLAS SGEMM FP32 pedantic sin atomics en la serie. Python NumPy nunca multiplica
+  los tensores de entrenamiento. Numba ejecuta im2col/col2im gather, no preparación
+  de archivos/imágenes; son transformaciones internas de convolución en la GPU.
+- Reutilizar workspace global de columnas576MiB, sin retener im2col por capa.
+  Nuevo tope buffers1408MiB. La consulta real confirma4GiB; registro de consumo
+  por RUN. Los grids internos GEMM pertenecen a NVIDIA: no se inventan16×16.
+  Los kernels propios conservan jerarquía explícita documentada.
+- Kernels Python numba-cuda0.30.4 requiere alias NumPy retirado row_stack para
+  registrar operaciones; alias de proceso row_stack=vstack, sin modificar
+  site-packages ni cambiar NumPy2.5.5. Toolkit13.1 y DLLcuBLAS local con SHA-256.
+- [Código](../../src/asl_cuda/blas.py); [ensayos](../../resultados/preparacion/cuda/validacion-003/validacion.json).
+
+## DEC-023 — Separar error de operador y sensibilidad de rutas no suaves
+
+- Estado: criterio de admisión fijado antes del entrenamiento medido; no se
+  declaran aprobadas las comparaciones estrictas de red completa que fallaron.
+- En diagnósticos b2/b20 las activaciones difieren por redondeo FP32. Se observaron
+  1 y14rutas de MaxPooling distintas, respectivamente, todas compatibles con
+  la cota de redondeo de sus ventanas. El gradiente completo cambia de ruta cerca
+  de empates; no es adecuado exigir igualdad de todas sus coordenadas entre
+  backends que reducen en órdenes distintos.
+- No se aflojan tolerancias de kernels:51pruebas independientes de operadores
+  pasan atol1e-4/rtol1e-3 (Adam1e-7/1e-5);78adjuntos de la red con activaciones y
+  gradientes de entrada **idénticos** pasan esos límites en b20 y128.
+- Diez pasos sintéticos, último20, contador real, exportación, validaciónCPU sin
+  mutación, guardado/recarga de pesos+Adam y restauración pasan. Son admisión de
+  implementación, no calidad ni timing sobre el dataset real.
+- Los diagnósticos fallidos se preservan como tales. Se reportarán curvas y
+  accuracy reales, sin afirmar identidad numérica o mejora de calidad debida a
+  CUDA. Tampoco se conserva el umbral2pp pareado de un protocolo ya sustituido:
+  las propias referencias CPU varían≈6pp y no hay máscaras históricas compartidas.
+- Evidencia: operadores-002,adjuntos-001,integracion-002 y rutas-004 bajo
+  resultados/preparacion/cuda. La serie real aún exige hashes/datos/pasos completos,
+  finitud, checkpoints y medición honesta con validación y transferencias.
+
 ## Estado de decisiones técnicas
 
 | ID | Pregunta | Alternativas a evaluar | Evidencia necesaria | Estado |
 |---|---|---|---|---|
-| DEC-003 | ¿Qué modelo y operaciones se aceleran? | CNN-A, CNN-B u otro alcance justificado del laboratorio | Paso 3 y DEC-016: matemática del entrenamiento CNN-B prioritaria | Resuelta como selección propuesta; diseño y validación pendientes |
-| DEC-004 | ¿Qué stack satisface CUDA Python y diseño explícito? | DEC-017: NVIDIA numba-cuda, kernels Python explícitos y bindings CUDA Python | Contratos y jerarquía DIS-CUDA-001; lock/prueba mínima pendientes | Resuelta como propuesta; compatibilidad sin certificar |
-| DEC-005 | ¿Cuál será la carga experimental? | Tamaño de muestra, batch, épocas/pasos, repeticiones, warmup, orden | DEC-011/013, configuración y serie EXP-002 | Resuelta para CPU; equivalencia GPU pendiente |
-| DEC-006 | ¿Cómo preparar imágenes con CPU? | DEC-018:6workers,12pendientes, coordinador escribe orden fijo | Igualdad de tensores y rendimiento por verificar | Resuelta como diseño, sin implementar |
+| DEC-003 | ¿Qué modelo y operaciones se aceleran? | CNN-B,según DEC-016 | EXP-003 y código aplicado | Resuelta e implementada para CNN-B |
+| DEC-004 | ¿Qué stack satisface CUDA Python y diseño explícito? | DEC-017/022:Numba-CUDA Python + cuBLAS | Código,pruebas,recursos propios y límites de backend documentados | Admitido y ejecutado localmente |
+| DEC-005 | ¿Cuál será la carga experimental? | DEC-021:CPU histórica compatible,sin otra campaña;GPU5corridas | Configuraciones/series EXP-002/003 | Resuelta con límites explícitos de RNG/referencia histórica |
+| DEC-006 | ¿Cómo preparar imágenes con CPU? | 6workers,12pendientes,coordinador escribe orden fijo | X/y idénticos por SHA-256;media8.034s | Implementada y medida,mejora CPU |
 | DEC-007 | ¿Cómo tratar augmentation? | DEC-018: fuera del alcance CNN-B base; preparación siempre CPU si se amplía | Separación del PDF y equivalencia futura | Resuelta para DIS-CUDA-001 |
-| DEC-008 | ¿Cómo medir transferencias y cómputo? | DEC-019: pared sincronizada y eventos de grupos, stream único | Validación/medición DIS-CUDA-001 | Resuelta como diseño, sin medición GPU |
-| DEC-009 | ¿Cómo fijar entorno y precisión? | Plataforma, versiones compatibles, dtype, determinismo | DEC-012: PCUDA existente; hardware.json y contexto de cada RUN | Fijada para CPU; reconstrucción y GPU pendientes |
+| DEC-008 | ¿Cómo medir transferencias y cómputo? | Pared sincronizada y eventos de grupos,stream único | Tiempos/transferencias por RUN EXP-003 | Medido;eventos no equivalen a tiempo activo puro |
+| DEC-009 | ¿Cómo fijar entorno y precisión? | PCUDA,FP32,toolkit13.1,paquetes ausentes añadidos sin cambiar anteriores | hardware.json,contexto,entorno.md y pruebas reales | Admitido localmente;reconstrucción limpia no certificada |
 
 ## Plantilla para resolver una decisión
 
