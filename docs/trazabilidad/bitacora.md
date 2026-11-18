@@ -512,6 +512,52 @@ git diff --check
   [verificación de preparación](../../resultados/preparacion/verificacion-preparacion.md).
   No implica ejecución del entrenamiento. Equipo y entrega global pendientes.
 
+## BIT-011 — Paso 6: análisis y conclusiones CNN-B
+
+- Fecha:2026-11-18UTC,17noviembre local. Responsable:Codex por solicitud del usuario;
+  DEC-024;CAM-009;PROC-09;REQ-08/10/12. Sin nuevo EXP/RUN ni entrenamiento.
+- Entradas:5CPU EXP-002,5GPU EXP-003,configuraciones,CSV por RUN,calidad,recursos,
+  PDFnormativo y auditoría previa.27fuentes con bytes/SHA-256 en fuentes.csv.
+- Se contrastó apartado6 directamente con página2 del PDF usando pymupdf existente
+  en Python del sistema. Se revisaron README/decisiones/bitácora y reservas previas.
+- Se aplicó figure-style:observaciones individuales,unidades,DE declarada,colores
+  consistentes y revisión visual. Script usa PCUDA y Matplotlib ya instalado;
+  no requiere descarga,entrenamiento,CUDA ni exportación PDF.
+- Se verificaron sello184entradas y5manifiestosCPU,leyeron10tiemposporRUN,
+  recalcularon estadísticas y cocientes de medias,contrastándolos con CSVprevio.
+  Sin emparejar RUNhistóricos ni excluir observaciones por su tiempo.
+- Primera generación03:11:49–03:11:52UTC completó con código0. Revisión visual
+  detectó nota redundante cortada en figura2. Se preservó fuente inicial y carpeta
+  completa;se ajustaron bbox/padding,redacción de residuo y condiciones. Se ejecutó
+  nuevamente solo posprocesado en destino nuevo;ningún dato/cifra cambió.
+- Comandos desde raíz:
+
+```powershell
+.\PCUDA\Scripts\python.exe -X utf8 scripts/analizar_paso_6.py --destino resultados/comparacion/paso-6
+.\PCUDA\Scripts\python.exe -X utf8 scripts/analizar_paso_6.py --destino resultados/comparacion/paso-6-revision-02
+.\PCUDA\Scripts\python.exe -X utf8 scripts/verificar_preparacion.py
+git diff --check
+```
+
+- El primer comando corresponde a fuente inicial preservada;el segundo,a fuente
+  vigente. Comando exacto,intérprete,UTC y versiones en cada procedencia.json.
+  No regenerar sobre carpeta existente;usar nueva identidad de salida.
+- [Análisis vigente](../../resultados/comparacion/paso-6-revision-02/analisis-y-conclusiones.md):
+  tablas10RUN,4fases,dispersión,desglose,calidad,9factores,5conclusiones y3gráficas
+  PNG/SVG. Resultado principal805.6497257→418.607683s,387.0420427s ahorrados,
+  speedup1.924593739×,reducción48.040982%. Transferencias3.527822618s incluidas.
+- Revisión visual final:tres imágenes legibles,ejes/leyendas/anotaciones completos.
+  Se verificaron por Python/PIL hashes de13derivados/27fuentes,sumaporcentajes100,
+  tres PNGválidos,ausenciaPDFnuevo e identidad de fuente preliminar conservada.
+  [Cierre](../../resultados/preparacion/paso-6-borrador/validacion-cierre.json)
+  aprobado03:14:17UTC;no entrenamiento.
+- Las causas se clasifican por evidencia;sin perfilado causal exclusivo por kernel,
+  sin afirmar corrección global absoluta ni saturaciónSM/VRAM. PreparaciónCPU1→6
+  separada del beneficioCUDA;testCPU no mejora. Reserva histórica conserva alcance.
+- Índices/requisitos actualizados;verificación documental en informe de preparación.
+  Siguiente trabajo autorizado aquí termina en paso6Markdown;informefinal/PDF/equipo
+  y entrega pendientes de otra actividad. No se editan fuentes congeladas ni RUN.
+
 ## Plantilla para cada actividad
 
 ```markdown
