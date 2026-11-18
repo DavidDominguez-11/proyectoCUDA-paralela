@@ -1,0 +1,15 @@
+{
+  "capturas": {
+    "cpu": "20261117T233947Z-cpu.png",
+    "gpu": "20261117T233706Z-gpu.png"
+  },
+  "excluidas": [
+    "20261117T232956Z-gpu.png",
+    "20261117T233210Z-cpu.png"
+  ],
+  "revision_visual": true,
+  "sha256": {
+    "cpu": "7fddb48c9d5272d13785085fc9e9dc8f3181af1e0e7e03500d1d31b99a8aa07c",
+    "gpu": "5cc75d4abaad968b2937e768565d076733bee1646255d5233a58f3f2b61a3206"
+  }
+}
