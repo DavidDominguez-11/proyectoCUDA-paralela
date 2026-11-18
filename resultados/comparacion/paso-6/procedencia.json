@@ -1,0 +1,37 @@
+{
+  "inicio_utc": "2026-11-18T03:11:49.949174+00:00",
+  "fin_utc": "2026-11-18T03:11:52.644564+00:00",
+  "tipo": "analisis_derivado_sin_nuevo_entrenamiento",
+  "responsable": "Codex por solicitud del usuario",
+  "comando": [
+    "C:\\Users\\David\\Documents\\2026\\S2\\PARALELA\\CUDA\\PROYECTO-CUDA\\proyectoCUDA-paralela\\PCUDA\\Scripts\\python.exe",
+    "scripts/analizar_paso_6.py",
+    "--destino",
+    "resultados/comparacion/paso-6"
+  ],
+  "cwd": "C:\\Users\\David\\Documents\\2026\\S2\\PARALELA\\CUDA\\PROYECTO-CUDA\\proyectoCUDA-paralela",
+  "python": "3.14.3 (tags/v3.14.3:323c59a, Feb  3 2026, 16:04:56) [MSC v.1944 64 bit (AMD64)]",
+  "paquetes": {
+    "matplotlib": "3.11.2",
+    "numpy": "2.5.5",
+    "pillow": "13.0.0"
+  },
+  "decisiones": [
+    "DEC-024"
+  ],
+  "cambios": [
+    "CAM-009"
+  ],
+  "experimentos": [
+    "EXP-002",
+    "EXP-003"
+  ],
+  "n_cpu": 5,
+  "n_gpu": 5,
+  "entrenamiento_ejecutado": false,
+  "pdf_generado": false,
+  "jerarquia_incertidumbre": "Puntos RUN; barras DE muestral; ICt95 nominal solo media, no cociente",
+  "integridad_exp003_entradas": 184,
+  "figuras": 3,
+  "fuentes": 27
+}
