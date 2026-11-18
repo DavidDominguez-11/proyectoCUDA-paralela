@@ -1,0 +1,17 @@
+{
+  "codigo": 0,
+  "comando": [
+    "C:\\Users\\David\\Documents\\2026\\S2\\PARALELA\\CUDA\\PROYECTO-CUDA\\proyectoCUDA-paralela\\PCUDA\\Scripts\\python.exe",
+    "-u",
+    "-X",
+    "utf8",
+    "scripts/ejecutar_notebook_cuda.py",
+    "--entrada",
+    "resultados/notebook-salidas/plantilla.ipynb",
+    "--salida",
+    "notebooks/Lab3_ASL_CUDA_con_salidas.ipynb"
+  ],
+  "serie_antes_sha256": "4870e1f1d039f88822eccabb0339ef246c9bfbb8351a4e44588c3cb6b1639935",
+  "serie_despues_sha256": "4870e1f1d039f88822eccabb0339ef246c9bfbb8351a4e44588c3cb6b1639935",
+  "sin_entrenar": true
+}

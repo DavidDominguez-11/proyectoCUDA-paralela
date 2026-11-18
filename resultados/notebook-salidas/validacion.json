@@ -1,0 +1,17 @@
+{
+  "fecha_utc": "2026-11-18T02:42:49.200223+00:00",
+  "estado": "aprobado",
+  "codigo_nativo": 0,
+  "notebook": "notebooks/Lab3_ASL_CUDA_con_salidas.ipynb",
+  "notebook_sha256": "081c1c6f93201ecd2e5aa45c38ed11924935b3125d0d7788df93712840559e70",
+  "run_id": "RUN-20261117T234658Z-gpu-05",
+  "celdas": 96,
+  "celdas_ejecutadas": 44,
+  "errores_celda": 0,
+  "lineas_epocas_reales": 15,
+  "imagenes_incrustadas": 5,
+  "sin_entrenar": true,
+  "fuente_congelada_sha256": "53050fbcc27a8629850d36165c5c4387982714277f09a58e256e3537b051b86f",
+  "manifiesto_exp003_sha256": "8e2ec12de88b85ea63f0156fa3876a5c3647265ffc6ed783770b6eb28d092d1d",
+  "archivos_exp003_verificados": 184
+}
