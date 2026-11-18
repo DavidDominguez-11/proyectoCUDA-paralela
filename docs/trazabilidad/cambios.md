@@ -125,6 +125,82 @@
   el archivo externo por bytes, se añade matriz de correspondencia y precisiones;
   se refina R(L,C) a32×8 para lectura contigua de canales, sin variar presupuesto.
 
+## CAM-006 — Copia del notebook e implementación CUDA Python
+
+- Estado:completado para CNN-B,2026-11-17UTC; responsable:Codex por solicitud del usuario.
+- Identidad original preservada SHA-256
+  ce8824e860ae7e02684bf702fd6865b7d87cc9eb71917f56bfb0ee8d9ccb8e8a.
+- REQ-06/07/09/12; DEC-021; BIT-008. Solo se modifica copia y módulos nuevos;
+  no se edita benchmark_cpu.py ni EXP-002 congelado.
+- Revisión previa: se cancela obligación de otra campaña CPU; reutilizar fases
+  compatibles de CNN-B, sin exigir igualdad de máscaras históricas Dropout.
+- Entorno: PCUDA, añadir solo paquetes ausentes; toolkit13.1 local. Instalaciones,
+  pruebas y resultados se registran al producirse, sin estados ficticios.
+- Se crearon copia de83celdas,módulos src/asl_cuda,kernels Python y wrapper
+  SGEMM;controlador/validadores/notebookejecutor/análisis/captura/reproducción.
+  Original y benchmark_cpu.py mantienen identidades congeladas.
+- Revisión DEC-022:SGEMM reduce ensayo preliminar0.60→0.26s/lote;workspace576MiB,
+  tope1408MiB. Grids propios explícitos,grids internos cuBLAS gestionados por NVIDIA.
+- Admisión:51pruebas de operadores,78adjuntos locales y10pasos sintéticos con
+  guardado/recarga. Diagnósticos globales estrictos fallidos conservados;DEC-023
+  distingue sensibilidad de rutas pooling cercanas a empates de error de operador.
+- EXP-003:cinco corridas completas,15épocas/1440pasos cada una,sin nueva campaña
+  CPU. Media418.607683±1.916308s frente a805.649726±2.722684s CPU;speedup1.924594×,
+  H2D/D2H/CPUstaging/validación incluidos;test98.620689% en las cinco.
+- Contenido canónico de cinco checkpoints idéntico,contadorAdam1440;hashes de
+  archivo y de contenido se distinguen. Datos X/y coinciden byte a byte con CPU.
+- Capturas reales inspeccionadas CPU/GPU,cuatro gráficas,CSV e informe PDF8páginas;
+  pruebas,DPI e historialIPython conservados/corregidos sin sobrescribir RUN.
+- Se guardó notebook de presentación validado,código nativo0,37celdas sin error;
+  consulta la serie completa sin generar entrenamientos adicionales.
+- [Resultados](../../resultados/paralelo/EXP-003/resultados.md),
+  [implementación](implementacion-cuda.md) y guía de reproducción disponibles.
+  Verificación documental y cierre en BIT-008. Commit/revisión humana pendientes.
+
+## CAM-007 — Salidas reales de la última corrida dentro del notebook
+
+- Solicitud adicional del usuario;actividad de presentación,sin otro EXP/RUN.
+- Se entrega notebooks/Lab3_ASL_CUDA_con_salidas.ipynb,con código y salidas
+  reales de RUN-20261117T234658Z-gpu-05:15épocas,métricas,tiempos,hardware y curvas.
+- Se preserva notebook fuente congelado SHA-256
+  53050fbcc27a8629850d36165c5c4387982714277f09a58e256e3537b051b86f.
+- Ejecutor previo SHA-256eafddcb8c5d54ca068b6bcb3e1385a355c1baf4210b019aa346d8c224c8fd5a1;
+  se añade argumento --entrada,sin cambiar el default ni lógica de entrenamiento.
+  Su versión anterior está preservada en analisis_fuentes del EXP-003 sellado.
+- Se añade notebook_con_salidas.py,plantilla y registro de ejecución. La vista
+  fuerza GPUFalse y lee evidencias reales;los logs no se simulan como fit nuevo.
+- Validación:nativo0,44celdas sin errores,15líneas EPOCH,5imágenes incrustadas.
+  SHAserie idéntico antes/después y184archivos sellados intactos. BIT-009.
+- Índices actualizados para abrir directamente el notebook con salidas.
+  No se edita el original,los modelos,las mediciones ni el informe sellado.
+
+## CAM-008 — Auditoría previa al paso 6
+
+- Solicitud: verificar proceso, datos y resultados contra el PDF sin repetir
+  experimentos. Responsable: Codex; BIT-010.
+- Se añade revision-pasos-1-5.md, script auditar_pasos_1_5.py y resultados de
+  auditoría en carpetas nuevas. Se ajustan índices, DAT-05 y estados REQ-07/09
+  para distinguir carga equivalente de condiciones idénticas y uso de saturación.
+- Identidades previas SHA-256 de documentos ajustados:
+
+| Archivo | SHA-256 previo |
+|---|---|
+| requisitos.md | 11e766b79a372432781c00b435649dc75488cc695b608a12863daa6f692aed36 |
+| datos.md | 2fe031574f6e64009236255118124b7364ae4cde37db5243b82788a4adfca2ce |
+| README de trazabilidad | 9f3db3cc8f1ae52249c5d78f1f936ae431090da8d570ad72fc0e4ba5f0ae9f9c |
+| README raíz | 50d0753313305e371af37d1ed45d86e53465cf72d7e1409070e2c1cb35e534d9 |
+| implementacion-cuda.md | 268a9576ceca7d6e8aacd987e5e0b50da2c709b2beeb92fc1f54804dbcba15bf |
+
+- Primer verificador: SHA58928b025cc1a31a9cd00991f1038826bd730062de7ff270e531589e1c807e56;
+  registró un error de lectura de encabezado GPU. Se corrigió a esquema dual
+  ruta/ruta_relativa y argumento --destino antes de un segundo intento nuevo.
+  Script aprobado SHA5bdc5ea9f00379a1c65d83389c3578968c372b90536309367e0dfb5c8e53178a.
+- Resultado:80 controles aprobados;10 manifiestos RUN,184 entradas del sello,
+  datos crudos,estados/modelos,estadísticas y salidas de notebook coherentes.
+- No se modifica código de entrenamiento,datos,notebooks,configuraciones ni
+  evidencias selladas CPU/GPU. No hay nuevas métricas experimentales. Las
+  reservas documentadas no se convierten en validaciones completas.
+
 ## Plantilla de cambio
 
 ```markdown
