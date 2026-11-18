@@ -1,0 +1,26 @@
+{
+  "estado": "aprobado",
+  "fecha_utc": "2026-11-18T03:47:37.458580+00:00",
+  "docx_sha256": "c1fa886f3bf4b747c1dbb17937dc193eabf645a088e3cabd46c2edea802a22c7",
+  "secciones_ordenadas": [
+    "1. Análisis de la solución secuencial existente",
+    "2. Medición del tiempo de ejecución secuencial",
+    "3. Identificación de oportunidades de paralelización",
+    "4. Diseño del algoritmo paralelo",
+    "5. Implementación con CUDA Python",
+    "6. Análisis y conclusiones"
+  ],
+  "tablas": 12,
+  "figuras_incrustadas": 7,
+  "fuentes_verificadas": 33,
+  "paginas_word": 13,
+  "tablas_cortadas": 0,
+  "capturas_originales_sin_alterar": true,
+  "sin_rutas_internas_en_cuerpo": true,
+  "autores_confirmados": true,
+  "tres_preguntas_tecnicas": true,
+  "pdf_generado": false,
+  "entrenamiento_ejecutado": false,
+  "limites": "Uso real acreditado; saturacion literal/ocupacion SM no demostradas. CPU historica y RNG diferentes.",
+  "script_sha256": "30dd1df25c7fa9573e4e4d5bf25dd2e303fcc8a1171f9cf55f98335a33a16278"
+}

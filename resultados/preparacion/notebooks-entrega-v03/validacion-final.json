@@ -1,0 +1,60 @@
+{
+  "fecha_utc": "2026-11-18T04:54:13.619879+00:00",
+  "notebooks": [
+    {
+      "archivo": "entregables/notebooks/ASL_Secuencial.ipynb",
+      "sha256": "201e6dff41312e2b921349ba5c066ca3abd9d25dcae7fb7206a2fd5d29646692",
+      "experimento": "EXP-008",
+      "run_id": "RUN-20261118T041129Z-cpu-notebook-01",
+      "celdas_codigo": 37,
+      "errores": 0,
+      "epocas_nuevas": 75,
+      "imagenes_incrustadas": 10,
+      "modelos": [
+        {
+          "modelo": "CNN-A",
+          "pasos": 1440
+        },
+        {
+          "modelo": "CNN-B",
+          "pasos": 1440
+        },
+        {
+          "modelo": "FC-A",
+          "pasos": 1440
+        },
+        {
+          "modelo": "FC-B",
+          "pasos": 1440
+        },
+        {
+          "modelo": "CNN-B+aug",
+          "pasos": 1440
+        }
+      ],
+      "logs_historicos_completos": 10,
+      "capturas_nuevas": 2
+    },
+    {
+      "archivo": "entregables/notebooks/ASL_CUDA.ipynb",
+      "sha256": "89c14f3184c36f7b63a53016dc20427c6b131ccc9196849d5e36ee0163e39595",
+      "experimento": "EXP-009",
+      "run_id": "RUN-20261118T041129Z-cuda-notebook-01",
+      "celdas_codigo": 31,
+      "errores": 0,
+      "epocas_nuevas": 15,
+      "imagenes_incrustadas": 4,
+      "modelos": [
+        {
+          "modelo": "CNN-B",
+          "pasos": 1440
+        }
+      ],
+      "logs_historicos_completos": 10,
+      "capturas_nuevas": 1
+    }
+  ],
+  "historicos_intactos": true,
+  "estado": "aprobado",
+  "script_sha256": "7377178fff0b730984adb3301474736dc08b5d4fc2431909e10d981ea76bfa5d"
+}

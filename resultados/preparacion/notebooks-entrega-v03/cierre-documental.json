@@ -1,0 +1,16 @@
+[
+  {
+    "notebook": "entregables/notebooks/ASL_Secuencial.ipynb",
+    "sha256": "201e6dff41312e2b921349ba5c066ca3abd9d25dcae7fb7206a2fd5d29646692",
+    "original_sha256": "ca6a0b9df6ec794f3f06e6afcde93cd63637f10e94dae38f068b4fcc8165257d",
+    "diagnosticos_caracteres": 17161,
+    "celdas_codigo_sin_cambios": true
+  },
+  {
+    "notebook": "entregables/notebooks/ASL_CUDA.ipynb",
+    "sha256": "89c14f3184c36f7b63a53016dc20427c6b131ccc9196849d5e36ee0163e39595",
+    "original_sha256": "a4a20af206977736b87a9dd48196512950934ba5f7c475066ef9e883401e8a04",
+    "diagnosticos_caracteres": 11657,
+    "celdas_codigo_sin_cambios": true
+  }
+]

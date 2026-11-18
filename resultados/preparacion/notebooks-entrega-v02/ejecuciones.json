@@ -1,0 +1,20 @@
+[
+  {
+    "tipo": "cpu",
+    "experimento": "EXP-006",
+    "run_id": "RUN-20261118T040831Z-cpu-notebook-01",
+    "plantilla": "C:\\Users\\David\\Documents\\2026\\S2\\PARALELA\\CUDA\\PROYECTO-CUDA\\proyectoCUDA-paralela\\resultados\\preparacion\\notebooks-entrega-v02\\ASL_Secuencial.plantilla.ipynb",
+    "salida": "C:\\Users\\David\\Documents\\2026\\S2\\PARALELA\\CUDA\\PROYECTO-CUDA\\proyectoCUDA-paralela\\entregables\\notebooks\\ASL_Secuencial.ipynb",
+    "run": "C:\\Users\\David\\Documents\\2026\\S2\\PARALELA\\CUDA\\PROYECTO-CUDA\\proyectoCUDA-paralela\\resultados\\secuencial\\EXP-006\\RUN-20261118T040831Z-cpu-notebook-01",
+    "configuracion_sha256": "6e1b13d58c1266a6c93402eb85f8d6003cc6ef3a0b1bc56c58d957b9a2516374"
+  },
+  {
+    "tipo": "cuda",
+    "experimento": "EXP-007",
+    "run_id": "RUN-20261118T040831Z-cuda-notebook-01",
+    "plantilla": "C:\\Users\\David\\Documents\\2026\\S2\\PARALELA\\CUDA\\PROYECTO-CUDA\\proyectoCUDA-paralela\\resultados\\preparacion\\notebooks-entrega-v02\\ASL_CUDA.plantilla.ipynb",
+    "salida": "C:\\Users\\David\\Documents\\2026\\S2\\PARALELA\\CUDA\\PROYECTO-CUDA\\proyectoCUDA-paralela\\entregables\\notebooks\\ASL_CUDA.ipynb",
+    "run": "C:\\Users\\David\\Documents\\2026\\S2\\PARALELA\\CUDA\\PROYECTO-CUDA\\proyectoCUDA-paralela\\resultados\\paralelo\\EXP-007\\RUN-20261118T040831Z-cuda-notebook-01",
+    "configuracion_sha256": "4e3f72a97af2b4371eaf2d25c34bedae67d48ce22e10cbebce4ccfe6109f81d7"
+  }
+]

@@ -1,0 +1,93 @@
+[IPKernelApp] WARNING | Kernel is running over TCP without encryption. All communication (including code and outputs) is sent in plain text and is susceptible to eavesdropping. Use IPC transport or launch with kernel manager-provisioned CurveZMQ keys to enable transport encryption.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1794974919.895467   37180 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1794974929.072609   37180 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+I0000 00:00:1794974963.150319   37180 cpu_feature_guard.cc:227] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: SSE3 SSE4.1 SSE4.2 AVX AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+Traceback (most recent call last):
+  File "C:\Users\David\Documents\2026\S2\PARALELA\CUDA\PROYECTO-CUDA\proyectoCUDA-paralela\scripts\ejecutar_notebooks_entrega.py", line 85, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "C:\Users\David\Documents\2026\S2\PARALELA\CUDA\PROYECTO-CUDA\proyectoCUDA-paralela\scripts\ejecutar_notebooks_entrega.py", line 58, in main
+    client.execute(cwd=str(ROOT))
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\David\Documents\2026\S2\PARALELA\CUDA\PROYECTO-CUDA\proyectoCUDA-paralela\PCUDA\Lib\site-packages\jupyter_core\utils\__init__.py", line 165, in wrapped
+    return loop.run_until_complete(inner)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^
+  File "C:\Python314\Lib\asyncio\base_events.py", line 719, in run_until_complete
+    return future.result()
+           ~~~~~~~~~~~~~^^
+  File "C:\Users\David\Documents\2026\S2\PARALELA\CUDA\PROYECTO-CUDA\proyectoCUDA-paralela\PCUDA\Lib\site-packages\nbclient\client.py", line 709, in async_execute
+    await self.async_execute_cell(
+        cell, index, execution_count=self.code_cells_executed + 1
+    )
+  File "C:\Users\David\Documents\2026\S2\PARALELA\CUDA\PROYECTO-CUDA\proyectoCUDA-paralela\PCUDA\Lib\site-packages\nbclient\client.py", line 1062, in async_execute_cell
+    await self._check_raise_for_error(cell, cell_index, exec_reply)
+  File "C:\Users\David\Documents\2026\S2\PARALELA\CUDA\PROYECTO-CUDA\proyectoCUDA-paralela\PCUDA\Lib\site-packages\nbclient\client.py", line 918, in _check_raise_for_error
+    raise CellExecutionError.from_cell_and_msg(cell, exec_reply_content)
+nbclient.exceptions.CellExecutionError: An error occurred while executing the following cell:
+------------------
+for name, seed in config['aleatoriedad']['semillas_modelos'].items():
+    record.state('inicializacion_y_warmup', modelo=name)
+    tf.keras.utils.set_random_seed(seed)
+    start = time.perf_counter()
+    if name == 'CNN-A':
+        model = namespace['build_cnn_a']()
+    elif name == 'CNN-B':
+        model = namespace['build_cnn_b']()
+    elif name == 'FC-A':
+        model = namespace['build_fc']([128, 64], dropout=0.3, name='FC_A_pequena')
+    elif name == 'FC-B':
+        model = namespace['build_fc']([512, 256, 128], dropout=0.4, name='FC_B_grande')
+    else:
+        model = augmented(name.split('+')[0])
+    model.jit_compile = False
+    model.optimizer.build(model.trainable_variables)
+    variables = list(model.variables) + list(model.optimizer.variables)
+    saved = [v.numpy().copy() for v in variables]
+    h = hashlib.sha256()
+    for array in saved:
+        h.update(str((array.shape, str(array.dtype))).encode())
+        h.update(array.tobytes())
+    fingerprint = h.hexdigest()
+    state_path = data_directory / f'{name}.estado-inicial.npz'
+    np.savez(state_path, *saved)
+    model.fit(warm_x, warm_y, validation_data=(warm_vx, warm_vy), epochs=1, batch_size=128, shuffle=False, verbose=0)
+    if len(variables) != len(list(model.variables) + list(model.optimizer.variables)):
+        raise ValueError('Warmup created unexpected state; cannot restore exactly.')
+    for variable, value in zip(variables, saved):
+        variable.assign(value)
+    if any((not np.array_equal(v.numpy(), a) for v, a in zip(variables, saved))):
+        raise ValueError('Warmup state restoration failed.')
+    initial[name] = dict(state_sha256=fingerprint, archivo=state_path.relative_to(ROOT).as_posix(), archivo_sha256=sha(state_path), variables=len(variables), arquitectura=model.to_json(), compile=model.get_compile_config())
+    warmup[name] = time.perf_counter() - start
+    models[name] = model
+    del saved
+
+write_json(directory / 'estados-iniciales.json', initial)
+
+write_json(directory / 'warmup.json', warmup)
+------------------
+
+
+[31m---------------------------------------------------------------------------[39m
+[31mNameError[39m                                 Traceback (most recent call last)
+[36mCell[39m[36m [39m[32mIn[9][39m[32m, line 2[39m
+[32m      1[39m [38;5;28;01mfor[39;00m name, seed [38;5;28;01min[39;00m config[[33m'aleatoriedad'[39m][[33m'semillas_modelos'[39m].items():
+[32m----> [39m[32m2[39m     record.state([33m'inicializacion_y_warmup'[39m, modelo=name)
+[32m      3[39m     tf.keras.utils.set_random_seed(seed)
+[32m      4[39m     start = time.perf_counter()
+[32m      5[39m     [38;5;28;01mif[39;00m name == [33m'CNN-A'[39m:
+
+[36mCell[39m[36m [39m[32mIn[2][39m[32m, line 48[39m, in [36mRecorder.state[39m[34m(self, phase, **more)[39m
+[32m     47[39m     [38;5;28;01mdef[39;00m state(self, phase, **more):
+[32m---> [39m[32m48[39m         write_json(self.directory / [33m'estado.json'[39m, dict(utc=utc(), fase=phase, **more))
+[32m     49[39m         print(f'[{utc()}] {phase} {more}', flush=[38;5;28;01mTrue[39;00m)
+
+[36mCell[39m[36m [39m[32mIn[2][39m[32m, line 4[39m, in [36mutc[39m[34m()[39m
+[32m      3[39m [38;5;28;01mdef[39;00m utc():
+[32m----> [39m[32m4[39m     [38;5;28;01mreturn[39;00m datetime.now(timezone.utc).isoformat()
+
+[31mNameError[39m: name 'datetime' is not defined
+

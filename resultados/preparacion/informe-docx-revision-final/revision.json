@@ -1,0 +1,165 @@
+{
+  "fecha_utc": "2026-11-18T03:45:32.458312+00:00",
+  "comando": [
+    "C:\\Python314\\python.exe",
+    "scripts/revisar_docx_word.py",
+    "--entrada",
+    "entregables/informe-final/Informe_Proyecto_3_CUDA.docx",
+    "--destino",
+    "resultados/preparacion/informe-docx-revision-final"
+  ],
+  "entrada": "C:\\Users\\David\\Documents\\2026\\S2\\PARALELA\\CUDA\\PROYECTO-CUDA\\proyectoCUDA-paralela\\entregables\\informe-final\\Informe_Proyecto_3_CUDA.docx",
+  "sha256": "4d691afbabf60d24dba9901381bd5ec2c862d784106afdd65c0cd2507c5586a6",
+  "word_version": "16.0",
+  "paginas": 13,
+  "encabezados": [
+    {
+      "texto": "Resumen",
+      "pagina": 1
+    },
+    {
+      "texto": "1. Análisis de la solución secuencial existente",
+      "pagina": 2
+    },
+    {
+      "texto": "2. Medición del tiempo de ejecución secuencial",
+      "pagina": 3
+    },
+    {
+      "texto": "Datos, entorno y condiciones controladas",
+      "pagina": 3
+    },
+    {
+      "texto": "Procedimiento de medición",
+      "pagina": 3
+    },
+    {
+      "texto": "2.1 Resultados CPU por fase y factores de rendimiento",
+      "pagina": 4
+    },
+    {
+      "texto": "3. Identificación de oportunidades de paralelización",
+      "pagina": 5
+    },
+    {
+      "texto": "Operaciones que permanecieron en CPU",
+      "pagina": 5
+    },
+    {
+      "texto": "Dependencias que limitan el paralelismo",
+      "pagina": 5
+    },
+    {
+      "texto": "4. Diseño del algoritmo paralelo",
+      "pagina": 6
+    },
+    {
+      "texto": "Secuencia, memoria y decisiones del diseño",
+      "pagina": 6
+    },
+    {
+      "texto": "5. Implementación con CUDA Python",
+      "pagina": 7
+    },
+    {
+      "texto": "Ejecución y temporización",
+      "pagina": 7
+    },
+    {
+      "texto": "Comprobaciones de corrección y evidencias conservadas",
+      "pagina": 7
+    },
+    {
+      "texto": "5.1 Evidencia de ejecución: preparación en CPU",
+      "pagina": 8
+    },
+    {
+      "texto": "5.2 Evidencia de ejecución: entrenamiento en GPU",
+      "pagina": 9
+    },
+    {
+      "texto": "6. Análisis y conclusiones",
+      "pagina": 10
+    },
+    {
+      "texto": "6.1 Speedup por fase y discusión técnica",
+      "pagina": 11
+    },
+    {
+      "texto": "6.2 Transferencias y factores que limitan CUDA",
+      "pagina": 12
+    },
+    {
+      "texto": "6.3 Calidad, conclusiones y alcance de los resultados",
+      "pagina": 13
+    },
+    {
+      "texto": "Referencias",
+      "pagina": 13
+    }
+  ],
+  "tablas": [
+    {
+      "tabla": 1,
+      "pagina_inicio": 1,
+      "pagina_fin": 1
+    },
+    {
+      "tabla": 2,
+      "pagina_inicio": 2,
+      "pagina_fin": 2
+    },
+    {
+      "tabla": 3,
+      "pagina_inicio": 2,
+      "pagina_fin": 2
+    },
+    {
+      "tabla": 4,
+      "pagina_inicio": 3,
+      "pagina_fin": 3
+    },
+    {
+      "tabla": 5,
+      "pagina_inicio": 3,
+      "pagina_fin": 3
+    },
+    {
+      "tabla": 6,
+      "pagina_inicio": 4,
+      "pagina_fin": 4
+    },
+    {
+      "tabla": 7,
+      "pagina_inicio": 5,
+      "pagina_fin": 5
+    },
+    {
+      "tabla": 8,
+      "pagina_inicio": 6,
+      "pagina_fin": 6
+    },
+    {
+      "tabla": 9,
+      "pagina_inicio": 7,
+      "pagina_fin": 7
+    },
+    {
+      "tabla": 10,
+      "pagina_inicio": 9,
+      "pagina_fin": 9
+    },
+    {
+      "tabla": 11,
+      "pagina_inicio": 10,
+      "pagina_fin": 10
+    },
+    {
+      "tabla": 12,
+      "pagina_inicio": 12,
+      "pagina_fin": 12
+    }
+  ],
+  "pdf_generado": false,
+  "paginas_renderizadas": 13
+}

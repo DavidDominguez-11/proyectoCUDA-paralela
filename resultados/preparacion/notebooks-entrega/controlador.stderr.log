@@ -1,0 +1,77 @@
+[IPKernelApp] WARNING | Kernel is running over TCP without encryption. All communication (including code and outputs) is sent in plain text and is susceptible to eavesdropping. Use IPC transport or launch with kernel manager-provisioned CurveZMQ keys to enable transport encryption.
+Traceback (most recent call last):
+  File "C:\Users\David\Documents\2026\S2\PARALELA\CUDA\PROYECTO-CUDA\proyectoCUDA-paralela\scripts\ejecutar_notebooks_entrega.py", line 79, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "C:\Users\David\Documents\2026\S2\PARALELA\CUDA\PROYECTO-CUDA\proyectoCUDA-paralela\scripts\ejecutar_notebooks_entrega.py", line 52, in main
+    client.execute(cwd=str(ROOT))
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\David\Documents\2026\S2\PARALELA\CUDA\PROYECTO-CUDA\proyectoCUDA-paralela\PCUDA\Lib\site-packages\jupyter_core\utils\__init__.py", line 165, in wrapped
+    return loop.run_until_complete(inner)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^
+  File "C:\Python314\Lib\asyncio\base_events.py", line 719, in run_until_complete
+    return future.result()
+           ~~~~~~~~~~~~~^^
+  File "C:\Users\David\Documents\2026\S2\PARALELA\CUDA\PROYECTO-CUDA\proyectoCUDA-paralela\PCUDA\Lib\site-packages\nbclient\client.py", line 709, in async_execute
+    await self.async_execute_cell(
+        cell, index, execution_count=self.code_cells_executed + 1
+    )
+  File "C:\Users\David\Documents\2026\S2\PARALELA\CUDA\PROYECTO-CUDA\proyectoCUDA-paralela\PCUDA\Lib\site-packages\nbclient\client.py", line 1062, in async_execute_cell
+    await self._check_raise_for_error(cell, cell_index, exec_reply)
+  File "C:\Users\David\Documents\2026\S2\PARALELA\CUDA\PROYECTO-CUDA\proyectoCUDA-paralela\PCUDA\Lib\site-packages\nbclient\client.py", line 918, in _check_raise_for_error
+    raise CellExecutionError.from_cell_and_msg(cell, exec_reply_content)
+nbclient.exceptions.CellExecutionError: An error occurred while executing the following cell:
+------------------
+def build_sampled_file_list(train_dir, classes, samples_per_class, seed=SEED):
+    rng = random.Random(seed)
+    records = []
+    for c in classes:
+        files = list((train_dir / c).glob('*.jpg'))
+        chosen = rng.sample(files, min(samples_per_class, len(files)))
+        for f in chosen:
+            records.append({'filepath': str(f), 'label': c})
+    return pd.DataFrame(records)
+
+def load_images(df, img_size=IMG_SIZE):
+    X = np.zeros((len(df), img_size, img_size, 3), dtype=np.float32)
+    y = np.zeros(len(df), dtype=np.int64)
+    for i, row in enumerate(df.itertuples()):
+        img = Image.open(row.filepath).convert('RGB').resize((img_size, img_size))
+        X[i] = np.asarray(img, dtype=np.float32) / 255.0
+        y[i] = label_to_idx[row.label]
+    return (X, y)
+
+def build_cnn_a():
+    model = keras.Sequential([layers.Input((IMG_SIZE, IMG_SIZE, 3)), layers.Conv2D(32, 3, activation='relu'), layers.MaxPooling2D(), layers.Conv2D(64, 3, activation='relu'), layers.MaxPooling2D(), layers.Flatten(), layers.Dense(128, activation='relu'), layers.Dropout(0.3), layers.Dense(NUM_CLASSES, activation='softmax')], name='CNN_A_baseline')
+    model.compile(optimizer='adam', loss='sparse_categorical_crossentropy', metrics=['accuracy'])
+    return model
+
+def build_cnn_b():
+
+    def bn():
+        return layers.BatchNormalization(momentum=0.9)
+    model = keras.Sequential([layers.Input((IMG_SIZE, IMG_SIZE, 3)), layers.Conv2D(32, 3, padding='same', activation='relu'), bn(), layers.Conv2D(32, 3, padding='same', activation='relu'), layers.MaxPooling2D(), layers.Dropout(0.25), layers.Conv2D(64, 3, padding='same', activation='relu'), bn(), layers.Conv2D(64, 3, padding='same', activation='relu'), layers.MaxPooling2D(), layers.Dropout(0.25), layers.Conv2D(128, 3, padding='same', activation='relu'), bn(), layers.MaxPooling2D(), layers.Dropout(0.3), layers.Flatten(), layers.Dense(256, activation='relu'), bn(), layers.Dropout(0.4), layers.Dense(NUM_CLASSES, activation='softmax')], name='CNN_B_regularizada')
+    model.compile(optimizer='adam', loss='sparse_categorical_crossentropy', metrics=['accuracy'])
+    return model
+
+def build_fc(hidden_layers, dropout=0.3, name='FC'):
+    model = keras.Sequential([layers.Input((IMG_SIZE, IMG_SIZE, 3)), layers.Flatten(), layers.BatchNormalization()], name=name)
+    for units in hidden_layers:
+        model.add(layers.Dense(units, activation='relu'))
+        model.add(layers.Dropout(dropout))
+    model.add(layers.Dense(NUM_CLASSES, activation='softmax'))
+    model.compile(optimizer='adam', loss='sparse_categorical_crossentropy', metrics=['accuracy'])
+    return model
+------------------
+
+
+[31m---------------------------------------------------------------------------[39m
+[31mNameError[39m                                 Traceback (most recent call last)
+[36mCell[39m[36m [39m[32mIn[4][39m[32m, line 1[39m
+[32m----> [39m[32m1[39m [38;5;28;01mdef[39;00m build_sampled_file_list(train_dir, classes, samples_per_class, seed=SEED):
+[32m      2[39m     rng = random.Random(seed)
+[32m      3[39m     records = []
+[32m      4[39m     [38;5;28;01mfor[39;00m c [38;5;28;01min[39;00m classes:
+
+[31mNameError[39m: name 'SEED' is not defined
+
