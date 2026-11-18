@@ -1,6 +1,6 @@
 # Datos, procedencia y evidencia
 
-## Registro de datos: estado tras el paso 2
+## Registro de datos: pasos 2 y 5
 
 | ID | Conjunto | Procedencia | Versión / identidad | Estado |
 |---|---|---|---|---|
@@ -8,7 +8,12 @@
 | DAT-02 | Fotos del equipo | imagenes_grupo, 15 JPEG de luis/bran/david | Hash individual en inventario-inicial.csv | Archivos presentes; metadatos inspeccionados |
 | DAT-03 | Submuestra y splits | Derivados de DAT-01 | DAT-03-EXP-002: 600/clase, semilla42, 70/15/15; manifiesto ordenado | Congelado y utilizado en cinco corridas |
 | DAT-04 | Tensores normalizados | Derivados de DAT-03 | RGB,64×64,float32,/255; y int64; hashes por partición | Coinciden entre cinco corridas; reconstruibles desde datos/manifiestos |
-| DAT-05 | Estados iniciales completos | Constructores originales y seeds explícitas por arquitectura | NPZ, SHA de archivo y fingerprint de valores en cada RUN | Verificados e iguales entre corridas; transferencia a GPU aún no validada |
+| DAT-05 | Estados iniciales completos | Constructores originales y seeds explícitas por arquitectura | NPZ, SHA de archivo y fingerprint de valores en cada RUN | CPU verificados e iguales entre corridas; CNN-B importada y restaurada en cinco RUN GPU EXP-003, con identidad y warmup verificados |
+
+La [revisión de pasos 1–5](revision-pasos-1-5.md) volvió a verificar los 17,400
+archivos por SHA-256 y los registros sellados de tensores CPU/GPU sin entrenar.
+La identidad de archivos/tensores no certifica independencia de personas o
+sesiones ni generalización del modelo fuera del conjunto de prueba interno.
 
 El enlace del dataset se conserva como procedencia histórica:
 https://www.kaggle.com/datasets/grassknoted/asl-alphabet.
