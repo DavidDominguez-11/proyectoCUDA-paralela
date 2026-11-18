@@ -348,6 +348,170 @@ git status --short
 - Siguiente paso:implementación paso5 cuando se solicite. No se inicia en esta
   actividad. Commit y revisión humana pendientes.
 
+## BIT-008 — Implementación y ejecución CUDA, paso5
+
+- Estado:completado para CNN-B;responsable:Codex,solicitud del usuario.
+- REQ-06/07/09/12; CAM-006; DEC-021. Fuentes y evidencias previas revisadas antes
+  de modificar; original intacto. Se aplica compute-env-setup para entorno/smoke.
+- Inspección: PCUDA Python3.14.3,NumPy2.5.5,TF2.22.0rc0; sin Numba/CUDA Python.
+  Toolkit local13.1; GTX1650,4096MiB,sm_75,driver591.59. Consulta nvidia-smi de
+  inventario, sin entrenamiento. PDF páginas2/3 extraído con pypdf para contraste.
+- Resolución preliminar, código0: PCUDA/python -m pip install --dry-run
+  numba==0.67.0 llvmlite==0.49.0 numba-cuda cuda-python. No propone reemplazar
+  NumPy existente; paquetes nuevos concretos se conservarán en reporte pip.
+- Se registra antes de implementar la revisión que evita repetir CPU y sustituye
+  la necesidad de mismas máscaras Dropout por pruebas puntuales de corrección.
+- Actividad y evidencia se completarán con códigos de salida, RUN y resultados
+  reales. Ningún resultado de rendimiento aceptado en este punto.
+
+### Cierre con evidencia real
+
+- Medición:2026-11-17T23:16:28–23:54:32UTC. EXP-003 congelado SHA-256
+  00866b6fa0d48db134fdbb866b91cce2006c0ee7fa43812476337970a6cfb583.
+  Cinco RUN completos,01..05,con códigos0;sin exclusiones de timing ni ampliación.
+- Se aplicó DEC-021 por preferencia del usuario:sustituir la obligación de otra
+  campaña CPU por reutilización de fase CNN-B compatible. No se entrenó CPU otra vez.
+- Entorno:uv añadió15paquetes ausentes,75anteriores declarados sin cambios y
+  pip25.3preexistente;NumPy/TF/Keras intactos. Caché uv fuera de sandbox requirió
+  aprobación. Pipdescargas detenidas sin completar instalación;se preserva registro
+  del intento. Detalles/comandos en [entorno](../../resultados/preparacion/cuda/entorno.md).
+- Primer smoke detectó alias NumPy.row_stack retirado;alias local vstack sin
+  modificar paquetes. CUDAreal pasó copia17valores. No simulator/fallbackCPU.
+- Se implementaron kernels Python y NetCNN-B explícita;ensayo tiled0.6014s/lote
+  y SGEMM0.2577s/lote justificaron DEC-022 antes de medir. Variante tiled conservada.
+- Pruebas:operadores-00251checks y adjuntos-00178checks aprobados;b20/b128,
+  FP64analítico/localTFCPU y tolerancias conservadas. Integracion-002aprueba10pasos,
+  último20,1172muestras,counter,exportación,CPUeval sin mutación,save/load y restore.
+- Fallos preservados:validacion-001/002/003 y rutas-004 no pasan identidad global
+  estricta. Se verifican1y14rutas pooling distintas dentro de cota de redondeo
+  para b2/b20;DEC-023 no las presenta como pruebas aprobadas. Introspección de
+  recursos falló en integracion-001,se corrigió API y pasó en002 sin cambiar math.
+- Notebookcopia83celdas,incluye68originales,códigoCPUguardadoFalse y apéndice de
+  fuentes. Se ejecutó con PCUDA37celdas de código;ningún error de celda. Primer
+  historialIPython fuera del workspace produjo avisosSQLite. Se ajustó ejecutor
+  a historial en memoria y se guardó otra vista sin ejecutar la serie de nuevo.
+  Ejecutor previo SHA-2566a6898edace43614aee9276d485d41dc276e464df0f9c0190657fecde77a6380,
+  preservado en fuentes del primer RUN. Se conserva salida previa y avisoTCP local.
+- [Salida notebook validado](../../resultados/paralelo/EXP-003/notebook-validado.salida.json):
+  código nativo0,misma huella de serie antes/después,sin nuevas corridas. La shell
+  PowerShell había marcado stderr nativo como error aunque las celdas completaron;
+  el supervisor Python registra el código real. No se repitieron entrenamientos.
+- Cada RUN verifica código/dataset y bytes X/y frente a CPU,restaura después
+  del warmup,cuenta12180muestras/época y1440updates,exporta Adam real. Se auditan
+  los cinco modelos HDF5:contador1440,76datasets,contenido canónico idéntico
+  47f46467b40415af622ef099aef5a8d125e43c8ae62bd69b91dadb574ebe49f1.
+- Tiempos entrenamiento GPU:415.499,418.797,420.509,419.772 y418.461s
+  (redondeados;valores crudos en CSV);media418.607683s,DE1.916308s,CV0.4578%,ICt95%[416.228272,420.987094]s.
+  Semiancho0.5684%≤5%:cinco bastan según regla previa. CPUmedia805.649726s,
+  speedup1.924594×. Transferencias yCPUvalidación se incluyen,anidadas sin doble suma.
+- Calidad:accuracy0.986206889,loss0.061565157,en todas las GPU;no atribuir mejora
+  de calidad a hardware ni prometer idéntica trayectoria CPU. Referencia histórica
+  no alternada,shuffle/máscaras diferentes y cambioCPUworkers1→6 explícitos.
+- Cuatro gráficas renderizadas e inspeccionadas;PDF8páginas con tablas,gráficas
+  y capturas. Capturas seleccionadasCPU23:39:47/GPU23:37:06 correlacionadas con
+  recursos.csv. IntentoDPI previo incompleto/no utilizable conservado y excluido.
+- [Informe](../../resultados/paralelo/EXP-003/resultados.md),fuentes de análisis,
+  comparabilidad por criterio,CSV clasificado por ejecutor,checkpoints,logs y
+  [reproducción](reproducir-cuda.md) disponibles. Modelos grandes fuera de Git.
+- Comandos principales desde raíz (salidas y comando exacto por RUN en invocacion.json):
+
+```powershell
+.\PCUDA\Scripts\python.exe -X utf8 scripts/benchmark_cuda.py prepare --experimento EXP-003
+.\PCUDA\Scripts\python.exe -u -X utf8 scripts/ejecutar_notebook_cuda.py --salida resultados/paralelo/EXP-003/notebook-ejecutado.ipynb
+.\PCUDA\Scripts\python.exe -X utf8 scripts/resumir_cuda.py --experimento EXP-003
+.\PCUDA\Scripts\python.exe -X utf8 scripts/verificar_preparacion.py
+.\PCUDA\Scripts\python.exe -X utf8 scripts/sellar_resultados_cuda.py --experimento EXP-003
+git diff --check
+```
+
+- Verificación documental aprobada2026-11-18T00:11:31UTC (17noviembre local):
+  352enlaces en45Markdown,19originales con bytes/SHA-256 coincidentes,
+  107esquemasCSV y214filas de índices experimentales,76fuentes de prueba archivadas.
+  Salida0;git diff --check0,solo avisos LF/CRLF. No es otra ejecución de entrenamiento.
+- Revisión posterior de la variante tiled conservada:operadores-explicit-003
+  aprueba51checks locales;no se mezcla con la serie de rendimiento cuBLAS.
+  Los archivos de evidencia quedan cerrados mediante sellar_resultados_cuda.py;
+  originales yCPUEXP-002 permanecen intactos.
+- Pendiente:revisión del equipo,contribuciones/commit y entrega global. No se
+  certifica reconstrucción desde cero en otra máquina ni ocupación por SM.
+
+## BIT-009 — Incrustar salidas reales en notebook
+
+- Responsable:Codex,por solicitud explícita posterior del usuario;CAM-007.
+- Origen:último RUN completo EXP-003,RUN-20261117T234658Z-gpu-05. No se crea EXP
+  ni RUN:solo se visualizan datos experimentales existentes. UTC de cierre en
+  resultados/notebook-salidas/validacion.json.
+- Se conserva la fuente congelada53050fbcc27a8629850d36165c5c4387982714277f09a58e256e3537b051b86f
+  y se crea otra copia con salidas al comienzo. Se añade --entrada al ejecutor,
+  registrando su identidad previa en CAM-007;ningún módulo de entrenamiento cambia.
+- Se ejecuta la plantilla con PCUDA,historial en memoria,GPUFalse y hardware
+  recuperado de hardware.json. Se imprimen literalmente15líneas EPOCH de stdout,
+  tabla15épocas,métricas,testloss,tiempos reales,curva última corrida y hashes.
+- Código nativo0;96celdas totales,44ejecutadas,0errores y5imágenes incrustadas.
+  La huella de serie antes/después es
+  4870e1f1d039f88822eccabb0339ef246c9bfbb8351a4e44588c3cb6b1639935.
+  Las184entradas del manifiesto EXP-003 mantienen SHA-256;ningún entrenamiento se repite.
+- [Notebook entregado](../../notebooks/Lab3_ASL_CUDA_con_salidas.ipynb),
+  [procedimiento](../../resultados/notebook-salidas/README.md),
+  [salida nativa](../../resultados/notebook-salidas/salida.json) y
+  [validación](../../resultados/notebook-salidas/validacion.json).
+- Comandos desde la raíz:
+
+```powershell
+.\PCUDA\Scripts\python.exe -X utf8 scripts/notebook_con_salidas.py
+.\PCUDA\Scripts\python.exe -u -X utf8 scripts/ejecutar_notebook_cuda.py --entrada resultados/notebook-salidas/plantilla.ipynb --salida notebooks/Lab3_ASL_CUDA_con_salidas.ipynb
+```
+
+- El segundo se lanzó con subprocess.run y stdout/stderr a archivos para
+  registrar su código nativo sin confundir avisos de PowerShell con un fallo.
+  Comando exacto en salida.json. Se actualizan README e índice de trazabilidad.
+- Validación documental final aprobada el 2026-11-18 a las 02:42:52 UTC con
+  `.\PCUDA\Scripts\python.exe -X utf8 scripts/verificar_preparacion.py`:
+  364 enlaces locales válidos en 46 Markdown, 108 esquemas CSV consistentes,
+  19 identidades originales conservadas y 78 fuentes archivadas verificadas.
+  `git diff --check` sin errores. Esta validación no ejecutó entrenamiento.
+
+## BIT-010 — Verificación de pasos 1–5 antes de conclusiones
+
+- Fecha:2026-11-18 UTC,17noviembre local. Responsable:Codex por solicitud
+  explícita del usuario;CAM-008;REQ-02 a REQ-12. Sin nueva campaña experimental.
+- Se leyó directamente el PDF de3páginas,documentación,decisiones y código CPU/
+  CUDA. La extracción inicial falló en codificación cp1252;se usó python -X utf8
+  con pymupdf ya instalado en Python del sistema. No se alteró ni descargó el PDF.
+- Se implementó auditor estático sin importar modelos. Primer intento conservado
+  en resultados/auditoria/pasos-1-5/verificacion.json:7controles correctos y
+  KeyError por encabezado ruta del manifiesto GPU. Se adaptó el lector y se
+  exigió --destino para conservar intentos separados.
+- Segundo intento:02:50:06–02:50:30UTC,código0,80controles aprobados. Se leyeron
+  17,400imágenes solo para SHA-256;10manifiestos RUN,184entradas globales y fuentes
+  congeladas intactas;hashes de estados/modelos y registros de tensores coinciden.
+  Medias/DE recalculadas desde crudos y cocientes publicados consistentes.
+- Comandos desde raíz:
+
+```powershell
+.\PCUDA\Scripts\python.exe -X utf8 scripts/auditar_pasos_1_5.py
+.\PCUDA\Scripts\python.exe -X utf8 scripts/auditar_pasos_1_5.py --destino resultados/auditoria/pasos-1-5-revision-02
+.\PCUDA\Scripts\python.exe -X utf8 scripts/verificar_preparacion.py
+git diff --check
+```
+
+- El primero corresponde a la versión inicial anterior a exigir --destino;
+  esa invocación conserva su error y SHA del script en su JSON. No se repite.
+- Revisión visual de capturas CPU/GPU:legibles y con muestra/UTC/RUN correlacionados.
+  CPUprep225.2% y GPUentrenamiento88%,1213/4096MiB:demuestran carga,no saturación
+  total ni ocupación porSM. La reserva REQ-09 queda explícita como parcial.
+- Se verificaron salidas notebook:15líneas idénticas a stdout real y0errores.
+  51operadores/78adjuntos aprobados son antecedentes,no pruebas nuevas;diagnósticos
+  globales estrictos permanecen fallidos. No se certifica equivalencia bit a bit.
+- [Dictamen y detalle](revision-pasos-1-5.md):se puede avanzar al paso6 para CNN-B
+  con límites históricos/RNG/workers,calidad y saturación. Sin inconsistencia
+  detectada que exija repetir entrenamientos. No se inicia todavía el paso6.
+- Evidencias:[auditoría aprobada](../../resultados/auditoria/pasos-1-5-revision-02/verificacion.json)
+  y [primer intento conservado](../../resultados/auditoria/pasos-1-5/verificacion.json).
+- Validación documental posterior:resultado en
+  [verificación de preparación](../../resultados/preparacion/verificacion-preparacion.md).
+  No implica ejecución del entrenamiento. Equipo y entrega global pendientes.
+
 ## Plantilla para cada actividad
 
 ```markdown
