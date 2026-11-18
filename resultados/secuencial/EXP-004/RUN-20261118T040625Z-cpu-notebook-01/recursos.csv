@@ -1,0 +1,2 @@
+utc,transcurrido_s,fase,modelo,epoca,cpu_procesos_pct,rss_bytes,gpu_util_pct,gpu_mem_util_pct,gpu_mem_used_mib,gpu_temperatura_c,cpu_logico_00_pct,cpu_logico_01_pct,cpu_logico_02_pct,cpu_logico_03_pct,cpu_logico_04_pct,cpu_logico_05_pct,cpu_logico_06_pct,cpu_logico_07_pct,cpu_logico_08_pct,cpu_logico_09_pct,cpu_logico_10_pct,cpu_logico_11_pct
+2026-11-18T04:07:04.008179+00:00,0.0017139998963102698,inicio,,,0.0,137940992,0.0,0.0,0.0,49.0,33.3,33.3,83.3,14.3,33.3,0.0,33.3,14.3,50.0,14.3,33.3,50.0

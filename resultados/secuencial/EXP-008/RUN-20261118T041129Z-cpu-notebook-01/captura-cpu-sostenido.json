@@ -1,0 +1,32 @@
+{
+  "tipo": "captura_original_monitor_en_vivo",
+  "captura_utc": "2026-11-18T04:17:00.614874+00:00",
+  "run_id": "RUN-20261118T041129Z-cpu-notebook-01",
+  "muestra_original": {
+    "utc": "2026-11-18T04:16:59.443605+00:00",
+    "transcurrido_s": "321.91136699996423",
+    "fase": "entrenamiento",
+    "modelo": "CNN-B",
+    "epoca": "3",
+    "cpu_procesos_pct": "507.27870165054566",
+    "rss_bytes": "3946213376",
+    "gpu_util_pct": "0.0",
+    "gpu_mem_util_pct": "0.0",
+    "gpu_mem_used_mib": "0.0",
+    "gpu_temperatura_c": "54.0",
+    "cpu_logico_00_pct": "91.9",
+    "cpu_logico_01_pct": "90.5",
+    "cpu_logico_02_pct": "93.8",
+    "cpu_logico_03_pct": "95.2",
+    "cpu_logico_04_pct": "88.7",
+    "cpu_logico_05_pct": "91.0",
+    "cpu_logico_06_pct": "95.3",
+    "cpu_logico_07_pct": "93.8",
+    "cpu_logico_08_pct": "95.3",
+    "cpu_logico_09_pct": "84.4",
+    "cpu_logico_10_pct": "84.4",
+    "cpu_logico_11_pct": "84.1"
+  },
+  "sha256": "53216db6006075c83a8a83041fb036a1773a9a359fc21e7e9af1daeb4e5a2536",
+  "capturador_sha256": "f9a9c8a78d1677f9d15cfa43355c1030aa94839a97d1c3ac7275041275d38c98"
+}

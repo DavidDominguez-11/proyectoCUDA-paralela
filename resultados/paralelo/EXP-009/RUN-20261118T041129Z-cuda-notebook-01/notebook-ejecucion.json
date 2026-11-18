@@ -1,0 +1,11 @@
+{
+  "inicio_utc": "2026-11-18T04:45:57.461086+00:00",
+  "tipo": "cuda",
+  "run_id": "RUN-20261118T041129Z-cuda-notebook-01",
+  "celdas_terminadas": 51,
+  "estado": "completada",
+  "actualizado_utc": "2026-11-18T04:53:50.390260+00:00",
+  "ultima_celda": "display(pd.read_csv(ROOT/\"resultados/paralelo/EXP-003/comparacion_cnn_b.csv\"))\ndisplay(pd.read_csv(R",
+  "fin_utc": "2026-11-18T04:53:50.421783+00:00",
+  "codigo": 0
+}

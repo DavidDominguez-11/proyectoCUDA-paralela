@@ -1,0 +1,11 @@
+{
+  "comando": [
+    "C:\\Users\\David\\Documents\\2026\\S2\\PARALELA\\CUDA\\PROYECTO-CUDA\\proyectoCUDA-paralela\\PCUDA\\Scripts\\python.exe",
+    "scripts/ejecutar_notebooks_entrega.py",
+    "--revision",
+    "notebooks-entrega-v02"
+  ],
+  "notebook": "C:\\Users\\David\\Documents\\2026\\S2\\PARALELA\\CUDA\\PROYECTO-CUDA\\proyectoCUDA-paralela\\resultados\\preparacion\\notebooks-entrega-v02\\ASL_Secuencial.plantilla.ipynb",
+  "metodo": "NotebookClient; codigo real separado por fases, sin subproceso de entrenamiento",
+  "inicio_utc": "2026-11-18T04:08:35.411133+00:00"
+}

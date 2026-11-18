@@ -1,0 +1,32 @@
+{
+  "tipo": "captura_original_monitor_en_vivo",
+  "captura_utc": "2026-11-18T04:47:18.130626+00:00",
+  "run_id": "RUN-20261118T041129Z-cuda-notebook-01",
+  "muestra_original": {
+    "utc": "2026-11-18T04:47:16.971783+00:00",
+    "transcurrido_s": "74.718877300038",
+    "fase": "entrenamiento_CNN-B",
+    "modelo": "",
+    "epoca": "2",
+    "cpu_procesos_pct": "98.91316195116735",
+    "rss_bytes": "2140184576",
+    "gpu_util_pct": "91.0",
+    "gpu_mem_util_pct": "28.0",
+    "gpu_mem_used_mib": "1213.0",
+    "gpu_temperatura_c": "65.0",
+    "cpu_logico_00_pct": "22.9",
+    "cpu_logico_01_pct": "0.0",
+    "cpu_logico_02_pct": "36.5",
+    "cpu_logico_03_pct": "1.6",
+    "cpu_logico_04_pct": "3.2",
+    "cpu_logico_05_pct": "0.0",
+    "cpu_logico_06_pct": "12.7",
+    "cpu_logico_07_pct": "4.7",
+    "cpu_logico_08_pct": "7.9",
+    "cpu_logico_09_pct": "4.6",
+    "cpu_logico_10_pct": "64.1",
+    "cpu_logico_11_pct": "6.3"
+  },
+  "sha256": "cc9433b5523356312ae674fb338415f7c2704c38744444efbc1377f024ce76cc",
+  "capturador_sha256": "f9a9c8a78d1677f9d15cfa43355c1030aa94839a97d1c3ac7275041275d38c98"
+}
