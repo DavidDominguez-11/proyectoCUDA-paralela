@@ -147,3 +147,8 @@ regenerar resúmenes/gráficas con su script y configuración.
 
 La reproducción solo se declara verificada cuando se realiza esta secuencia y
 se adjunta un RUN de reproducción, sus diferencias y el criterio de aceptación.
+
+
+## Ampliación posterior vigente: FC-A y FC-B
+
+El alcance inicial CNN-B se amplió con dos entrenamientos completos adicionales en CUDA. Se conservaron las mediciones y evidencias anteriores. [Diseño,procedimiento,decisiones,resultados,notebooks e informe actualizados](ampliacion-fc.md). Los conteos/hashes de la entrega anterior descritos arriba son antecedentes; la entrega actual CUDA tiene92celdas de código y30PNG, y el DOCX16tablas/13imágenes con el diseño editado por el usuario.

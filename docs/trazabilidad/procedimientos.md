@@ -46,3 +46,8 @@ Guardar errores completos y causa conocida o hipótesis. Registrar corrección
 en CAM/DEC y crear otro RUN. Las observaciones fallidas conservan su estado.
 Si cambia el método de medición, no mezclar series incompatibles; volver a medir
 CPU/GPU o presentar experimentos separados con su explicación.
+
+
+## Ampliación posterior vigente: FC-A y FC-B
+
+El alcance inicial CNN-B se amplió con dos entrenamientos completos adicionales en CUDA. Se conservaron las mediciones y evidencias anteriores. [Diseño,procedimiento,decisiones,resultados,notebooks e informe actualizados](ampliacion-fc.md). Los conteos/hashes de la entrega anterior descritos arriba son antecedentes; la entrega actual CUDA tiene92celdas de código y30PNG, y el DOCX16tablas/13imágenes con el diseño editado por el usuario.

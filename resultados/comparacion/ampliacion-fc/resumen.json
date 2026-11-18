@@ -1,0 +1,357 @@
+{
+  "creado_utc": "2026-11-18T13:51:30.438819+00:00",
+  "comparacion": [
+    {
+      "modelo": "CNN-B",
+      "fase": "entrenamiento_CNN-B",
+      "cpu_media_s": 805.6497256999999,
+      "cpu_de_s": 2.722683652403696,
+      "cuda_media_s": 418.607683,
+      "cuda_de_s": 1.9163082015840514,
+      "speedup": 1.9245937387632703,
+      "reduccion_pct": 48.04098237155273
+    },
+    {
+      "modelo": "CNN-B",
+      "fase": "evaluacion_CNN-B",
+      "cpu_media_s": 2.3223897599999996,
+      "cpu_de_s": 0.07178745335086763,
+      "cuda_media_s": 2.49219244,
+      "cuda_de_s": 0.3812881432836102,
+      "speedup": 0.9318661443335409,
+      "reduccion_pct": -7.3115496341148445
+    },
+    {
+      "modelo": "FC-A",
+      "fase": "entrenamiento_FC-A",
+      "cpu_media_s": 50.715659880000004,
+      "cpu_de_s": 1.2646239249738433,
+      "cuda_media_s": 15.122541380000001,
+      "cuda_de_s": 0.3322831035274846,
+      "speedup": 3.353646626292121,
+      "reduccion_pct": 70.18171228417032
+    },
+    {
+      "modelo": "FC-A",
+      "fase": "evaluacion_FC-A",
+      "cpu_media_s": 0.3788417,
+      "cpu_de_s": 0.005732543411523356,
+      "cuda_media_s": 0.39241373999999996,
+      "cuda_de_s": 0.004506884750911646,
+      "speedup": 0.9654139531403769,
+      "reduccion_pct": -3.582509528386124
+    },
+    {
+      "modelo": "FC-B",
+      "fase": "entrenamiento_FC-B",
+      "cpu_media_s": 102.44108204,
+      "cpu_de_s": 3.275204580920838,
+      "cuda_media_s": 21.06199454,
+      "cuda_de_s": 0.20140438251146195,
+      "speedup": 4.863788272542207,
+      "reduccion_pct": 79.43989450269964
+    },
+    {
+      "modelo": "FC-B",
+      "fase": "evaluacion_FC-B",
+      "cpu_media_s": 0.5200666199999999,
+      "cpu_de_s": 0.01149331232008422,
+      "cuda_media_s": 0.5231741999999999,
+      "cuda_de_s": 0.008611930732710322,
+      "speedup": 0.9940601428740179,
+      "reduccion_pct": -0.5975349850370959
+    }
+  ],
+  "estadisticas": [
+    {
+      "modelo": "CNN-B",
+      "fase": "entrenamiento_CNN-B",
+      "origen": "CPU",
+      "n": 5,
+      "media_s": 805.6497256999999,
+      "de_s": 2.722683652403696,
+      "cv_pct": 0.33794880896137025,
+      "ic95_inf_s": 802.2690674303122,
+      "ic95_sup_s": 809.0303839696875,
+      "min_s": 802.3202022,
+      "max_s": 809.3632467
+    },
+    {
+      "modelo": "CNN-B",
+      "fase": "entrenamiento_CNN-B",
+      "origen": "CUDA",
+      "n": 5,
+      "media_s": 418.607683,
+      "de_s": 1.9163082015840514,
+      "cv_pct": 0.45778142146140477,
+      "ic95_inf_s": 416.22827209663046,
+      "ic95_sup_s": 420.98709390336955,
+      "min_s": 415.4992941,
+      "max_s": 420.5088237
+    },
+    {
+      "modelo": "CNN-B",
+      "fase": "evaluacion_CNN-B",
+      "origen": "CPU",
+      "n": 5,
+      "media_s": 2.3223897599999996,
+      "de_s": 0.07178745335086763,
+      "cv_pct": 3.0911027333701147,
+      "ic95_inf_s": 2.233253863651495,
+      "ic95_sup_s": 2.411525656348504,
+      "min_s": 2.2652769,
+      "max_s": 2.4449506
+    },
+    {
+      "modelo": "CNN-B",
+      "fase": "evaluacion_CNN-B",
+      "origen": "CUDA",
+      "n": 5,
+      "media_s": 2.49219244,
+      "de_s": 0.3812881432836102,
+      "cv_pct": 15.299305830636827,
+      "ic95_inf_s": 2.0187606795427833,
+      "ic95_sup_s": 2.965624200457217,
+      "min_s": 2.168861,
+      "max_s": 3.1449708
+    },
+    {
+      "modelo": "FC-A",
+      "fase": "entrenamiento_FC-A",
+      "origen": "CPU",
+      "n": 5,
+      "media_s": 50.715659880000004,
+      "de_s": 1.2646239249738433,
+      "cv_pct": 2.493557074809066,
+      "ic95_inf_s": 49.145421881092844,
+      "ic95_sup_s": 52.285897878907164,
+      "min_s": 48.5201096,
+      "max_s": 51.4950106
+    },
+    {
+      "modelo": "FC-A",
+      "fase": "entrenamiento_FC-A",
+      "origen": "CUDA",
+      "n": 5,
+      "media_s": 15.122541380000001,
+      "de_s": 0.3322831035274846,
+      "cv_pct": 2.1972702548986813,
+      "ic95_inf_s": 14.70995741313851,
+      "ic95_sup_s": 15.535125346861493,
+      "min_s": 14.829318,
+      "max_s": 15.6858155
+    },
+    {
+      "modelo": "FC-A",
+      "fase": "evaluacion_FC-A",
+      "origen": "CPU",
+      "n": 5,
+      "media_s": 0.3788417,
+      "de_s": 0.005732543411523356,
+      "cv_pct": 1.5131764564258252,
+      "ic95_inf_s": 0.37172380722777126,
+      "ic95_sup_s": 0.38595959277222874,
+      "min_s": 0.3729525,
+      "max_s": 0.3883504
+    },
+    {
+      "modelo": "FC-A",
+      "fase": "evaluacion_FC-A",
+      "origen": "CUDA",
+      "n": 5,
+      "media_s": 0.39241373999999996,
+      "de_s": 0.004506884750911646,
+      "cv_pct": 1.1485032993267887,
+      "ic95_inf_s": 0.3868177034607394,
+      "ic95_sup_s": 0.3980097765392605,
+      "min_s": 0.3873936,
+      "max_s": 0.3979068
+    },
+    {
+      "modelo": "FC-B",
+      "fase": "entrenamiento_FC-B",
+      "origen": "CPU",
+      "n": 5,
+      "media_s": 102.44108204,
+      "de_s": 3.275204580920838,
+      "cv_pct": 3.1971592994712554,
+      "ic95_inf_s": 98.37437842511855,
+      "ic95_sup_s": 106.50778565488145,
+      "min_s": 100.3473252,
+      "max_s": 108.0900143
+    },
+    {
+      "modelo": "FC-B",
+      "fase": "entrenamiento_FC-B",
+      "origen": "CUDA",
+      "n": 5,
+      "media_s": 21.06199454,
+      "de_s": 0.20140438251146195,
+      "cv_pct": 0.9562455356683515,
+      "ic95_inf_s": 20.811917969155058,
+      "ic95_sup_s": 21.312071110844943,
+      "min_s": 20.851751,
+      "max_s": 21.3026643
+    },
+    {
+      "modelo": "FC-B",
+      "fase": "evaluacion_FC-B",
+      "origen": "CPU",
+      "n": 5,
+      "media_s": 0.5200666199999999,
+      "de_s": 0.01149331232008422,
+      "cv_pct": 2.2099692381880267,
+      "ic95_inf_s": 0.5057957878720396,
+      "ic95_sup_s": 0.5343374521279602,
+      "min_s": 0.5098613,
+      "max_s": 0.5370794
+    },
+    {
+      "modelo": "FC-B",
+      "fase": "evaluacion_FC-B",
+      "origen": "CUDA",
+      "n": 5,
+      "media_s": 0.5231741999999999,
+      "de_s": 0.008611930732710322,
+      "cv_pct": 1.6460923976584323,
+      "ic95_inf_s": 0.512481075654169,
+      "ic95_sup_s": 0.5338673243458308,
+      "min_s": 0.5110136,
+      "max_s": 0.5312584
+    }
+  ],
+  "calidad": [
+    {
+      "modelo": "FC-A",
+      "origen": "CPU",
+      "n": 5,
+      "accuracy_media_pct": 53.0651330947876,
+      "accuracy_min_pct": 53.0651330947876,
+      "accuracy_max_pct": 53.0651330947876,
+      "loss_media": 1.5230441093444824
+    },
+    {
+      "modelo": "FC-A",
+      "origen": "CUDA",
+      "n": 5,
+      "accuracy_media_pct": 51.724135875701904,
+      "accuracy_min_pct": 51.724135875701904,
+      "accuracy_max_pct": 51.724135875701904,
+      "loss_media": 1.5723273754119873
+    },
+    {
+      "modelo": "FC-B",
+      "origen": "CPU",
+      "n": 5,
+      "accuracy_media_pct": 44.29118633270264,
+      "accuracy_min_pct": 44.29118633270264,
+      "accuracy_max_pct": 44.29118633270264,
+      "loss_media": 1.7380640506744385
+    },
+    {
+      "modelo": "FC-B",
+      "origen": "CUDA",
+      "n": 5,
+      "accuracy_media_pct": 39.96168673038483,
+      "accuracy_min_pct": 39.96168673038483,
+      "accuracy_max_pct": 39.96168673038483,
+      "loss_media": 1.759406566619873
+    }
+  ],
+  "recursos": [
+    {
+      "modelo": "FC-A",
+      "repeticion": 1,
+      "muestras_training": 15,
+      "gpu_media_pct": 31.466666666666665,
+      "gpu_max_pct": 50.0,
+      "vram_max_mib": 111.0,
+      "cpu_media_pct": 121.71952728074956
+    },
+    {
+      "modelo": "FC-A",
+      "repeticion": 2,
+      "muestras_training": 15,
+      "gpu_media_pct": 30.933333333333334,
+      "gpu_max_pct": 33.0,
+      "vram_max_mib": 111.0,
+      "cpu_media_pct": 120.47721643285958
+    },
+    {
+      "modelo": "FC-A",
+      "repeticion": 3,
+      "muestras_training": 15,
+      "gpu_media_pct": 30.266666666666666,
+      "gpu_max_pct": 33.0,
+      "vram_max_mib": 111.0,
+      "cpu_media_pct": 123.1028169572067
+    },
+    {
+      "modelo": "FC-A",
+      "repeticion": 4,
+      "muestras_training": 15,
+      "gpu_media_pct": 32.13333333333333,
+      "gpu_max_pct": 33.0,
+      "vram_max_mib": 111.0,
+      "cpu_media_pct": 122.82121759470134
+    },
+    {
+      "modelo": "FC-A",
+      "repeticion": 5,
+      "muestras_training": 15,
+      "gpu_media_pct": 31.733333333333334,
+      "gpu_max_pct": 34.0,
+      "vram_max_mib": 111.0,
+      "cpu_media_pct": 123.8366614820971
+    },
+    {
+      "modelo": "FC-B",
+      "repeticion": 1,
+      "muestras_training": 17,
+      "gpu_media_pct": 37.94117647058823,
+      "gpu_max_pct": 56.0,
+      "vram_max_mib": 187.0,
+      "cpu_media_pct": 147.5028297575025
+    },
+    {
+      "modelo": "FC-B",
+      "repeticion": 2,
+      "muestras_training": 16,
+      "gpu_media_pct": 40.8125,
+      "gpu_max_pct": 55.0,
+      "vram_max_mib": 187.0,
+      "cpu_media_pct": 157.62095907165988
+    },
+    {
+      "modelo": "FC-B",
+      "repeticion": 3,
+      "muestras_training": 16,
+      "gpu_media_pct": 38.625,
+      "gpu_max_pct": 52.0,
+      "vram_max_mib": 187.0,
+      "cpu_media_pct": 146.2237111178607
+    },
+    {
+      "modelo": "FC-B",
+      "repeticion": 4,
+      "muestras_training": 15,
+      "gpu_media_pct": 43.266666666666666,
+      "gpu_max_pct": 55.0,
+      "vram_max_mib": 187.0,
+      "cpu_media_pct": 142.61653035599463
+    },
+    {
+      "modelo": "FC-B",
+      "repeticion": 5,
+      "muestras_training": 15,
+      "gpu_media_pct": 43.13333333333333,
+      "gpu_max_pct": 53.0,
+      "vram_max_mib": 187.0,
+      "cpu_media_pct": 154.10916112010457
+    }
+  ],
+  "estados_repetibles": {
+    "FC-A": true,
+    "FC-B": true
+  }
+}

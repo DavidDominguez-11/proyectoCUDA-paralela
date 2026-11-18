@@ -1,0 +1,13 @@
+{
+  "inicio_utc": "2026-11-18T13:45:17.231847+00:00",
+  "estado": "completada",
+  "celdas_terminadas": 59,
+  "comando": [
+    "C:\\Users\\David\\Documents\\2026\\S2\\PARALELA\\CUDA\\PROYECTO-CUDA\\proyectoCUDA-paralela\\PCUDA\\Scripts\\python.exe",
+    "scripts/ejecutar_fc_notebook_v3.py"
+  ],
+  "metodo": "NotebookClient; c\u00f3digo FC real visible y ejecutado por celdas",
+  "ultima_celda": "display(pd.DataFrame([{k:v for k,v in row.items() if k!='test'}|{'test_accuracy':row['test']['accuracy'],'test",
+  "actualizado_utc": "2026-11-18T13:50:23.000747+00:00",
+  "fin_utc": "2026-11-18T13:50:23.035084+00:00"
+}

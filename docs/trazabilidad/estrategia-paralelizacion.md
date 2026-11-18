@@ -94,3 +94,8 @@ incluyen validación posterior y no se consideran satisfechos por escribir el di
 - Presupuesto de memoria con entradas, pesos, activaciones, gradientes y optimizador.
 - Medición de transferencias, coste de lanzamiento y total sincronizado.
 - Verificación numérica, limitaciones y decisiones documentadas.
+
+
+## Ampliación posterior vigente: FC-A y FC-B
+
+El alcance inicial CNN-B se amplió con dos entrenamientos completos adicionales en CUDA. Se conservaron las mediciones y evidencias anteriores. [Diseño,procedimiento,decisiones,resultados,notebooks e informe actualizados](ampliacion-fc.md). Los conteos/hashes de la entrega anterior descritos arriba son antecedentes; la entrega actual CUDA tiene92celdas de código y30PNG, y el DOCX16tablas/13imágenes con el diseño editado por el usuario.

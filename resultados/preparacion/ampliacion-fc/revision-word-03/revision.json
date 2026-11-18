@@ -1,0 +1,209 @@
+{
+  "fecha_utc": "2026-11-18T13:56:54.629712+00:00",
+  "comando": [
+    "C:\\Python314\\python.exe",
+    "scripts/revisar_docx_word.py",
+    "--entrada",
+    "entregables/Informe_Proyecto_3_CUDA.docx",
+    "--destino",
+    "resultados/preparacion/ampliacion-fc/revision-word-03"
+  ],
+  "entrada": "C:\\Users\\David\\Documents\\2026\\S2\\PARALELA\\CUDA\\PROYECTO-CUDA\\proyectoCUDA-paralela\\entregables\\Informe_Proyecto_3_CUDA.docx",
+  "sha256": "15a6471b92e10d2e11bb316b1a15d731f253d9aab13dd9e2935790d01a219c16",
+  "word_version": "16.0",
+  "paginas": 25,
+  "encabezados": [
+    {
+      "texto": "1. Análisis de la solución secuencial existente",
+      "pagina": 2
+    },
+    {
+      "texto": "2. Medición del tiempo de ejecución secuencial",
+      "pagina": 4
+    },
+    {
+      "texto": "Datos, entorno y condiciones controladas",
+      "pagina": 4
+    },
+    {
+      "texto": "Procedimiento de medición",
+      "pagina": 4
+    },
+    {
+      "texto": "3. Identificación de oportunidades de paralelización",
+      "pagina": 6
+    },
+    {
+      "texto": "Operaciones que permanecieron en CPU",
+      "pagina": 6
+    },
+    {
+      "texto": "Dependencias que limitan el paralelismo",
+      "pagina": 6
+    },
+    {
+      "texto": "Ampliación de oportunidades: FC-A y FC-B",
+      "pagina": 7
+    },
+    {
+      "texto": "4. Diseño del algoritmo paralelo",
+      "pagina": 7
+    },
+    {
+      "texto": "Secuencia, memoria y decisiones del diseño",
+      "pagina": 8
+    },
+    {
+      "texto": "Extensión del diseño a las redes totalmente conectadas",
+      "pagina": 8
+    },
+    {
+      "texto": "5. Implementación con CUDA Python",
+      "pagina": 8
+    },
+    {
+      "texto": "Ejecución y temporización",
+      "pagina": 9
+    },
+    {
+      "texto": "Comprobaciones de corrección y evidencias conservadas",
+      "pagina": 9
+    },
+    {
+      "texto": "5.1 Evidencia de ejecución: preparación en CPU",
+      "pagina": 9
+    },
+    {
+      "texto": "5.2 Evidencia de ejecución: entrenamiento en GPU",
+      "pagina": 11
+    },
+    {
+      "texto": "5.3 Implementación y medición adicional de FC-A y FC-B",
+      "pagina": 13
+    },
+    {
+      "texto": "5.4 Evidencia real durante entrenamiento FC-A",
+      "pagina": 14
+    },
+    {
+      "texto": "5.5 Evidencia real durante entrenamiento FC-B",
+      "pagina": 15
+    },
+    {
+      "texto": "6. Análisis y conclusiones",
+      "pagina": 16
+    },
+    {
+      "texto": "6.1 Speedup por fase y discusión técnica",
+      "pagina": 17
+    },
+    {
+      "texto": "6.2 Transferencias y factores que limitan CUDA",
+      "pagina": 19
+    },
+    {
+      "texto": "6.3 Calidad, conclusiones y alcance de los resultados",
+      "pagina": 20
+    },
+    {
+      "texto": "6.4 Comparación ampliada: tres redes con CUDA",
+      "pagina": 22
+    },
+    {
+      "texto": "6.5 Interpretación del rendimiento y calidad de las FC",
+      "pagina": 23
+    },
+    {
+      "texto": "6.6 Calidad y cierre de la ampliación",
+      "pagina": 24
+    },
+    {
+      "texto": "Referencias",
+      "pagina": 25
+    }
+  ],
+  "tablas": [
+    {
+      "tabla": 1,
+      "pagina_inicio": 2,
+      "pagina_fin": 2
+    },
+    {
+      "tabla": 2,
+      "pagina_inicio": 2,
+      "pagina_fin": 3
+    },
+    {
+      "tabla": 3,
+      "pagina_inicio": 3,
+      "pagina_fin": 3
+    },
+    {
+      "tabla": 4,
+      "pagina_inicio": 4,
+      "pagina_fin": 4
+    },
+    {
+      "tabla": 5,
+      "pagina_inicio": 4,
+      "pagina_fin": 4
+    },
+    {
+      "tabla": 6,
+      "pagina_inicio": 5,
+      "pagina_fin": 5
+    },
+    {
+      "tabla": 7,
+      "pagina_inicio": 6,
+      "pagina_fin": 6
+    },
+    {
+      "tabla": 8,
+      "pagina_inicio": 7,
+      "pagina_fin": 7
+    },
+    {
+      "tabla": 9,
+      "pagina_inicio": 8,
+      "pagina_fin": 8
+    },
+    {
+      "tabla": 10,
+      "pagina_inicio": 9,
+      "pagina_fin": 9
+    },
+    {
+      "tabla": 11,
+      "pagina_inicio": 11,
+      "pagina_fin": 11
+    },
+    {
+      "tabla": 12,
+      "pagina_inicio": 13,
+      "pagina_fin": 13
+    },
+    {
+      "tabla": 13,
+      "pagina_inicio": 16,
+      "pagina_fin": 16
+    },
+    {
+      "tabla": 14,
+      "pagina_inicio": 19,
+      "pagina_fin": 19
+    },
+    {
+      "tabla": 15,
+      "pagina_inicio": 22,
+      "pagina_fin": 22
+    },
+    {
+      "tabla": 16,
+      "pagina_inicio": 24,
+      "pagina_fin": 24
+    }
+  ],
+  "pdf_generado": false,
+  "paginas_renderizadas": 25
+}

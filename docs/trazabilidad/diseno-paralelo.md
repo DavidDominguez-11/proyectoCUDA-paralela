@@ -352,3 +352,8 @@ CPU, kernels y controlador CUDA Python, importador/exportador de estados,
 comprobaciones de equivalencia y un EXP nuevo congelado con versiones efectivas.
 Son componentes previstos, **no archivos implementados**. Las evidencias de
 hardware activo, capturas, mediciones y PDF final siguen pendientes.
+
+
+## Ampliación posterior vigente: FC-A y FC-B
+
+El alcance inicial CNN-B se amplió con dos entrenamientos completos adicionales en CUDA. Se conservaron las mediciones y evidencias anteriores. [Diseño,procedimiento,decisiones,resultados,notebooks e informe actualizados](ampliacion-fc.md). Los conteos/hashes de la entrega anterior descritos arriba son antecedentes; la entrega actual CUDA tiene92celdas de código y30PNG, y el DOCX16tablas/13imágenes con el diseño editado por el usuario.

@@ -1,0 +1,142 @@
+[
+  {
+    "run_id": "RUN-20261118T134323Z-fc-a-01",
+    "modelo": "FC-A",
+    "repeticion": 1,
+    "test": {
+      "accuracy": 0.517241358757019,
+      "loss": 1.5723273754119873
+    },
+    "epocas": 15,
+    "pasos": 1440,
+    "entrenamiento_s": 14.829318,
+    "evaluacion_cpu_s": 0.3873936,
+    "comparabilidad": "Datos, estado inicial, arquitectura y pasos equivalentes; CPU histórica; RNG interno diferente"
+  },
+  {
+    "run_id": "RUN-20261118T134514Z-fc-a-02",
+    "modelo": "FC-A",
+    "repeticion": 2,
+    "test": {
+      "accuracy": 0.517241358757019,
+      "loss": 1.5723273754119873
+    },
+    "epocas": 15,
+    "pasos": 1440,
+    "entrenamiento_s": 15.6858155,
+    "evaluacion_cpu_s": 0.390274,
+    "comparabilidad": "Datos, estado inicial, arquitectura y pasos equivalentes; CPU histórica; RNG interno diferente"
+  },
+  {
+    "run_id": "RUN-20261118T134514Z-fc-a-03",
+    "modelo": "FC-A",
+    "repeticion": 3,
+    "test": {
+      "accuracy": 0.517241358757019,
+      "loss": 1.5723273754119873
+    },
+    "epocas": 15,
+    "pasos": 1440,
+    "entrenamiento_s": 14.969787,
+    "evaluacion_cpu_s": 0.3964019,
+    "comparabilidad": "Datos, estado inicial, arquitectura y pasos equivalentes; CPU histórica; RNG interno diferente"
+  },
+  {
+    "run_id": "RUN-20261118T134514Z-fc-a-04",
+    "modelo": "FC-A",
+    "repeticion": 4,
+    "test": {
+      "accuracy": 0.517241358757019,
+      "loss": 1.5723273754119873
+    },
+    "epocas": 15,
+    "pasos": 1440,
+    "entrenamiento_s": 14.9999501,
+    "evaluacion_cpu_s": 0.3900924,
+    "comparabilidad": "Datos, estado inicial, arquitectura y pasos equivalentes; CPU histórica; RNG interno diferente"
+  },
+  {
+    "run_id": "RUN-20261118T134514Z-fc-a-05",
+    "modelo": "FC-A",
+    "repeticion": 5,
+    "test": {
+      "accuracy": 0.517241358757019,
+      "loss": 1.5723273754119873
+    },
+    "epocas": 15,
+    "pasos": 1440,
+    "entrenamiento_s": 15.1278363,
+    "evaluacion_cpu_s": 0.3979068,
+    "comparabilidad": "Datos, estado inicial, arquitectura y pasos equivalentes; CPU histórica; RNG interno diferente"
+  },
+  {
+    "run_id": "RUN-20261118T134514Z-fc-b-01",
+    "modelo": "FC-B",
+    "repeticion": 1,
+    "test": {
+      "accuracy": 0.39961686730384827,
+      "loss": 1.759406566619873
+    },
+    "epocas": 15,
+    "pasos": 1440,
+    "entrenamiento_s": 21.3026643,
+    "evaluacion_cpu_s": 0.5177506,
+    "comparabilidad": "Datos, estado inicial, arquitectura y pasos equivalentes; CPU histórica; RNG interno diferente"
+  },
+  {
+    "run_id": "RUN-20261118T134514Z-fc-b-02",
+    "modelo": "FC-B",
+    "repeticion": 2,
+    "test": {
+      "accuracy": 0.39961686730384827,
+      "loss": 1.759406566619873
+    },
+    "epocas": 15,
+    "pasos": 1440,
+    "entrenamiento_s": 20.9450619,
+    "evaluacion_cpu_s": 0.5312584,
+    "comparabilidad": "Datos, estado inicial, arquitectura y pasos equivalentes; CPU histórica; RNG interno diferente"
+  },
+  {
+    "run_id": "RUN-20261118T134514Z-fc-b-03",
+    "modelo": "FC-B",
+    "repeticion": 3,
+    "test": {
+      "accuracy": 0.39961686730384827,
+      "loss": 1.759406566619873
+    },
+    "epocas": 15,
+    "pasos": 1440,
+    "entrenamiento_s": 21.251391,
+    "evaluacion_cpu_s": 0.5258163,
+    "comparabilidad": "Datos, estado inicial, arquitectura y pasos equivalentes; CPU histórica; RNG interno diferente"
+  },
+  {
+    "run_id": "RUN-20261118T134514Z-fc-b-04",
+    "modelo": "FC-B",
+    "repeticion": 4,
+    "test": {
+      "accuracy": 0.39961686730384827,
+      "loss": 1.759406566619873
+    },
+    "epocas": 15,
+    "pasos": 1440,
+    "entrenamiento_s": 20.9591045,
+    "evaluacion_cpu_s": 0.5110136,
+    "comparabilidad": "Datos, estado inicial, arquitectura y pasos equivalentes; CPU histórica; RNG interno diferente"
+  },
+  {
+    "run_id": "RUN-20261118T134514Z-fc-b-05",
+    "modelo": "FC-B",
+    "repeticion": 5,
+    "test": {
+      "accuracy": 0.39961686730384827,
+      "loss": 1.759406566619873
+    },
+    "epocas": 15,
+    "pasos": 1440,
+    "entrenamiento_s": 20.851751,
+    "evaluacion_cpu_s": 0.5300321,
+    "comparabilidad": "Datos, estado inicial, arquitectura y pasos equivalentes; CPU histórica; RNG interno diferente"
+  }
+]

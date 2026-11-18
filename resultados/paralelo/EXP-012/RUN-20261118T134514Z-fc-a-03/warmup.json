@@ -1,0 +1,8 @@
+{
+  "duracion_s": 1.1838242000667378,
+  "train": 148,
+  "val": 128,
+  "test": 32,
+  "restauracion_verificada": true,
+  "excluido_timing": true
+}

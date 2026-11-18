@@ -1,0 +1,10 @@
+{
+  "notebook_cuda_sha256": "4e9c6b7787cf3dd4ebe3113006d5f1e21350745ab0ea54464b30e067b813a897",
+  "celdas_previas_preservadas": 53,
+  "celdas_fc_nativas": 74,
+  "codigo_fc": 56,
+  "codigo_total": 92,
+  "png_total": 30,
+  "errores": 0,
+  "notebook_cpu_inalterado": true
+}

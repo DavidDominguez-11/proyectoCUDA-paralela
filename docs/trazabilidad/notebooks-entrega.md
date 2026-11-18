@@ -116,3 +116,8 @@ contador ni salida ejecutada. Finalizar y verificar desde raíz:
 
 Los184artefactos históricosEXP-003 y el DOCX final conservaron sus hashes. No se
 reentrenaron las campañas originales ni se exportó un PDF nuevo.
+
+
+## Ampliación posterior vigente: FC-A y FC-B
+
+El alcance inicial CNN-B se amplió con dos entrenamientos completos adicionales en CUDA. Se conservaron las mediciones y evidencias anteriores. [Diseño,procedimiento,decisiones,resultados,notebooks e informe actualizados](ampliacion-fc.md). Los conteos/hashes de la entrega anterior descritos arriba son antecedentes; la entrega actual CUDA tiene92celdas de código y30PNG, y el DOCX16tablas/13imágenes con el diseño editado por el usuario.

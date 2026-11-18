@@ -416,3 +416,19 @@ evaluada. Al sustituir una decisión, conservar la anterior y enlazar la nueva.
 - Cambios CAM / commits:
 - Condiciones para revisarla:
 ```
+
+
+## DEC-027 — Ampliación CUDA a FC-A y FC-B
+
+Aceptada por el usuario. Ejecutar exclusivamente implementaciones/pruebas nuevas FC; reutilizar cinco mediciones CPU EXP-002 y CNN-B EXP-003, sin repetirlas. Misma arquitectura, estado inicial histórico, FP32, 15 épocas, batch128 (último20), validación CPU incluida y test CPU separado. Comparación histórica con RNG distinto ya reconocido. FC conserva BN momentum0.99 y dropout0.3/0.4. Código aditivo, memoria dimensionada sin workspace de convoluciones. Cinco RUN nuevos por modelo; EXP-010. Preservar diseño DOCX editado por usuario y salidas previas de notebooks.
+
+
+Ampliación FC, corrección documental del intento: EXP-010 completó 15épocas FC-A pero falló al exportar CSV de esquema heterogéneo; excluido por cierre incompleto. Se conserva íntegro con traceback,épocas,métricas y captura. EXP-011 corrige únicamente esquema de filas y retoma campaña nueva. No se ejecutó CPU/CNN-B.
+
+
+La primera corrida FC-A EXP-011 terminó entrenamiento, test, checkpoint y monitor. Solo falló presentación Styler por jinja2 ausente. **Se reutiliza sin repetirla**. EXP-012 ejecutará únicamente nueve pendientes (FC-A2–5,FC-B1–5) y mostrará DataFrame nativo sin dependencias adicionales. Se preservan notebook y error originales.
+
+
+## Cierre DEC-027
+
+Aceptada e implementada para FC-A y FC-B. Se reutilizaron CPU/CNN-B previas y la primera FC-A ya guardada. Diez corridas completas FC, sin reoptimizar la métrica predictiva. Uso de GPU demostrado con capturas reales; no se fuerza saturación. [Resultados y reservas](ampliacion-fc.md).

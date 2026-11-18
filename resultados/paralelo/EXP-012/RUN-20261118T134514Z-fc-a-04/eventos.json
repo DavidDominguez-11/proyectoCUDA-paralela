@@ -1,0 +1,15 @@
+{
+  "eventos_s": {
+    "h2d_inicial": 0.01412895965576172,
+    "h2d_lotes": 1.7134092161059395,
+    "forward_loss": 1.9252602211236975,
+    "backward": 2.724813183605669,
+    "adam_metricas": 0.858055008620024,
+    "d2h_control": 0.14810371201112868,
+    "d2h_modelo": 0.030085984110832215,
+    "d2h_optimizador": 0.003382047891616821
+  },
+  "validacion_cpu_s": 3.46774250024464,
+  "export_cpu_pared_s": 0.09190099977422506,
+  "nota": "Intervalos stream anidados; no equivalen a tiempo activo exclusivo de kernels; no sumar al tiempo pared"
+}

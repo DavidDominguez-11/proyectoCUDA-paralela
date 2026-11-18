@@ -1,0 +1,118 @@
+{
+  "vector_block": 256,
+  "bn_parcial_block": [
+    32,
+    8,
+    1
+  ],
+  "bn_parcial_grid": [
+    1,
+    384,
+    1
+  ],
+  "bn_final_block": 256,
+  "bn_final_grid": [
+    48,
+    1,
+    1
+  ],
+  "softmax_block": 32,
+  "softmax_grid": [
+    128,
+    1,
+    1
+  ],
+  "ultimo_batch": 20,
+  "recursos": {
+    "relu_backward": [
+      {
+        "firma": "(Array(float32, 1, 'C', False, aligned=True), Array(float32, 1, 'C', False, aligned=True), int64)",
+        "registros": 22,
+        "shared_bytes": 0,
+        "local_bytes": 0
+      }
+    ],
+    "dropout": [
+      {
+        "firma": "(Array(float32, 1, 'C', False, aligned=True), Array(uint8, 1, 'C', False, aligned=True), Array(float32, 1, 'C', False, aligned=True), float32, int64)",
+        "registros": 23,
+        "shared_bytes": 0,
+        "local_bytes": 0
+      }
+    ],
+    "reduce_channels": [
+      {
+        "firma": "(Array(float32, 1, 'C', False, aligned=True), Array(float32, 1, 'C', False, aligned=True), Array(float32, 1, 'C', False, aligned=True), Array(float32, 1, 'C', False, aligned=True), Array(float32, 1, 'C', False, aligned=True), Array(float32, 1, 'C', False, aligned=True), int64, int64, int64)",
+        "registros": 44,
+        "shared_bytes": 2048,
+        "local_bytes": 0
+      }
+    ],
+    "bn_forward": [
+      {
+        "firma": "(Array(float32, 1, 'C', False, aligned=True), Array(float32, 1, 'C', False, aligned=True), Array(float32, 1, 'C', False, aligned=True), Array(float32, 1, 'C', False, aligned=True), Array(float32, 1, 'C', False, aligned=True), Array(float32, 1, 'C', False, aligned=True), int64, int64)",
+        "registros": 32,
+        "shared_bytes": 0,
+        "local_bytes": 0
+      }
+    ],
+    "bn_backward": [
+      {
+        "firma": "(Array(float32, 1, 'C', False, aligned=True), Array(float32, 1, 'C', False, aligned=True), Array(float32, 1, 'C', False, aligned=True), Array(float32, 1, 'C', False, aligned=True), Array(float32, 1, 'C', False, aligned=True), Array(float32, 1, 'C', False, aligned=True), Array(float32, 1, 'C', False, aligned=True), Array(float32, 1, 'C', False, aligned=True), int64, int64)",
+        "registros": 34,
+        "shared_bytes": 0,
+        "local_bytes": 0
+      }
+    ],
+    "softmax_loss": [
+      {
+        "firma": "(Array(float32, 1, 'C', False, aligned=True), Array(int64, 1, 'C', False, aligned=True), Array(float32, 1, 'C', False, aligned=True), Array(float32, 1, 'C', False, aligned=True), Array(float32, 1, 'C', False, aligned=True), Array(uint8, 1, 'C', False, aligned=True), int64)",
+        "registros": 26,
+        "shared_bytes": 128,
+        "local_bytes": 0
+      }
+    ],
+    "adam": [
+      {
+        "firma": "(Array(float32, 1, 'C', False, aligned=True), Array(float32, 1, 'C', False, aligned=True), Array(float32, 1, 'C', False, aligned=True), Array(float32, 1, 'C', False, aligned=True), float32, int64, Array(int32, 1, 'C', False, aligned=True))",
+        "registros": 32,
+        "shared_bytes": 0,
+        "local_bytes": 0
+      }
+    ],
+    "finite_check": [
+      {
+        "firma": "(Array(float32, 1, 'C', False, aligned=True), int64, Array(int32, 1, 'C', False, aligned=True))",
+        "registros": 22,
+        "shared_bytes": 0,
+        "local_bytes": 0
+      }
+    ],
+    "metrics": [
+      {
+        "firma": "(Array(float32, 1, 'C', False, aligned=True), Array(uint8, 1, 'C', False, aligned=True), int64, Array(float32, 1, 'C', False, aligned=True))",
+        "registros": 14,
+        "shared_bytes": 2048,
+        "local_bytes": 0
+      }
+    ],
+    "advance_step": [
+      {
+        "firma": "(Array(int64, 1, 'C', False, aligned=True),)",
+        "registros": 6,
+        "shared_bytes": 0,
+        "local_bytes": 0
+      }
+    ],
+    "bias_activation": [
+      {
+        "firma": "(Array(float32, 1, 'C', False, aligned=True), Array(float32, 1, 'C', False, aligned=True), int64, int64, bool)",
+        "registros": 34,
+        "shared_bytes": 0,
+        "local_bytes": 0
+      }
+    ]
+  },
+  "fc_finish_regs": "{(Array(float32, 1, 'C', False, aligned=True), Array(float32, 1, 'C', False, aligned=True), Array(float32, 1, 'C', False, aligned=True), Array(float32, 1, 'C', False, aligned=True), Array(float32, 1, 'C', False, aligned=True), Array(float32, 1, 'C', False, aligned=True), Array(float32, 1, 'C', False, aligned=True), Array(float32, 1, 'C', False, aligned=True), int64, int64, int64, int64, float32): 41}",
+  "gemm": "cuBLAS SGEMM FP32 PEDANTIC; jerarquía interna de biblioteca, no fijada por el equipo"
+}

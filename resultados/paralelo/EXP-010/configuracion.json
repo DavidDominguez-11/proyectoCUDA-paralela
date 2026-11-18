@@ -1,0 +1,254 @@
+{
+  "experimento_id": "EXP-010",
+  "creado_utc": "2026-11-18T13:39:45.299173+00:00",
+  "responsable": "Codex por instrucción del usuario",
+  "decisiones": [
+    "DEC-027"
+  ],
+  "cambios": [
+    "CAM-012"
+  ],
+  "codigo": {
+    "fuentes": {
+      "scripts/preparar_experimento_fc.py": "15729043aca154cd88820582e01362f5f55c1aba6b7263321c9d5a571c8a8948",
+      "scripts/ejecutar_fc_notebook.py": "323f19e6e815181c87cda4181cf7f5cd0e56de5933c574a94473249e1390cdb5",
+      "scripts/capturar_fc_real.py": "b076c03ed68e6d31ac12c26a85c1cd610bdf1422279d78a36bc9e6b09264ceae",
+      "scripts/registro_notebook.py": "e3c86af1681993ccaf26da1568deac0ab9be5b4af4dcf9a6d5f6bbd1075ea9fd",
+      "scripts/benchmark_cuda.py": "816574529011075f5e8ad7c53d925bf882e11c10e420abe2e9688f6c97ba1c5a",
+      "scripts/benchmark_cpu.py": "c40127fa1e03dfc156b792c997578014b589f6b0650b2a3fe0fb03462c918893",
+      "src/asl_cuda/__init__.py": "905eaf476ad18cd47ebcb0b4fc5d8e6f89e92c8de7a07e1c1e68d18a9f52284c",
+      "src/asl_cuda/runtime.py": "90d0c6469d9e4ee15658375a5026307032068d875557d0084654b429889f97cb",
+      "src/asl_cuda/kernels.py": "3dc55a51bc4e2ece39c279ecf9d60956c06d4700a03603c44dda23f6dd100fec",
+      "src/asl_cuda/blas.py": "1ba799e3cb2d8856e3b7bd408ca2d8f6cd6cb840a0e326916c40f3bc021024b8",
+      "src/asl_cuda/model.py": "9c474d9d20212177f44d1dafb26eef6427a70e89f60118d2b819d5f47a80a156",
+      "src/asl_cuda/fc.py": "fb043eff0b143b1f22f9cd844e1cc5f215f30dcba5e3a0caa43a501c9fa7d266",
+      "resultados/paralelo/EXP-010/FC_CUDA.plantilla.ipynb": "684f06e8fbf1878da76be67f5a4ffe732bd589827b5c2653b6c14a9e1f89505f"
+    }
+  },
+  "datos": {
+    "dataset_id": "DAT-01-v1",
+    "version": 1,
+    "ruta": "C:\\Users\\David\\.cache\\kagglehub\\datasets\\grassknoted\\asl-alphabet\\versions\\1",
+    "manifest_fuente_sha256": "ad9b594ec04ac653ea6c81450e7297097e76bdf95ecbc4266e3018b88674dab8",
+    "manifest_splits_sha256": "6a67443d4804072b4bba1176d33ccee6efc73b09ae0c60a5f10a7a2d9c1b37d2",
+    "label_mapping_sha256": "726e71d3436eb0dec26bdfed80ddd2b541d54bd515dd7f9c0ad7c7179fff9a1d",
+    "samples_per_class": 600,
+    "splits": {
+      "train": 12180,
+      "val": 2610,
+      "test": 2610
+    },
+    "transformaciones": {
+      "rgb": true,
+      "tamano": [
+        64,
+        64
+      ],
+      "dtype": "float32",
+      "etiquetas": "int64",
+      "normalizacion": "/255.0",
+      "resize": "Pillow RGB default BICUBIC; original unchanged",
+      "exif": "no transpose; original behavior"
+    },
+    "augmentation": "Original layers inside CPU model; selected CNN architecture; not CUDA design"
+  },
+  "alcance": {
+    "modelos": [
+      "FC-A",
+      "FC-B"
+    ],
+    "repeticiones": 5,
+    "epocas": 15,
+    "batch": 128,
+    "ultimo_batch": 20,
+    "pasos": 1440,
+    "preparacion": "CPU6workers",
+    "validacion": "CPU128 cada época incluida en fit",
+    "test": "CPU32 separado",
+    "augmentation": false
+  },
+  "precision": {
+    "dtype": "float32",
+    "cublas": "PEDANTIC_MATH",
+    "atomics": false,
+    "tf32": false
+  },
+  "aleatoriedad": {
+    "seeds": {
+      "FC-A": 44,
+      "FC-B": 45
+    },
+    "shuffle": "PCG64 por época",
+    "dropout": "Bernoulli [seed,epoch,batch,layer]",
+    "identidad_mascaras_cpu": false
+  },
+  "medicion": {
+    "principal": "pared sincronizada incluyendo staging,H2D,D2H,validaciónCPU",
+    "eventos": "intervalos stream anidados, no suma independiente",
+    "warmup": "128+20 train;128val;32test;restauración total",
+    "referencia_cpu": "EXP-002 cinco RUN históricos, no volver a ejecutar",
+    "capturas": "primera corrida por modelo, coste no descontado"
+  },
+  "validacion": {
+    "ruta": "resultados/preparacion/ampliacion-fc/validacion-01/validacion.json",
+    "sha256": "7c0ca9ffb4f33705f848d296b66e6bab740705deefeec5708d3426faea2446cb"
+  },
+  "estados_iniciales": {
+    "FC-A": {
+      "ruta": "data/EXP-002/RUN-20261117T171942Z-cpu-01/FC-A.estado-inicial.npz",
+      "sha256": "90e4977faa65b2ad7965d1454992c77149cf4b5f967cf470e7d9499e0dbdc861"
+    },
+    "FC-B": {
+      "ruta": "data/EXP-002/RUN-20261117T171942Z-cpu-01/FC-B.estado-inicial.npz",
+      "sha256": "dd4970a6bd61bfad5178a042d74b212130216bab6f68544a0caeb76132996a8a"
+    }
+  },
+  "entorno": {
+    "python": "3.14.3 (tags/v3.14.3:323c59a, Feb  3 2026, 16:04:56) [MSC v.1944 64 bit (AMD64)]",
+    "paquetes": {
+      "absl-py": "2.5.1",
+      "asttokens": "3.0.2",
+      "astunparse": "1.6.3",
+      "attrs": "26.1.0",
+      "certifi": "2026.10.23",
+      "charset-normalizer": "3.5.2",
+      "cloudpickle": "3.1.2",
+      "colorama": "0.4.6",
+      "comm": "0.2.3",
+      "contourpy": "1.4.0",
+      "cuda-bindings": "13.5.0",
+      "cuda-core": "1.2.2",
+      "cuda-pathfinder": "1.9.0",
+      "cuda-python": "13.5.0",
+      "cycler": "0.12.1",
+      "debugpy": "1.8.22",
+      "executing": "2.3.0",
+      "fastjsonschema": "2.22.3",
+      "flatbuffers": "25.12.19",
+      "fonttools": "4.68.0",
+      "gast": "0.7.0",
+      "google-pasta": "0.2.0",
+      "grpcio": "1.85.1",
+      "h5py": "3.15.1",
+      "idna": "3.20",
+      "ipykernel": "7.4.0",
+      "ipython": "9.18.1",
+      "ipython_pygments_lexers": "1.1.1",
+      "jedi": "0.20.1",
+      "joblib": "1.6.0",
+      "jsonschema": "4.26.0",
+      "jsonschema-specifications": "2025.9.1",
+      "jupyter_client": "8.10.0",
+      "jupyter_core": "5.9.1",
+      "kagglehub": "1.0.3",
+      "kagglesdk": "0.1.38",
+      "keras-nightly": "3.16.0.dev2026111503",
+      "kiwisolver": "1.5.1",
+      "libclang": "18.1.1",
+      "llvmlite": "0.49.0",
+      "markdown-it-py": "4.3.0",
+      "matplotlib": "3.11.2",
+      "matplotlib-inline": "0.2.2",
+      "mdurl": "0.1.2",
+      "ml_dtypes": "0.6.0",
+      "namex": "0.1.0",
+      "narwhals": "2.28.0",
+      "nbclient": "0.10.4",
+      "nbformat": "5.10.4",
+      "nest-asyncio2": "1.7.4",
+      "numba": "0.67.0",
+      "numba-cuda": "0.30.4",
+      "numpy": "2.5.5",
+      "optree": "0.20.0",
+      "opt_einsum": "3.4.0",
+      "packaging": "26.3",
+      "pandas": "3.1.1",
+      "parso": "0.8.7",
+      "pillow": "13.0.0",
+      "pip": "25.3",
+      "platformdirs": "4.14.5",
+      "prompt_toolkit": "3.0.53",
+      "protobuf": "7.36.2",
+      "psutil": "7.2.2",
+      "pure_eval": "0.2.4",
+      "Pygments": "2.21.0",
+      "pyparsing": "3.3.3",
+      "python-dateutil": "4.0.0",
+      "PyYAML": "6.0.3",
+      "pyzmq": "27.3.0",
+      "referencing": "0.37.0",
+      "requests": "2.34.2",
+      "rich": "15.0.0",
+      "rpds-py": "2026.9.1",
+      "scikit-learn": "1.9.1",
+      "scipy": "1.18.1",
+      "seaborn": "0.13.2",
+      "six": "1.17.0",
+      "stack-data": "0.6.3",
+      "tensorflow": "2.22.0rc0",
+      "termcolor": "3.3.0",
+      "threadpoolctl": "3.8.0",
+      "tornado": "6.6.1",
+      "tqdm": "4.70.1",
+      "traitlets": "5.16.1",
+      "typing_extensions": "4.16.0",
+      "tzdata": "2026.6",
+      "urllib3": "2.8.0",
+      "wcwidth": "0.9.4",
+      "wheel": "0.48.0",
+      "wrapt": "2.5.2"
+    }
+  },
+  "runs": [
+    {
+      "modelo": "FC-A",
+      "repeticion": 1,
+      "run_id": "RUN-20261118T133945Z-fc-a-01"
+    },
+    {
+      "modelo": "FC-A",
+      "repeticion": 2,
+      "run_id": "RUN-20261118T133945Z-fc-a-02"
+    },
+    {
+      "modelo": "FC-A",
+      "repeticion": 3,
+      "run_id": "RUN-20261118T133945Z-fc-a-03"
+    },
+    {
+      "modelo": "FC-A",
+      "repeticion": 4,
+      "run_id": "RUN-20261118T133945Z-fc-a-04"
+    },
+    {
+      "modelo": "FC-A",
+      "repeticion": 5,
+      "run_id": "RUN-20261118T133945Z-fc-a-05"
+    },
+    {
+      "modelo": "FC-B",
+      "repeticion": 1,
+      "run_id": "RUN-20261118T133945Z-fc-b-01"
+    },
+    {
+      "modelo": "FC-B",
+      "repeticion": 2,
+      "run_id": "RUN-20261118T133945Z-fc-b-02"
+    },
+    {
+      "modelo": "FC-B",
+      "repeticion": 3,
+      "run_id": "RUN-20261118T133945Z-fc-b-03"
+    },
+    {
+      "modelo": "FC-B",
+      "repeticion": 4,
+      "run_id": "RUN-20261118T133945Z-fc-b-04"
+    },
+    {
+      "modelo": "FC-B",
+      "repeticion": 5,
+      "run_id": "RUN-20261118T133945Z-fc-b-05"
+    }
+  ]
+}

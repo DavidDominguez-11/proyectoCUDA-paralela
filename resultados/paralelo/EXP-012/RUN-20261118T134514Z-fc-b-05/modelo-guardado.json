@@ -1,0 +1,6 @@
+{
+  "ruta": "data/EXP-012/RUN-20261118T134514Z-fc-b-05/FC-B-CUDA.keras",
+  "sha256": "a7862eddc2cf173e33f3443988cf3a75d6140262ba64926d4a685870806b5906",
+  "estado_canonico_sha256": "70cd1de5a39cc589fbec9dfd01452e01341e9b5776b69b912d56a0d35856eea7",
+  "optimizer_iterations": 1440
+}

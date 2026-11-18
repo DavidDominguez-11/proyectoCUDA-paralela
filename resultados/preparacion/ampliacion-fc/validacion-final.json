@@ -1,0 +1,40 @@
+{
+  "estado": "aprobado",
+  "runs_fc": 10,
+  "epocas_fc": 150,
+  "actualizaciones_fc": 14400,
+  "checkpoints_h5_finitos_y_adam1440": true,
+  "pruebas_fc_oraculo": 4,
+  "capturas_reales": 2,
+  "celdas_codigo_cuda_total": 92,
+  "png_notebook": 30,
+  "epocas_fc_en_stream_nativo": 150,
+  "estados_gpu_repetibles": true,
+  "notebook_cpu_inalterado": true,
+  "artefactos_cnn_b_verificados": 184,
+  "docx_estilo_preservado": {
+    "antes_sha256": "ba0952a8acd1e1b1abaf38cde208f4faf064c3aa2b18a2db17b8b56e1e35b427",
+    "despues_sha256": "4cda1e1a2ca0dfcbb06fccd704bdc7b5c4d1d1d9b929336c2d88aba8a958e07b",
+    "elementos_previos_preservados": 152,
+    "estilos_headers_footers_temas_preservados": [
+      "word/footer1.xml",
+      "word/theme/theme1.xml",
+      "word/styles.xml"
+    ],
+    "partes_normalizadas_restauradas": [
+      "word/footer1.xml",
+      "word/styles.xml"
+    ],
+    "tablas_antes": 12,
+    "tablas_despues": 16,
+    "imagenes_antes": 7,
+    "imagenes_despues": 13,
+    "pdf_generado": false
+  },
+  "limites": [
+    "CPU histórica no pareada; Dropout/shuffle distintos",
+    "FC CUDA menor accuracy que CPU histórica",
+    "No se midió ocupación por SM ni se demostró saturación VRAM",
+    "PDF no generado por instrucción del usuario"
+  ]
+}

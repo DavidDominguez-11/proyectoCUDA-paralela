@@ -1,0 +1,6 @@
+{
+  "estado": "entrenamiento_completado_presentacion_fallida",
+  "causa": "Pandas Styler exige jinja2 ausente en PCUDA; no se instala nada.",
+  "reutilizado": "resultados/paralelo/EXP-011/RUN-20261118T134323Z-fc-a-01",
+  "decision": "Conservar y reutilizar esta corrida completa sin volver a entrenarla; EXP-012 ejecuta únicamente las nueve pendientes. Presentar DataFrame nativo sin Styler."
+}

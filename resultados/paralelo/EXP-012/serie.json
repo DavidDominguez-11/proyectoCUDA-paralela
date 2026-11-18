@@ -1,0 +1,95 @@
+{
+  "estado": "completada",
+  "cerrado_utc": "2026-11-18T14:04:29.470343+00:00",
+  "runs": [
+    {
+      "modelo": "FC-A",
+      "repeticion": 1,
+      "run_id": "RUN-20261118T134323Z-fc-a-01",
+      "ruta": "resultados/paralelo/EXP-011/RUN-20261118T134323Z-fc-a-01",
+      "reutilizado_sin_reentrenar": true,
+      "estado": "entrenamiento_y_checkpoint_completados",
+      "metricas_sha256": "24cebe3d357f7c9a4b31ba9c278fa3dd43a43ea51f35cef6a395762b61cb8326"
+    },
+    {
+      "modelo": "FC-A",
+      "repeticion": 2,
+      "run_id": "RUN-20261118T134514Z-fc-a-02",
+      "estado": "entrenamiento_y_checkpoint_completados",
+      "metricas_sha256": "8e273024f0e9e55eeaca9f17e44614114e13d00c6f55508600e97d95c52fe209"
+    },
+    {
+      "modelo": "FC-A",
+      "repeticion": 3,
+      "run_id": "RUN-20261118T134514Z-fc-a-03",
+      "estado": "entrenamiento_y_checkpoint_completados",
+      "metricas_sha256": "d1b5b22585211cc215b79c667370741e2ce2fd094540f8cf881dee1329c30f3f"
+    },
+    {
+      "modelo": "FC-A",
+      "repeticion": 4,
+      "run_id": "RUN-20261118T134514Z-fc-a-04",
+      "estado": "entrenamiento_y_checkpoint_completados",
+      "metricas_sha256": "79f27dcdbe1f40ce54af0b2d0b64d8e9fd2290c8cb5e66a40cfd19e9281e7f47"
+    },
+    {
+      "modelo": "FC-A",
+      "repeticion": 5,
+      "run_id": "RUN-20261118T134514Z-fc-a-05",
+      "estado": "entrenamiento_y_checkpoint_completados",
+      "metricas_sha256": "9cb75e3844ee34c11ecf4c3919029d2b8606245ceb296d388f63da62a05853dd"
+    },
+    {
+      "modelo": "FC-B",
+      "repeticion": 1,
+      "run_id": "RUN-20261118T134514Z-fc-b-01",
+      "estado": "entrenamiento_y_checkpoint_completados",
+      "metricas_sha256": "f60e84bbe3a1240c7e470bf5051003f74d5361cf666428b5abedd838286001b8"
+    },
+    {
+      "modelo": "FC-B",
+      "repeticion": 2,
+      "run_id": "RUN-20261118T134514Z-fc-b-02",
+      "estado": "entrenamiento_y_checkpoint_completados",
+      "metricas_sha256": "1d507e03d08b17eb109b6202fbe4c9f887b2f275f33c3e4962fd313964b87c9e"
+    },
+    {
+      "modelo": "FC-B",
+      "repeticion": 3,
+      "run_id": "RUN-20261118T134514Z-fc-b-03",
+      "estado": "entrenamiento_y_checkpoint_completados",
+      "metricas_sha256": "40cd698cb3bbe7c7c7c2eb12a176ed62da08f1c944568680eef64ebf9bde2668"
+    },
+    {
+      "modelo": "FC-B",
+      "repeticion": 4,
+      "run_id": "RUN-20261118T134514Z-fc-b-04",
+      "estado": "entrenamiento_y_checkpoint_completados",
+      "metricas_sha256": "3111d8a8466532bfbb91561dd75a1bcb81f91ea488f2617c8f6224818e3b3089"
+    },
+    {
+      "modelo": "FC-B",
+      "repeticion": 5,
+      "run_id": "RUN-20261118T134514Z-fc-b-05",
+      "estado": "entrenamiento_y_checkpoint_completados",
+      "metricas_sha256": "683add2d76a334b7bc019f1e47a3cadb71ca98cb799ae80b9470f194c5868a53"
+    }
+  ],
+  "epocas": 150,
+  "actualizaciones": 14400,
+  "exclusiones": [
+    "EXP-010 incompleto: CSV sin cierre/modelo"
+  ],
+  "recuperacion": "FC-A1 EXP-011 guardada antes de error Styler; se reutiliza sin entrenar otra vez",
+  "historicos_no_ejecutados": [
+    "CPU EXP-002",
+    "CNN-B EXP-003",
+    "notebooks EXP-008/009"
+  ],
+  "limitaciones": [
+    "CPU histórica no pareada; Dropout/shuffle distintos",
+    "FC CUDA menor accuracy que CPU histórica",
+    "No se midió ocupación por SM ni se demostró saturación VRAM",
+    "PDF no generado por instrucción del usuario"
+  ]
+}

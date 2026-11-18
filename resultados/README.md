@@ -78,3 +78,8 @@ efectivo de cada fase para distinguir CPU,GPU,transferencias y tramo heterogéne
 Se generó mediante lectura de bytes y SHA-256, sin ejecutar el notebook. Los
 paths son relativos a la raíz. Es una foto de entradas iniciales, no se regenera
 silenciosamente si el original cambia; se crea una nueva versión y un CAM.
+
+
+## Ampliación CUDA FC-A/FC-B
+
+[Resultados completos](comparacion/ampliacion-fc/resultados.md), CSV ycuatrográficas, cinco observaciones por red. EXP-012 referencia FC-A1 guardada enEXP-011 y ejecuta nueve pendientes. EXP-010incompleto se conserva excluido. [Trazabilidad](../docs/trazabilidad/ampliacion-fc.md). CPU/CNN-B previas no se repitieron.

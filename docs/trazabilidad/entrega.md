@@ -4,7 +4,7 @@ El PDF oficial exige código documentado e informe PDF. Los Markdown son la
 fuente de documentación del proyecto; no sustituyen ese informe final.
 
 **Entrega actual:**[DOCX final](../../entregables/Informe_Proyecto_3_CUDA.docx),
-13páginas revisadas,con12tablas,7figuras y los seis apartados en orden. Por
+24páginas revisadas,con16tablas,13imágenes y los seis apartados en orden, más la ampliaciónFC. Por
 instrucción explícita del usuario,no se exporta aPDF:él realizará la conversión.
 [Cobertura y validación](informe-final.md). La saturaciónGPU literal y las
 contribuciones verificables del equipo no se certifican mediante el informe.
@@ -46,3 +46,6 @@ contribuciones verificables del equipo no se certifican mediante el informe.
 Ruta propuesta: `entregables/informe.md` como fuente y
 `entregables/informe.pdf` como exportación final. Crear al existir resultados.
 Conservar herramienta/versión/comando de exportación y hash del PDF.
+
+
+[Ampliación FC completada y entregables vigentes](ampliacion-fc.md): dos notebooks separados, GPU con92celdas/30PNG/0errores. PDF no generado por instrucción del usuario.

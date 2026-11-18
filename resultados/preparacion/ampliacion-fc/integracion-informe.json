@@ -1,0 +1,19 @@
+{
+  "antes_sha256": "ba0952a8acd1e1b1abaf38cde208f4faf064c3aa2b18a2db17b8b56e1e35b427",
+  "despues_sha256": "4cda1e1a2ca0dfcbb06fccd704bdc7b5c4d1d1d9b929336c2d88aba8a958e07b",
+  "elementos_previos_preservados": 152,
+  "estilos_headers_footers_temas_preservados": [
+    "word/footer1.xml",
+    "word/theme/theme1.xml",
+    "word/styles.xml"
+  ],
+  "partes_normalizadas_restauradas": [
+    "word/footer1.xml",
+    "word/styles.xml"
+  ],
+  "tablas_antes": 12,
+  "tablas_despues": 16,
+  "imagenes_antes": 7,
+  "imagenes_despues": 13,
+  "pdf_generado": false
+}

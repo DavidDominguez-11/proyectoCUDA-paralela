@@ -1,0 +1,554 @@
+EXP-012 | SOLO FC-A / FC-B CUDA | CPU y CNN-B anteriores NO ejecutados
+Configuración SHA-256: 27d39f1099858c45a972f00ff99a7c6d1772fda80c36b99fa42c962c99c17497 Python: C:\Users\David\Documents\2026\S2\PARALELA\CUDA\PROYECTO-CUDA\proyectoCUDA-paralela\PCUDA\Scripts\python.exe
+{
+  "experimento_id": "EXP-012",
+  "creado_utc": "2026-11-18T13:45:14.433962+00:00",
+  "responsable": "Codex por instrucción del usuario",
+  "decisiones": [
+    "DEC-027"
+  ],
+  "cambios": [
+    "CAM-012"
+  ],
+  "codigo": {
+    "fuentes": {
+      "scripts/preparar_experimento_fc_v3.py": "6695b5d08a21fed7d50161950ad01670886ee60148b8a96061841fad46b15ef7",
+      "scripts/ejecutar_fc_notebook_v3.py": "744835b2d02c3120a921ad09aa85ec1d17511cf5b2b08edf0ac362c6d54456f8",
+      "scripts/capturar_fc_real.py": "b076c03ed68e6d31ac12c26a85c1cd610bdf1422279d78a36bc9e6b09264ceae",
+      "scripts/registro_notebook.py": "e3c86af1681993ccaf26da1568deac0ab9be5b4af4dcf9a6d5f6bbd1075ea9fd",
+      "scripts/benchmark_cuda.py": "816574529011075f5e8ad7c53d925bf882e11c10e420abe2e9688f6c97ba1c5a",
+      "scripts/benchmark_cpu.py": "c40127fa1e03dfc156b792c997578014b589f6b0650b2a3fe0fb03462c918893",
+      "src/asl_cuda/__init__.py": "905eaf476ad18cd47ebcb0b4fc5d8e6f89e92c8de7a07e1c1e68d18a9f52284c",
+      "src/asl_cuda/runtime.py": "90d0c6469d9e4ee15658375a5026307032068d875557d0084654b429889f97cb",
+      "src/asl_cuda/kernels.py": "3dc55a51bc4e2ece39c279ecf9d60956c06d4700a03603c44dda23f6dd100fec",
+      "src/asl_cuda/blas.py": "1ba799e3cb2d8856e3b7bd408ca2d8f6cd6cb840a0e326916c40f3bc021024b8",
+      "src/asl_cuda/model.py": "9c474d9d20212177f44d1dafb26eef6427a70e89f60118d2b819d5f47a80a156",
+      "src/asl_cuda/fc.py": "fb043eff0b143b1f22f9cd844e1cc5f215f30dcba5e3a0caa43a501c9fa7d266",
+      "resultados/paralelo/EXP-012/FC_CUDA.plantilla.ipynb": "8648a01a65ec48fb6e5c1e1e0abba464c76e46b71323b0a39f9c9632af49dfb6"
+    }
+  },
+  "datos": {
+    "dataset_id": "DAT-01-v1",
+    "version": 1,
+    "ruta": "C:\\Users\\David\\.cache\\kagglehub\\datasets\\grassknoted\\asl-alphabet\\versions\\1",
+    "manifest_fuente_sha256": "ad9b594ec04ac653ea6c81450e7297097e76bdf95ecbc4266e3018b88674dab8",
+    "manifest_splits_sha256": "6a67443d4804072b4bba1176d33ccee6efc73b09ae0c60a5f10a7a2d9c1b37d2",
+    "label_mapping_sha256": "726e71d3436eb0dec26bdfed80ddd2b541d54bd515dd7f9c0ad7c7179fff9a1d",
+    "samples_per_class": 600,
+    "splits": {
+      "train": 12180,
+      "val": 2610,
+      "test": 2610
+    },
+    "transformaciones": {
+      "rgb": true,
+      "tamano": [
+        64,
+        64
+      ],
+      "dtype": "float32",
+      "etiquetas": "int64",
+      "normalizacion": "/255.0",
+      "resize": "Pillow RGB default BICUBIC; original unchanged",
+      "exif": "no transpose; original behavior"
+    },
+    "augmentation": "Original layers inside CPU model; selected CNN architecture; not CUDA design"
+  },
+  "alcance": {
+    "modelos": [
+      "FC-A",
+      "FC-B"
+    ],
+    "repeticiones": 5,
+    "epocas": 15,
+    "batch": 128,
+    "ultimo_batch": 20,
+    "pasos": 1440,
+    "preparacion": "CPU6workers",
+    "validacion": "CPU128 cada época incluida en fit",
+    "test": "CPU32 separado",
+    "augmentation": false
+  },
+  "precision": {
+    "dtype": "float32",
+    "cublas": "PEDANTIC_MATH",
+    "atomics": false,
+    "tf32": false
+  },
+  "aleatoriedad": {
+    "seeds": {
+      "FC-A": 44,
+      "FC-B": 45
+    },
+    "shuffle": "PCG64 por época",
+    "dropout": "Bernoulli [seed,epoch,batch,layer]",
+    "identidad_mascaras_cpu": false
+  },
+  "medicion": {
+    "principal": "pared sincronizada incluyendo staging,H2D,D2H,validaciónCPU",
+    "eventos": "intervalos stream anidados, no suma independiente",
+    "warmup": "128+20 train;128val;32test;restauración total",
+    "referencia_cpu": "EXP-002 cinco RUN históricos, no volver a ejecutar",
+    "capturas": "primera corrida por modelo, coste no descontado"
+  },
+  "validacion": {
+    "ruta": "resultados/preparacion/ampliacion-fc/validacion-01/validacion.json",
+    "sha256": "7c0ca9ffb4f33705f848d296b66e6bab740705deefeec5708d3426faea2446cb"
+  },
+  "estados_iniciales": {
+    "FC-A": {
+      "ruta": "data/EXP-002/RUN-20261117T171942Z-cpu-01/FC-A.estado-inicial.npz",
+      "sha256": "90e4977faa65b2ad7965d1454992c77149cf4b5f967cf470e7d9499e0dbdc861"
+    },
+    "FC-B": {
+      "ruta": "data/EXP-002/RUN-20261117T171942Z-cpu-01/FC-B.estado-inicial.npz",
+      "sha256": "dd4970a6bd61bfad5178a042d74b212130216bab6f68544a0caeb76132996a8a"
+    }
+  },
+  "entorno": {
+    "python": "3.14.3 (tags/v3.14.3:323c59a, Feb  3 2026, 16:04:56) [MSC v.1944 64 bit (AMD64)]",
+    "paquetes": {
+      "absl-py": "2.5.1",
+      "asttokens": "3.0.2",
+      "astunparse": "1.6.3",
+      "attrs": "26.1.0",
+      "certifi": "2026.10.23",
+      "charset-normalizer": "3.5.2",
+      "cloudpickle": "3.1.2",
+      "colorama": "0.4.6",
+      "comm": "0.2.3",
+      "contourpy": "1.4.0",
+      "cuda-bindings": "13.5.0",
+      "cuda-core": "1.2.2",
+      "cuda-pathfinder": "1.9.0",
+      "cuda-python": "13.5.0",
+      "cycler": "0.12.1",
+      "debugpy": "1.8.22",
+      "executing": "2.3.0",
+      "fastjsonschema": "2.22.3",
+      "flatbuffers": "25.12.19",
+      "fonttools": "4.68.0",
+      "gast": "0.7.0",
+      "google-pasta": "0.2.0",
+      "grpcio": "1.85.1",
+      "h5py": "3.15.1",
+      "idna": "3.20",
+      "ipykernel": "7.4.0",
+      "ipython": "9.18.1",
+      "ipython_pygments_lexers": "1.1.1",
+      "jedi": "0.20.1",
+      "joblib": "1.6.0",
+      "jsonschema": "4.26.0",
+      "jsonschema-specifications": "2025.9.1",
+      "jupyter_client": "8.10.0",
+      "jupyter_core": "5.9.1",
+      "kagglehub": "1.0.3",
+      "kagglesdk": "0.1.38",
+      "keras-nightly": "3.16.0.dev2026111503",
+      "kiwisolver": "1.5.1",
+      "libclang": "18.1.1",
+      "llvmlite": "0.49.0",
+      "markdown-it-py": "4.3.0",
+      "matplotlib": "3.11.2",
+      "matplotlib-inline": "0.2.2",
+      "mdurl": "0.1.2",
+      "ml_dtypes": "0.6.0",
+      "namex": "0.1.0",
+      "narwhals": "2.28.0",
+      "nbclient": "0.10.4",
+      "nbformat": "5.10.4",
+      "nest-asyncio2": "1.7.4",
+      "numba": "0.67.0",
+      "numba-cuda": "0.30.4",
+      "numpy": "2.5.5",
+      "optree": "0.20.0",
+      "opt_einsum": "3.4.0",
+      "packaging": "26.3",
+      "pandas": "3.1.1",
+      "parso": "0.8.7",
+      "pillow": "13.0.0",
+      "pip": "25.3",
+      "platformdirs": "4.14.5",
+      "prompt_toolkit": "3.0.53",
+      "protobuf": "7.36.2",
+      "psutil": "7.2.2",
+      "pure_eval": "0.2.4",
+      "Pygments": "2.21.0",
+      "pyparsing": "3.3.3",
+      "python-dateutil": "4.0.0",
+      "PyYAML": "6.0.3",
+      "pyzmq": "27.3.0",
+      "referencing": "0.37.0",
+      "requests": "2.34.2",
+      "rich": "15.0.0",
+      "rpds-py": "2026.9.1",
+      "scikit-learn": "1.9.1",
+      "scipy": "1.18.1",
+      "seaborn": "0.13.2",
+      "six": "1.17.0",
+      "stack-data": "0.6.3",
+      "tensorflow": "2.22.0rc0",
+      "termcolor": "3.3.0",
+      "threadpoolctl": "3.8.0",
+      "tornado": "6.6.1",
+      "tqdm": "4.70.1",
+      "traitlets": "5.16.1",
+      "typing_extensions": "4.16.0",
+      "tzdata": "2026.6",
+      "urllib3": "2.8.0",
+      "wcwidth": "0.9.4",
+      "wheel": "0.48.0",
+      "wrapt": "2.5.2"
+    }
+  },
+  "runs": [
+    {
+      "modelo": "FC-A",
+      "repeticion": 1,
+      "run_id": "RUN-20261118T134323Z-fc-a-01",
+      "ruta": "resultados/paralelo/EXP-011/RUN-20261118T134323Z-fc-a-01",
+      "reutilizado_sin_reentrenar": true
+    },
+    {
+      "modelo": "FC-A",
+      "repeticion": 2,
+      "run_id": "RUN-20261118T134514Z-fc-a-02"
+    },
+    {
+      "modelo": "FC-A",
+      "repeticion": 3,
+      "run_id": "RUN-20261118T134514Z-fc-a-03"
+    },
+    {
+      "modelo": "FC-A",
+      "repeticion": 4,
+      "run_id": "RUN-20261118T134514Z-fc-a-04"
+    },
+    {
+      "modelo": "FC-A",
+      "repeticion": 5,
+      "run_id": "RUN-20261118T134514Z-fc-a-05"
+    },
+    {
+      "modelo": "FC-B",
+      "repeticion": 1,
+      "run_id": "RUN-20261118T134514Z-fc-b-01"
+    },
+    {
+      "modelo": "FC-B",
+      "repeticion": 2,
+      "run_id": "RUN-20261118T134514Z-fc-b-02"
+    },
+    {
+      "modelo": "FC-B",
+      "repeticion": 3,
+      "run_id": "RUN-20261118T134514Z-fc-b-03"
+    },
+    {
+      "modelo": "FC-B",
+      "repeticion": 4,
+      "run_id": "RUN-20261118T134514Z-fc-b-04"
+    },
+    {
+      "modelo": "FC-B",
+      "repeticion": 5,
+      "run_id": "RUN-20261118T134514Z-fc-b-05"
+    }
+  ]
+}
+Módulo CUDA Python definido: asl_cuda.runtime SHA-256 90d0c6469d9e4ee15658375a5026307032068d875557d0084654b429889f97cb
+Módulo CUDA Python definido: asl_cuda.kernels SHA-256 3dc55a51bc4e2ece39c279ecf9d60956c06d4700a03603c44dda23f6dd100fec
+Módulo CUDA Python definido: asl_cuda.blas SHA-256 1ba799e3cb2d8856e3b7bd408ca2d8f6cd6cb840a0e326916c40f3bc021024b8
+Módulo CUDA Python definido: asl_cuda.model SHA-256 9c474d9d20212177f44d1dafb26eef6427a70e89f60118d2b819d5f47a80a156
+Módulo CUDA Python definido: asl_cuda.fc SHA-256 fb043eff0b143b1f22f9cd844e1cc5f215f30dcba5e3a0caa43a501c9fa7d266
+GPU REAL {'name': 'NVIDIA GeForce GTX 1650', 'compute_capability': [7, 5], 'free_bytes': 3454795776, 'total_bytes': 4294639616, 'max_threads_per_block': 1024, 'max_shared_memory_per_block': 49152, 'simulator': False} Arena bytes 51864680 BN momentum [0.99]
+Warmup nuevo FC terminado y estado inicial restaurado; no incluido en entrenamiento.
+Preparación SOLO CPU (6 workers); bytes idénticos a EXP-002: {'train': {'images_sha256': '266ba8ca1cffb35dea04beea3f6dda3683b6ab3eb33e2a2cef0e543b02997be4', 'labels_sha256': '71cc0861806c907823b853bc596542ece8b481b12e23d2a6b50b107b5daecba3', 'shape': [12180, 64, 64, 3], 'dtype': 'float32'}, 'val': {'images_sha256': 'f14771b692aa401450dd6c7e2067d88519b00343bf6ae990f4cd2de6e1935d73', 'labels_sha256': '9a7e2a8feb527b18aa82e4e810aa81d28b3b6b925edc1c7bbba2e87ca16ce6a2', 'shape': [2610, 64, 64, 3], 'dtype': 'float32'}, 'test': {'images_sha256': '89d5d47ebdc6b172870f1ebb8e5ec1ac65de6547defb0f2d9297551fd7d4ce7f', 'labels_sha256': 'd594f12e2a74e612a88dd970efd10a74bb007b15f832f7afaea8887c8003211d', 'shape': [2610, 64, 64, 3], 'dtype': 'float32'}}
+EPOCH FC-A 2 {'modelo': 'FC-A', 'repeticion': 2, 'epoca': 1, 'pasos_acumulados': 96, 'train_loss': 4.118539810180664, 'train_accuracy': 0.07832512259483337, 'val_loss': 3.2670347690582275, 'val_accuracy': 0.07586207240819931, 'pared_epoca_s': 1.2685893999878317, 'validacion_cpu_s': 0.27377870003692806}
+EPOCH FC-A 2 {'modelo': 'FC-A', 'repeticion': 2, 'epoca': 2, 'pasos_acumulados': 192, 'train_loss': 3.082785129547119, 'train_accuracy': 0.1306239664554596, 'val_loss': 3.051234483718872, 'val_accuracy': 0.18160919845104218, 'pared_epoca_s': 1.0310452999547124, 'validacion_cpu_s': 0.2225024999352172}
+EPOCH FC-A 2 {'modelo': 'FC-A', 'repeticion': 2, 'epoca': 3, 'pasos_acumulados': 288, 'train_loss': 2.9082589149475098, 'train_accuracy': 0.16428571939468384, 'val_loss': 2.749790668487549, 'val_accuracy': 0.22720307111740112, 'pared_epoca_s': 0.9548888000426814, 'validacion_cpu_s': 0.21820990007836372}
+EPOCH FC-A 2 {'modelo': 'FC-A', 'repeticion': 2, 'epoca': 4, 'pasos_acumulados': 384, 'train_loss': 2.7658119201660156, 'train_accuracy': 0.1868637055158615, 'val_loss': 2.5271878242492676, 'val_accuracy': 0.2459770143032074, 'pared_epoca_s': 0.9872255999362096, 'validacion_cpu_s': 0.22606090002227575}
+EPOCH FC-A 2 {'modelo': 'FC-A', 'repeticion': 2, 'epoca': 5, 'pasos_acumulados': 480, 'train_loss': 2.6709158420562744, 'train_accuracy': 0.20098522305488586, 'val_loss': 2.3656442165374756, 'val_accuracy': 0.28812259435653687, 'pared_epoca_s': 0.9931405999232084, 'validacion_cpu_s': 0.22322700009681284}
+EPOCH FC-A 2 {'modelo': 'FC-A', 'repeticion': 2, 'epoca': 6, 'pasos_acumulados': 576, 'train_loss': 2.568258047103882, 'train_accuracy': 0.22413793206214905, 'val_loss': 2.312250852584839, 'val_accuracy': 0.3045977056026459, 'pared_epoca_s': 0.9568521999754012, 'validacion_cpu_s': 0.22280360001605004}
+EPOCH FC-A 2 {'modelo': 'FC-A', 'repeticion': 2, 'epoca': 7, 'pasos_acumulados': 672, 'train_loss': 2.473478317260742, 'train_accuracy': 0.24729064106941223, 'val_loss': 2.1610734462738037, 'val_accuracy': 0.35862070322036743, 'pared_epoca_s': 0.9893071999540552, 'validacion_cpu_s': 0.22149490006268024}
+EPOCH FC-A 2 {'modelo': 'FC-A', 'repeticion': 2, 'epoca': 8, 'pasos_acumulados': 768, 'train_loss': 2.3518173694610596, 'train_accuracy': 0.27192118763923645, 'val_loss': 2.0055863857269287, 'val_accuracy': 0.40613025426864624, 'pared_epoca_s': 1.021160800009966, 'validacion_cpu_s': 0.2557218000292778}
+EPOCH FC-A 2 {'modelo': 'FC-A', 'repeticion': 2, 'epoca': 9, 'pasos_acumulados': 864, 'train_loss': 2.259943723678589, 'train_accuracy': 0.2935960590839386, 'val_loss': 1.926896572113037, 'val_accuracy': 0.40689656138420105, 'pared_epoca_s': 1.1311503000324592, 'validacion_cpu_s': 0.24441179994028062}
+EPOCH FC-A 2 {'modelo': 'FC-A', 'repeticion': 2, 'epoca': 10, 'pasos_acumulados': 960, 'train_loss': 2.21301531791687, 'train_accuracy': 0.3011494278907776, 'val_loss': 1.895586609840393, 'val_accuracy': 0.43065133690834045, 'pared_epoca_s': 1.0300678999628872, 'validacion_cpu_s': 0.24134970002342016}
+EPOCH FC-A 2 {'modelo': 'FC-A', 'repeticion': 2, 'epoca': 11, 'pasos_acumulados': 1056, 'train_loss': 2.1286184787750244, 'train_accuracy': 0.324794739484787, 'val_loss': 1.7522492408752441, 'val_accuracy': 0.4724137783050537, 'pared_epoca_s': 1.0573132999707013, 'validacion_cpu_s': 0.2713679000735283}
+EPOCH FC-A 2 {'modelo': 'FC-A', 'repeticion': 2, 'epoca': 12, 'pasos_acumulados': 1152, 'train_loss': 2.0731849670410156, 'train_accuracy': 0.3339080512523651, 'val_loss': 1.7136602401733398, 'val_accuracy': 0.4674329459667206, 'pared_epoca_s': 1.1159097000490874, 'validacion_cpu_s': 0.2403263000305742}
+EPOCH FC-A 2 {'modelo': 'FC-A', 'repeticion': 2, 'epoca': 13, 'pasos_acumulados': 1248, 'train_loss': 2.004786491394043, 'train_accuracy': 0.34688013792037964, 'val_loss': 1.6550549268722534, 'val_accuracy': 0.4927203059196472, 'pared_epoca_s': 1.0321442000567913, 'validacion_cpu_s': 0.2488417000276968}
+EPOCH FC-A 2 {'modelo': 'FC-A', 'repeticion': 2, 'epoca': 14, 'pasos_acumulados': 1344, 'train_loss': 1.984330415725708, 'train_accuracy': 0.3534482717514038, 'val_loss': 1.6590479612350464, 'val_accuracy': 0.48160919547080994, 'pared_epoca_s': 1.0321389000164345, 'validacion_cpu_s': 0.234187199966982}
+EPOCH FC-A 2 {'modelo': 'FC-A', 'repeticion': 2, 'epoca': 15, 'pasos_acumulados': 1440, 'train_loss': 1.9210010766983032, 'train_accuracy': 0.3697044253349304, 'val_loss': 1.6039336919784546, 'val_accuracy': 0.4927203059196472, 'pared_epoca_s': 1.0202177000464872, 'validacion_cpu_s': 0.24999240005854517}
+ENTRENAMIENTO CUDA REAL FC-A corrida 2 segundos 15.6858155 | incluye staging, máscaras, H2D, GPU, D2H y validación CPU; pasos 1440
+MÉTRICAS REALES {
+  "modelo": "FC-A",
+  "repeticion": 2,
+  "test": {
+    "accuracy": 0.517241358757019,
+    "loss": 1.5723273754119873
+  },
+  "epocas": 15,
+  "pasos": 1440,
+  "entrenamiento_s": 15.6858155,
+  "evaluacion_cpu_s": 0.390274,
+  "comparabilidad": "Datos, estado inicial, arquitectura y pasos equivalentes; CPU histórica; RNG interno diferente"
+}
+WARNING:tensorflow:From C:\Users\David\Documents\2026\S2\PARALELA\CUDA\PROYECTO-CUDA\proyectoCUDA-paralela\PCUDA\Lib\site-packages\keras\src\backend\common\global_state.py:87: The name tf.reset_default_graph is deprecated. Please use tf.compat.v1.reset_default_graph instead.
+
+GPU REAL {'name': 'NVIDIA GeForce GTX 1650', 'compute_capability': [7, 5], 'free_bytes': 3450601472, 'total_bytes': 4294639616, 'max_threads_per_block': 1024, 'max_shared_memory_per_block': 49152, 'simulator': False} Arena bytes 51864680 BN momentum [0.99]
+Warmup nuevo FC terminado y estado inicial restaurado; no incluido en entrenamiento.
+Preparación SOLO CPU (6 workers); bytes idénticos a EXP-002: {'train': {'images_sha256': '266ba8ca1cffb35dea04beea3f6dda3683b6ab3eb33e2a2cef0e543b02997be4', 'labels_sha256': '71cc0861806c907823b853bc596542ece8b481b12e23d2a6b50b107b5daecba3', 'shape': [12180, 64, 64, 3], 'dtype': 'float32'}, 'val': {'images_sha256': 'f14771b692aa401450dd6c7e2067d88519b00343bf6ae990f4cd2de6e1935d73', 'labels_sha256': '9a7e2a8feb527b18aa82e4e810aa81d28b3b6b925edc1c7bbba2e87ca16ce6a2', 'shape': [2610, 64, 64, 3], 'dtype': 'float32'}, 'test': {'images_sha256': '89d5d47ebdc6b172870f1ebb8e5ec1ac65de6547defb0f2d9297551fd7d4ce7f', 'labels_sha256': 'd594f12e2a74e612a88dd970efd10a74bb007b15f832f7afaea8887c8003211d', 'shape': [2610, 64, 64, 3], 'dtype': 'float32'}}
+EPOCH FC-A 3 {'modelo': 'FC-A', 'repeticion': 3, 'epoca': 1, 'pasos_acumulados': 96, 'train_loss': 4.118539810180664, 'train_accuracy': 0.07832512259483337, 'val_loss': 3.2670347690582275, 'val_accuracy': 0.07586207240819931, 'pared_epoca_s': 1.1022567000472918, 'validacion_cpu_s': 0.22886920010205358}
+EPOCH FC-A 3 {'modelo': 'FC-A', 'repeticion': 3, 'epoca': 2, 'pasos_acumulados': 192, 'train_loss': 3.082785129547119, 'train_accuracy': 0.1306239664554596, 'val_loss': 3.051234483718872, 'val_accuracy': 0.18160919845104218, 'pared_epoca_s': 0.9958342999452725, 'validacion_cpu_s': 0.23659440001938492}
+EPOCH FC-A 3 {'modelo': 'FC-A', 'repeticion': 3, 'epoca': 3, 'pasos_acumulados': 288, 'train_loss': 2.9082589149475098, 'train_accuracy': 0.16428571939468384, 'val_loss': 2.749790668487549, 'val_accuracy': 0.22720307111740112, 'pared_epoca_s': 0.9808610000181943, 'validacion_cpu_s': 0.23115440004039556}
+EPOCH FC-A 3 {'modelo': 'FC-A', 'repeticion': 3, 'epoca': 4, 'pasos_acumulados': 384, 'train_loss': 2.7658119201660156, 'train_accuracy': 0.1868637055158615, 'val_loss': 2.5271878242492676, 'val_accuracy': 0.2459770143032074, 'pared_epoca_s': 0.9798138999613002, 'validacion_cpu_s': 0.2355837000068277}
+EPOCH FC-A 3 {'modelo': 'FC-A', 'repeticion': 3, 'epoca': 5, 'pasos_acumulados': 480, 'train_loss': 2.6709158420562744, 'train_accuracy': 0.20098522305488586, 'val_loss': 2.3656442165374756, 'val_accuracy': 0.28812259435653687, 'pared_epoca_s': 0.968916599988006, 'validacion_cpu_s': 0.22943199996370822}
+EPOCH FC-A 3 {'modelo': 'FC-A', 'repeticion': 3, 'epoca': 6, 'pasos_acumulados': 576, 'train_loss': 2.568258047103882, 'train_accuracy': 0.22413793206214905, 'val_loss': 2.312250852584839, 'val_accuracy': 0.3045977056026459, 'pared_epoca_s': 0.9888972999760881, 'validacion_cpu_s': 0.2307573000434786}
+EPOCH FC-A 3 {'modelo': 'FC-A', 'repeticion': 3, 'epoca': 7, 'pasos_acumulados': 672, 'train_loss': 2.473478317260742, 'train_accuracy': 0.24729064106941223, 'val_loss': 2.1610734462738037, 'val_accuracy': 0.35862070322036743, 'pared_epoca_s': 0.981934400042519, 'validacion_cpu_s': 0.23413740005344152}
+EPOCH FC-A 3 {'modelo': 'FC-A', 'repeticion': 3, 'epoca': 8, 'pasos_acumulados': 768, 'train_loss': 2.3518173694610596, 'train_accuracy': 0.27192118763923645, 'val_loss': 2.0055863857269287, 'val_accuracy': 0.40613025426864624, 'pared_epoca_s': 0.9762500999495387, 'validacion_cpu_s': 0.22299430007115006}
+EPOCH FC-A 3 {'modelo': 'FC-A', 'repeticion': 3, 'epoca': 9, 'pasos_acumulados': 864, 'train_loss': 2.259943723678589, 'train_accuracy': 0.2935960590839386, 'val_loss': 1.926896572113037, 'val_accuracy': 0.40689656138420105, 'pared_epoca_s': 0.9911279999651015, 'validacion_cpu_s': 0.22192099993117154}
+EPOCH FC-A 3 {'modelo': 'FC-A', 'repeticion': 3, 'epoca': 10, 'pasos_acumulados': 960, 'train_loss': 2.21301531791687, 'train_accuracy': 0.3011494278907776, 'val_loss': 1.895586609840393, 'val_accuracy': 0.43065133690834045, 'pared_epoca_s': 0.9603543999837711, 'validacion_cpu_s': 0.2262099999934435}
+EPOCH FC-A 3 {'modelo': 'FC-A', 'repeticion': 3, 'epoca': 11, 'pasos_acumulados': 1056, 'train_loss': 2.1286184787750244, 'train_accuracy': 0.324794739484787, 'val_loss': 1.7522492408752441, 'val_accuracy': 0.4724137783050537, 'pared_epoca_s': 1.0106161000439897, 'validacion_cpu_s': 0.22324500000104308}
+EPOCH FC-A 3 {'modelo': 'FC-A', 'repeticion': 3, 'epoca': 12, 'pasos_acumulados': 1152, 'train_loss': 2.0731849670410156, 'train_accuracy': 0.3339080512523651, 'val_loss': 1.7136602401733398, 'val_accuracy': 0.4674329459667206, 'pared_epoca_s': 1.039408199954778, 'validacion_cpu_s': 0.2351781000616029}
+EPOCH FC-A 3 {'modelo': 'FC-A', 'repeticion': 3, 'epoca': 13, 'pasos_acumulados': 1248, 'train_loss': 2.004786491394043, 'train_accuracy': 0.34688013792037964, 'val_loss': 1.6550549268722534, 'val_accuracy': 0.4927203059196472, 'pared_epoca_s': 0.9779048999771476, 'validacion_cpu_s': 0.22646720008924603}
+EPOCH FC-A 3 {'modelo': 'FC-A', 'repeticion': 3, 'epoca': 14, 'pasos_acumulados': 1344, 'train_loss': 1.984330415725708, 'train_accuracy': 0.3534482717514038, 'val_loss': 1.6590479612350464, 'val_accuracy': 0.48160919547080994, 'pared_epoca_s': 0.9908873999956995, 'validacion_cpu_s': 0.225028199958615}
+EPOCH FC-A 3 {'modelo': 'FC-A', 'repeticion': 3, 'epoca': 15, 'pasos_acumulados': 1440, 'train_loss': 1.9210010766983032, 'train_accuracy': 0.3697044253349304, 'val_loss': 1.6039336919784546, 'val_accuracy': 0.4927203059196472, 'pared_epoca_s': 0.9652876999462023, 'validacion_cpu_s': 0.21987700008321553}
+ENTRENAMIENTO CUDA REAL FC-A corrida 3 segundos 14.969787 | incluye staging, máscaras, H2D, GPU, D2H y validación CPU; pasos 1440
+MÉTRICAS REALES {
+  "modelo": "FC-A",
+  "repeticion": 3,
+  "test": {
+    "accuracy": 0.517241358757019,
+    "loss": 1.5723273754119873
+  },
+  "epocas": 15,
+  "pasos": 1440,
+  "entrenamiento_s": 14.969787,
+  "evaluacion_cpu_s": 0.3964019,
+  "comparabilidad": "Datos, estado inicial, arquitectura y pasos equivalentes; CPU histórica; RNG interno diferente"
+}
+GPU REAL {'name': 'NVIDIA GeForce GTX 1650', 'compute_capability': [7, 5], 'free_bytes': 3450601472, 'total_bytes': 4294639616, 'max_threads_per_block': 1024, 'max_shared_memory_per_block': 49152, 'simulator': False} Arena bytes 51864680 BN momentum [0.99]
+Warmup nuevo FC terminado y estado inicial restaurado; no incluido en entrenamiento.
+Preparación SOLO CPU (6 workers); bytes idénticos a EXP-002: {'train': {'images_sha256': '266ba8ca1cffb35dea04beea3f6dda3683b6ab3eb33e2a2cef0e543b02997be4', 'labels_sha256': '71cc0861806c907823b853bc596542ece8b481b12e23d2a6b50b107b5daecba3', 'shape': [12180, 64, 64, 3], 'dtype': 'float32'}, 'val': {'images_sha256': 'f14771b692aa401450dd6c7e2067d88519b00343bf6ae990f4cd2de6e1935d73', 'labels_sha256': '9a7e2a8feb527b18aa82e4e810aa81d28b3b6b925edc1c7bbba2e87ca16ce6a2', 'shape': [2610, 64, 64, 3], 'dtype': 'float32'}, 'test': {'images_sha256': '89d5d47ebdc6b172870f1ebb8e5ec1ac65de6547defb0f2d9297551fd7d4ce7f', 'labels_sha256': 'd594f12e2a74e612a88dd970efd10a74bb007b15f832f7afaea8887c8003211d', 'shape': [2610, 64, 64, 3], 'dtype': 'float32'}}
+EPOCH FC-A 4 {'modelo': 'FC-A', 'repeticion': 4, 'epoca': 1, 'pasos_acumulados': 96, 'train_loss': 4.118539810180664, 'train_accuracy': 0.07832512259483337, 'val_loss': 3.2670347690582275, 'val_accuracy': 0.07586207240819931, 'pared_epoca_s': 1.156284400029108, 'validacion_cpu_s': 0.23248240002430975}
+EPOCH FC-A 4 {'modelo': 'FC-A', 'repeticion': 4, 'epoca': 2, 'pasos_acumulados': 192, 'train_loss': 3.082785129547119, 'train_accuracy': 0.1306239664554596, 'val_loss': 3.051234483718872, 'val_accuracy': 0.18160919845104218, 'pared_epoca_s': 0.9853574000298977, 'validacion_cpu_s': 0.2313553000567481}
+EPOCH FC-A 4 {'modelo': 'FC-A', 'repeticion': 4, 'epoca': 3, 'pasos_acumulados': 288, 'train_loss': 2.9082589149475098, 'train_accuracy': 0.16428571939468384, 'val_loss': 2.749790668487549, 'val_accuracy': 0.22720307111740112, 'pared_epoca_s': 0.9954636000329629, 'validacion_cpu_s': 0.23228989995550364}
+EPOCH FC-A 4 {'modelo': 'FC-A', 'repeticion': 4, 'epoca': 4, 'pasos_acumulados': 384, 'train_loss': 2.7658119201660156, 'train_accuracy': 0.1868637055158615, 'val_loss': 2.5271878242492676, 'val_accuracy': 0.2459770143032074, 'pared_epoca_s': 0.9795244000852108, 'validacion_cpu_s': 0.2319433999946341}
+EPOCH FC-A 4 {'modelo': 'FC-A', 'repeticion': 4, 'epoca': 5, 'pasos_acumulados': 480, 'train_loss': 2.6709158420562744, 'train_accuracy': 0.20098522305488586, 'val_loss': 2.3656442165374756, 'val_accuracy': 0.28812259435653687, 'pared_epoca_s': 0.985647700028494, 'validacion_cpu_s': 0.23985030001495034}
+EPOCH FC-A 4 {'modelo': 'FC-A', 'repeticion': 4, 'epoca': 6, 'pasos_acumulados': 576, 'train_loss': 2.568258047103882, 'train_accuracy': 0.22413793206214905, 'val_loss': 2.312250852584839, 'val_accuracy': 0.3045977056026459, 'pared_epoca_s': 1.0221411000238732, 'validacion_cpu_s': 0.22769930004142225}
+EPOCH FC-A 4 {'modelo': 'FC-A', 'repeticion': 4, 'epoca': 7, 'pasos_acumulados': 672, 'train_loss': 2.473478317260742, 'train_accuracy': 0.24729064106941223, 'val_loss': 2.1610734462738037, 'val_accuracy': 0.35862070322036743, 'pared_epoca_s': 0.970689499983564, 'validacion_cpu_s': 0.23289909993764013}
+EPOCH FC-A 4 {'modelo': 'FC-A', 'repeticion': 4, 'epoca': 8, 'pasos_acumulados': 768, 'train_loss': 2.3518173694610596, 'train_accuracy': 0.27192118763923645, 'val_loss': 2.0055863857269287, 'val_accuracy': 0.40613025426864624, 'pared_epoca_s': 0.9718137999298051, 'validacion_cpu_s': 0.2285560000455007}
+EPOCH FC-A 4 {'modelo': 'FC-A', 'repeticion': 4, 'epoca': 9, 'pasos_acumulados': 864, 'train_loss': 2.259943723678589, 'train_accuracy': 0.2935960590839386, 'val_loss': 1.926896572113037, 'val_accuracy': 0.40689656138420105, 'pared_epoca_s': 0.9743641000241041, 'validacion_cpu_s': 0.23071150004398078}
+EPOCH FC-A 4 {'modelo': 'FC-A', 'repeticion': 4, 'epoca': 10, 'pasos_acumulados': 960, 'train_loss': 2.21301531791687, 'train_accuracy': 0.3011494278907776, 'val_loss': 1.895586609840393, 'val_accuracy': 0.43065133690834045, 'pared_epoca_s': 0.9857558000367135, 'validacion_cpu_s': 0.23267349996604025}
+EPOCH FC-A 4 {'modelo': 'FC-A', 'repeticion': 4, 'epoca': 11, 'pasos_acumulados': 1056, 'train_loss': 2.1286184787750244, 'train_accuracy': 0.324794739484787, 'val_loss': 1.7522492408752441, 'val_accuracy': 0.4724137783050537, 'pared_epoca_s': 0.9947097999975085, 'validacion_cpu_s': 0.23046990006696433}
+EPOCH FC-A 4 {'modelo': 'FC-A', 'repeticion': 4, 'epoca': 12, 'pasos_acumulados': 1152, 'train_loss': 2.0731849670410156, 'train_accuracy': 0.3339080512523651, 'val_loss': 1.7136602401733398, 'val_accuracy': 0.4674329459667206, 'pared_epoca_s': 0.9722991000162438, 'validacion_cpu_s': 0.22626760008279234}
+EPOCH FC-A 4 {'modelo': 'FC-A', 'repeticion': 4, 'epoca': 13, 'pasos_acumulados': 1248, 'train_loss': 2.004786491394043, 'train_accuracy': 0.34688013792037964, 'val_loss': 1.6550549268722534, 'val_accuracy': 0.4927203059196472, 'pared_epoca_s': 1.0014680000022054, 'validacion_cpu_s': 0.24132249993272126}
+EPOCH FC-A 4 {'modelo': 'FC-A', 'repeticion': 4, 'epoca': 14, 'pasos_acumulados': 1344, 'train_loss': 1.984330415725708, 'train_accuracy': 0.3534482717514038, 'val_loss': 1.6590479612350464, 'val_accuracy': 0.48160919547080994, 'pared_epoca_s': 0.9757283999351785, 'validacion_cpu_s': 0.22493490006309003}
+EPOCH FC-A 4 {'modelo': 'FC-A', 'repeticion': 4, 'epoca': 15, 'pasos_acumulados': 1440, 'train_loss': 1.9210010766983032, 'train_accuracy': 0.3697044253349304, 'val_loss': 1.6039336919784546, 'val_accuracy': 0.4927203059196472, 'pared_epoca_s': 0.969699899898842, 'validacion_cpu_s': 0.22428690001834184}
+ENTRENAMIENTO CUDA REAL FC-A corrida 4 segundos 14.9999501 | incluye staging, máscaras, H2D, GPU, D2H y validación CPU; pasos 1440
+MÉTRICAS REALES {
+  "modelo": "FC-A",
+  "repeticion": 4,
+  "test": {
+    "accuracy": 0.517241358757019,
+    "loss": 1.5723273754119873
+  },
+  "epocas": 15,
+  "pasos": 1440,
+  "entrenamiento_s": 14.9999501,
+  "evaluacion_cpu_s": 0.3900924,
+  "comparabilidad": "Datos, estado inicial, arquitectura y pasos equivalentes; CPU histórica; RNG interno diferente"
+}
+GPU REAL {'name': 'NVIDIA GeForce GTX 1650', 'compute_capability': [7, 5], 'free_bytes': 3450601472, 'total_bytes': 4294639616, 'max_threads_per_block': 1024, 'max_shared_memory_per_block': 49152, 'simulator': False} Arena bytes 51864680 BN momentum [0.99]
+Warmup nuevo FC terminado y estado inicial restaurado; no incluido en entrenamiento.
+Preparación SOLO CPU (6 workers); bytes idénticos a EXP-002: {'train': {'images_sha256': '266ba8ca1cffb35dea04beea3f6dda3683b6ab3eb33e2a2cef0e543b02997be4', 'labels_sha256': '71cc0861806c907823b853bc596542ece8b481b12e23d2a6b50b107b5daecba3', 'shape': [12180, 64, 64, 3], 'dtype': 'float32'}, 'val': {'images_sha256': 'f14771b692aa401450dd6c7e2067d88519b00343bf6ae990f4cd2de6e1935d73', 'labels_sha256': '9a7e2a8feb527b18aa82e4e810aa81d28b3b6b925edc1c7bbba2e87ca16ce6a2', 'shape': [2610, 64, 64, 3], 'dtype': 'float32'}, 'test': {'images_sha256': '89d5d47ebdc6b172870f1ebb8e5ec1ac65de6547defb0f2d9297551fd7d4ce7f', 'labels_sha256': 'd594f12e2a74e612a88dd970efd10a74bb007b15f832f7afaea8887c8003211d', 'shape': [2610, 64, 64, 3], 'dtype': 'float32'}}
+EPOCH FC-A 5 {'modelo': 'FC-A', 'repeticion': 5, 'epoca': 1, 'pasos_acumulados': 96, 'train_loss': 4.118539810180664, 'train_accuracy': 0.07832512259483337, 'val_loss': 3.2670347690582275, 'val_accuracy': 0.07586207240819931, 'pared_epoca_s': 1.1978128000628203, 'validacion_cpu_s': 0.23693499993532896}
+EPOCH FC-A 5 {'modelo': 'FC-A', 'repeticion': 5, 'epoca': 2, 'pasos_acumulados': 192, 'train_loss': 3.082785129547119, 'train_accuracy': 0.1306239664554596, 'val_loss': 3.051234483718872, 'val_accuracy': 0.18160919845104218, 'pared_epoca_s': 0.9888904000399634, 'validacion_cpu_s': 0.2277052999706939}
+EPOCH FC-A 5 {'modelo': 'FC-A', 'repeticion': 5, 'epoca': 3, 'pasos_acumulados': 288, 'train_loss': 2.9082589149475098, 'train_accuracy': 0.16428571939468384, 'val_loss': 2.749790668487549, 'val_accuracy': 0.22720307111740112, 'pared_epoca_s': 0.9729193000821397, 'validacion_cpu_s': 0.22714920004364103}
+EPOCH FC-A 5 {'modelo': 'FC-A', 'repeticion': 5, 'epoca': 4, 'pasos_acumulados': 384, 'train_loss': 2.7658119201660156, 'train_accuracy': 0.1868637055158615, 'val_loss': 2.5271878242492676, 'val_accuracy': 0.2459770143032074, 'pared_epoca_s': 0.9829977999906987, 'validacion_cpu_s': 0.23174630000721663}
+EPOCH FC-A 5 {'modelo': 'FC-A', 'repeticion': 5, 'epoca': 5, 'pasos_acumulados': 480, 'train_loss': 2.6709158420562744, 'train_accuracy': 0.20098522305488586, 'val_loss': 2.3656442165374756, 'val_accuracy': 0.28812259435653687, 'pared_epoca_s': 1.0095536999870092, 'validacion_cpu_s': 0.23770459997467697}
+EPOCH FC-A 5 {'modelo': 'FC-A', 'repeticion': 5, 'epoca': 6, 'pasos_acumulados': 576, 'train_loss': 2.568258047103882, 'train_accuracy': 0.22413793206214905, 'val_loss': 2.312250852584839, 'val_accuracy': 0.3045977056026459, 'pared_epoca_s': 0.9987356000347063, 'validacion_cpu_s': 0.22514909994788468}
+EPOCH FC-A 5 {'modelo': 'FC-A', 'repeticion': 5, 'epoca': 7, 'pasos_acumulados': 672, 'train_loss': 2.473478317260742, 'train_accuracy': 0.24729064106941223, 'val_loss': 2.1610734462738037, 'val_accuracy': 0.35862070322036743, 'pared_epoca_s': 0.9798186999978498, 'validacion_cpu_s': 0.22438409994356334}
+EPOCH FC-A 5 {'modelo': 'FC-A', 'repeticion': 5, 'epoca': 8, 'pasos_acumulados': 768, 'train_loss': 2.3518173694610596, 'train_accuracy': 0.27192118763923645, 'val_loss': 2.0055863857269287, 'val_accuracy': 0.40613025426864624, 'pared_epoca_s': 1.0159339000238106, 'validacion_cpu_s': 0.2280750999925658}
+EPOCH FC-A 5 {'modelo': 'FC-A', 'repeticion': 5, 'epoca': 9, 'pasos_acumulados': 864, 'train_loss': 2.259943723678589, 'train_accuracy': 0.2935960590839386, 'val_loss': 1.926896572113037, 'val_accuracy': 0.40689656138420105, 'pared_epoca_s': 1.0047356999712065, 'validacion_cpu_s': 0.2262821999611333}
+EPOCH FC-A 5 {'modelo': 'FC-A', 'repeticion': 5, 'epoca': 10, 'pasos_acumulados': 960, 'train_loss': 2.21301531791687, 'train_accuracy': 0.3011494278907776, 'val_loss': 1.895586609840393, 'val_accuracy': 0.43065133690834045, 'pared_epoca_s': 0.9802547000581399, 'validacion_cpu_s': 0.2331716000335291}
+EPOCH FC-A 5 {'modelo': 'FC-A', 'repeticion': 5, 'epoca': 11, 'pasos_acumulados': 1056, 'train_loss': 2.1286184787750244, 'train_accuracy': 0.324794739484787, 'val_loss': 1.7522492408752441, 'val_accuracy': 0.4724137783050537, 'pared_epoca_s': 0.9808482000371441, 'validacion_cpu_s': 0.23055980005301535}
+EPOCH FC-A 5 {'modelo': 'FC-A', 'repeticion': 5, 'epoca': 12, 'pasos_acumulados': 1152, 'train_loss': 2.0731849670410156, 'train_accuracy': 0.3339080512523651, 'val_loss': 1.7136602401733398, 'val_accuracy': 0.4674329459667206, 'pared_epoca_s': 1.026099000009708, 'validacion_cpu_s': 0.2288772000465542}
+EPOCH FC-A 5 {'modelo': 'FC-A', 'repeticion': 5, 'epoca': 13, 'pasos_acumulados': 1248, 'train_loss': 2.004786491394043, 'train_accuracy': 0.34688013792037964, 'val_loss': 1.6550549268722534, 'val_accuracy': 0.4927203059196472, 'pared_epoca_s': 0.9812829999718815, 'validacion_cpu_s': 0.23460669990163296}
+EPOCH FC-A 5 {'modelo': 'FC-A', 'repeticion': 5, 'epoca': 14, 'pasos_acumulados': 1344, 'train_loss': 1.984330415725708, 'train_accuracy': 0.3534482717514038, 'val_loss': 1.6590479612350464, 'val_accuracy': 0.48160919547080994, 'pared_epoca_s': 0.975418199901469, 'validacion_cpu_s': 0.2274755999678746}
+EPOCH FC-A 5 {'modelo': 'FC-A', 'repeticion': 5, 'epoca': 15, 'pasos_acumulados': 1440, 'train_loss': 1.9210010766983032, 'train_accuracy': 0.3697044253349304, 'val_loss': 1.6039336919784546, 'val_accuracy': 0.4927203059196472, 'pared_epoca_s': 0.9721604000078514, 'validacion_cpu_s': 0.2295992000726983}
+ENTRENAMIENTO CUDA REAL FC-A corrida 5 segundos 15.1278363 | incluye staging, máscaras, H2D, GPU, D2H y validación CPU; pasos 1440
+MÉTRICAS REALES {
+  "modelo": "FC-A",
+  "repeticion": 5,
+  "test": {
+    "accuracy": 0.517241358757019,
+    "loss": 1.5723273754119873
+  },
+  "epocas": 15,
+  "pasos": 1440,
+  "entrenamiento_s": 15.1278363,
+  "evaluacion_cpu_s": 0.3979068,
+  "comparabilidad": "Datos, estado inicial, arquitectura y pasos equivalentes; CPU histórica; RNG interno diferente"
+}
+GPU REAL {'name': 'NVIDIA GeForce GTX 1650', 'compute_capability': [7, 5], 'free_bytes': 3450601472, 'total_bytes': 4294639616, 'max_threads_per_block': 1024, 'max_shared_memory_per_block': 49152, 'simulator': False} Arena bytes 130704488 BN momentum [0.99]
+Warmup nuevo FC terminado y estado inicial restaurado; no incluido en entrenamiento.
+Preparación SOLO CPU (6 workers); bytes idénticos a EXP-002: {'train': {'images_sha256': '266ba8ca1cffb35dea04beea3f6dda3683b6ab3eb33e2a2cef0e543b02997be4', 'labels_sha256': '71cc0861806c907823b853bc596542ece8b481b12e23d2a6b50b107b5daecba3', 'shape': [12180, 64, 64, 3], 'dtype': 'float32'}, 'val': {'images_sha256': 'f14771b692aa401450dd6c7e2067d88519b00343bf6ae990f4cd2de6e1935d73', 'labels_sha256': '9a7e2a8feb527b18aa82e4e810aa81d28b3b6b925edc1c7bbba2e87ca16ce6a2', 'shape': [2610, 64, 64, 3], 'dtype': 'float32'}, 'test': {'images_sha256': '89d5d47ebdc6b172870f1ebb8e5ec1ac65de6547defb0f2d9297551fd7d4ce7f', 'labels_sha256': 'd594f12e2a74e612a88dd970efd10a74bb007b15f832f7afaea8887c8003211d', 'shape': [2610, 64, 64, 3], 'dtype': 'float32'}}
+EPOCH FC-B 1 {'modelo': 'FC-B', 'repeticion': 1, 'epoca': 1, 'pasos_acumulados': 96, 'train_loss': 5.114112377166748, 'train_accuracy': 0.04950739070773125, 'val_loss': 3.3247272968292236, 'val_accuracy': 0.0475095771253109, 'pared_epoca_s': 1.588294900022447, 'validacion_cpu_s': 0.40928969997912645}
+EPOCH FC-B 1 {'modelo': 'FC-B', 'repeticion': 1, 'epoca': 2, 'pasos_acumulados': 192, 'train_loss': 3.381804943084717, 'train_accuracy': 0.0714285746216774, 'val_loss': 3.245692253112793, 'val_accuracy': 0.08160919696092606, 'pared_epoca_s': 1.5987866000505164, 'validacion_cpu_s': 0.4300015999469906}
+EPOCH FC-B 1 {'modelo': 'FC-B', 'repeticion': 1, 'epoca': 3, 'pasos_acumulados': 288, 'train_loss': 3.192230224609375, 'train_accuracy': 0.09376025944948196, 'val_loss': 3.0364584922790527, 'val_accuracy': 0.1394636034965515, 'pared_epoca_s': 1.526204099995084, 'validacion_cpu_s': 0.43000060005579144}
+EPOCH FC-B 1 {'modelo': 'FC-B', 'repeticion': 1, 'epoca': 4, 'pasos_acumulados': 384, 'train_loss': 3.0399556159973145, 'train_accuracy': 0.1228243038058281, 'val_loss': 2.8100357055664062, 'val_accuracy': 0.17624521255493164, 'pared_epoca_s': 1.3729981000069529, 'validacion_cpu_s': 0.3064291999908164}
+EPOCH FC-B 1 {'modelo': 'FC-B', 'repeticion': 1, 'epoca': 5, 'pasos_acumulados': 480, 'train_loss': 2.9195146560668945, 'train_accuracy': 0.13612478971481323, 'val_loss': 2.60569429397583, 'val_accuracy': 0.230268195271492, 'pared_epoca_s': 1.3779785999795422, 'validacion_cpu_s': 0.3333707000128925}
+EPOCH FC-B 1 {'modelo': 'FC-B', 'repeticion': 1, 'epoca': 6, 'pasos_acumulados': 576, 'train_loss': 2.809615135192871, 'train_accuracy': 0.15985222160816193, 'val_loss': 2.513597011566162, 'val_accuracy': 0.22835248708724976, 'pared_epoca_s': 1.3632746000075713, 'validacion_cpu_s': 0.3060338000068441}
+EPOCH FC-B 1 {'modelo': 'FC-B', 'repeticion': 1, 'epoca': 7, 'pasos_acumulados': 672, 'train_loss': 2.6993114948272705, 'train_accuracy': 0.17660097777843475, 'val_loss': 2.3594553470611572, 'val_accuracy': 0.2747126519680023, 'pared_epoca_s': 1.373745599994436, 'validacion_cpu_s': 0.3406152999959886}
+EPOCH FC-B 1 {'modelo': 'FC-B', 'repeticion': 1, 'epoca': 8, 'pasos_acumulados': 768, 'train_loss': 2.6092920303344727, 'train_accuracy': 0.19105090200901031, 'val_loss': 2.2711737155914307, 'val_accuracy': 0.28697317838668823, 'pared_epoca_s': 1.3985340000363067, 'validacion_cpu_s': 0.3305813000770286}
+EPOCH FC-B 1 {'modelo': 'FC-B', 'repeticion': 1, 'epoca': 9, 'pasos_acumulados': 864, 'train_loss': 2.5239548683166504, 'train_accuracy': 0.2139573097229004, 'val_loss': 2.193864583969116, 'val_accuracy': 0.3130268156528473, 'pared_epoca_s': 1.3599886000156403, 'validacion_cpu_s': 0.3185801999643445}
+EPOCH FC-B 1 {'modelo': 'FC-B', 'repeticion': 1, 'epoca': 10, 'pasos_acumulados': 960, 'train_loss': 2.455425977706909, 'train_accuracy': 0.22873562574386597, 'val_loss': 2.0784318447113037, 'val_accuracy': 0.3563218414783478, 'pared_epoca_s': 1.373545499984175, 'validacion_cpu_s': 0.34420180006418377}
+EPOCH FC-B 1 {'modelo': 'FC-B', 'repeticion': 1, 'epoca': 11, 'pasos_acumulados': 1056, 'train_loss': 2.333486318588257, 'train_accuracy': 0.2533661723136902, 'val_loss': 2.0321121215820312, 'val_accuracy': 0.35593870282173157, 'pared_epoca_s': 1.3600764001021162, 'validacion_cpu_s': 0.3020908000180498}
+EPOCH FC-B 1 {'modelo': 'FC-B', 'repeticion': 1, 'epoca': 12, 'pasos_acumulados': 1152, 'train_loss': 2.2715535163879395, 'train_accuracy': 0.2706075608730316, 'val_loss': 1.9162896871566772, 'val_accuracy': 0.38352489471435547, 'pared_epoca_s': 1.3682917000260204, 'validacion_cpu_s': 0.32055369997397065}
+EPOCH FC-B 1 {'modelo': 'FC-B', 'repeticion': 1, 'epoca': 13, 'pasos_acumulados': 1248, 'train_loss': 2.2342052459716797, 'train_accuracy': 0.27167487144470215, 'val_loss': 1.859998345375061, 'val_accuracy': 0.40229883790016174, 'pared_epoca_s': 1.3729646999854594, 'validacion_cpu_s': 0.3463415999431163}
+EPOCH FC-B 1 {'modelo': 'FC-B', 'repeticion': 1, 'epoca': 14, 'pasos_acumulados': 1344, 'train_loss': 2.1608409881591797, 'train_accuracy': 0.28809523582458496, 'val_loss': 1.8032516241073608, 'val_accuracy': 0.38735631108283997, 'pared_epoca_s': 1.3561524000251666, 'validacion_cpu_s': 0.32025510002858937}
+EPOCH FC-B 1 {'modelo': 'FC-B', 'repeticion': 1, 'epoca': 15, 'pasos_acumulados': 1440, 'train_loss': 2.106384754180908, 'train_accuracy': 0.3024630546569824, 'val_loss': 1.7751481533050537, 'val_accuracy': 0.4007662832736969, 'pared_epoca_s': 1.3787567999679595, 'validacion_cpu_s': 0.32694830000400543}
+ENTRENAMIENTO CUDA REAL FC-B corrida 1 segundos 21.3026643 | incluye staging, máscaras, H2D, GPU, D2H y validación CPU; pasos 1440
+MÉTRICAS REALES {
+  "modelo": "FC-B",
+  "repeticion": 1,
+  "test": {
+    "accuracy": 0.39961686730384827,
+    "loss": 1.759406566619873
+  },
+  "epocas": 15,
+  "pasos": 1440,
+  "entrenamiento_s": 21.3026643,
+  "evaluacion_cpu_s": 0.5177506,
+  "comparabilidad": "Datos, estado inicial, arquitectura y pasos equivalentes; CPU histórica; RNG interno diferente"
+}
+GPU REAL {'name': 'NVIDIA GeForce GTX 1650', 'compute_capability': [7, 5], 'free_bytes': 3448504320, 'total_bytes': 4294639616, 'max_threads_per_block': 1024, 'max_shared_memory_per_block': 49152, 'simulator': False} Arena bytes 130704488 BN momentum [0.99]
+Warmup nuevo FC terminado y estado inicial restaurado; no incluido en entrenamiento.
+Preparación SOLO CPU (6 workers); bytes idénticos a EXP-002: {'train': {'images_sha256': '266ba8ca1cffb35dea04beea3f6dda3683b6ab3eb33e2a2cef0e543b02997be4', 'labels_sha256': '71cc0861806c907823b853bc596542ece8b481b12e23d2a6b50b107b5daecba3', 'shape': [12180, 64, 64, 3], 'dtype': 'float32'}, 'val': {'images_sha256': 'f14771b692aa401450dd6c7e2067d88519b00343bf6ae990f4cd2de6e1935d73', 'labels_sha256': '9a7e2a8feb527b18aa82e4e810aa81d28b3b6b925edc1c7bbba2e87ca16ce6a2', 'shape': [2610, 64, 64, 3], 'dtype': 'float32'}, 'test': {'images_sha256': '89d5d47ebdc6b172870f1ebb8e5ec1ac65de6547defb0f2d9297551fd7d4ce7f', 'labels_sha256': 'd594f12e2a74e612a88dd970efd10a74bb007b15f832f7afaea8887c8003211d', 'shape': [2610, 64, 64, 3], 'dtype': 'float32'}}
+EPOCH FC-B 2 {'modelo': 'FC-B', 'repeticion': 2, 'epoca': 1, 'pasos_acumulados': 96, 'train_loss': 5.114112377166748, 'train_accuracy': 0.04950739070773125, 'val_loss': 3.3247272968292236, 'val_accuracy': 0.0475095771253109, 'pared_epoca_s': 1.5916912000393495, 'validacion_cpu_s': 0.331556300050579}
+EPOCH FC-B 2 {'modelo': 'FC-B', 'repeticion': 2, 'epoca': 2, 'pasos_acumulados': 192, 'train_loss': 3.381804943084717, 'train_accuracy': 0.0714285746216774, 'val_loss': 3.245692253112793, 'val_accuracy': 0.08160919696092606, 'pared_epoca_s': 1.362608499941416, 'validacion_cpu_s': 0.30849840003065765}
+EPOCH FC-B 2 {'modelo': 'FC-B', 'repeticion': 2, 'epoca': 3, 'pasos_acumulados': 288, 'train_loss': 3.192230224609375, 'train_accuracy': 0.09376025944948196, 'val_loss': 3.0364584922790527, 'val_accuracy': 0.1394636034965515, 'pared_epoca_s': 1.3814386000158265, 'validacion_cpu_s': 0.3272263999097049}
+EPOCH FC-B 2 {'modelo': 'FC-B', 'repeticion': 2, 'epoca': 4, 'pasos_acumulados': 384, 'train_loss': 3.0399556159973145, 'train_accuracy': 0.1228243038058281, 'val_loss': 2.8100357055664062, 'val_accuracy': 0.17624521255493164, 'pared_epoca_s': 1.3616519999923185, 'validacion_cpu_s': 0.3102483000839129}
+EPOCH FC-B 2 {'modelo': 'FC-B', 'repeticion': 2, 'epoca': 5, 'pasos_acumulados': 480, 'train_loss': 2.9195146560668945, 'train_accuracy': 0.13612478971481323, 'val_loss': 2.60569429397583, 'val_accuracy': 0.230268195271492, 'pared_epoca_s': 1.3458561999723315, 'validacion_cpu_s': 0.3191050000023097}
+EPOCH FC-B 2 {'modelo': 'FC-B', 'repeticion': 2, 'epoca': 6, 'pasos_acumulados': 576, 'train_loss': 2.809615135192871, 'train_accuracy': 0.15985222160816193, 'val_loss': 2.513597011566162, 'val_accuracy': 0.22835248708724976, 'pared_epoca_s': 1.3614131999202073, 'validacion_cpu_s': 0.32328469993080944}
+EPOCH FC-B 2 {'modelo': 'FC-B', 'repeticion': 2, 'epoca': 7, 'pasos_acumulados': 672, 'train_loss': 2.6993114948272705, 'train_accuracy': 0.17660097777843475, 'val_loss': 2.3594553470611572, 'val_accuracy': 0.2747126519680023, 'pared_epoca_s': 1.345294400001876, 'validacion_cpu_s': 0.2987841999856755}
+EPOCH FC-B 2 {'modelo': 'FC-B', 'repeticion': 2, 'epoca': 8, 'pasos_acumulados': 768, 'train_loss': 2.6092920303344727, 'train_accuracy': 0.19105090200901031, 'val_loss': 2.2711737155914307, 'val_accuracy': 0.28697317838668823, 'pared_epoca_s': 1.3828312999103218, 'validacion_cpu_s': 0.31042610004078597}
+EPOCH FC-B 2 {'modelo': 'FC-B', 'repeticion': 2, 'epoca': 9, 'pasos_acumulados': 864, 'train_loss': 2.5239548683166504, 'train_accuracy': 0.2139573097229004, 'val_loss': 2.193864583969116, 'val_accuracy': 0.3130268156528473, 'pared_epoca_s': 1.3617728999815881, 'validacion_cpu_s': 0.33367779990658164}
+EPOCH FC-B 2 {'modelo': 'FC-B', 'repeticion': 2, 'epoca': 10, 'pasos_acumulados': 960, 'train_loss': 2.455425977706909, 'train_accuracy': 0.22873562574386597, 'val_loss': 2.0784318447113037, 'val_accuracy': 0.3563218414783478, 'pared_epoca_s': 1.4351888000965118, 'validacion_cpu_s': 0.3855984000256285}
+EPOCH FC-B 2 {'modelo': 'FC-B', 'repeticion': 2, 'epoca': 11, 'pasos_acumulados': 1056, 'train_loss': 2.333486318588257, 'train_accuracy': 0.2533661723136902, 'val_loss': 2.0321121215820312, 'val_accuracy': 0.35593870282173157, 'pared_epoca_s': 1.437715300009586, 'validacion_cpu_s': 0.38535820005927235}
+EPOCH FC-B 2 {'modelo': 'FC-B', 'repeticion': 2, 'epoca': 12, 'pasos_acumulados': 1152, 'train_loss': 2.2715535163879395, 'train_accuracy': 0.2706075608730316, 'val_loss': 1.9162896871566772, 'val_accuracy': 0.38352489471435547, 'pared_epoca_s': 1.3846502000233158, 'validacion_cpu_s': 0.3112758999923244}
+EPOCH FC-B 2 {'modelo': 'FC-B', 'repeticion': 2, 'epoca': 13, 'pasos_acumulados': 1248, 'train_loss': 2.2342052459716797, 'train_accuracy': 0.27167487144470215, 'val_loss': 1.859998345375061, 'val_accuracy': 0.40229883790016174, 'pared_epoca_s': 1.355373500031419, 'validacion_cpu_s': 0.3106781999813393}
+EPOCH FC-B 2 {'modelo': 'FC-B', 'repeticion': 2, 'epoca': 14, 'pasos_acumulados': 1344, 'train_loss': 2.1608409881591797, 'train_accuracy': 0.28809523582458496, 'val_loss': 1.8032516241073608, 'val_accuracy': 0.38735631108283997, 'pared_epoca_s': 1.3421227999497205, 'validacion_cpu_s': 0.31035210005939007}
+EPOCH FC-B 2 {'modelo': 'FC-B', 'repeticion': 2, 'epoca': 15, 'pasos_acumulados': 1440, 'train_loss': 2.106384754180908, 'train_accuracy': 0.3024630546569824, 'val_loss': 1.7751481533050537, 'val_accuracy': 0.4007662832736969, 'pared_epoca_s': 1.3642112000379711, 'validacion_cpu_s': 0.3320852000033483}
+ENTRENAMIENTO CUDA REAL FC-B corrida 2 segundos 20.9450619 | incluye staging, máscaras, H2D, GPU, D2H y validación CPU; pasos 1440
+MÉTRICAS REALES {
+  "modelo": "FC-B",
+  "repeticion": 2,
+  "test": {
+    "accuracy": 0.39961686730384827,
+    "loss": 1.759406566619873
+  },
+  "epocas": 15,
+  "pasos": 1440,
+  "entrenamiento_s": 20.9450619,
+  "evaluacion_cpu_s": 0.5312584,
+  "comparabilidad": "Datos, estado inicial, arquitectura y pasos equivalentes; CPU histórica; RNG interno diferente"
+}
+GPU REAL {'name': 'NVIDIA GeForce GTX 1650', 'compute_capability': [7, 5], 'free_bytes': 3450601472, 'total_bytes': 4294639616, 'max_threads_per_block': 1024, 'max_shared_memory_per_block': 49152, 'simulator': False} Arena bytes 130704488 BN momentum [0.99]
+Warmup nuevo FC terminado y estado inicial restaurado; no incluido en entrenamiento.
+Preparación SOLO CPU (6 workers); bytes idénticos a EXP-002: {'train': {'images_sha256': '266ba8ca1cffb35dea04beea3f6dda3683b6ab3eb33e2a2cef0e543b02997be4', 'labels_sha256': '71cc0861806c907823b853bc596542ece8b481b12e23d2a6b50b107b5daecba3', 'shape': [12180, 64, 64, 3], 'dtype': 'float32'}, 'val': {'images_sha256': 'f14771b692aa401450dd6c7e2067d88519b00343bf6ae990f4cd2de6e1935d73', 'labels_sha256': '9a7e2a8feb527b18aa82e4e810aa81d28b3b6b925edc1c7bbba2e87ca16ce6a2', 'shape': [2610, 64, 64, 3], 'dtype': 'float32'}, 'test': {'images_sha256': '89d5d47ebdc6b172870f1ebb8e5ec1ac65de6547defb0f2d9297551fd7d4ce7f', 'labels_sha256': 'd594f12e2a74e612a88dd970efd10a74bb007b15f832f7afaea8887c8003211d', 'shape': [2610, 64, 64, 3], 'dtype': 'float32'}}
+EPOCH FC-B 3 {'modelo': 'FC-B', 'repeticion': 3, 'epoca': 1, 'pasos_acumulados': 96, 'train_loss': 5.114112377166748, 'train_accuracy': 0.04950739070773125, 'val_loss': 3.3247272968292236, 'val_accuracy': 0.0475095771253109, 'pared_epoca_s': 1.548382299952209, 'validacion_cpu_s': 0.34454289998393506}
+EPOCH FC-B 3 {'modelo': 'FC-B', 'repeticion': 3, 'epoca': 2, 'pasos_acumulados': 192, 'train_loss': 3.381804943084717, 'train_accuracy': 0.0714285746216774, 'val_loss': 3.245692253112793, 'val_accuracy': 0.08160919696092606, 'pared_epoca_s': 1.3603323999559507, 'validacion_cpu_s': 0.3243243000470102}
+EPOCH FC-B 3 {'modelo': 'FC-B', 'repeticion': 3, 'epoca': 3, 'pasos_acumulados': 288, 'train_loss': 3.192230224609375, 'train_accuracy': 0.09376025944948196, 'val_loss': 3.0364584922790527, 'val_accuracy': 0.1394636034965515, 'pared_epoca_s': 1.3526339000090957, 'validacion_cpu_s': 0.3243825000245124}
+EPOCH FC-B 3 {'modelo': 'FC-B', 'repeticion': 3, 'epoca': 4, 'pasos_acumulados': 384, 'train_loss': 3.0399556159973145, 'train_accuracy': 0.1228243038058281, 'val_loss': 2.8100357055664062, 'val_accuracy': 0.17624521255493164, 'pared_epoca_s': 1.3585641999961808, 'validacion_cpu_s': 0.3138947000261396}
+EPOCH FC-B 3 {'modelo': 'FC-B', 'repeticion': 3, 'epoca': 5, 'pasos_acumulados': 480, 'train_loss': 2.9195146560668945, 'train_accuracy': 0.13612478971481323, 'val_loss': 2.60569429397583, 'val_accuracy': 0.230268195271492, 'pared_epoca_s': 1.4647621000185609, 'validacion_cpu_s': 0.383318500011228}
+EPOCH FC-B 3 {'modelo': 'FC-B', 'repeticion': 3, 'epoca': 6, 'pasos_acumulados': 576, 'train_loss': 2.809615135192871, 'train_accuracy': 0.15985222160816193, 'val_loss': 2.513597011566162, 'val_accuracy': 0.22835248708724976, 'pared_epoca_s': 1.4730512999230996, 'validacion_cpu_s': 0.38707360008265823}
+EPOCH FC-B 3 {'modelo': 'FC-B', 'repeticion': 3, 'epoca': 7, 'pasos_acumulados': 672, 'train_loss': 2.6993114948272705, 'train_accuracy': 0.17660097777843475, 'val_loss': 2.3594553470611572, 'val_accuracy': 0.2747126519680023, 'pared_epoca_s': 1.438140399986878, 'validacion_cpu_s': 0.396274600061588}
+EPOCH FC-B 3 {'modelo': 'FC-B', 'repeticion': 3, 'epoca': 8, 'pasos_acumulados': 768, 'train_loss': 2.6092920303344727, 'train_accuracy': 0.19105090200901031, 'val_loss': 2.2711737155914307, 'val_accuracy': 0.28697317838668823, 'pared_epoca_s': 1.3729368000058457, 'validacion_cpu_s': 0.29955200001131743}
+EPOCH FC-B 3 {'modelo': 'FC-B', 'repeticion': 3, 'epoca': 9, 'pasos_acumulados': 864, 'train_loss': 2.5239548683166504, 'train_accuracy': 0.2139573097229004, 'val_loss': 2.193864583969116, 'val_accuracy': 0.3130268156528473, 'pared_epoca_s': 1.3658256999915466, 'validacion_cpu_s': 0.31931369996163994}
+EPOCH FC-B 3 {'modelo': 'FC-B', 'repeticion': 3, 'epoca': 10, 'pasos_acumulados': 960, 'train_loss': 2.455425977706909, 'train_accuracy': 0.22873562574386597, 'val_loss': 2.0784318447113037, 'val_accuracy': 0.3563218414783478, 'pared_epoca_s': 1.391923199989833, 'validacion_cpu_s': 0.3430568999610841}
+EPOCH FC-B 3 {'modelo': 'FC-B', 'repeticion': 3, 'epoca': 11, 'pasos_acumulados': 1056, 'train_loss': 2.333486318588257, 'train_accuracy': 0.2533661723136902, 'val_loss': 2.0321121215820312, 'val_accuracy': 0.35593870282173157, 'pared_epoca_s': 1.3510120999999344, 'validacion_cpu_s': 0.3070166999241337}
+EPOCH FC-B 3 {'modelo': 'FC-B', 'repeticion': 3, 'epoca': 12, 'pasos_acumulados': 1152, 'train_loss': 2.2715535163879395, 'train_accuracy': 0.2706075608730316, 'val_loss': 1.9162896871566772, 'val_accuracy': 0.38352489471435547, 'pared_epoca_s': 1.4428472000872716, 'validacion_cpu_s': 0.3735189000144601}
+EPOCH FC-B 3 {'modelo': 'FC-B', 'repeticion': 3, 'epoca': 13, 'pasos_acumulados': 1248, 'train_loss': 2.2342052459716797, 'train_accuracy': 0.27167487144470215, 'val_loss': 1.859998345375061, 'val_accuracy': 0.40229883790016174, 'pared_epoca_s': 1.4678898999700323, 'validacion_cpu_s': 0.3491063000401482}
+EPOCH FC-B 3 {'modelo': 'FC-B', 'repeticion': 3, 'epoca': 14, 'pasos_acumulados': 1344, 'train_loss': 2.1608409881591797, 'train_accuracy': 0.28809523582458496, 'val_loss': 1.8032516241073608, 'val_accuracy': 0.38735631108283997, 'pared_epoca_s': 1.3497950000455603, 'validacion_cpu_s': 0.30734539998229593}
+EPOCH FC-B 3 {'modelo': 'FC-B', 'repeticion': 3, 'epoca': 15, 'pasos_acumulados': 1440, 'train_loss': 2.106384754180908, 'train_accuracy': 0.3024630546569824, 'val_loss': 1.7751481533050537, 'val_accuracy': 0.4007662832736969, 'pared_epoca_s': 1.3894083000486717, 'validacion_cpu_s': 0.3259338999632746}
+ENTRENAMIENTO CUDA REAL FC-B corrida 3 segundos 21.251391 | incluye staging, máscaras, H2D, GPU, D2H y validación CPU; pasos 1440
+MÉTRICAS REALES {
+  "modelo": "FC-B",
+  "repeticion": 3,
+  "test": {
+    "accuracy": 0.39961686730384827,
+    "loss": 1.759406566619873
+  },
+  "epocas": 15,
+  "pasos": 1440,
+  "entrenamiento_s": 21.251391,
+  "evaluacion_cpu_s": 0.5258163,
+  "comparabilidad": "Datos, estado inicial, arquitectura y pasos equivalentes; CPU histórica; RNG interno diferente"
+}
+GPU REAL {'name': 'NVIDIA GeForce GTX 1650', 'compute_capability': [7, 5], 'free_bytes': 3452698624, 'total_bytes': 4294639616, 'max_threads_per_block': 1024, 'max_shared_memory_per_block': 49152, 'simulator': False} Arena bytes 130704488 BN momentum [0.99]
+Warmup nuevo FC terminado y estado inicial restaurado; no incluido en entrenamiento.
+Preparación SOLO CPU (6 workers); bytes idénticos a EXP-002: {'train': {'images_sha256': '266ba8ca1cffb35dea04beea3f6dda3683b6ab3eb33e2a2cef0e543b02997be4', 'labels_sha256': '71cc0861806c907823b853bc596542ece8b481b12e23d2a6b50b107b5daecba3', 'shape': [12180, 64, 64, 3], 'dtype': 'float32'}, 'val': {'images_sha256': 'f14771b692aa401450dd6c7e2067d88519b00343bf6ae990f4cd2de6e1935d73', 'labels_sha256': '9a7e2a8feb527b18aa82e4e810aa81d28b3b6b925edc1c7bbba2e87ca16ce6a2', 'shape': [2610, 64, 64, 3], 'dtype': 'float32'}, 'test': {'images_sha256': '89d5d47ebdc6b172870f1ebb8e5ec1ac65de6547defb0f2d9297551fd7d4ce7f', 'labels_sha256': 'd594f12e2a74e612a88dd970efd10a74bb007b15f832f7afaea8887c8003211d', 'shape': [2610, 64, 64, 3], 'dtype': 'float32'}}
+EPOCH FC-B 4 {'modelo': 'FC-B', 'repeticion': 4, 'epoca': 1, 'pasos_acumulados': 96, 'train_loss': 5.114112377166748, 'train_accuracy': 0.04950739070773125, 'val_loss': 3.3247272968292236, 'val_accuracy': 0.0475095771253109, 'pared_epoca_s': 1.6431643000105396, 'validacion_cpu_s': 0.32559719996061176}
+EPOCH FC-B 4 {'modelo': 'FC-B', 'repeticion': 4, 'epoca': 2, 'pasos_acumulados': 192, 'train_loss': 3.381804943084717, 'train_accuracy': 0.0714285746216774, 'val_loss': 3.245692253112793, 'val_accuracy': 0.08160919696092606, 'pared_epoca_s': 1.359677999978885, 'validacion_cpu_s': 0.32419399998616427}
+EPOCH FC-B 4 {'modelo': 'FC-B', 'repeticion': 4, 'epoca': 3, 'pasos_acumulados': 288, 'train_loss': 3.192230224609375, 'train_accuracy': 0.09376025944948196, 'val_loss': 3.0364584922790527, 'val_accuracy': 0.1394636034965515, 'pared_epoca_s': 1.3588407000061125, 'validacion_cpu_s': 0.3255012999288738}
+EPOCH FC-B 4 {'modelo': 'FC-B', 'repeticion': 4, 'epoca': 4, 'pasos_acumulados': 384, 'train_loss': 3.0399556159973145, 'train_accuracy': 0.1228243038058281, 'val_loss': 2.8100357055664062, 'val_accuracy': 0.17624521255493164, 'pared_epoca_s': 1.3657489999895915, 'validacion_cpu_s': 0.34271680004894733}
+EPOCH FC-B 4 {'modelo': 'FC-B', 'repeticion': 4, 'epoca': 5, 'pasos_acumulados': 480, 'train_loss': 2.9195146560668945, 'train_accuracy': 0.13612478971481323, 'val_loss': 2.60569429397583, 'val_accuracy': 0.230268195271492, 'pared_epoca_s': 1.403727800003253, 'validacion_cpu_s': 0.3564245000015944}
+EPOCH FC-B 4 {'modelo': 'FC-B', 'repeticion': 4, 'epoca': 6, 'pasos_acumulados': 576, 'train_loss': 2.809615135192871, 'train_accuracy': 0.15985222160816193, 'val_loss': 2.513597011566162, 'val_accuracy': 0.22835248708724976, 'pared_epoca_s': 1.3757733999518678, 'validacion_cpu_s': 0.3297628000145778}
+EPOCH FC-B 4 {'modelo': 'FC-B', 'repeticion': 4, 'epoca': 7, 'pasos_acumulados': 672, 'train_loss': 2.6993114948272705, 'train_accuracy': 0.17660097777843475, 'val_loss': 2.3594553470611572, 'val_accuracy': 0.2747126519680023, 'pared_epoca_s': 1.4442562999902293, 'validacion_cpu_s': 0.40225739998277277}
+EPOCH FC-B 4 {'modelo': 'FC-B', 'repeticion': 4, 'epoca': 8, 'pasos_acumulados': 768, 'train_loss': 2.6092920303344727, 'train_accuracy': 0.19105090200901031, 'val_loss': 2.2711737155914307, 'val_accuracy': 0.28697317838668823, 'pared_epoca_s': 1.3713601999916136, 'validacion_cpu_s': 0.31738689995836467}
+EPOCH FC-B 4 {'modelo': 'FC-B', 'repeticion': 4, 'epoca': 9, 'pasos_acumulados': 864, 'train_loss': 2.5239548683166504, 'train_accuracy': 0.2139573097229004, 'val_loss': 2.193864583969116, 'val_accuracy': 0.3130268156528473, 'pared_epoca_s': 1.3497489000437781, 'validacion_cpu_s': 0.3161592000396922}
+EPOCH FC-B 4 {'modelo': 'FC-B', 'repeticion': 4, 'epoca': 10, 'pasos_acumulados': 960, 'train_loss': 2.455425977706909, 'train_accuracy': 0.22873562574386597, 'val_loss': 2.0784318447113037, 'val_accuracy': 0.3563218414783478, 'pared_epoca_s': 1.348234000033699, 'validacion_cpu_s': 0.32576000003609806}
+EPOCH FC-B 4 {'modelo': 'FC-B', 'repeticion': 4, 'epoca': 11, 'pasos_acumulados': 1056, 'train_loss': 2.333486318588257, 'train_accuracy': 0.2533661723136902, 'val_loss': 2.0321121215820312, 'val_accuracy': 0.35593870282173157, 'pared_epoca_s': 1.3448654999956489, 'validacion_cpu_s': 0.3133428000146523}
+EPOCH FC-B 4 {'modelo': 'FC-B', 'repeticion': 4, 'epoca': 12, 'pasos_acumulados': 1152, 'train_loss': 2.2715535163879395, 'train_accuracy': 0.2706075608730316, 'val_loss': 1.9162896871566772, 'val_accuracy': 0.38352489471435547, 'pared_epoca_s': 1.4076183000579476, 'validacion_cpu_s': 0.3284635000163689}
+EPOCH FC-B 4 {'modelo': 'FC-B', 'repeticion': 4, 'epoca': 13, 'pasos_acumulados': 1248, 'train_loss': 2.2342052459716797, 'train_accuracy': 0.27167487144470215, 'val_loss': 1.859998345375061, 'val_accuracy': 0.40229883790016174, 'pared_epoca_s': 1.3817834999645129, 'validacion_cpu_s': 0.34350369998719543}
+EPOCH FC-B 4 {'modelo': 'FC-B', 'repeticion': 4, 'epoca': 14, 'pasos_acumulados': 1344, 'train_loss': 2.1608409881591797, 'train_accuracy': 0.28809523582458496, 'val_loss': 1.8032516241073608, 'val_accuracy': 0.38735631108283997, 'pared_epoca_s': 1.3316179000539705, 'validacion_cpu_s': 0.3036096999421716}
+EPOCH FC-B 4 {'modelo': 'FC-B', 'repeticion': 4, 'epoca': 15, 'pasos_acumulados': 1440, 'train_loss': 2.106384754180908, 'train_accuracy': 0.3024630546569824, 'val_loss': 1.7751481533050537, 'val_accuracy': 0.4007662832736969, 'pared_epoca_s': 1.3505069999955595, 'validacion_cpu_s': 0.3119558999314904}
+ENTRENAMIENTO CUDA REAL FC-B corrida 4 segundos 20.9591045 | incluye staging, máscaras, H2D, GPU, D2H y validación CPU; pasos 1440
+MÉTRICAS REALES {
+  "modelo": "FC-B",
+  "repeticion": 4,
+  "test": {
+    "accuracy": 0.39961686730384827,
+    "loss": 1.759406566619873
+  },
+  "epocas": 15,
+  "pasos": 1440,
+  "entrenamiento_s": 20.9591045,
+  "evaluacion_cpu_s": 0.5110136,
+  "comparabilidad": "Datos, estado inicial, arquitectura y pasos equivalentes; CPU histórica; RNG interno diferente"
+}
+GPU REAL {'name': 'NVIDIA GeForce GTX 1650', 'compute_capability': [7, 5], 'free_bytes': 3448504320, 'total_bytes': 4294639616, 'max_threads_per_block': 1024, 'max_shared_memory_per_block': 49152, 'simulator': False} Arena bytes 130704488 BN momentum [0.99]
+Warmup nuevo FC terminado y estado inicial restaurado; no incluido en entrenamiento.
+Preparación SOLO CPU (6 workers); bytes idénticos a EXP-002: {'train': {'images_sha256': '266ba8ca1cffb35dea04beea3f6dda3683b6ab3eb33e2a2cef0e543b02997be4', 'labels_sha256': '71cc0861806c907823b853bc596542ece8b481b12e23d2a6b50b107b5daecba3', 'shape': [12180, 64, 64, 3], 'dtype': 'float32'}, 'val': {'images_sha256': 'f14771b692aa401450dd6c7e2067d88519b00343bf6ae990f4cd2de6e1935d73', 'labels_sha256': '9a7e2a8feb527b18aa82e4e810aa81d28b3b6b925edc1c7bbba2e87ca16ce6a2', 'shape': [2610, 64, 64, 3], 'dtype': 'float32'}, 'test': {'images_sha256': '89d5d47ebdc6b172870f1ebb8e5ec1ac65de6547defb0f2d9297551fd7d4ce7f', 'labels_sha256': 'd594f12e2a74e612a88dd970efd10a74bb007b15f832f7afaea8887c8003211d', 'shape': [2610, 64, 64, 3], 'dtype': 'float32'}}
+EPOCH FC-B 5 {'modelo': 'FC-B', 'repeticion': 5, 'epoca': 1, 'pasos_acumulados': 96, 'train_loss': 5.114112377166748, 'train_accuracy': 0.04950739070773125, 'val_loss': 3.3247272968292236, 'val_accuracy': 0.0475095771253109, 'pared_epoca_s': 1.6518236000556499, 'validacion_cpu_s': 0.4055810000281781}
+EPOCH FC-B 5 {'modelo': 'FC-B', 'repeticion': 5, 'epoca': 2, 'pasos_acumulados': 192, 'train_loss': 3.381804943084717, 'train_accuracy': 0.0714285746216774, 'val_loss': 3.245692253112793, 'val_accuracy': 0.08160919696092606, 'pared_epoca_s': 1.505568000022322, 'validacion_cpu_s': 0.40524059999734163}
+EPOCH FC-B 5 {'modelo': 'FC-B', 'repeticion': 5, 'epoca': 3, 'pasos_acumulados': 288, 'train_loss': 3.192230224609375, 'train_accuracy': 0.09376025944948196, 'val_loss': 3.0364584922790527, 'val_accuracy': 0.1394636034965515, 'pared_epoca_s': 1.3429907999234274, 'validacion_cpu_s': 0.3126559999072924}
+EPOCH FC-B 5 {'modelo': 'FC-B', 'repeticion': 5, 'epoca': 4, 'pasos_acumulados': 384, 'train_loss': 3.0399556159973145, 'train_accuracy': 0.1228243038058281, 'val_loss': 2.8100357055664062, 'val_accuracy': 0.17624521255493164, 'pared_epoca_s': 1.368434099946171, 'validacion_cpu_s': 0.32350990001577884}
+EPOCH FC-B 5 {'modelo': 'FC-B', 'repeticion': 5, 'epoca': 5, 'pasos_acumulados': 480, 'train_loss': 2.9195146560668945, 'train_accuracy': 0.13612478971481323, 'val_loss': 2.60569429397583, 'val_accuracy': 0.230268195271492, 'pared_epoca_s': 1.354947500047274, 'validacion_cpu_s': 0.32148919999599457}
+EPOCH FC-B 5 {'modelo': 'FC-B', 'repeticion': 5, 'epoca': 6, 'pasos_acumulados': 576, 'train_loss': 2.809615135192871, 'train_accuracy': 0.15985222160816193, 'val_loss': 2.513597011566162, 'val_accuracy': 0.22835248708724976, 'pared_epoca_s': 1.3413249000441283, 'validacion_cpu_s': 0.3129510999424383}
+EPOCH FC-B 5 {'modelo': 'FC-B', 'repeticion': 5, 'epoca': 7, 'pasos_acumulados': 672, 'train_loss': 2.6993114948272705, 'train_accuracy': 0.17660097777843475, 'val_loss': 2.3594553470611572, 'val_accuracy': 0.2747126519680023, 'pared_epoca_s': 1.3430699999444187, 'validacion_cpu_s': 0.2994804000481963}
+EPOCH FC-B 5 {'modelo': 'FC-B', 'repeticion': 5, 'epoca': 8, 'pasos_acumulados': 768, 'train_loss': 2.6092920303344727, 'train_accuracy': 0.19105090200901031, 'val_loss': 2.2711737155914307, 'val_accuracy': 0.28697317838668823, 'pared_epoca_s': 1.3451095999917015, 'validacion_cpu_s': 0.30925890000071377}
+EPOCH FC-B 5 {'modelo': 'FC-B', 'repeticion': 5, 'epoca': 9, 'pasos_acumulados': 864, 'train_loss': 2.5239548683166504, 'train_accuracy': 0.2139573097229004, 'val_loss': 2.193864583969116, 'val_accuracy': 0.3130268156528473, 'pared_epoca_s': 1.35791220003739, 'validacion_cpu_s': 0.3108280999585986}
+EPOCH FC-B 5 {'modelo': 'FC-B', 'repeticion': 5, 'epoca': 10, 'pasos_acumulados': 960, 'train_loss': 2.455425977706909, 'train_accuracy': 0.22873562574386597, 'val_loss': 2.0784318447113037, 'val_accuracy': 0.3563218414783478, 'pared_epoca_s': 1.3544726999243721, 'validacion_cpu_s': 0.3228847000282258}
+EPOCH FC-B 5 {'modelo': 'FC-B', 'repeticion': 5, 'epoca': 11, 'pasos_acumulados': 1056, 'train_loss': 2.333486318588257, 'train_accuracy': 0.2533661723136902, 'val_loss': 2.0321121215820312, 'val_accuracy': 0.35593870282173157, 'pared_epoca_s': 1.355847999919206, 'validacion_cpu_s': 0.3241072000237182}
+EPOCH FC-B 5 {'modelo': 'FC-B', 'repeticion': 5, 'epoca': 12, 'pasos_acumulados': 1152, 'train_loss': 2.2715535163879395, 'train_accuracy': 0.2706075608730316, 'val_loss': 1.9162896871566772, 'val_accuracy': 0.38352489471435547, 'pared_epoca_s': 1.3465984999202192, 'validacion_cpu_s': 0.30844270007219166}
+EPOCH FC-B 5 {'modelo': 'FC-B', 'repeticion': 5, 'epoca': 13, 'pasos_acumulados': 1248, 'train_loss': 2.2342052459716797, 'train_accuracy': 0.27167487144470215, 'val_loss': 1.859998345375061, 'val_accuracy': 0.40229883790016174, 'pared_epoca_s': 1.3452265000669286, 'validacion_cpu_s': 0.31903280003461987}
+EPOCH FC-B 5 {'modelo': 'FC-B', 'repeticion': 5, 'epoca': 14, 'pasos_acumulados': 1344, 'train_loss': 2.1608409881591797, 'train_accuracy': 0.28809523582458496, 'val_loss': 1.8032516241073608, 'val_accuracy': 0.38735631108283997, 'pared_epoca_s': 1.338154700002633, 'validacion_cpu_s': 0.31264060002285987}
+EPOCH FC-B 5 {'modelo': 'FC-B', 'repeticion': 5, 'epoca': 15, 'pasos_acumulados': 1440, 'train_loss': 2.106384754180908, 'train_accuracy': 0.3024630546569824, 'val_loss': 1.7751481533050537, 'val_accuracy': 0.4007662832736969, 'pared_epoca_s': 1.376716100028716, 'validacion_cpu_s': 0.32482370000798255}
+ENTRENAMIENTO CUDA REAL FC-B corrida 5 segundos 20.851751 | incluye staging, máscaras, H2D, GPU, D2H y validación CPU; pasos 1440
+MÉTRICAS REALES {
+  "modelo": "FC-B",
+  "repeticion": 5,
+  "test": {
+    "accuracy": 0.39961686730384827,
+    "loss": 1.759406566619873
+  },
+  "epocas": 15,
+  "pasos": 1440,
+  "entrenamiento_s": 20.851751,
+  "evaluacion_cpu_s": 0.5300321,
+  "comparabilidad": "Datos, estado inicial, arquitectura y pasos equivalentes; CPU histórica; RNG interno diferente"
+}
+FIN EXP-012: 150 épocas nuevas FC, cero entrenamientos CPU/CNN-B previos repetidos.

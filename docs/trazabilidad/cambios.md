@@ -330,3 +330,19 @@
 Un cambio de optimización requiere demostrar corrección, además de rendimiento.
 Un cambio de medición o datos puede invalidar comparaciones y exige explicarlo.
 No reescribir retrospectivamente los registros de corridas anteriores.
+
+
+## CAM-012 — Dos redes FC CUDA adicionales
+
+En preparación: módulo src/asl_cuda/fc.py, pruebas nuevas, notebook nativo adicional FC y ampliación de notebook CUDA/informe. No modificar fuentes ni evidencias CNN-B/CPU congeladas. Identidades previas y copias del DOCX editado y notebooks en resultados/preparacion/ampliacion-fc/identidades-previas.json. DEC-027; BIT-014.
+
+
+Ampliación FC, corrección documental del intento: EXP-010 completó 15épocas FC-A pero falló al exportar CSV de esquema heterogéneo; excluido por cierre incompleto. Se conserva íntegro con traceback,épocas,métricas y captura. EXP-011 corrige únicamente esquema de filas y retoma campaña nueva. No se ejecutó CPU/CNN-B.
+
+
+La primera corrida FC-A EXP-011 terminó entrenamiento, test, checkpoint y monitor. Solo falló presentación Styler por jinja2 ausente. **Se reutiliza sin repetirla**. EXP-012 ejecutará únicamente nueve pendientes (FC-A2–5,FC-B1–5) y mostrará DataFrame nativo sin dependencias adicionales. Se preservan notebook y error originales.
+
+
+## Cierre CAM-012
+
+Ampliación FC implementada y medida, código aditivo src/asl_cuda/fc.py; fuentes CNN-B congeladas intactas. Notebook GPU y DOCX actualizados conservando identidades previas y diseño del usuario. [Trazabilidad completa](ampliacion-fc.md).

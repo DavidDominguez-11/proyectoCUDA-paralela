@@ -1,0 +1,2 @@
+experimento_id,run_id,modelo,repeticion,fase,tipo_medicion,duracion_s,configuracion_sha256
+EXP-010,RUN-20261118T133945Z-fc-a-01,FC-A,1,preparacion_cpu,pared,9.308675199979916,955ab4aa910b93f8ff9b0a101b6309845fb9b663bb0b26394748c81a608d1631

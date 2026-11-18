@@ -679,3 +679,22 @@ git diff --check
 - Siguiente paso:
 - Commit / revisión:
 ```
+
+
+## BIT-014 — Implementación y evaluación de FC-A/FC-B CUDA
+
+Inicio UTC: 2026-11-18T13:36:01.646670+00:00. Responsable: Codex por instrucción del usuario. Revisados PDF normativo (tres páginas), matriz, README, decisiones, bitácora, procedimientos y reproducibilidad. Solo nuevas ejecuciones FC; PCUDA existente, sin instalaciones ni descargas. Se preserva DOCX editado de752593bytes y ambos notebooks mediante copia/hash. Desarrollo y resultados pendientes; EXP-010; DEC-027; CAM-012.
+
+
+Ampliación FC, corrección documental del intento: EXP-010 completó 15épocas FC-A pero falló al exportar CSV de esquema heterogéneo; excluido por cierre incompleto. Se conserva íntegro con traceback,épocas,métricas y captura. EXP-011 corrige únicamente esquema de filas y retoma campaña nueva. No se ejecutó CPU/CNN-B.
+
+
+La primera corrida FC-A EXP-011 terminó entrenamiento, test, checkpoint y monitor. Solo falló presentación Styler por jinja2 ausente. **Se reutiliza sin repetirla**. EXP-012 ejecutará únicamente nueve pendientes (FC-A2–5,FC-B1–5) y mostrará DataFrame nativo sin dependencias adicionales. Se preservan notebook y error originales.
+
+
+## Cierre BIT-014 — 2026-11-18T14:02:26.340794+00:00
+
+Finalizadas FC-A/FC-B: cinco corridas completas por red,150épocas/14,400pasos nuevos válidos, medias15.122541s/21.061995s yspeedup3.353647×/4.863788× contraCPUhistórica. EXP-010incompleto excluido;EXP-011primeraFC-A guardada reutilizada sin repetir;EXP-012nueve restantes. Cuatro pruebas oráculo aprobadas. Dos capturas vivas,logs,CSV,cuatrográficas de comparación,checkpoints ysalidas nativas. NotebookCUDA92celdas/30PNG/0errores conserva53celdas previas;CPUinalterada y184artefactosCNN-B intactos. DOCX24páginas/16tablas/13imágenes mantiene152elementos previos yestilos/tema/footer del usuario. WordXPS/PNG revisado,sinPDF. MétricaspredictivasFCmenores documentadas. [Procedimiento,evidencias,comandos,incidencias ylímites](ampliacion-fc.md).
+
+
+Cierre documental14:03UTC: verificación de preparación aprobó506enlaces en53Markdown,19originales,190esquemasCSV y119fuentes. Revisión Word final24páginas sin páginas vacías;las cuatro tablas añadidas están completas en una página cada una. Validación HDF5 de los diez checkpoints confirmó parámetros finitos yAdam1440sin cargar/ejecutar redes. Sellado mediante scripts/sellar_ampliacion_fc.py;no modifica CPU/CNN-B anteriores.

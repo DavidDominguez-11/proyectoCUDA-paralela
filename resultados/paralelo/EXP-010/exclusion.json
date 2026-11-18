@@ -1,0 +1,6 @@
+{
+  "estado": "excluido_incompleto",
+  "causa": "Fallo de exportación CSV: primera fila carecía de inicio_utc/fin_utc presentes en entrenamiento. FC-A completó 15épocas y test; no guardó checkpoint ni cierre. No incorporado a promedios.",
+  "correccion": "EXP-011: todas las filas de tiempos definen el mismo esquema. Código matemático FC y validación sin cambios.",
+  "no_repetido": "CPU histórica y CNN-B intactos"
+}

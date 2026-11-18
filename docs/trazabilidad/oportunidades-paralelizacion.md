@@ -150,3 +150,8 @@ REQ-04 queda cubierto por selección, justificación y análisis de dependencias
 REQ-05 permanece pendiente: no se ha diseñado el algoritmo paralelo. REQ-06/07/08
 conservan sus pendientes de implementación, ejecución GPU y speedup. No se crea
 EXP/RUN porque esta actividad es documental y utiliza evidencia ya existente.
+
+
+## Ampliación posterior vigente: FC-A y FC-B
+
+El alcance inicial CNN-B se amplió con dos entrenamientos completos adicionales en CUDA. Se conservaron las mediciones y evidencias anteriores. [Diseño,procedimiento,decisiones,resultados,notebooks e informe actualizados](ampliacion-fc.md). Los conteos/hashes de la entrega anterior descritos arriba son antecedentes; la entrega actual CUDA tiene92celdas de código y30PNG, y el DOCX16tablas/13imágenes con el diseño editado por el usuario.

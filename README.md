@@ -29,9 +29,12 @@ memoria, equivalencia y medición. Se implementó y ejecutó CNN-B con CUDA Pyth
 y cuBLAS: cinco corridas, media418.608s frente a805.650s CPU, aceleración1.925×,
 incluyendo transferencias y validaciónCPU; accuracy test98.62%.
 Los cambios del diseño se documentan en DEC-021/022/023. No se repitió la campaña
-CPU; el original permanece intacto. El alcance medido es CNN-B, no todo el notebook.
+CPU; el original permanece intacto. La ampliación posterior incorpora también FC-A y FC-B; no se aceleró todo el notebook.
 
 El paso 6 analiza el speedup y sus posibles causas con las cinco observaciones
 por variante y los límites de la revisión previa. Se conserva en Markdown con
 CSV y tres gráficas reproducibles. El informe final DOCX está disponible con
-13páginas,12tablas y7figuras;la exportación PDF queda a cargo del usuario.
+24páginas,16tablas y13imágenes, conservando el estilo editado por el usuario; la exportación PDF queda a su cargo.
+
+
+[Ampliación final FC-A/FC-B: implementación, resultados y evidencias](docs/trazabilidad/ampliacion-fc.md). FC-A15.123s vs50.716sCPU(3.354×), FC-B21.062s vs102.441sCPU(4.864×), cinco observaciones por modelo. Notebook CUDA actualizado con salidas nativas de las tres redes; CPU/CNN-B previas no se volvieron a ejecutar.

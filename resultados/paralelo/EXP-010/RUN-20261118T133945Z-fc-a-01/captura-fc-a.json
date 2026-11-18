@@ -1,0 +1,32 @@
+{
+  "tipo": "captura_original_monitor_en_vivo",
+  "captura_utc": "2026-11-18T13:40:49.440665+00:00",
+  "run_id": "RUN-20261118T133945Z-fc-a-01",
+  "muestra_original": {
+    "utc": "2026-11-18T13:40:48.042911+00:00",
+    "transcurrido_s": "20.36350229999516",
+    "fase": "entrenamiento_FC-A",
+    "modelo": "FC-A",
+    "epoca": "2",
+    "cpu_procesos_pct": "140.69358734244167",
+    "rss_bytes": "1989738496",
+    "gpu_util_pct": "26.0",
+    "gpu_mem_util_pct": "8.0",
+    "gpu_mem_used_mib": "111.0",
+    "gpu_temperatura_c": "49.0",
+    "cpu_logico_00_pct": "36.8",
+    "cpu_logico_01_pct": "18.5",
+    "cpu_logico_02_pct": "26.2",
+    "cpu_logico_03_pct": "30.8",
+    "cpu_logico_04_pct": "15.4",
+    "cpu_logico_05_pct": "13.6",
+    "cpu_logico_06_pct": "27.7",
+    "cpu_logico_07_pct": "16.9",
+    "cpu_logico_08_pct": "40.9",
+    "cpu_logico_09_pct": "35.4",
+    "cpu_logico_10_pct": "68.2",
+    "cpu_logico_11_pct": "30.8"
+  },
+  "sha256": "d4e04852c95d7c032d4ad460a1e2027cf9c3c0b28168a88324eb10160d133b69",
+  "capturador_sha256": "b076c03ed68e6d31ac12c26a85c1cd610bdf1422279d78a36bc9e6b09264ceae"
+}

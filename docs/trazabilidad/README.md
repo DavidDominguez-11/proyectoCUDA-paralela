@@ -7,8 +7,7 @@ páginas. Ante una diferencia, prevalece ese PDF sobre cualquier otro archivo.
 Las convenciones de esta carpeta son acuerdos internos para satisfacerlo;
 no deben presentarse como instrucciones adicionales del docente.
 
-Estado: **pasos 1–6 documentados para CNN-B; cinco corridas CPU EXP-002 y cinco
-CUDA EXP-003; informe final DOCX revisado; PDF por usuario y entrega global pendientes**.
+Estado: **pasos1–6 y ampliación CUDA CNN-B/FC-A/FC-B documentados y medidos; CPU/CNN-B históricas conservadas; DOCX actualizado manteniendo diseño del usuario. PDF por usuario y entrega global pendientes**.
 Fecha de apertura: 2026-11-17, zona de trabajo America/Guatemala.
 Las [instrucciones del repositorio](../../AGENTS.md) mantienen estas convenciones
 para trabajos posteriores.
@@ -115,3 +114,8 @@ Incluye tres gráficas nuevas y sus CSV/PNG/SVG. Las reservas REQ-07/09 y de
 corrección permanecen explícitas. El [informe final DOCX](../../entregables/Informe_Proyecto_3_CUDA.docx)
 integra seis pasos,12tablas,7figuras y referenciasAPA7 en13páginas revisadas con
 Word;la exportaciónPDF queda a cargo del usuario,según su instrucción.
+
+
+## Ampliación vigente
+
+[FC-A yFC-B implementadas,cinco mediciones por red,capturas reales yentregables actualizados](ampliacion-fc.md). Sustituye el alcance inicial exclusivamenteCNN-B, sin invalidar ni sobrescribir sus evidencias.

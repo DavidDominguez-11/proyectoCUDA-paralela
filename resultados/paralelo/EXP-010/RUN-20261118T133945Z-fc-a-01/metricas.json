@@ -1,0 +1,13 @@
+{
+  "modelo": "FC-A",
+  "repeticion": 1,
+  "test": {
+    "accuracy": 0.517241358757019,
+    "loss": 1.5723273754119873
+  },
+  "epocas": 15,
+  "pasos": 1440,
+  "entrenamiento_s": 15.496968,
+  "evaluacion_cpu_s": 0.3782506,
+  "comparabilidad": "Datos, estado inicial, arquitectura y pasos equivalentes; CPU histórica; RNG interno diferente"
+}

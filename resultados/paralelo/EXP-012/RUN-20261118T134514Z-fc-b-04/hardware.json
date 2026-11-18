@@ -1,0 +1,31 @@
+{
+  "device": {
+    "name": "NVIDIA GeForce GTX 1650",
+    "compute_capability": [
+      7,
+      5
+    ],
+    "free_bytes": 3452698624,
+    "total_bytes": 4294639616,
+    "max_threads_per_block": 1024,
+    "max_shared_memory_per_block": 49152,
+    "simulator": false
+  },
+  "tensorflow": "2.22.0-rc0",
+  "tf_build": {
+    "is_cuda_build": false,
+    "is_rocm_build": false,
+    "is_tensorrt_build": false,
+    "msvcp_dll_names": "msvcp140.dll,msvcp140_1.dll"
+  },
+  "cpu_tensor_device": "/job:localhost/replica:0/task:0/device:CPU:0",
+  "tf_visible": [
+    "PhysicalDevice(name='/physical_device:CPU:0', device_type='CPU')"
+  ],
+  "cublas_version": 130201,
+  "cublas_dll": "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.1\\bin\\x64\\cublas64_13.dll",
+  "cublas_sha256": "3a9a8abd59316ef56bec6c01422639466a213443144fa25e1a9862c1b40a7584",
+  "buffers_bytes": 130704488,
+  "parametros": 6484509,
+  "initial_checkpoint_sha256": "dd4970a6bd61bfad5178a042d74b212130216bab6f68544a0caeb76132996a8a"
+}

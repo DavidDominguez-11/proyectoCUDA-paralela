@@ -1,0 +1,125 @@
+[IPKernelApp] WARNING | Kernel is running over TCP without encryption. All communication (including code and outputs) is sent in plain text and is susceptible to eavesdropping. Use IPC transport or launch with kernel manager-provisioned CurveZMQ keys to enable transport encryption.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1795009227.691279   18832 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1795009231.453020   18832 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+I0000 00:00:1795009234.429902   18832 cpu_feature_guard.cc:227] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: SSE3 SSE4.1 SSE4.2 AVX AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+E0000 00:00:1795009247.292806   18832 node_def_util.cc:684] NodeDef mentions attribute use_unbounded_threadpool which is not in the op definition: Op<name=MapDataset; signature=input_dataset:variant, other_arguments: -> handle:variant; attr=f:func; attr=Targuments:list(type),min=0; attr=output_types:list(type),min=1; attr=output_shapes:list(shape),min=1; attr=use_inter_op_parallelism:bool,default=true; attr=preserve_cardinality:bool,default=false; attr=force_synchronous:bool,default=false; attr=metadata:string,default=""> This may be expected if your graph generating binary is newer  than this binary. Unknown attributes will be ignored. NodeDef: {{node ParallelMapDatasetV2/_15}}
+E0000 00:00:1795009252.636625   18832 node_def_util.cc:684] NodeDef mentions attribute use_unbounded_threadpool which is not in the op definition: Op<name=MapDataset; signature=input_dataset:variant, other_arguments: -> handle:variant; attr=f:func; attr=Targuments:list(type),min=0; attr=output_types:list(type),min=1; attr=output_shapes:list(shape),min=1; attr=use_inter_op_parallelism:bool,default=true; attr=preserve_cardinality:bool,default=false; attr=force_synchronous:bool,default=false; attr=metadata:string,default=""> This may be expected if your graph generating binary is newer  than this binary. Unknown attributes will be ignored. NodeDef: {{node ParallelMapDatasetV2/_15}}
+E0000 00:00:1795009258.535425   18832 node_def_util.cc:684] NodeDef mentions attribute use_unbounded_threadpool which is not in the op definition: Op<name=MapDataset; signature=input_dataset:variant, other_arguments: -> handle:variant; attr=f:func; attr=Targuments:list(type),min=0; attr=output_types:list(type),min=1; attr=output_shapes:list(shape),min=1; attr=use_inter_op_parallelism:bool,default=true; attr=preserve_cardinality:bool,default=false; attr=force_synchronous:bool,default=false; attr=metadata:string,default=""> This may be expected if your graph generating binary is newer  than this binary. Unknown attributes will be ignored. NodeDef: {{node ParallelMapDatasetV2/_15}}
+Traceback (most recent call last):
+  File "C:\Users\David\Documents\2026\S2\PARALELA\CUDA\PROYECTO-CUDA\proyectoCUDA-paralela\scripts\ejecutar_fc_notebook.py", line 42, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "C:\Users\David\Documents\2026\S2\PARALELA\CUDA\PROYECTO-CUDA\proyectoCUDA-paralela\scripts\ejecutar_fc_notebook.py", line 29, in main
+    NotebookClient(nb,km=km,timeout=10800,resources={'metadata':{'path':str(ROOT)}},on_cell_executed=done).execute(cwd=str(ROOT))
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\David\Documents\2026\S2\PARALELA\CUDA\PROYECTO-CUDA\proyectoCUDA-paralela\PCUDA\Lib\site-packages\jupyter_core\utils\__init__.py", line 165, in wrapped
+    return loop.run_until_complete(inner)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^
+  File "C:\Python314\Lib\asyncio\base_events.py", line 719, in run_until_complete
+    return future.result()
+           ~~~~~~~~~~~~~^^
+  File "C:\Users\David\Documents\2026\S2\PARALELA\CUDA\PROYECTO-CUDA\proyectoCUDA-paralela\PCUDA\Lib\site-packages\nbclient\client.py", line 709, in async_execute
+    await self.async_execute_cell(
+        cell, index, execution_count=self.code_cells_executed + 1
+    )
+  File "C:\Users\David\Documents\2026\S2\PARALELA\CUDA\PROYECTO-CUDA\proyectoCUDA-paralela\PCUDA\Lib\site-packages\nbclient\client.py", line 1062, in async_execute_cell
+    await self._check_raise_for_error(cell, cell_index, exec_reply)
+  File "C:\Users\David\Documents\2026\S2\PARALELA\CUDA\PROYECTO-CUDA\proyectoCUDA-paralela\PCUDA\Lib\site-packages\nbclient\client.py", line 918, in _check_raise_for_error
+    raise CellExecutionError.from_cell_and_msg(cell, exec_reply_content)
+nbclient.exceptions.CellExecutionError: An error occurred while executing the following cell:
+------------------
+state('evaluacion_final_cpu',pasos=net.steps)
+start=time.perf_counter_ns()
+test=reference.evaluate(tx,ty,batch_size=32,verbose=0,return_dict=True)
+eval_seconds=(time.perf_counter_ns()-start)/1e9
+add('evaluacion_'+name,eval_seconds)
+metrics=dict(modelo=name,repeticion=repetition,test={k:float(v) for k,v in test.items()},epocas=15,pasos=1440,
+    entrenamiento_s=train_seconds,evaluacion_cpu_s=eval_seconds,
+    comparabilidad='Datos, estado inicial, arquitectura y pasos equivalentes; CPU histórica; RNG interno diferente')
+write_json(run/'metricas.json',metrics);write_csv(run/'tiempos.csv',timings)
+write_json(run/'eventos.json',dict(eventos_s=events,validacion_cpu_s=validations,export_cpu_pared_s=export_wall,
+    nota='Intervalos stream anidados; no equivalen a tiempo activo exclusivo de kernels; no sumar al tiempo pared'))
+write_json(run/'ordenes.json',dict(seed=seed,generador='PCG64',epocas_sha256=shuffle_hashes))
+param_count=sum(p['value'].size for p in net.params)
+bn_count=sum(op['C']*2 for op in net.ops if op['kind']=='bn')
+write_json(run/'transferencias.json',dict(lotes=net.transfers[-1440:],modelo_d2h_copias=16,
+    modelo_bytes_por_copia=(param_count+bn_count)*4,optimizador_final_bytes=param_count*8+8,
+    control_d2h_bytes=1440*4,reinicios_metricas_h2d_bytes=15*12,
+    nota='Copia final adicional de pesos incluida; sin restar costes'))
+state('guardado_fuera_timing')
+model_dir=ROOT/'data/EXP-010'/run.name;model_dir.mkdir(parents=True,exist_ok=False)
+model_path=model_dir/(name+'-CUDA.keras');reference.save(model_path)
+fingerprint=hashlib.sha256()
+for variable in [*reference.variables,*reference.optimizer.variables]:
+    array=variable.numpy();fingerprint.update(str(array.dtype).encode());fingerprint.update(str(array.shape).encode());fingerprint.update(array.tobytes())
+write_json(run/'modelo-guardado.json',dict(ruta=model_path.relative_to(ROOT).as_posix(),sha256=sha(model_path),
+    estado_canonico_sha256=fingerprint.hexdigest(),optimizer_iterations=1440))
+write_json(run/'lanzamientos.json',dict(vector_block=256,bn_parcial_block=[32,8,1],
+    bn_parcial_grid=[1,384,1],bn_final_block=256,bn_final_grid=[48,1,1],
+    softmax_block=32,softmax_grid=[128,1,1],ultimo_batch=20,recursos=compiled_resources(),
+    fc_finish_regs=str(finish_fc.get_regs_per_thread()),
+    gemm='cuBLAS SGEMM FP32 PEDANTIC; jerarquía interna de biblioteca, no fijada por el equipo'))
+state('completada',pasos=1440)
+stop.set();monitor.join(timeout=15)
+if repetition==1:
+    try:capture.wait(timeout=8)
+    except subprocess.TimeoutExpired:capture.terminate();capture.wait();print('Captura no disponible; revisar capturador.log')
+    capture_log.close()
+display(pd.DataFrame(timings).fillna('').style.hide(axis='index'))
+display(pd.DataFrame(epoch_rows).style.hide(axis='index'))
+print('MÉTRICAS REALES',json.dumps(metrics,indent=2,ensure_ascii=False))
+fig,axes=plt.subplots(1,2,figsize=(10,3.6),layout='constrained')
+for ax,keys,title in zip(axes,[('train_loss','val_loss'),('train_accuracy','val_accuracy')],['Pérdida','Exactitud']):
+    for key in keys:ax.plot(range(1,16),[r[key] for r in epoch_rows],label=key)
+    ax.set(xlabel='Época',ylabel=title,title=name+' · corrida '+str(repetition));ax.legend();ax.grid(alpha=.2)
+fig.savefig(run/'curvas.png',dpi=160);fig.savefig(run/'curvas.svg');mostrar_figura(fig)
+resource=pd.read_csv(run/'recursos.csv')
+fig,axes=plt.subplots(2,1,figsize=(10,5),sharex=True,layout='constrained')
+axes[0].plot(resource.transcurrido_s,resource.cpu_procesos_pct,color='#0072B2',label='CPU proceso e hijos (100% por núcleo)')
+axes[1].plot(resource.transcurrido_s,resource.gpu_util_pct,color='#D55E00',label='Actividad GPU (%)')
+axes[0].set(ylabel='Uso CPU (%)');axes[1].set(ylabel='Actividad GPU (%)',xlabel='Tiempo desde inicio del RUN (s)',ylim=(0,105))
+for ax in axes:ax.legend(loc='upper right');ax.grid(alpha=.2)
+fig.suptitle(name+' · monitorización real, corrida '+str(repetition))
+fig.savefig(run/'recursos.png',dpi=160);fig.savefig(run/'recursos.svg');mostrar_figura(fig)
+for picture in sorted(run.glob('captura-*.png')):display(Image(filename=str(picture)))
+all_results.append(dict(run_id=run.name,**metrics));write_json(ROOT/'resultados/paralelo/EXP-010/progreso.json',all_results)
+net.stream.synchronize();net.blas.close()
+del net,reference,inputs,x,y,vx,vy,tx,ty,wx,wy,wv,wvy,wt,wty,p,op
+tf.keras.backend.clear_session();gc.collect();cuda.current_context().deallocations.clear()
+
+------------------
+
+
+[31m---------------------------------------------------------------------------[39m
+[31mValueError[39m                                Traceback (most recent call last)
+[36mCell[39m[36m [39m[32mIn[12][39m[32m, line 9[39m
+[32m      5[39m add([33m'evaluacion_'[39m+name,eval_seconds)
+[32m      6[39m metrics=dict(modelo=name,repeticion=repetition,test={k:float(v) for k,v in test.items()},epocas=15,pasos=1440,
+[32m      7[39m     entrenamiento_s=train_seconds,evaluacion_cpu_s=eval_seconds,
+[32m      8[39m     comparabilidad=[33m'Datos, estado inicial, arquitectura y pasos equivalentes; CPU histórica; RNG interno diferente'[39m)
+[32m----> [39m[32m9[39m write_json(run/[33m'metricas.json'[39m,metrics);write_csv(run/[33m'tiempos.csv'[39m,timings)
+[32m     10[39m write_json(run/'eventos.json',dict(eventos_s=events,validacion_cpu_s=validations,export_cpu_pared_s=export_wall,
+[32m     11[39m     nota=[33m'Intervalos stream anidados; no equivalen a tiempo activo exclusivo de kernels; no sumar al tiempo pared'[39m))
+[32m     12[39m write_json(run/[33m'ordenes.json'[39m,dict(seed=seed,generador=[33m'PCG64'[39m,epocas_sha256=shuffle_hashes))
+
+[36mFile [39m[32m~\Documents\2026\S2\PARALELA\CUDA\PROYECTO-CUDA\proyectoCUDA-paralela\scripts\benchmark_cpu.py:51[39m, in [36mwrite_csv[39m[34m(path, rows, fields)[39m
+[32m     49[39m writer = csv.DictWriter(handle, fieldnames=fields [38;5;129;01mor[39;00m [38;5;28mlist[39m(rows[[32m0[39m]))
+[32m     50[39m writer.writeheader()
+[32m---> [39m[32m51[39m [30;43mwriter[39;49m[30;43m.[39;49m[30;43mwriterows[39;49m[30;43m([39;49m[30;43mrows[39;49m[30;43m)[39;49m
+
+[36mFile [39m[32mC:\Python314\Lib\csv.py:228[39m, in [36mDictWriter.writerows[39m[34m(self, rowdicts)[39m
+[32m    227[39m [38;5;28;01mdef[39;00m[38;5;250m [39m[34mwriterows[39m([38;5;28mself[39m, rowdicts):
+[32m--> [39m[32m228[39m     [38;5;28;01mreturn[39;00m [30;43mself[39;49m[30;43m.[39;49m[30;43mwriter[39;49m[30;43m.[39;49m[30;43mwriterows[39;49m[30;43m([39;49m[30;43mmap[39;49m[30;43m([39;49m[30;43mself[39;49m[30;43m.[39;49m[30;43m_dict_to_list[39;49m[30;43m,[39;49m[30;43m [39;49m[30;43mrowdicts[39;49m[30;43m)[39;49m[30;43m)[39;49m
+
+[36mFile [39m[32mC:\Python314\Lib\csv.py:220[39m, in [36mDictWriter._dict_to_list[39m[34m(self, rowdict)[39m
+[32m    218[39m     wrong_fields = rowdict.keys() - [38;5;28mself[39m.fieldnames
+[32m    219[39m     [38;5;28;01mif[39;00m wrong_fields:
+[32m--> [39m[32m220[39m         [38;5;28;01mraise[39;00m [38;5;167;01mValueError[39;00m([33m"[39m[33mdict contains fields not in fieldnames: [39m[33m"[39m
+[32m    221[39m                          + [33m"[39m[33m, [39m[33m"[39m.join([[38;5;28mrepr[39m(x) [38;5;28;01mfor[39;00m x [38;5;129;01min[39;00m wrong_fields]))
+[32m    222[39m [38;5;28;01mreturn[39;00m (rowdict.get(key, [38;5;28mself[39m.restval) [38;5;28;01mfor[39;00m key [38;5;129;01min[39;00m [38;5;28mself[39m.fieldnames)
+
+[31mValueError[39m: dict contains fields not in fieldnames: 'fin_utc', 'inicio_utc'
+
