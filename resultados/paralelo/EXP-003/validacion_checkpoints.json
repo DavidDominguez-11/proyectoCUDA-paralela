@@ -1,0 +1,41 @@
+{
+  "estado": "aprobado",
+  "modelos": [
+    {
+      "run_id": "RUN-20261117T231628Z-gpu-01",
+      "keras_sha256": "204342f0510ea44a111d54610ebf1ecd041664693289c7a96b29940ac2be961f",
+      "contenido_canonico_sha256": "47f46467b40415af622ef099aef5a8d125e43c8ae62bd69b91dadb574ebe49f1",
+      "optimizer_iterations": 1440,
+      "arrays": 76
+    },
+    {
+      "run_id": "RUN-20261117T232412Z-gpu-02",
+      "keras_sha256": "a8c688ffed591258e26774572cb551390aa639a9beb90f43a06384e185c95a12",
+      "contenido_canonico_sha256": "47f46467b40415af622ef099aef5a8d125e43c8ae62bd69b91dadb574ebe49f1",
+      "optimizer_iterations": 1440,
+      "arrays": 76
+    },
+    {
+      "run_id": "RUN-20261117T233146Z-gpu-03",
+      "keras_sha256": "c133ca2638a6e579bdab542da232d5fe69dac9fb9446b70e0150767f49178fe9",
+      "contenido_canonico_sha256": "47f46467b40415af622ef099aef5a8d125e43c8ae62bd69b91dadb574ebe49f1",
+      "optimizer_iterations": 1440,
+      "arrays": 76
+    },
+    {
+      "run_id": "RUN-20261117T233923Z-gpu-04",
+      "keras_sha256": "79f0c1eef7bbbd940ebf17b4b3d1a927c9f279212fb419b048a089288dd18877",
+      "contenido_canonico_sha256": "47f46467b40415af622ef099aef5a8d125e43c8ae62bd69b91dadb574ebe49f1",
+      "optimizer_iterations": 1440,
+      "arrays": 76
+    },
+    {
+      "run_id": "RUN-20261117T234658Z-gpu-05",
+      "keras_sha256": "0c3bd06774abc90d40738b65246835c5b94e019d247fb7379b43258149f3f006",
+      "contenido_canonico_sha256": "47f46467b40415af622ef099aef5a8d125e43c8ae62bd69b91dadb574ebe49f1",
+      "optimizer_iterations": 1440,
+      "arrays": 76
+    }
+  ],
+  "identicos_entre_corridas": true
+}

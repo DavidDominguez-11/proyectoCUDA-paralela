@@ -1,0 +1,18 @@
+{
+  "comando": [
+    "C:\\Users\\David\\Documents\\2026\\S2\\PARALELA\\CUDA\\PROYECTO-CUDA\\proyectoCUDA-paralela\\PCUDA\\Scripts\\python.exe",
+    "-u",
+    "-X",
+    "utf8",
+    "C:\\Users\\David\\Documents\\2026\\S2\\PARALELA\\CUDA\\PROYECTO-CUDA\\proyectoCUDA-paralela\\scripts\\benchmark_cuda.py",
+    "worker",
+    "--experimento",
+    "EXP-003",
+    "--run",
+    "RUN-20261117T232412Z-gpu-02",
+    "--repeticion",
+    "2"
+  ],
+  "cwd": "C:\\Users\\David\\Documents\\2026\\S2\\PARALELA\\CUDA\\PROYECTO-CUDA\\proyectoCUDA-paralela",
+  "inicio": "2026-11-17T23:24:12.075735+00:00"
+}

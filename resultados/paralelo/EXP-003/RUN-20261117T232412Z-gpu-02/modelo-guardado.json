@@ -1,0 +1,6 @@
+{
+  "ruta": "data/EXP-003/RUN-20261117T232412Z-gpu-02/CNN-B-CUDA.keras",
+  "sha256": "a8c688ffed591258e26774572cb551390aa639a9beb90f43a06384e185c95a12",
+  "optimizer_iterations": 1440,
+  "nota": "Inferencia Keras CPU; reanudar entrenamiento CUDA requiere claves RNG y estado del adaptador"
+}

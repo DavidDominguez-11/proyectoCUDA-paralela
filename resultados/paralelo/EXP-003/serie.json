@@ -1,0 +1,29 @@
+{
+  "estado": "completada",
+  "inicio": "2026-11-17T23:16:28.629192+00:00",
+  "configuracion_sha256": "00866b6fa0d48db134fdbb866b91cce2006c0ee7fa43812476337970a6cfb583",
+  "corridas": [
+    {
+      "run_id": "RUN-20261117T231628Z-gpu-01",
+      "codigo": 0
+    },
+    {
+      "run_id": "RUN-20261117T232412Z-gpu-02",
+      "codigo": 0
+    },
+    {
+      "run_id": "RUN-20261117T233146Z-gpu-03",
+      "codigo": 0
+    },
+    {
+      "run_id": "RUN-20261117T233923Z-gpu-04",
+      "codigo": 0
+    },
+    {
+      "run_id": "RUN-20261117T234658Z-gpu-05",
+      "codigo": 0
+    }
+  ],
+  "precision_ic95_semiancho_pct": 0.5684107100751703,
+  "fin": "2026-11-17T23:54:32.725010+00:00"
+}

@@ -1,0 +1,157 @@
+2026-11-17T23:39:26.120734+00:00 verificacion_fuentes_y_datos {}
+2026-11-17T23:39:36.644197+00:00 inicializacion_y_warmup {}
+2026-11-17T23:39:47.048265+00:00 preparacion_cpu {'workers': 6}
+2026-11-17T23:39:55.277770+00:00 entrenamiento_CNN-B {'epoca': 1, 'pasos': 0}
+2026-11-17T23:39:55.764710+00:00 entrenamiento_CNN-B {'epoca': 1, 'pasos': 1}
+2026-11-17T23:39:58.970799+00:00 entrenamiento_CNN-B {'epoca': 1, 'pasos': 13}
+2026-11-17T23:40:02.162452+00:00 entrenamiento_CNN-B {'epoca': 1, 'pasos': 25}
+2026-11-17T23:40:05.358523+00:00 entrenamiento_CNN-B {'epoca': 1, 'pasos': 37}
+2026-11-17T23:40:08.562871+00:00 entrenamiento_CNN-B {'epoca': 1, 'pasos': 49}
+2026-11-17T23:40:11.767598+00:00 entrenamiento_CNN-B {'epoca': 1, 'pasos': 61}
+2026-11-17T23:40:14.979846+00:00 entrenamiento_CNN-B {'epoca': 1, 'pasos': 73}
+2026-11-17T23:40:18.193022+00:00 entrenamiento_CNN-B {'epoca': 1, 'pasos': 85}
+2026-11-17T23:40:20.929671+00:00 validacion_cpu {'epoca': 1, 'pasos': 96}
+EPOCH 1 {'epoca': 1, 'pasos_acumulados': 96, 'train_loss': 2.756971597671509, 'train_accuracy': 0.25246304273605347, 'val_loss': 21.91301155090332, 'val_accuracy': 0.12605364620685577, 'pared_epoca_s': 27.813794900022913, 'validacion_cpu_s': 2.185542399995029}
+2026-11-17T23:40:23.600629+00:00 entrenamiento_CNN-B {'epoca': 2, 'pasos': 97}
+2026-11-17T23:40:26.825733+00:00 entrenamiento_CNN-B {'epoca': 2, 'pasos': 109}
+2026-11-17T23:40:30.056397+00:00 entrenamiento_CNN-B {'epoca': 2, 'pasos': 121}
+2026-11-17T23:40:33.295541+00:00 entrenamiento_CNN-B {'epoca': 2, 'pasos': 133}
+2026-11-17T23:40:36.531998+00:00 entrenamiento_CNN-B {'epoca': 2, 'pasos': 145}
+2026-11-17T23:40:39.768937+00:00 entrenamiento_CNN-B {'epoca': 2, 'pasos': 157}
+2026-11-17T23:40:43.005161+00:00 entrenamiento_CNN-B {'epoca': 2, 'pasos': 169}
+2026-11-17T23:40:46.240578+00:00 entrenamiento_CNN-B {'epoca': 2, 'pasos': 181}
+2026-11-17T23:40:48.995373+00:00 validacion_cpu {'epoca': 2, 'pasos': 192}
+EPOCH 2 {'epoca': 2, 'pasos_acumulados': 192, 'train_loss': 1.3889416456222534, 'train_accuracy': 0.5783251523971558, 'val_loss': 8.168072700500488, 'val_accuracy': 0.37049809098243713, 'pared_epoca_s': 28.04544929997064, 'validacion_cpu_s': 2.1666525000473484}
+2026-11-17T23:40:51.660764+00:00 entrenamiento_CNN-B {'epoca': 3, 'pasos': 193}
+2026-11-17T23:40:54.894112+00:00 entrenamiento_CNN-B {'epoca': 3, 'pasos': 205}
+2026-11-17T23:40:58.126231+00:00 entrenamiento_CNN-B {'epoca': 3, 'pasos': 217}
+2026-11-17T23:41:01.358766+00:00 entrenamiento_CNN-B {'epoca': 3, 'pasos': 229}
+2026-11-17T23:41:04.590467+00:00 entrenamiento_CNN-B {'epoca': 3, 'pasos': 241}
+2026-11-17T23:41:07.826780+00:00 entrenamiento_CNN-B {'epoca': 3, 'pasos': 253}
+2026-11-17T23:41:11.064631+00:00 entrenamiento_CNN-B {'epoca': 3, 'pasos': 265}
+2026-11-17T23:41:14.300347+00:00 entrenamiento_CNN-B {'epoca': 3, 'pasos': 277}
+2026-11-17T23:41:17.054234+00:00 validacion_cpu {'epoca': 3, 'pasos': 288}
+EPOCH 3 {'epoca': 3, 'pasos_acumulados': 288, 'train_loss': 0.8151745796203613, 'train_accuracy': 0.7505747079849243, 'val_loss': 2.5862271785736084, 'val_accuracy': 0.5785440802574158, 'pared_epoca_s': 28.005730200035032, 'validacion_cpu_s': 2.114507300022524}
+2026-11-17T23:41:19.697730+00:00 entrenamiento_CNN-B {'epoca': 4, 'pasos': 289}
+2026-11-17T23:41:22.934686+00:00 entrenamiento_CNN-B {'epoca': 4, 'pasos': 301}
+2026-11-17T23:41:26.161167+00:00 entrenamiento_CNN-B {'epoca': 4, 'pasos': 313}
+2026-11-17T23:41:29.403054+00:00 entrenamiento_CNN-B {'epoca': 4, 'pasos': 325}
+2026-11-17T23:41:32.645316+00:00 entrenamiento_CNN-B {'epoca': 4, 'pasos': 337}
+2026-11-17T23:41:35.877588+00:00 entrenamiento_CNN-B {'epoca': 4, 'pasos': 349}
+2026-11-17T23:41:39.115127+00:00 entrenamiento_CNN-B {'epoca': 4, 'pasos': 361}
+2026-11-17T23:41:42.346942+00:00 entrenamiento_CNN-B {'epoca': 4, 'pasos': 373}
+2026-11-17T23:41:45.099512+00:00 validacion_cpu {'epoca': 4, 'pasos': 384}
+EPOCH 4 {'epoca': 4, 'pasos_acumulados': 384, 'train_loss': 0.5259777903556824, 'train_accuracy': 0.8435960412025452, 'val_loss': 1.0154019594192505, 'val_accuracy': 0.778927206993103, 'pared_epoca_s': 28.100695299974177, 'validacion_cpu_s': 2.1708198999986053}
+2026-11-17T23:41:47.793548+00:00 entrenamiento_CNN-B {'epoca': 5, 'pasos': 385}
+2026-11-17T23:41:51.024063+00:00 entrenamiento_CNN-B {'epoca': 5, 'pasos': 397}
+2026-11-17T23:41:54.256430+00:00 entrenamiento_CNN-B {'epoca': 5, 'pasos': 409}
+2026-11-17T23:41:57.484379+00:00 entrenamiento_CNN-B {'epoca': 5, 'pasos': 421}
+2026-11-17T23:42:00.719038+00:00 entrenamiento_CNN-B {'epoca': 5, 'pasos': 433}
+2026-11-17T23:42:03.948357+00:00 entrenamiento_CNN-B {'epoca': 5, 'pasos': 445}
+2026-11-17T23:42:07.180664+00:00 entrenamiento_CNN-B {'epoca': 5, 'pasos': 457}
+2026-11-17T23:42:10.412419+00:00 entrenamiento_CNN-B {'epoca': 5, 'pasos': 469}
+2026-11-17T23:42:13.163416+00:00 validacion_cpu {'epoca': 5, 'pasos': 480}
+EPOCH 5 {'epoca': 5, 'pasos_acumulados': 480, 'train_loss': 0.34307801723480225, 'train_accuracy': 0.8990969061851501, 'val_loss': 0.31078094244003296, 'val_accuracy': 0.921072781085968, 'pared_epoca_s': 27.986457800026983, 'validacion_cpu_s': 2.0942976999795064}
+2026-11-17T23:42:15.703952+00:00 entrenamiento_CNN-B {'epoca': 6, 'pasos': 481}
+2026-11-17T23:42:18.939892+00:00 entrenamiento_CNN-B {'epoca': 6, 'pasos': 493}
+2026-11-17T23:42:22.178527+00:00 entrenamiento_CNN-B {'epoca': 6, 'pasos': 505}
+2026-11-17T23:42:25.409355+00:00 entrenamiento_CNN-B {'epoca': 6, 'pasos': 517}
+2026-11-17T23:42:28.639977+00:00 entrenamiento_CNN-B {'epoca': 6, 'pasos': 529}
+2026-11-17T23:42:31.868132+00:00 entrenamiento_CNN-B {'epoca': 6, 'pasos': 541}
+2026-11-17T23:42:35.099600+00:00 entrenamiento_CNN-B {'epoca': 6, 'pasos': 553}
+2026-11-17T23:42:38.329803+00:00 entrenamiento_CNN-B {'epoca': 6, 'pasos': 565}
+2026-11-17T23:42:41.081563+00:00 validacion_cpu {'epoca': 6, 'pasos': 576}
+EPOCH 6 {'epoca': 6, 'pasos_acumulados': 576, 'train_loss': 0.23939639329910278, 'train_accuracy': 0.9307060837745667, 'val_loss': 0.5141513347625732, 'val_accuracy': 0.8528735637664795, 'pared_epoca_s': 27.944463599997107, 'validacion_cpu_s': 2.121542999986559}
+2026-11-17T23:42:43.731507+00:00 entrenamiento_CNN-B {'epoca': 7, 'pasos': 577}
+2026-11-17T23:42:46.959267+00:00 entrenamiento_CNN-B {'epoca': 7, 'pasos': 589}
+2026-11-17T23:42:50.190751+00:00 entrenamiento_CNN-B {'epoca': 7, 'pasos': 601}
+2026-11-17T23:42:53.420720+00:00 entrenamiento_CNN-B {'epoca': 7, 'pasos': 613}
+2026-11-17T23:42:56.650363+00:00 entrenamiento_CNN-B {'epoca': 7, 'pasos': 625}
+2026-11-17T23:42:59.881708+00:00 entrenamiento_CNN-B {'epoca': 7, 'pasos': 637}
+2026-11-17T23:43:03.121378+00:00 entrenamiento_CNN-B {'epoca': 7, 'pasos': 649}
+2026-11-17T23:43:06.354668+00:00 entrenamiento_CNN-B {'epoca': 7, 'pasos': 661}
+2026-11-17T23:43:09.106744+00:00 validacion_cpu {'epoca': 7, 'pasos': 672}
+EPOCH 7 {'epoca': 7, 'pasos_acumulados': 672, 'train_loss': 0.18585482239723206, 'train_accuracy': 0.9473727345466614, 'val_loss': 0.399549663066864, 'val_accuracy': 0.8881226181983948, 'pared_epoca_s': 28.048411899944767, 'validacion_cpu_s': 2.1457883999682963}
+2026-11-17T23:43:11.661524+00:00 entrenamiento_CNN-B {'epoca': 8, 'pasos': 673}
+2026-11-17T23:43:14.888960+00:00 entrenamiento_CNN-B {'epoca': 8, 'pasos': 685}
+2026-11-17T23:43:18.118881+00:00 entrenamiento_CNN-B {'epoca': 8, 'pasos': 697}
+2026-11-17T23:43:21.349739+00:00 entrenamiento_CNN-B {'epoca': 8, 'pasos': 709}
+2026-11-17T23:43:24.579552+00:00 entrenamiento_CNN-B {'epoca': 8, 'pasos': 721}
+2026-11-17T23:43:27.815044+00:00 entrenamiento_CNN-B {'epoca': 8, 'pasos': 733}
+2026-11-17T23:43:31.042514+00:00 entrenamiento_CNN-B {'epoca': 8, 'pasos': 745}
+2026-11-17T23:43:34.268995+00:00 entrenamiento_CNN-B {'epoca': 8, 'pasos': 757}
+2026-11-17T23:43:37.013061+00:00 validacion_cpu {'epoca': 8, 'pasos': 768}
+EPOCH 8 {'epoca': 8, 'pasos_acumulados': 768, 'train_loss': 0.1416754126548767, 'train_accuracy': 0.9591132998466492, 'val_loss': 0.37006038427352905, 'val_accuracy': 0.9199233651161194, 'pared_epoca_s': 27.874918500019703, 'validacion_cpu_s': 2.115296899981331}
+2026-11-17T23:43:39.543337+00:00 entrenamiento_CNN-B {'epoca': 9, 'pasos': 769}
+2026-11-17T23:43:42.770496+00:00 entrenamiento_CNN-B {'epoca': 9, 'pasos': 781}
+2026-11-17T23:43:46.005366+00:00 entrenamiento_CNN-B {'epoca': 9, 'pasos': 793}
+2026-11-17T23:43:49.238703+00:00 entrenamiento_CNN-B {'epoca': 9, 'pasos': 805}
+2026-11-17T23:43:52.467075+00:00 entrenamiento_CNN-B {'epoca': 9, 'pasos': 817}
+2026-11-17T23:43:55.696226+00:00 entrenamiento_CNN-B {'epoca': 9, 'pasos': 829}
+2026-11-17T23:43:58.924369+00:00 entrenamiento_CNN-B {'epoca': 9, 'pasos': 841}
+2026-11-17T23:44:02.157721+00:00 entrenamiento_CNN-B {'epoca': 9, 'pasos': 853}
+2026-11-17T23:44:04.908493+00:00 validacion_cpu {'epoca': 9, 'pasos': 864}
+EPOCH 9 {'epoca': 9, 'pasos_acumulados': 864, 'train_loss': 0.11056599766016006, 'train_accuracy': 0.9701970219612122, 'val_loss': 0.6767783761024475, 'val_accuracy': 0.8306513428688049, 'pared_epoca_s': 27.958332300011534, 'validacion_cpu_s': 2.1790286999894306}
+2026-11-17T23:44:07.593242+00:00 entrenamiento_CNN-B {'epoca': 10, 'pasos': 865}
+2026-11-17T23:44:10.819064+00:00 entrenamiento_CNN-B {'epoca': 10, 'pasos': 877}
+2026-11-17T23:44:14.048723+00:00 entrenamiento_CNN-B {'epoca': 10, 'pasos': 889}
+2026-11-17T23:44:17.274294+00:00 entrenamiento_CNN-B {'epoca': 10, 'pasos': 901}
+2026-11-17T23:44:20.503343+00:00 entrenamiento_CNN-B {'epoca': 10, 'pasos': 913}
+2026-11-17T23:44:23.733857+00:00 entrenamiento_CNN-B {'epoca': 10, 'pasos': 925}
+2026-11-17T23:44:26.963843+00:00 entrenamiento_CNN-B {'epoca': 10, 'pasos': 937}
+2026-11-17T23:44:30.197996+00:00 entrenamiento_CNN-B {'epoca': 10, 'pasos': 949}
+2026-11-17T23:44:32.948111+00:00 validacion_cpu {'epoca': 10, 'pasos': 960}
+EPOCH 10 {'epoca': 10, 'pasos_acumulados': 960, 'train_loss': 0.09317190200090408, 'train_accuracy': 0.9736453294754028, 'val_loss': 0.19163855910301208, 'val_accuracy': 0.9490421414375305, 'pared_epoca_s': 28.030591999995522, 'validacion_cpu_s': 2.1709805999998935}
+2026-11-17T23:44:35.644470+00:00 entrenamiento_CNN-B {'epoca': 11, 'pasos': 961}
+2026-11-17T23:44:38.878694+00:00 entrenamiento_CNN-B {'epoca': 11, 'pasos': 973}
+2026-11-17T23:44:42.109031+00:00 entrenamiento_CNN-B {'epoca': 11, 'pasos': 985}
+2026-11-17T23:44:45.347757+00:00 entrenamiento_CNN-B {'epoca': 11, 'pasos': 997}
+2026-11-17T23:44:48.577378+00:00 entrenamiento_CNN-B {'epoca': 11, 'pasos': 1009}
+2026-11-17T23:44:51.805301+00:00 entrenamiento_CNN-B {'epoca': 11, 'pasos': 1021}
+2026-11-17T23:44:55.035658+00:00 entrenamiento_CNN-B {'epoca': 11, 'pasos': 1033}
+2026-11-17T23:44:58.266829+00:00 entrenamiento_CNN-B {'epoca': 11, 'pasos': 1045}
+2026-11-17T23:45:01.014014+00:00 validacion_cpu {'epoca': 11, 'pasos': 1056}
+EPOCH 11 {'epoca': 11, 'pasos_acumulados': 1056, 'train_loss': 0.073661208152771, 'train_accuracy': 0.9799671769142151, 'val_loss': 0.26367589831352234, 'val_accuracy': 0.9199233651161194, 'pared_epoca_s': 28.01023889996577, 'validacion_cpu_s': 2.1164467000053264}
+2026-11-17T23:45:03.557355+00:00 entrenamiento_CNN-B {'epoca': 12, 'pasos': 1057}
+2026-11-17T23:45:06.785544+00:00 entrenamiento_CNN-B {'epoca': 12, 'pasos': 1069}
+2026-11-17T23:45:10.018609+00:00 entrenamiento_CNN-B {'epoca': 12, 'pasos': 1081}
+2026-11-17T23:45:13.250210+00:00 entrenamiento_CNN-B {'epoca': 12, 'pasos': 1093}
+2026-11-17T23:45:16.476707+00:00 entrenamiento_CNN-B {'epoca': 12, 'pasos': 1105}
+2026-11-17T23:45:19.707276+00:00 entrenamiento_CNN-B {'epoca': 12, 'pasos': 1117}
+2026-11-17T23:45:22.934851+00:00 entrenamiento_CNN-B {'epoca': 12, 'pasos': 1129}
+2026-11-17T23:45:26.165784+00:00 entrenamiento_CNN-B {'epoca': 12, 'pasos': 1141}
+2026-11-17T23:45:28.912836+00:00 validacion_cpu {'epoca': 12, 'pasos': 1152}
+EPOCH 12 {'epoca': 12, 'pasos_acumulados': 1152, 'train_loss': 0.06788969039916992, 'train_accuracy': 0.982758641242981, 'val_loss': 0.24109329283237457, 'val_accuracy': 0.919157087802887, 'pared_epoca_s': 27.910346399992704, 'validacion_cpu_s': 2.1290049999952316}
+2026-11-17T23:45:31.568464+00:00 entrenamiento_CNN-B {'epoca': 13, 'pasos': 1153}
+2026-11-17T23:45:34.800942+00:00 entrenamiento_CNN-B {'epoca': 13, 'pasos': 1165}
+2026-11-17T23:45:38.037481+00:00 entrenamiento_CNN-B {'epoca': 13, 'pasos': 1177}
+2026-11-17T23:45:41.265795+00:00 entrenamiento_CNN-B {'epoca': 13, 'pasos': 1189}
+2026-11-17T23:45:44.498080+00:00 entrenamiento_CNN-B {'epoca': 13, 'pasos': 1201}
+2026-11-17T23:45:47.725527+00:00 entrenamiento_CNN-B {'epoca': 13, 'pasos': 1213}
+2026-11-17T23:45:50.953851+00:00 entrenamiento_CNN-B {'epoca': 13, 'pasos': 1225}
+2026-11-17T23:45:54.183553+00:00 entrenamiento_CNN-B {'epoca': 13, 'pasos': 1237}
+2026-11-17T23:45:56.931204+00:00 validacion_cpu {'epoca': 13, 'pasos': 1248}
+EPOCH 13 {'epoca': 13, 'pasos_acumulados': 1248, 'train_loss': 0.05134382098913193, 'train_accuracy': 0.9864531755447388, 'val_loss': 0.09185357391834259, 'val_accuracy': 0.9762452244758606, 'pared_epoca_s': 28.06785910000326, 'validacion_cpu_s': 2.1795021999860182}
+2026-11-17T23:45:59.521788+00:00 entrenamiento_CNN-B {'epoca': 14, 'pasos': 1249}
+2026-11-17T23:46:02.750924+00:00 entrenamiento_CNN-B {'epoca': 14, 'pasos': 1261}
+2026-11-17T23:46:05.977960+00:00 entrenamiento_CNN-B {'epoca': 14, 'pasos': 1273}
+2026-11-17T23:46:09.209474+00:00 entrenamiento_CNN-B {'epoca': 14, 'pasos': 1285}
+2026-11-17T23:46:12.444745+00:00 entrenamiento_CNN-B {'epoca': 14, 'pasos': 1297}
+2026-11-17T23:46:15.676691+00:00 entrenamiento_CNN-B {'epoca': 14, 'pasos': 1309}
+2026-11-17T23:46:18.907783+00:00 entrenamiento_CNN-B {'epoca': 14, 'pasos': 1321}
+2026-11-17T23:46:22.133942+00:00 entrenamiento_CNN-B {'epoca': 14, 'pasos': 1333}
+2026-11-17T23:46:24.881963+00:00 validacion_cpu {'epoca': 14, 'pasos': 1344}
+EPOCH 14 {'epoca': 14, 'pasos_acumulados': 1344, 'train_loss': 0.041579123586416245, 'train_accuracy': 0.989819347858429, 'val_loss': 0.13204194605350494, 'val_accuracy': 0.9620689749717712, 'pared_epoca_s': 27.883990500005893, 'validacion_cpu_s': 2.113734399958048}
+2026-11-17T23:46:27.518451+00:00 entrenamiento_CNN-B {'epoca': 15, 'pasos': 1345}
+2026-11-17T23:46:30.753468+00:00 entrenamiento_CNN-B {'epoca': 15, 'pasos': 1357}
+2026-11-17T23:46:33.980112+00:00 entrenamiento_CNN-B {'epoca': 15, 'pasos': 1369}
+2026-11-17T23:46:37.204703+00:00 entrenamiento_CNN-B {'epoca': 15, 'pasos': 1381}
+2026-11-17T23:46:40.433231+00:00 entrenamiento_CNN-B {'epoca': 15, 'pasos': 1393}
+2026-11-17T23:46:43.662139+00:00 entrenamiento_CNN-B {'epoca': 15, 'pasos': 1405}
+2026-11-17T23:46:46.899356+00:00 entrenamiento_CNN-B {'epoca': 15, 'pasos': 1417}
+2026-11-17T23:46:50.130966+00:00 entrenamiento_CNN-B {'epoca': 15, 'pasos': 1429}
+2026-11-17T23:46:52.876182+00:00 validacion_cpu {'epoca': 15, 'pasos': 1440}
+EPOCH 15 {'epoca': 15, 'pasos_acumulados': 1440, 'train_loss': 0.04032161831855774, 'train_accuracy': 0.9899014830589294, 'val_loss': 0.04838373884558678, 'val_accuracy': 0.9858237504959106, 'pared_epoca_s': 28.023385200009216, 'validacion_cpu_s': 2.1438656999962404}
+2026-11-17T23:46:55.057153+00:00 evaluacion_final_cpu {'pasos': 1440}
+2026-11-17T23:46:57.377969+00:00 guardado_fuera_de_timing {'pasos': 1440}
+2026-11-17T23:46:57.536846+00:00 completada {'pasos': 1440}

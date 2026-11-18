@@ -1,0 +1,5 @@
+fase,n_cpu,n_gpu,media_cpu_s,media_gpu_s,speedup,interpretacion
+preparacion_cpu_s,5,5,17.32450892,8.034344800000001,2.1563063760967784,"CPU1vs6workers, no CUDA"
+entrenamiento_s,5,5,805.6497256999999,418.607683,1.9245937387632703,Mismo alcance; incluye transferencias y validacion
+evaluacion_cpu_s,5,5,2.3223897599999996,2.49219244,0.9318661443335409,Ambas evaluaciones CPU
+suma_comparable_s,5,5,825.2966243799999,429.13422024,1.923166658483772,Mismo alcance; incluye transferencias y validacion

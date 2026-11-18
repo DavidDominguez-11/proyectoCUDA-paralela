@@ -1,0 +1,11 @@
+{
+  "estado": "cerrado",
+  "fecha_utc": "2026-11-18T02:35:59.472977+00:00",
+  "corridas": 5,
+  "archivos_run_verificados": 130,
+  "notebook_codigo_nativo": 0,
+  "celdas_codigo_ejecutadas": 37,
+  "nuevos_entrenamientos_durante_presentacion": false,
+  "codigo_analisis": "analisis_fuentes; codigo de medicion en cada RUN/contexto/fuentes.zip",
+  "alcance": "CNN-B; CPU historica compatible; transferencias/validacion incluidas; no todo el notebook original"
+}

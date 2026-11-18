@@ -1,0 +1,20 @@
+{
+  "test": {
+    "accuracy": 0.9862068891525269,
+    "loss": 0.061565157026052475
+  },
+  "epocas": 15,
+  "pasos": 1440,
+  "val_final": {
+    "epoca": 15,
+    "pasos_acumulados": 1440,
+    "train_loss": 0.04032161831855774,
+    "train_accuracy": 0.9899014830589294,
+    "val_loss": 0.04838373884558678,
+    "val_accuracy": 0.9858237504959106,
+    "pared_epoca_s": 28.275734700029716,
+    "validacion_cpu_s": 2.3601692999945953
+  },
+  "accuracy_historica_cpu_min": 0.9287356,
+  "comparabilidad": "Mismos datos,modelo,pasos; RNG/ejecucion diferentes, no identidad numerica"
+}

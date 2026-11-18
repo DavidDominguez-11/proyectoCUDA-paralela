@@ -1,0 +1,8 @@
+{
+  "estado": "aprobado",
+  "sha256": {
+    "LAB3-DATASCIENCE/Lab3_ASL_Deep_Learning.ipynb": "ce8824e860ae7e02684bf702fd6865b7d87cc9eb71917f56bfb0ee8d9ccb8e8a",
+    "scripts/benchmark_cpu.py": "c40127fa1e03dfc156b792c997578014b589f6b0650b2a3fe0fb03462c918893"
+  },
+  "comprobacion": "Mismos archivos importados en captura de cada RUN y referencia EXP-002; originales intactos"
+}

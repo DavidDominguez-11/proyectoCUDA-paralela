@@ -1,0 +1,243 @@
+{
+  "propio": [
+    {
+      "operacion": "im2col",
+      "block": [
+        256,
+        1,
+        1
+      ],
+      "grid": [
+        4096,
+        1,
+        1
+      ],
+      "forma": [
+        128,
+        64,
+        64,
+        3,
+        32
+      ]
+    },
+    {
+      "operacion": "im2col",
+      "block": [
+        256,
+        1,
+        1
+      ],
+      "grid": [
+        4096,
+        1,
+        1
+      ],
+      "forma": [
+        128,
+        64,
+        64,
+        32,
+        32
+      ]
+    },
+    {
+      "operacion": "im2col",
+      "block": [
+        256,
+        1,
+        1
+      ],
+      "grid": [
+        4096,
+        1,
+        1
+      ],
+      "forma": [
+        128,
+        32,
+        32,
+        32,
+        64
+      ]
+    },
+    {
+      "operacion": "im2col",
+      "block": [
+        256,
+        1,
+        1
+      ],
+      "grid": [
+        4096,
+        1,
+        1
+      ],
+      "forma": [
+        128,
+        32,
+        32,
+        64,
+        64
+      ]
+    },
+    {
+      "operacion": "im2col",
+      "block": [
+        256,
+        1,
+        1
+      ],
+      "grid": [
+        4096,
+        1,
+        1
+      ],
+      "forma": [
+        128,
+        16,
+        16,
+        64,
+        128
+      ]
+    }
+  ],
+  "vector_block": 256,
+  "reduccion_block": [
+    32,
+    8,
+    1
+  ],
+  "reduccion_final_block": 256,
+  "softmax_block": 32,
+  "gemm": "cuBLAS SGEMM: jerarquia interna gestionada por NVIDIA, no inventada por el equipo",
+  "recursos": {
+    "relu_backward": [
+      {
+        "firma": "(Array(float32, 1, 'C', False, aligned=True), Array(float32, 1, 'C', False, aligned=True), int64)",
+        "registros": 22,
+        "shared_bytes": 0,
+        "local_bytes": 0
+      }
+    ],
+    "dropout": [
+      {
+        "firma": "(Array(float32, 1, 'C', False, aligned=True), Array(uint8, 1, 'C', False, aligned=True), Array(float32, 1, 'C', False, aligned=True), float32, int64)",
+        "registros": 23,
+        "shared_bytes": 0,
+        "local_bytes": 0
+      }
+    ],
+    "pool_forward": [
+      {
+        "firma": "(Array(float32, 1, 'C', False, aligned=True), Array(float32, 1, 'C', False, aligned=True), Array(uint8, 1, 'C', False, aligned=True), int64, int64, int64, int64)",
+        "registros": 40,
+        "shared_bytes": 0,
+        "local_bytes": 0
+      }
+    ],
+    "pool_backward": [
+      {
+        "firma": "(Array(float32, 1, 'C', False, aligned=True), Array(uint8, 1, 'C', False, aligned=True), Array(float32, 1, 'C', False, aligned=True), int64, int64, int64, int64)",
+        "registros": 36,
+        "shared_bytes": 0,
+        "local_bytes": 0
+      }
+    ],
+    "reduce_channels": [
+      {
+        "firma": "(Array(float32, 1, 'C', False, aligned=True), Array(float32, 1, 'C', False, aligned=True), Array(float32, 1, 'C', False, aligned=True), Array(float32, 1, 'C', False, aligned=True), Array(float32, 1, 'C', False, aligned=True), Array(float32, 1, 'C', False, aligned=True), int64, int64, int64)",
+        "registros": 44,
+        "shared_bytes": 2048,
+        "local_bytes": 0
+      }
+    ],
+    "finish_channels": [
+      {
+        "firma": "(Array(float32, 1, 'C', False, aligned=True), Array(float32, 1, 'C', False, aligned=True), Array(float32, 1, 'C', False, aligned=True), Array(float32, 1, 'C', False, aligned=True), Array(float32, 1, 'C', False, aligned=True), Array(float32, 1, 'C', False, aligned=True), Array(float32, 1, 'C', False, aligned=True), Array(float32, 1, 'C', False, aligned=True), int64, int64, int64, int64)",
+        "registros": 14,
+        "shared_bytes": 2048,
+        "local_bytes": 0
+      }
+    ],
+    "bn_forward": [
+      {
+        "firma": "(Array(float32, 1, 'C', False, aligned=True), Array(float32, 1, 'C', False, aligned=True), Array(float32, 1, 'C', False, aligned=True), Array(float32, 1, 'C', False, aligned=True), Array(float32, 1, 'C', False, aligned=True), Array(float32, 1, 'C', False, aligned=True), int64, int64)",
+        "registros": 32,
+        "shared_bytes": 0,
+        "local_bytes": 0
+      }
+    ],
+    "bn_backward": [
+      {
+        "firma": "(Array(float32, 1, 'C', False, aligned=True), Array(float32, 1, 'C', False, aligned=True), Array(float32, 1, 'C', False, aligned=True), Array(float32, 1, 'C', False, aligned=True), Array(float32, 1, 'C', False, aligned=True), Array(float32, 1, 'C', False, aligned=True), Array(float32, 1, 'C', False, aligned=True), Array(float32, 1, 'C', False, aligned=True), int64, int64)",
+        "registros": 34,
+        "shared_bytes": 0,
+        "local_bytes": 0
+      }
+    ],
+    "softmax_loss": [
+      {
+        "firma": "(Array(float32, 1, 'C', False, aligned=True), Array(int64, 1, 'C', False, aligned=True), Array(float32, 1, 'C', False, aligned=True), Array(float32, 1, 'C', False, aligned=True), Array(float32, 1, 'C', False, aligned=True), Array(uint8, 1, 'C', False, aligned=True), int64)",
+        "registros": 26,
+        "shared_bytes": 128,
+        "local_bytes": 0
+      }
+    ],
+    "adam": [
+      {
+        "firma": "(Array(float32, 1, 'C', False, aligned=True), Array(float32, 1, 'C', False, aligned=True), Array(float32, 1, 'C', False, aligned=True), Array(float32, 1, 'C', False, aligned=True), float32, int64, Array(int32, 1, 'C', False, aligned=True))",
+        "registros": 32,
+        "shared_bytes": 0,
+        "local_bytes": 0
+      }
+    ],
+    "finite_check": [
+      {
+        "firma": "(Array(float32, 1, 'C', False, aligned=True), int64, Array(int32, 1, 'C', False, aligned=True))",
+        "registros": 22,
+        "shared_bytes": 0,
+        "local_bytes": 0
+      }
+    ],
+    "metrics": [
+      {
+        "firma": "(Array(float32, 1, 'C', False, aligned=True), Array(uint8, 1, 'C', False, aligned=True), int64, Array(float32, 1, 'C', False, aligned=True))",
+        "registros": 14,
+        "shared_bytes": 2048,
+        "local_bytes": 0
+      }
+    ],
+    "advance_step": [
+      {
+        "firma": "(Array(int64, 1, 'C', False, aligned=True),)",
+        "registros": 6,
+        "shared_bytes": 0,
+        "local_bytes": 0
+      }
+    ],
+    "im2col": [
+      {
+        "firma": "(Array(float32, 1, 'C', False, aligned=True), Array(float32, 1, 'C', False, aligned=True), int64, int64, int64, int64)",
+        "registros": 42,
+        "shared_bytes": 0,
+        "local_bytes": 0
+      }
+    ],
+    "col2im_gather": [
+      {
+        "firma": "(Array(float32, 1, 'C', False, aligned=True), Array(float32, 1, 'C', False, aligned=True), int64, int64, int64, int64)",
+        "registros": 36,
+        "shared_bytes": 0,
+        "local_bytes": 0
+      }
+    ],
+    "bias_activation": [
+      {
+        "firma": "(Array(float32, 1, 'C', False, aligned=True), Array(float32, 1, 'C', False, aligned=True), int64, int64, bool)",
+        "registros": 34,
+        "shared_bytes": 0,
+        "local_bytes": 0
+      }
+    ]
+  }
+}

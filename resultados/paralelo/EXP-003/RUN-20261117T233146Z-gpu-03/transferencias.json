@@ -1,0 +1,8651 @@
+{
+  "lotes": [
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 20,
+      "imagenes_bytes": 983040,
+      "etiquetas_bytes": 160,
+      "mascaras_bytes": 1152000
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 20,
+      "imagenes_bytes": 983040,
+      "etiquetas_bytes": 160,
+      "mascaras_bytes": 1152000
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 20,
+      "imagenes_bytes": 983040,
+      "etiquetas_bytes": 160,
+      "mascaras_bytes": 1152000
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 20,
+      "imagenes_bytes": 983040,
+      "etiquetas_bytes": 160,
+      "mascaras_bytes": 1152000
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 20,
+      "imagenes_bytes": 983040,
+      "etiquetas_bytes": 160,
+      "mascaras_bytes": 1152000
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 20,
+      "imagenes_bytes": 983040,
+      "etiquetas_bytes": 160,
+      "mascaras_bytes": 1152000
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 20,
+      "imagenes_bytes": 983040,
+      "etiquetas_bytes": 160,
+      "mascaras_bytes": 1152000
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 20,
+      "imagenes_bytes": 983040,
+      "etiquetas_bytes": 160,
+      "mascaras_bytes": 1152000
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 20,
+      "imagenes_bytes": 983040,
+      "etiquetas_bytes": 160,
+      "mascaras_bytes": 1152000
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 20,
+      "imagenes_bytes": 983040,
+      "etiquetas_bytes": 160,
+      "mascaras_bytes": 1152000
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 20,
+      "imagenes_bytes": 983040,
+      "etiquetas_bytes": 160,
+      "mascaras_bytes": 1152000
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 20,
+      "imagenes_bytes": 983040,
+      "etiquetas_bytes": 160,
+      "mascaras_bytes": 1152000
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 20,
+      "imagenes_bytes": 983040,
+      "etiquetas_bytes": 160,
+      "mascaras_bytes": 1152000
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 20,
+      "imagenes_bytes": 983040,
+      "etiquetas_bytes": 160,
+      "mascaras_bytes": 1152000
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 128,
+      "imagenes_bytes": 6291456,
+      "etiquetas_bytes": 1024,
+      "mascaras_bytes": 7372800
+    },
+    {
+      "batch": 20,
+      "imagenes_bytes": 983040,
+      "etiquetas_bytes": 160,
+      "mascaras_bytes": 1152000
+    }
+  ],
+  "h2d_estado_inicial_bytes": 26946804,
+  "reinicios_metricas_h2d_bytes": 180,
+  "modelo_d2h_copias": 16,
+  "modelo_bytes_por_copia": 8984820,
+  "optimizador_final_bytes": 17961968,
+  "control_d2h_bytes": 5760,
+  "aclaracion": "Ultima copia extra de pesos por export final, incluida en pared y eventos"
+}
