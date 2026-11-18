@@ -10,6 +10,10 @@ compatible y registra transferencias,repeticiones,calidad y límites. Hay
 [PDF](paralelo/EXP-003/informe-paso-5.pdf) y
 [capturas reales](evidencias/EXP-003/README.md).
 
+El [paso 6: análisis y conclusiones](comparacion/paso-6-revision-02/analisis-y-conclusiones.md)
+compara medias/variabilidad por fase,calcula speedup/ahorro y discute causas y
+límites. Es Markdown con CSV y tres gráficas PNG/SVG;no es informe final ni PDF.
+
 | Carpeta / archivo | Uso |
 |---|---|
 | [inventario-inicial.csv](inventario-inicial.csv) | Identidad de la consigna, notebook, dependencias y fotos al preparar trazabilidad |
