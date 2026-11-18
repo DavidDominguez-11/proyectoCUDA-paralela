@@ -2,6 +2,14 @@
 
 Estado: **comparación CNN-B disponible, cinco referencias CPU EXP-002 y cinco CUDA EXP-003**.
 
+**Paso 6 vigente:** [análisis y conclusiones](paso-6-revision-02/analisis-y-conclusiones.md),
+[tabla por fase](paso-6-revision-02/comparacion_fases.csv),
+[fuentes](paso-6-revision-02/fuentes.csv) y
+[procedencia](paso-6-revision-02/procedencia.json). Contiene tres gráficas PNG/SVG,
+observaciones individuales,estadísticas y causas de rendimiento,sin entrenar ni
+generar PDF. El directorio paso-6 anterior conserva una revisión preliminar
+reemplazada por esta vista;véase BIT-011.
+
 [Resultados y límites](../paralelo/EXP-003/resultados.md),
 [comparabilidad](../paralelo/EXP-003/comparabilidad.csv),
 [speedup](../paralelo/EXP-003/speedup.csv). Se compara tiempo de pared completo
