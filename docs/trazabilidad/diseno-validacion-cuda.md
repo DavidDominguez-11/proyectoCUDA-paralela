@@ -1,5 +1,10 @@
 # DIS-CUDA-001. Equivalencia, validación y medición
 
+**Antecedente revisión1.** La instrucción posterior del usuario y DEC-021/023
+retiran la campaña CPU pareada obligatoria y definen admisión por pruebas locales
+con activaciones iguales, conservando los diagnósticos globales fallidos.
+El [paso5](implementacion-cuda.md) y su EXP describen el protocolo efectivamente usado.
+
 Parte del [diseño del paso 4](diseno-paralelo.md), revisión1. **Plan completo,
 sin pruebas GPU ni experimentos nuevos ejecutados**. Amplía los contratos de
 [reproducibilidad](reproducibilidad.md); no sustituye la evidencia CPU EXP-002.
