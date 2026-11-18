@@ -7,8 +7,8 @@ páginas. Ante una diferencia, prevalece ese PDF sobre cualquier otro archivo.
 Las convenciones de esta carpeta son acuerdos internos para satisfacerlo;
 no deben presentarse como instrucciones adicionales del docente.
 
-Estado: **pasos 1–5 documentados; cinco corridas CPU EXP-002 y cinco CUDA EXP-003;
-CNN-B implementada/medida, informe PDF disponible; entrega global pendiente de revisión**.
+Estado: **pasos 1–6 documentados para CNN-B; cinco corridas CPU EXP-002 y cinco
+CUDA EXP-003; paso 6 en Markdown; informe final y entrega global pendientes**.
 Fecha de apertura: 2026-11-17, zona de trabajo America/Guatemala.
 Las [instrucciones del repositorio](../../AGENTS.md) mantienen estas convenciones
 para trabajos posteriores.
@@ -32,6 +32,7 @@ para trabajos posteriores.
 | [Contraste con Semana15](contraste-semana-15.md) | Correspondencia con clase, precisiones y refinamiento de coalescencia; fuente conservada. |
 | [Inspección del diseño](../../resultados/diseno/paso-4-inspeccion.md) | Inventario GPU, fuentes locales, hashes y presupuestos derivados; sin ejecutar kernels. |
 | [Implementación CUDA](implementacion-cuda.md) | Paso5: código, revisiones del diseño, ejecución real, tiempos y límites. |
+| [Análisis y conclusiones](../../resultados/comparacion/paso-6-revision-02/analisis-y-conclusiones.md) | Paso6: comparación por fase, speedup, dispersión, transferencias, causas y conclusiones; sin informe final/PDF. |
 | [Notebook con salidas reales](../../notebooks/Lab3_ASL_CUDA_con_salidas.ipynb) | Última corrida:15épocas,tablas,métricas,tiempos y gráficas incrustados,sin entrenar otra vez. |
 | [Reproducir CUDA](reproducir-cuda.md) | Consultar sin repetir corridas o preparar otra identidad con datos/estado preservados. |
 | [Estrategia de paralelización](estrategia-paralelizacion.md) | Índice de selección y fichas del diseño vigente. |
@@ -104,3 +105,9 @@ Numba-CUDA/cuBLAS:418.608±1.916s frente a805.650±2.723s CPU, aceleración1.925
 [informe PDF](../../resultados/paralelo/EXP-003/informe-paso-5.pdf).
 La reconstrucción limpia en otra máquina, contribuciones del equipo y revisión
 de entrega global no se han certificado. No se promete identidad numérica CPU/GPU.
+
+El [paso 6](../../resultados/comparacion/paso-6-revision-02/analisis-y-conclusiones.md)
+analiza los datos conservados sin entrenar otra vez: ahorro de387.042s en
+entrenamiento (48.041%),preparación mejorada enCPU y test sin mejora observada.
+Incluye tres gráficas nuevas y sus CSV/PNG/SVG. Las reservas REQ-07/09 y de
+corrección permanecen explícitas; todavía no se produce el informe final ni PDF.
