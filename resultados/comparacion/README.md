@@ -1,6 +1,13 @@
 # Comparación CPU / GPU
 
-Estado: pendiente de RUN medidos, validados y comparables.
+Estado: **comparación CNN-B disponible, cinco referencias CPU EXP-002 y cinco CUDA EXP-003**.
+
+[Resultados y límites](../paralelo/EXP-003/resultados.md),
+[comparabilidad](../paralelo/EXP-003/comparabilidad.csv),
+[speedup](../paralelo/EXP-003/speedup.csv). Se compara tiempo de pared completo
+de entrenamiento, incluyendo transferencias/validaciónCPU;1.924594×.
+La referencia es histórica no alternada y los RNG internos difieren; no se afirma
+identidad numérica CPU/GPU. La mejora de preparación1→6workers es CPU, no CUDA.
 
 Crear por EXP un `analisis.md`, los CSV derivados y el script/configuración que
 los regenera. Registrar su commit, versiones, comandos y hashes de entradas.
