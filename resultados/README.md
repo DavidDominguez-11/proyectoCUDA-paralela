@@ -1,9 +1,14 @@
 # Resultados y evidencias
 
-Estado actual: **cinco corridas CPU EXP-002 completadas; GPU pendiente**.
+Estado actual: **cinco corridas CPU EXP-002 y cinco CUDA EXP-003 completadas**.
 Los valores crudos se conservan por RUN y el índice CPU está consolidado.
 El [informe CPU](secuencial/EXP-002/resultados.md) separa las fases comunes de
 las ramas adaptativas; no se mezclan como si fueran una única carga fija.
+
+El [informe CUDA CNN-B](paralelo/EXP-003/resultados.md) reutiliza la fase CPU
+compatible y registra transferencias,repeticiones,calidad y límites. Hay
+[PDF](paralelo/EXP-003/informe-paso-5.pdf) y
+[capturas reales](evidencias/EXP-003/README.md).
 
 | Carpeta / archivo | Uso |
 |---|---|
@@ -57,8 +62,9 @@ Una duración desconocida queda vacía con estado pendiente. Para CPU, h2d/d2h
 tienen estado no_aplica y duración vacía. Los intervalos se documentan en el reloj
 de pared; los eventos de dispositivo conservan además su salida cruda.
 
-No existe todavía un exportador de métricas del algoritmo: la implementación
-CPU/CUDA deberá producir este esquema o documentar su conversión verificable.
+benchmark_cpu.py y benchmark_cuda.py producen este esquema. En la serie CUDA,
+dispositivo identifica la variante; tiempos_clasificados.csv añade el ejecutor
+efectivo de cada fase para distinguir CPU,GPU,transferencias y tramo heterogéneo.
 
 ## Manifiesto inicial
 
