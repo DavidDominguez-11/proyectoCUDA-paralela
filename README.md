@@ -14,6 +14,7 @@ La versión Markdown de la consigna es material explicativo secundario.
 - [Paso 3: identificación de oportunidades de paralelización](docs/trazabilidad/oportunidades-paralelizacion.md).
 - [Paso 4: diseño completo del algoritmo CUDA](docs/trazabilidad/diseno-paralelo.md).
 - [Paso 5: notebook CUDA Python con salidas reales](notebooks/Lab3_ASL_CUDA_con_salidas.ipynb).
+- [Paso 6: análisis y conclusiones, tablas y gráficas](resultados/comparacion/paso-6-revision-02/analisis-y-conclusiones.md).
 - [Notebook fuente congelado de las mediciones](notebooks/Lab3_ASL_CUDA.ipynb).
 - [Resultados CPU/CUDA, CSV y gráficas](resultados/paralelo/EXP-003/resultados.md).
 - [Informe PDF del paso 5](resultados/paralelo/EXP-003/informe-paso-5.pdf).
@@ -26,3 +27,7 @@ y cuBLAS: cinco corridas, media418.608s frente a805.650s CPU, aceleración1.925�
 incluyendo transferencias y validaciónCPU; accuracy test98.62%.
 Los cambios del diseño se documentan en DEC-021/022/023. No se repitió la campaña
 CPU; el original permanece intacto. El alcance medido es CNN-B, no todo el notebook.
+
+El paso 6 analiza el speedup y sus posibles causas con las cinco observaciones
+por variante y los límites de la revisión previa. Se conserva en Markdown con
+CSV y tres gráficas reproducibles; el informe final y su PDF siguen pendientes.
