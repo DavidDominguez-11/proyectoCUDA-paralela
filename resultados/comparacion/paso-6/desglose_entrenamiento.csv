@@ -1,0 +1,6 @@
+componente,descripcion,media_s,porcentaje_entrenamiento
+computo_intervalos_stream_s,Cómputo: intervalos del stream,340.8148799630702,81.41629831554482
+h2d_eventos_s,H2D: eventos,3.3129218248248113,0.7914144817128956
+d2h_eventos_s,D2H: eventos,0.21490079347863777,0.051337039955532245
+validacion_anidada_s,Validación CPU anidada,32.32359978004824,7.721692910268023
+administracion_y_staging_s,Residuo de pared / staging / control,41.94138063857808,10.019257252518722
