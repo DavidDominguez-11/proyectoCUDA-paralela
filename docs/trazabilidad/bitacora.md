@@ -698,3 +698,41 @@ Finalizadas FC-A/FC-B: cinco corridas completas por red,150épocas/14,400pasos n
 
 
 Cierre documental14:03UTC: verificación de preparación aprobó506enlaces en53Markdown,19originales,190esquemasCSV y119fuentes. Revisión Word final24páginas sin páginas vacías;las cuatro tablas añadidas están completas en una página cada una. Validación HDF5 de los diez checkpoints confirmó parámetros finitos yAdam1440sin cargar/ejecutar redes. Sellado mediante scripts/sellar_ampliacion_fc.py;no modifica CPU/CNN-B anteriores.
+
+
+## BIT-015 — Presentación del proyecto
+
+Inicio UTC:2026-11-18T22:00:45.751664+00:00. Responsable:Codex por petición del usuario. Revisados PDF normativo, trazabilidad, resultados CPU/CUDA/FC y habilidad local SKILL-P.md. Node pptxgenjs no estaba disponible; se añadió solamente a data/presentacion-tooling, sin modificar PCUDA. Presentación sin nuevos entrenamientos; documentos existentes protegidos mediante hashes.
+
+
+## Cierre BIT-015 — 2026-11-18T22:13:05.400198+00:00
+
+Presentación editable de31diapositivas(26principales+5anexos),13gráficas nativas,31notas yguionMD. Reutilizadas39fuentes,fotosASL ycinco capturas reales. Medias/DE/speedup contrastados;ningún modelo ejecutado. PowerPoint abrióyrenderizó todas,sin desbordes tras correcciones7/18. Documentos/notebooks previos conservadosporSHA-256. [Procedimiento,evidencia yentrega](presentacion.md).
+
+
+Auditoría documental final:las cuatro copias históricas de Markdown se renombraron .md.bak sin cambiar sus bytes; sus enlaces son relativos a su ubicación original yno documentación activa. El primer control detectó esos enlaces de las copias. El manifiesto inicial artefactos.csv se conserva comoantecedente; artefactos-v02.csv registra elcierre actual ylas rutas de snapshots corregidas. Ninguna diapositiva odato experimental se cambió.
+
+
+## BIT-016 — Preparación de presentación corta
+
+InicioUTC:2026-11-18T22:30:04.211345+00:00. RevisadosREADME,trazabilidad,decisiones,bitácora yhabilidad localSKILL-P.md. Origen:presentación actual de31diapositivas,SHA-256:4dfbf8fa08dccf6db2186064332f46ec87ad8dff3bd8c2c8505c61afa65c5f0c. Se conservarán exactamente15diapositivas: 1,3,5,6,7,8,9,11,12,14,15,17,20,23,26. Ningún modelo ejecutado.
+
+
+## Cierre BIT-016 — 2026-11-18T22:32:43.518215+00:00
+
+Presentación corta final:15láminas,7gráficas,7tablas ynotas;PowerPointvalidadoyrenderizado sin desbordes. Se preservaexactamenteelPPTX31delusuario,SHA-256:4dfbf8fa08dccf6db2186064332f46ec87ad8dff3bd8c2c8505c61afa65c5f0c. TambiénPDF/DOCX/notebooks intactos. [Procedimiento](presentacion-corta.md).
+
+
+## BIT-017 — Inspección técnica de CUDA
+
+InicioUTC:2026-11-18T22:56:53.810384+00:00. Responsable:Codexporpetición delusuario. Leídosruntime,kernels,blas,model,fc ycontrolador medido. Se consultaron las APIoficialesNumba-CUDA ycuBLAS13.1. No seimportaron módulos de entrenamiento ni se ejecutó códigoGPU. Se generará índice estáticoAST ymapa deceldas visuales.
+
+
+## Cierre BIT-017 — 2026-11-18T23:02:21.942290+00:00
+
+Guía de código CUDA creada con rutas,funciones ylíneas,guion literal,ruta rápida,sincronización yFAQ. Validación estática aprobada:104enlaces,82anclas,45celdas y5snippetsPython. Fuentes ytodoslosentregables previos intactos porSHA-256. Sin GPU/entrenamientos nuevos. [Detalle](guia-codigo-cuda.md).
+
+
+## BIT-018 — Tabla de consulta para exposición
+
+2026-11-19T00:13:26.664101+00:00. Tabla breve de archivos CUDA guardada en entregables/Tabla_Archivos_CUDA.md, con sincronización y orden de exposición. Solo documentación; sin modificar código ni ejecutar entrenamientos. [Documento](../../entregables/Tabla_Archivos_CUDA.md).

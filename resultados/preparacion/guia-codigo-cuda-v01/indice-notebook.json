@@ -1,0 +1,407 @@
+[
+  {
+    "celda_visual": 12,
+    "execution_count": 8,
+    "id": "35b15bbd",
+    "primera_linea": "%%modulo asl_cuda.runtime",
+    "temas": [
+      "Módulo runtime CNN-B"
+    ]
+  },
+  {
+    "celda_visual": 13,
+    "execution_count": 9,
+    "id": "f0c090e0",
+    "primera_linea": "%%modulo asl_cuda.kernels",
+    "temas": [
+      "Kernels CNN-B"
+    ]
+  },
+  {
+    "celda_visual": 14,
+    "execution_count": 10,
+    "id": "47015a07",
+    "primera_linea": "%%modulo asl_cuda.blas",
+    "temas": [
+      "Adaptador cuBLAS CNN-B"
+    ]
+  },
+  {
+    "celda_visual": 15,
+    "execution_count": 11,
+    "id": "9ba8118e",
+    "primera_linea": "%%modulo asl_cuda.model",
+    "temas": [
+      "Clase Network CNN-B"
+    ]
+  },
+  {
+    "celda_visual": 18,
+    "execution_count": 13,
+    "id": "d261416c",
+    "primera_linea": "conf, folder = locations(experiment)",
+    "temas": [
+      "Creación Network, backend medido"
+    ]
+  },
+  {
+    "celda_visual": 24,
+    "execution_count": 17,
+    "id": "1be05e1a",
+    "primera_linea": "state('preparacion_cpu', workers=6)",
+    "temas": [
+      "Preparación CPU"
+    ]
+  },
+  {
+    "celda_visual": 29,
+    "execution_count": 20,
+    "id": "240c1ad6",
+    "primera_linea": "state('entrenamiento_CNN-B', epoca=1, pasos=0)",
+    "temas": [
+      "Bucle real de entrenamiento"
+    ]
+  },
+  {
+    "celda_visual": 60,
+    "execution_count": 4,
+    "id": "6c6ad55a",
+    "primera_linea": "%%modulo_fc asl_cuda.kernels",
+    "temas": [
+      "Kernels reutilizados FC"
+    ]
+  },
+  {
+    "celda_visual": 61,
+    "execution_count": 5,
+    "id": "f7eee239",
+    "primera_linea": "%%modulo_fc asl_cuda.blas",
+    "temas": [
+      "cuBLAS reutilizado FC"
+    ]
+  },
+  {
+    "celda_visual": 62,
+    "execution_count": 6,
+    "id": "7b2087b7",
+    "primera_linea": "%%modulo_fc asl_cuda.model",
+    "temas": [
+      "Network reutilizada FC"
+    ]
+  },
+  {
+    "celda_visual": 63,
+    "execution_count": 7,
+    "id": "e0055bef",
+    "primera_linea": "%%modulo_fc asl_cuda.fc",
+    "temas": [
+      "Extensión FCNetwork"
+    ]
+  },
+  {
+    "celda_visual": 67,
+    "execution_count": 9,
+    "id": "10432e8e",
+    "primera_linea": "name='FC-A';repetition=1;run_id='RUN-20261118T134323Z-fc-a-01'",
+    "temas": [
+      "Creación FCNetwork / warmup"
+    ]
+  },
+  {
+    "celda_visual": 68,
+    "execution_count": 10,
+    "id": "d0acc842",
+    "primera_linea": "state('preparacion_cpu',workers=6)",
+    "temas": [
+      "Preparación CPU"
+    ]
+  },
+  {
+    "celda_visual": 69,
+    "execution_count": 11,
+    "id": "ead4d246",
+    "primera_linea": "state('entrenamiento_'+name,epoca=1,pasos=0)",
+    "temas": [
+      "Bucle real de entrenamiento"
+    ]
+  },
+  {
+    "celda_visual": 79,
+    "execution_count": 4,
+    "id": "40be3413",
+    "primera_linea": "%%modulo_fc asl_cuda.kernels",
+    "temas": [
+      "Kernels reutilizados FC"
+    ]
+  },
+  {
+    "celda_visual": 80,
+    "execution_count": 5,
+    "id": "ea941fb0",
+    "primera_linea": "%%modulo_fc asl_cuda.blas",
+    "temas": [
+      "cuBLAS reutilizado FC"
+    ]
+  },
+  {
+    "celda_visual": 81,
+    "execution_count": 6,
+    "id": "484e5b2a",
+    "primera_linea": "%%modulo_fc asl_cuda.model",
+    "temas": [
+      "Network reutilizada FC"
+    ]
+  },
+  {
+    "celda_visual": 82,
+    "execution_count": 7,
+    "id": "7f8d25be",
+    "primera_linea": "%%modulo_fc asl_cuda.fc",
+    "temas": [
+      "Extensión FCNetwork"
+    ]
+  },
+  {
+    "celda_visual": 86,
+    "execution_count": 9,
+    "id": "9516a9fd",
+    "primera_linea": "name='FC-A';repetition=2;run_id='RUN-20261118T134514Z-fc-a-02'",
+    "temas": [
+      "Creación FCNetwork / warmup"
+    ]
+  },
+  {
+    "celda_visual": 87,
+    "execution_count": 10,
+    "id": "ac2e8e55",
+    "primera_linea": "state('preparacion_cpu',workers=6)",
+    "temas": [
+      "Preparación CPU"
+    ]
+  },
+  {
+    "celda_visual": 88,
+    "execution_count": 11,
+    "id": "26a1a706",
+    "primera_linea": "state('entrenamiento_'+name,epoca=1,pasos=0)",
+    "temas": [
+      "Bucle real de entrenamiento"
+    ]
+  },
+  {
+    "celda_visual": 91,
+    "execution_count": 13,
+    "id": "eecfe3d9",
+    "primera_linea": "name='FC-A';repetition=3;run_id='RUN-20261118T134514Z-fc-a-03'",
+    "temas": [
+      "Creación FCNetwork / warmup"
+    ]
+  },
+  {
+    "celda_visual": 92,
+    "execution_count": 14,
+    "id": "ced96d45",
+    "primera_linea": "state('preparacion_cpu',workers=6)",
+    "temas": [
+      "Preparación CPU"
+    ]
+  },
+  {
+    "celda_visual": 93,
+    "execution_count": 15,
+    "id": "d13c347e",
+    "primera_linea": "state('entrenamiento_'+name,epoca=1,pasos=0)",
+    "temas": [
+      "Bucle real de entrenamiento"
+    ]
+  },
+  {
+    "celda_visual": 96,
+    "execution_count": 17,
+    "id": "9b6527f1",
+    "primera_linea": "name='FC-A';repetition=4;run_id='RUN-20261118T134514Z-fc-a-04'",
+    "temas": [
+      "Creación FCNetwork / warmup"
+    ]
+  },
+  {
+    "celda_visual": 97,
+    "execution_count": 18,
+    "id": "9966be51",
+    "primera_linea": "state('preparacion_cpu',workers=6)",
+    "temas": [
+      "Preparación CPU"
+    ]
+  },
+  {
+    "celda_visual": 98,
+    "execution_count": 19,
+    "id": "b3158a39",
+    "primera_linea": "state('entrenamiento_'+name,epoca=1,pasos=0)",
+    "temas": [
+      "Bucle real de entrenamiento"
+    ]
+  },
+  {
+    "celda_visual": 101,
+    "execution_count": 21,
+    "id": "2de0497c",
+    "primera_linea": "name='FC-A';repetition=5;run_id='RUN-20261118T134514Z-fc-a-05'",
+    "temas": [
+      "Creación FCNetwork / warmup"
+    ]
+  },
+  {
+    "celda_visual": 102,
+    "execution_count": 22,
+    "id": "ea6e6f03",
+    "primera_linea": "state('preparacion_cpu',workers=6)",
+    "temas": [
+      "Preparación CPU"
+    ]
+  },
+  {
+    "celda_visual": 103,
+    "execution_count": 23,
+    "id": "cfbf8e8b",
+    "primera_linea": "state('entrenamiento_'+name,epoca=1,pasos=0)",
+    "temas": [
+      "Bucle real de entrenamiento"
+    ]
+  },
+  {
+    "celda_visual": 107,
+    "execution_count": 25,
+    "id": "d01acd7f",
+    "primera_linea": "name='FC-B';repetition=1;run_id='RUN-20261118T134514Z-fc-b-01'",
+    "temas": [
+      "Creación FCNetwork / warmup"
+    ]
+  },
+  {
+    "celda_visual": 108,
+    "execution_count": 26,
+    "id": "5a7ef635",
+    "primera_linea": "state('preparacion_cpu',workers=6)",
+    "temas": [
+      "Preparación CPU"
+    ]
+  },
+  {
+    "celda_visual": 109,
+    "execution_count": 27,
+    "id": "5794251e",
+    "primera_linea": "state('entrenamiento_'+name,epoca=1,pasos=0)",
+    "temas": [
+      "Bucle real de entrenamiento"
+    ]
+  },
+  {
+    "celda_visual": 112,
+    "execution_count": 29,
+    "id": "214023f0",
+    "primera_linea": "name='FC-B';repetition=2;run_id='RUN-20261118T134514Z-fc-b-02'",
+    "temas": [
+      "Creación FCNetwork / warmup"
+    ]
+  },
+  {
+    "celda_visual": 113,
+    "execution_count": 30,
+    "id": "eade1e3d",
+    "primera_linea": "state('preparacion_cpu',workers=6)",
+    "temas": [
+      "Preparación CPU"
+    ]
+  },
+  {
+    "celda_visual": 114,
+    "execution_count": 31,
+    "id": "0e3885d9",
+    "primera_linea": "state('entrenamiento_'+name,epoca=1,pasos=0)",
+    "temas": [
+      "Bucle real de entrenamiento"
+    ]
+  },
+  {
+    "celda_visual": 117,
+    "execution_count": 33,
+    "id": "52d6a38b",
+    "primera_linea": "name='FC-B';repetition=3;run_id='RUN-20261118T134514Z-fc-b-03'",
+    "temas": [
+      "Creación FCNetwork / warmup"
+    ]
+  },
+  {
+    "celda_visual": 118,
+    "execution_count": 34,
+    "id": "2a96284a",
+    "primera_linea": "state('preparacion_cpu',workers=6)",
+    "temas": [
+      "Preparación CPU"
+    ]
+  },
+  {
+    "celda_visual": 119,
+    "execution_count": 35,
+    "id": "24de4b7f",
+    "primera_linea": "state('entrenamiento_'+name,epoca=1,pasos=0)",
+    "temas": [
+      "Bucle real de entrenamiento"
+    ]
+  },
+  {
+    "celda_visual": 122,
+    "execution_count": 37,
+    "id": "21c0c5c4",
+    "primera_linea": "name='FC-B';repetition=4;run_id='RUN-20261118T134514Z-fc-b-04'",
+    "temas": [
+      "Creación FCNetwork / warmup"
+    ]
+  },
+  {
+    "celda_visual": 123,
+    "execution_count": 38,
+    "id": "ac1466fc",
+    "primera_linea": "state('preparacion_cpu',workers=6)",
+    "temas": [
+      "Preparación CPU"
+    ]
+  },
+  {
+    "celda_visual": 124,
+    "execution_count": 39,
+    "id": "1874ad05",
+    "primera_linea": "state('entrenamiento_'+name,epoca=1,pasos=0)",
+    "temas": [
+      "Bucle real de entrenamiento"
+    ]
+  },
+  {
+    "celda_visual": 127,
+    "execution_count": 41,
+    "id": "d4810b25",
+    "primera_linea": "name='FC-B';repetition=5;run_id='RUN-20261118T134514Z-fc-b-05'",
+    "temas": [
+      "Creación FCNetwork / warmup"
+    ]
+  },
+  {
+    "celda_visual": 128,
+    "execution_count": 42,
+    "id": "7f02d74e",
+    "primera_linea": "state('preparacion_cpu',workers=6)",
+    "temas": [
+      "Preparación CPU"
+    ]
+  },
+  {
+    "celda_visual": 129,
+    "execution_count": 43,
+    "id": "177000f5",
+    "primera_linea": "state('entrenamiento_'+name,epoca=1,pasos=0)",
+    "temas": [
+      "Bucle real de entrenamiento"
+    ]
+  }
+]

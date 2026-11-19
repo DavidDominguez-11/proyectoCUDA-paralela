@@ -38,3 +38,12 @@ CSV y tres gráficas reproducibles. El informe final DOCX está disponible con
 
 
 [Ampliación final FC-A/FC-B: implementación, resultados y evidencias](docs/trazabilidad/ampliacion-fc.md). FC-A15.123s vs50.716sCPU(3.354×), FC-B21.062s vs102.441sCPU(4.864×), cinco observaciones por modelo. Notebook CUDA actualizado con salidas nativas de las tres redes; CPU/CNN-B previas no se volvieron a ejecutar.
+
+
+[Presentación PowerPoint del proyecto](entregables/Presentacion_Proyecto_3_CUDA.pptx) · [Guion para exponer](entregables/presentacion/Guion_de_exposicion.md) · [Vista general](entregables/presentacion/Vista_general.png).
+
+
+[Presentación corta:15diapositivas](entregables/Presentacion_Proyecto_3_CUDA_Corta.pptx) · [Guion corto](entregables/presentacion-corta/Guion_corto.md). La versión de31se conserva sin cambios.
+
+
+[Guía de exposición del código CUDA](entregables/Guia_Codigo_CUDA.md):qué enseñar,qué decir yarchivo/función/línea exactos.

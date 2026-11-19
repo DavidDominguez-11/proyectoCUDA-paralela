@@ -1,0 +1,30 @@
+{
+  "estado": "revisar_texto",
+  "fecha_utc": "2026-11-18T22:09:04.149753+00:00",
+  "comando": [
+    "C:\\Python314\\python.exe",
+    "scripts/revisar_presentacion_cuda.py",
+    "--revision",
+    "revision-02"
+  ],
+  "pptx_sha256": "c54ba8c8078a835dd2204b7c20b2a9ebc9c40db3acf24bfe2382a8426efa0147",
+  "diapositivas": 31,
+  "graficas_nativas": 13,
+  "notas": 31,
+  "relaciones_xml_validas": true,
+  "colores_validos": true,
+  "ejes_validos": true,
+  "sin_objetos_fuera": true,
+  "powerpoint_abierto_y_renderizado": true,
+  "diapositivas_renderizadas": 31,
+  "posibles_desbordes": [
+    {
+      "slide": 7,
+      "text": "Prioridad inicial: CNN-B → ampliación final: FC-A y FC-B",
+      "bound_pt": 43.20000076293945,
+      "available_pt": 23.040000915527344
+    }
+  ],
+  "documentos_previos_inalterados": true,
+  "pdf_generado": false
+}

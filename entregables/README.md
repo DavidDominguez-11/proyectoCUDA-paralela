@@ -32,3 +32,13 @@ informe-final-v02 y la copia principal enlazada arriba;no hubo nuevas mediciones
 El uso real del hardware queda documentado. Las capturas no acreditan saturación
 literal de VRAM ni ocupación porSM,limitación que se explica expresamente. La
 exportación PDF y contribuciones verificables del equipo siguen pendientes.
+
+
+## Presentación visual
+
+[PowerPoint editable](Presentacion_Proyecto_3_CUDA.pptx),31diapositivas;[guion](presentacion/Guion_de_exposicion.md) y[vista general](presentacion/Vista_general.png). Gráficas/tablas editables,capturas reales ynotas en todas las láminas.
+
+
+## Guía para mostrar código
+
+[Guia_Codigo_CUDA.md](Guia_Codigo_CUDA.md):ruta rápida,ubicaciones exactas yguion literal,con atención especial asincronización,streams,memoria,kernels,cuBLAS yFC.

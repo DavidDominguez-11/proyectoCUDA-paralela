@@ -1,0 +1,22 @@
+{
+  "entregables/Informe_Proyecto_3_CUDA.docx": {
+    "sha256": "94bfddc0de974bc331a7bf086a74c8382243313509387157ec637a9061d63d9b",
+    "bytes": 1184083
+  },
+  "entregables/InformeFinal_Proyecto_3_CUDA.pdf": {
+    "sha256": "658c593066ae582ba8e26664ec81948e6058e6071eb367bcc967d15d09d4c88b",
+    "bytes": 1299675
+  },
+  "entregables/notebooks/ASL_Secuencial.ipynb": {
+    "sha256": "201e6dff41312e2b921349ba5c066ca3abd9d25dcae7fb7206a2fd5d29646692",
+    "bytes": 5307986
+  },
+  "entregables/notebooks/ASL_CUDA.ipynb": {
+    "sha256": "4e9c6b7787cf3dd4ebe3113006d5f1e21350745ab0ea54464b30e067b813a897",
+    "bytes": 6025977
+  },
+  "entregables/SKILL-P.md": {
+    "sha256": "3679488c7e497c9b2f14bf026f39624d4c45b9519d845bc08650ce31598b0d6a",
+    "bytes": 29203
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "estado": "aprobado",
+  "fecha_utc": "2026-11-18T22:10:32.437256+00:00",
+  "comando": [
+    "C:\\Python314\\python.exe",
+    "scripts/revisar_presentacion_cuda.py",
+    "--revision",
+    "revision-03"
+  ],
+  "pptx_sha256": "80af4ba85603e98168e3fe4067749463fc55751fa82185e29446b76bf62ba45d",
+  "diapositivas": 31,
+  "graficas_nativas": 13,
+  "notas": 31,
+  "relaciones_xml_validas": true,
+  "colores_validos": true,
+  "ejes_validos": true,
+  "sin_objetos_fuera": true,
+  "powerpoint_abierto_y_renderizado": true,
+  "diapositivas_renderizadas": 31,
+  "posibles_desbordes": [],
+  "documentos_previos_inalterados": true,
+  "pdf_generado": false
+}

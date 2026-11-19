@@ -1,0 +1,3336 @@
+{
+  "compare": [
+    {
+      "modelo": "CNN-B",
+      "fase": "entrenamiento_CNN-B",
+      "cpu_media_s": "805.6497256999999",
+      "cpu_de_s": "2.722683652403696",
+      "cuda_media_s": "418.607683",
+      "cuda_de_s": "1.9163082015840514",
+      "speedup": "1.9245937387632703",
+      "reduccion_pct": "48.04098237155273"
+    },
+    {
+      "modelo": "CNN-B",
+      "fase": "evaluacion_CNN-B",
+      "cpu_media_s": "2.3223897599999996",
+      "cpu_de_s": "0.07178745335086763",
+      "cuda_media_s": "2.49219244",
+      "cuda_de_s": "0.3812881432836102",
+      "speedup": "0.9318661443335409",
+      "reduccion_pct": "-7.3115496341148445"
+    },
+    {
+      "modelo": "FC-A",
+      "fase": "entrenamiento_FC-A",
+      "cpu_media_s": "50.715659880000004",
+      "cpu_de_s": "1.2646239249738433",
+      "cuda_media_s": "15.122541380000001",
+      "cuda_de_s": "0.3322831035274846",
+      "speedup": "3.353646626292121",
+      "reduccion_pct": "70.18171228417032"
+    },
+    {
+      "modelo": "FC-A",
+      "fase": "evaluacion_FC-A",
+      "cpu_media_s": "0.3788417",
+      "cpu_de_s": "0.005732543411523356",
+      "cuda_media_s": "0.39241373999999996",
+      "cuda_de_s": "0.004506884750911646",
+      "speedup": "0.9654139531403769",
+      "reduccion_pct": "-3.582509528386124"
+    },
+    {
+      "modelo": "FC-B",
+      "fase": "entrenamiento_FC-B",
+      "cpu_media_s": "102.44108204",
+      "cpu_de_s": "3.275204580920838",
+      "cuda_media_s": "21.06199454",
+      "cuda_de_s": "0.20140438251146195",
+      "speedup": "4.863788272542207",
+      "reduccion_pct": "79.43989450269964"
+    },
+    {
+      "modelo": "FC-B",
+      "fase": "evaluacion_FC-B",
+      "cpu_media_s": "0.5200666199999999",
+      "cpu_de_s": "0.01149331232008422",
+      "cuda_media_s": "0.5231741999999999",
+      "cuda_de_s": "0.008611930732710322",
+      "speedup": "0.9940601428740179",
+      "reduccion_pct": "-0.5975349850370959"
+    }
+  ],
+  "observations": [
+    {
+      "origen": "CUDA",
+      "modelo": "FC-A",
+      "run_id": "RUN-20261118T134323Z-fc-a-01",
+      "repeticion": "1",
+      "fase": "preparacion_cpu",
+      "tipo_medicion": "pared",
+      "duracion_s": "8.07197399996221"
+    },
+    {
+      "origen": "CUDA",
+      "modelo": "FC-A",
+      "run_id": "RUN-20261118T134323Z-fc-a-01",
+      "repeticion": "1",
+      "fase": "entrenamiento_FC-A",
+      "tipo_medicion": "pared",
+      "duracion_s": "14.829318"
+    },
+    {
+      "origen": "CUDA",
+      "modelo": "FC-A",
+      "run_id": "RUN-20261118T134323Z-fc-a-01",
+      "repeticion": "1",
+      "fase": "validacion_anidada_FC-A",
+      "tipo_medicion": "pared",
+      "duracion_s": "3.468007700284943"
+    },
+    {
+      "origen": "CUDA",
+      "modelo": "FC-A",
+      "run_id": "RUN-20261118T134323Z-fc-a-01",
+      "repeticion": "1",
+      "fase": "h2d_inicial",
+      "tipo_medicion": "evento_device",
+      "duracion_s": "0.014884639739990234"
+    },
+    {
+      "origen": "CUDA",
+      "modelo": "FC-A",
+      "run_id": "RUN-20261118T134323Z-fc-a-01",
+      "repeticion": "1",
+      "fase": "h2d_lotes",
+      "tipo_medicion": "evento_device",
+      "duracion_s": "1.7172928636670095"
+    },
+    {
+      "origen": "CUDA",
+      "modelo": "FC-A",
+      "run_id": "RUN-20261118T134323Z-fc-a-01",
+      "repeticion": "1",
+      "fase": "forward_loss",
+      "tipo_medicion": "evento_device",
+      "duracion_s": "1.9276599375009555"
+    },
+    {
+      "origen": "CUDA",
+      "modelo": "FC-A",
+      "run_id": "RUN-20261118T134323Z-fc-a-01",
+      "repeticion": "1",
+      "fase": "backward",
+      "tipo_medicion": "evento_device",
+      "duracion_s": "2.5928322247862825"
+    },
+    {
+      "origen": "CUDA",
+      "modelo": "FC-A",
+      "run_id": "RUN-20261118T134323Z-fc-a-01",
+      "repeticion": "1",
+      "fase": "adam_metricas",
+      "tipo_medicion": "evento_device",
+      "duracion_s": "0.791589791774749"
+    },
+    {
+      "origen": "CUDA",
+      "modelo": "FC-A",
+      "run_id": "RUN-20261118T134323Z-fc-a-01",
+      "repeticion": "1",
+      "fase": "d2h_control",
+      "tipo_medicion": "evento_device",
+      "duracion_s": "0.14704665608331577"
+    },
+    {
+      "origen": "CUDA",
+      "modelo": "FC-A",
+      "run_id": "RUN-20261118T134323Z-fc-a-01",
+      "repeticion": "1",
+      "fase": "d2h_modelo",
+      "tipo_medicion": "evento_device",
+      "duracion_s": "0.02995161592960358"
+    },
+    {
+      "origen": "CUDA",
+      "modelo": "FC-A",
+      "run_id": "RUN-20261118T134323Z-fc-a-01",
+      "repeticion": "1",
+      "fase": "d2h_optimizador",
+      "tipo_medicion": "evento_device",
+      "duracion_s": "0.0033018560409545897"
+    },
+    {
+      "origen": "CUDA",
+      "modelo": "FC-A",
+      "run_id": "RUN-20261118T134323Z-fc-a-01",
+      "repeticion": "1",
+      "fase": "evaluacion_FC-A",
+      "tipo_medicion": "pared",
+      "duracion_s": "0.3873936"
+    },
+    {
+      "origen": "CUDA",
+      "modelo": "FC-A",
+      "run_id": "RUN-20261118T134514Z-fc-a-02",
+      "repeticion": "2",
+      "fase": "preparacion_cpu",
+      "tipo_medicion": "pared",
+      "duracion_s": "8.333823899971321"
+    },
+    {
+      "origen": "CUDA",
+      "modelo": "FC-A",
+      "run_id": "RUN-20261118T134514Z-fc-a-02",
+      "repeticion": "2",
+      "fase": "entrenamiento_FC-A",
+      "tipo_medicion": "pared",
+      "duracion_s": "15.6858155"
+    },
+    {
+      "origen": "CUDA",
+      "modelo": "FC-A",
+      "run_id": "RUN-20261118T134514Z-fc-a-02",
+      "repeticion": "2",
+      "fase": "validacion_anidada_FC-A",
+      "tipo_medicion": "pared",
+      "duracion_s": "3.594276300398633"
+    },
+    {
+      "origen": "CUDA",
+      "modelo": "FC-A",
+      "run_id": "RUN-20261118T134514Z-fc-a-02",
+      "repeticion": "2",
+      "fase": "h2d_inicial",
+      "tipo_medicion": "evento_device",
+      "duracion_s": "0.014409728050231933"
+    },
+    {
+      "origen": "CUDA",
+      "modelo": "FC-A",
+      "run_id": "RUN-20261118T134514Z-fc-a-02",
+      "repeticion": "2",
+      "fase": "h2d_lotes",
+      "tipo_medicion": "evento_device",
+      "duracion_s": "1.7272962571382515"
+    },
+    {
+      "origen": "CUDA",
+      "modelo": "FC-A",
+      "run_id": "RUN-20261118T134514Z-fc-a-02",
+      "repeticion": "2",
+      "fase": "forward_loss",
+      "tipo_medicion": "evento_device",
+      "duracion_s": "2.0749545928239823"
+    },
+    {
+      "origen": "CUDA",
+      "modelo": "FC-A",
+      "run_id": "RUN-20261118T134514Z-fc-a-02",
+      "repeticion": "2",
+      "fase": "backward",
+      "tipo_medicion": "evento_device",
+      "duracion_s": "2.864519777655594"
+    },
+    {
+      "origen": "CUDA",
+      "modelo": "FC-A",
+      "run_id": "RUN-20261118T134514Z-fc-a-02",
+      "repeticion": "2",
+      "fase": "adam_metricas",
+      "tipo_medicion": "evento_device",
+      "duracion_s": "0.9446136321127407"
+    },
+    {
+      "origen": "CUDA",
+      "modelo": "FC-A",
+      "run_id": "RUN-20261118T134514Z-fc-a-02",
+      "repeticion": "2",
+      "fase": "d2h_control",
+      "tipo_medicion": "evento_device",
+      "duracion_s": "0.15792790403962148"
+    },
+    {
+      "origen": "CUDA",
+      "modelo": "FC-A",
+      "run_id": "RUN-20261118T134514Z-fc-a-02",
+      "repeticion": "2",
+      "fase": "d2h_modelo",
+      "tipo_medicion": "evento_device",
+      "duracion_s": "0.03205788791179657"
+    },
+    {
+      "origen": "CUDA",
+      "modelo": "FC-A",
+      "run_id": "RUN-20261118T134514Z-fc-a-02",
+      "repeticion": "2",
+      "fase": "d2h_optimizador",
+      "tipo_medicion": "evento_device",
+      "duracion_s": "0.00473203182220459"
+    },
+    {
+      "origen": "CUDA",
+      "modelo": "FC-A",
+      "run_id": "RUN-20261118T134514Z-fc-a-02",
+      "repeticion": "2",
+      "fase": "evaluacion_FC-A",
+      "tipo_medicion": "pared",
+      "duracion_s": "0.390274"
+    },
+    {
+      "origen": "CUDA",
+      "modelo": "FC-A",
+      "run_id": "RUN-20261118T134514Z-fc-a-03",
+      "repeticion": "3",
+      "fase": "preparacion_cpu",
+      "tipo_medicion": "pared",
+      "duracion_s": "8.096806999994442"
+    },
+    {
+      "origen": "CUDA",
+      "modelo": "FC-A",
+      "run_id": "RUN-20261118T134514Z-fc-a-03",
+      "repeticion": "3",
+      "fase": "entrenamiento_FC-A",
+      "tipo_medicion": "pared",
+      "duracion_s": "14.969787"
+    },
+    {
+      "origen": "CUDA",
+      "modelo": "FC-A",
+      "run_id": "RUN-20261118T134514Z-fc-a-03",
+      "repeticion": "3",
+      "fase": "validacion_anidada_FC-A",
+      "tipo_medicion": "pared",
+      "duracion_s": "3.4274492004187778"
+    },
+    {
+      "origen": "CUDA",
+      "modelo": "FC-A",
+      "run_id": "RUN-20261118T134514Z-fc-a-03",
+      "repeticion": "3",
+      "fase": "h2d_inicial",
+      "tipo_medicion": "evento_device",
+      "duracion_s": "0.014033151626586913"
+    },
+    {
+      "origen": "CUDA",
+      "modelo": "FC-A",
+      "run_id": "RUN-20261118T134514Z-fc-a-03",
+      "repeticion": "3",
+      "fase": "h2d_lotes",
+      "tipo_medicion": "evento_device",
+      "duracion_s": "1.7188950065970434"
+    },
+    {
+      "origen": "CUDA",
+      "modelo": "FC-A",
+      "run_id": "RUN-20261118T134514Z-fc-a-03",
+      "repeticion": "3",
+      "fase": "forward_loss",
+      "tipo_medicion": "evento_device",
+      "duracion_s": "1.9265982710123055"
+    },
+    {
+      "origen": "CUDA",
+      "modelo": "FC-A",
+      "run_id": "RUN-20261118T134514Z-fc-a-03",
+      "repeticion": "3",
+      "fase": "backward",
+      "tipo_medicion": "evento_device",
+      "duracion_s": "2.70802646660805"
+    },
+    {
+      "origen": "CUDA",
+      "modelo": "FC-A",
+      "run_id": "RUN-20261118T134514Z-fc-a-03",
+      "repeticion": "3",
+      "fase": "adam_metricas",
+      "tipo_medicion": "evento_device",
+      "duracion_s": "0.8308518718481074"
+    },
+    {
+      "origen": "CUDA",
+      "modelo": "FC-A",
+      "run_id": "RUN-20261118T134514Z-fc-a-03",
+      "repeticion": "3",
+      "fase": "d2h_control",
+      "tipo_medicion": "evento_device",
+      "duracion_s": "0.15003299193829292"
+    },
+    {
+      "origen": "CUDA",
+      "modelo": "FC-A",
+      "run_id": "RUN-20261118T134514Z-fc-a-03",
+      "repeticion": "3",
+      "fase": "d2h_modelo",
+      "tipo_medicion": "evento_device",
+      "duracion_s": "0.031097983717918398"
+    },
+    {
+      "origen": "CUDA",
+      "modelo": "FC-A",
+      "run_id": "RUN-20261118T134514Z-fc-a-03",
+      "repeticion": "3",
+      "fase": "d2h_optimizador",
+      "tipo_medicion": "evento_device",
+      "duracion_s": "0.0037354879379272463"
+    },
+    {
+      "origen": "CUDA",
+      "modelo": "FC-A",
+      "run_id": "RUN-20261118T134514Z-fc-a-03",
+      "repeticion": "3",
+      "fase": "evaluacion_FC-A",
+      "tipo_medicion": "pared",
+      "duracion_s": "0.3964019"
+    },
+    {
+      "origen": "CUDA",
+      "modelo": "FC-A",
+      "run_id": "RUN-20261118T134514Z-fc-a-04",
+      "repeticion": "4",
+      "fase": "preparacion_cpu",
+      "tipo_medicion": "pared",
+      "duracion_s": "8.046608800068498"
+    },
+    {
+      "origen": "CUDA",
+      "modelo": "FC-A",
+      "run_id": "RUN-20261118T134514Z-fc-a-04",
+      "repeticion": "4",
+      "fase": "entrenamiento_FC-A",
+      "tipo_medicion": "pared",
+      "duracion_s": "14.9999501"
+    },
+    {
+      "origen": "CUDA",
+      "modelo": "FC-A",
+      "run_id": "RUN-20261118T134514Z-fc-a-04",
+      "repeticion": "4",
+      "fase": "validacion_anidada_FC-A",
+      "tipo_medicion": "pared",
+      "duracion_s": "3.46774250024464"
+    },
+    {
+      "origen": "CUDA",
+      "modelo": "FC-A",
+      "run_id": "RUN-20261118T134514Z-fc-a-04",
+      "repeticion": "4",
+      "fase": "h2d_inicial",
+      "tipo_medicion": "evento_device",
+      "duracion_s": "0.01412895965576172"
+    },
+    {
+      "origen": "CUDA",
+      "modelo": "FC-A",
+      "run_id": "RUN-20261118T134514Z-fc-a-04",
+      "repeticion": "4",
+      "fase": "h2d_lotes",
+      "tipo_medicion": "evento_device",
+      "duracion_s": "1.7134092161059395"
+    },
+    {
+      "origen": "CUDA",
+      "modelo": "FC-A",
+      "run_id": "RUN-20261118T134514Z-fc-a-04",
+      "repeticion": "4",
+      "fase": "forward_loss",
+      "tipo_medicion": "evento_device",
+      "duracion_s": "1.9252602211236975"
+    },
+    {
+      "origen": "CUDA",
+      "modelo": "FC-A",
+      "run_id": "RUN-20261118T134514Z-fc-a-04",
+      "repeticion": "4",
+      "fase": "backward",
+      "tipo_medicion": "evento_device",
+      "duracion_s": "2.724813183605669"
+    },
+    {
+      "origen": "CUDA",
+      "modelo": "FC-A",
+      "run_id": "RUN-20261118T134514Z-fc-a-04",
+      "repeticion": "4",
+      "fase": "adam_metricas",
+      "tipo_medicion": "evento_device",
+      "duracion_s": "0.858055008620024"
+    },
+    {
+      "origen": "CUDA",
+      "modelo": "FC-A",
+      "run_id": "RUN-20261118T134514Z-fc-a-04",
+      "repeticion": "4",
+      "fase": "d2h_control",
+      "tipo_medicion": "evento_device",
+      "duracion_s": "0.14810371201112868"
+    },
+    {
+      "origen": "CUDA",
+      "modelo": "FC-A",
+      "run_id": "RUN-20261118T134514Z-fc-a-04",
+      "repeticion": "4",
+      "fase": "d2h_modelo",
+      "tipo_medicion": "evento_device",
+      "duracion_s": "0.030085984110832215"
+    },
+    {
+      "origen": "CUDA",
+      "modelo": "FC-A",
+      "run_id": "RUN-20261118T134514Z-fc-a-04",
+      "repeticion": "4",
+      "fase": "d2h_optimizador",
+      "tipo_medicion": "evento_device",
+      "duracion_s": "0.003382047891616821"
+    },
+    {
+      "origen": "CUDA",
+      "modelo": "FC-A",
+      "run_id": "RUN-20261118T134514Z-fc-a-04",
+      "repeticion": "4",
+      "fase": "evaluacion_FC-A",
+      "tipo_medicion": "pared",
+      "duracion_s": "0.3900924"
+    },
+    {
+      "origen": "CUDA",
+      "modelo": "FC-A",
+      "run_id": "RUN-20261118T134514Z-fc-a-05",
+      "repeticion": "5",
+      "fase": "preparacion_cpu",
+      "tipo_medicion": "pared",
+      "duracion_s": "8.220173400011845"
+    },
+    {
+      "origen": "CUDA",
+      "modelo": "FC-A",
+      "run_id": "RUN-20261118T134514Z-fc-a-05",
+      "repeticion": "5",
+      "fase": "entrenamiento_FC-A",
+      "tipo_medicion": "pared",
+      "duracion_s": "15.1278363"
+    },
+    {
+      "origen": "CUDA",
+      "modelo": "FC-A",
+      "run_id": "RUN-20261118T134514Z-fc-a-05",
+      "repeticion": "5",
+      "fase": "validacion_anidada_FC-A",
+      "tipo_medicion": "pared",
+      "duracion_s": "3.449420999852009"
+    },
+    {
+      "origen": "CUDA",
+      "modelo": "FC-A",
+      "run_id": "RUN-20261118T134514Z-fc-a-05",
+      "repeticion": "5",
+      "fase": "h2d_inicial",
+      "tipo_medicion": "evento_device",
+      "duracion_s": "0.01470297622680664"
+    },
+    {
+      "origen": "CUDA",
+      "modelo": "FC-A",
+      "run_id": "RUN-20261118T134514Z-fc-a-05",
+      "repeticion": "5",
+      "fase": "h2d_lotes",
+      "tipo_medicion": "evento_device",
+      "duracion_s": "1.7167185264229772"
+    },
+    {
+      "origen": "CUDA",
+      "modelo": "FC-A",
+      "run_id": "RUN-20261118T134514Z-fc-a-05",
+      "repeticion": "5",
+      "fase": "forward_loss",
+      "tipo_medicion": "evento_device",
+      "duracion_s": "1.9713702695369748"
+    },
+    {
+      "origen": "CUDA",
+      "modelo": "FC-A",
+      "run_id": "RUN-20261118T134514Z-fc-a-05",
+      "repeticion": "5",
+      "fase": "backward",
+      "tipo_medicion": "evento_device",
+      "duracion_s": "2.7541731530427933"
+    },
+    {
+      "origen": "CUDA",
+      "modelo": "FC-A",
+      "run_id": "RUN-20261118T134514Z-fc-a-05",
+      "repeticion": "5",
+      "fase": "adam_metricas",
+      "tipo_medicion": "evento_device",
+      "duracion_s": "0.8491144632697077"
+    },
+    {
+      "origen": "CUDA",
+      "modelo": "FC-A",
+      "run_id": "RUN-20261118T134514Z-fc-a-05",
+      "repeticion": "5",
+      "fase": "d2h_control",
+      "tipo_medicion": "evento_device",
+      "duracion_s": "0.1539531839825213"
+    },
+    {
+      "origen": "CUDA",
+      "modelo": "FC-A",
+      "run_id": "RUN-20261118T134514Z-fc-a-05",
+      "repeticion": "5",
+      "fase": "d2h_modelo",
+      "tipo_medicion": "evento_device",
+      "duracion_s": "0.02963670408725739"
+    },
+    {
+      "origen": "CUDA",
+      "modelo": "FC-A",
+      "run_id": "RUN-20261118T134514Z-fc-a-05",
+      "repeticion": "5",
+      "fase": "d2h_optimizador",
+      "tipo_medicion": "evento_device",
+      "duracion_s": "0.0032769598960876467"
+    },
+    {
+      "origen": "CUDA",
+      "modelo": "FC-A",
+      "run_id": "RUN-20261118T134514Z-fc-a-05",
+      "repeticion": "5",
+      "fase": "evaluacion_FC-A",
+      "tipo_medicion": "pared",
+      "duracion_s": "0.3979068"
+    },
+    {
+      "origen": "CUDA",
+      "modelo": "FC-B",
+      "run_id": "RUN-20261118T134514Z-fc-b-01",
+      "repeticion": "1",
+      "fase": "preparacion_cpu",
+      "tipo_medicion": "pared",
+      "duracion_s": "9.796823199954815"
+    },
+    {
+      "origen": "CUDA",
+      "modelo": "FC-B",
+      "run_id": "RUN-20261118T134514Z-fc-b-01",
+      "repeticion": "1",
+      "fase": "entrenamiento_FC-B",
+      "tipo_medicion": "pared",
+      "duracion_s": "21.3026643"
+    },
+    {
+      "origen": "CUDA",
+      "modelo": "FC-B",
+      "run_id": "RUN-20261118T134514Z-fc-b-01",
+      "repeticion": "1",
+      "fase": "validacion_anidada_FC-B",
+      "tipo_medicion": "pared",
+      "duracion_s": "5.1652937000617385"
+    },
+    {
+      "origen": "CUDA",
+      "modelo": "FC-B",
+      "run_id": "RUN-20261118T134514Z-fc-b-01",
+      "repeticion": "1",
+      "fase": "h2d_inicial",
+      "tipo_medicion": "evento_device",
+      "duracion_s": "0.05176163101196289"
+    },
+    {
+      "origen": "CUDA",
+      "modelo": "FC-B",
+      "run_id": "RUN-20261118T134514Z-fc-b-01",
+      "repeticion": "1",
+      "fase": "h2d_lotes",
+      "tipo_medicion": "evento_device",
+      "duracion_s": "1.8017781097292893"
+    },
+    {
+      "origen": "CUDA",
+      "modelo": "FC-B",
+      "run_id": "RUN-20261118T134514Z-fc-b-01",
+      "repeticion": "1",
+      "fase": "forward_loss",
+      "tipo_medicion": "evento_device",
+      "duracion_s": "2.977323234438898"
+    },
+    {
+      "origen": "CUDA",
+      "modelo": "FC-B",
+      "run_id": "RUN-20261118T134514Z-fc-b-01",
+      "repeticion": "1",
+      "fase": "backward",
+      "tipo_medicion": "evento_device",
+      "duracion_s": "4.818070720195761"
+    },
+    {
+      "origen": "CUDA",
+      "modelo": "FC-B",
+      "run_id": "RUN-20261118T134514Z-fc-b-01",
+      "repeticion": "1",
+      "fase": "adam_metricas",
+      "tipo_medicion": "evento_device",
+      "duracion_s": "1.5993029340505518"
+    },
+    {
+      "origen": "CUDA",
+      "modelo": "FC-B",
+      "run_id": "RUN-20261118T134514Z-fc-b-01",
+      "repeticion": "1",
+      "fase": "d2h_control",
+      "tipo_medicion": "evento_device",
+      "duracion_s": "0.11783551996201283"
+    },
+    {
+      "origen": "CUDA",
+      "modelo": "FC-B",
+      "run_id": "RUN-20261118T134514Z-fc-b-01",
+      "repeticion": "1",
+      "fase": "d2h_modelo",
+      "tipo_medicion": "evento_device",
+      "duracion_s": "0.08859609651565552"
+    },
+    {
+      "origen": "CUDA",
+      "modelo": "FC-B",
+      "run_id": "RUN-20261118T134514Z-fc-b-01",
+      "repeticion": "1",
+      "fase": "d2h_optimizador",
+      "tipo_medicion": "evento_device",
+      "duracion_s": "0.010122591972351075"
+    },
+    {
+      "origen": "CUDA",
+      "modelo": "FC-B",
+      "run_id": "RUN-20261118T134514Z-fc-b-01",
+      "repeticion": "1",
+      "fase": "evaluacion_FC-B",
+      "tipo_medicion": "pared",
+      "duracion_s": "0.5177506"
+    },
+    {
+      "origen": "CUDA",
+      "modelo": "FC-B",
+      "run_id": "RUN-20261118T134514Z-fc-b-02",
+      "repeticion": "2",
+      "fase": "preparacion_cpu",
+      "tipo_medicion": "pared",
+      "duracion_s": "7.993483999976888"
+    },
+    {
+      "origen": "CUDA",
+      "modelo": "FC-B",
+      "run_id": "RUN-20261118T134514Z-fc-b-02",
+      "repeticion": "2",
+      "fase": "entrenamiento_FC-B",
+      "tipo_medicion": "pared",
+      "duracion_s": "20.9450619"
+    },
+    {
+      "origen": "CUDA",
+      "modelo": "FC-B",
+      "run_id": "RUN-20261118T134514Z-fc-b-02",
+      "repeticion": "2",
+      "fase": "validacion_anidada_FC-B",
+      "tipo_medicion": "pared",
+      "duracion_s": "4.89815520006232"
+    },
+    {
+      "origen": "CUDA",
+      "modelo": "FC-B",
+      "run_id": "RUN-20261118T134514Z-fc-b-02",
+      "repeticion": "2",
+      "fase": "h2d_inicial",
+      "tipo_medicion": "evento_device",
+      "duracion_s": "0.054567840576171874"
+    },
+    {
+      "origen": "CUDA",
+      "modelo": "FC-B",
+      "run_id": "RUN-20261118T134514Z-fc-b-02",
+      "repeticion": "2",
+      "fase": "h2d_lotes",
+      "tipo_medicion": "evento_device",
+      "duracion_s": "1.7996955175995821"
+    },
+    {
+      "origen": "CUDA",
+      "modelo": "FC-B",
+      "run_id": "RUN-20261118T134514Z-fc-b-02",
+      "repeticion": "2",
+      "fase": "forward_loss",
+      "tipo_medicion": "evento_device",
+      "duracion_s": "2.962224926948548"
+    },
+    {
+      "origen": "CUDA",
+      "modelo": "FC-B",
+      "run_id": "RUN-20261118T134514Z-fc-b-02",
+      "repeticion": "2",
+      "fase": "backward",
+      "tipo_medicion": "evento_device",
+      "duracion_s": "4.746297055721284"
+    },
+    {
+      "origen": "CUDA",
+      "modelo": "FC-B",
+      "run_id": "RUN-20261118T134514Z-fc-b-02",
+      "repeticion": "2",
+      "fase": "adam_metricas",
+      "tipo_medicion": "evento_device",
+      "duracion_s": "1.6276631896495706"
+    },
+    {
+      "origen": "CUDA",
+      "modelo": "FC-B",
+      "run_id": "RUN-20261118T134514Z-fc-b-02",
+      "repeticion": "2",
+      "fase": "d2h_control",
+      "tipo_medicion": "evento_device",
+      "duracion_s": "0.12042140809446569"
+    },
+    {
+      "origen": "CUDA",
+      "modelo": "FC-B",
+      "run_id": "RUN-20261118T134514Z-fc-b-02",
+      "repeticion": "2",
+      "fase": "d2h_modelo",
+      "tipo_medicion": "evento_device",
+      "duracion_s": "0.08987276840209961"
+    },
+    {
+      "origen": "CUDA",
+      "modelo": "FC-B",
+      "run_id": "RUN-20261118T134514Z-fc-b-02",
+      "repeticion": "2",
+      "fase": "d2h_optimizador",
+      "tipo_medicion": "evento_device",
+      "duracion_s": "0.012102879524230958"
+    },
+    {
+      "origen": "CUDA",
+      "modelo": "FC-B",
+      "run_id": "RUN-20261118T134514Z-fc-b-02",
+      "repeticion": "2",
+      "fase": "evaluacion_FC-B",
+      "tipo_medicion": "pared",
+      "duracion_s": "0.5312584"
+    },
+    {
+      "origen": "CUDA",
+      "modelo": "FC-B",
+      "run_id": "RUN-20261118T134514Z-fc-b-03",
+      "repeticion": "3",
+      "fase": "preparacion_cpu",
+      "tipo_medicion": "pared",
+      "duracion_s": "8.233044699998572"
+    },
+    {
+      "origen": "CUDA",
+      "modelo": "FC-B",
+      "run_id": "RUN-20261118T134514Z-fc-b-03",
+      "repeticion": "3",
+      "fase": "entrenamiento_FC-B",
+      "tipo_medicion": "pared",
+      "duracion_s": "21.251391"
+    },
+    {
+      "origen": "CUDA",
+      "modelo": "FC-B",
+      "run_id": "RUN-20261118T134514Z-fc-b-03",
+      "repeticion": "3",
+      "fase": "validacion_anidada_FC-B",
+      "tipo_medicion": "pared",
+      "duracion_s": "5.0986549000954255"
+    },
+    {
+      "origen": "CUDA",
+      "modelo": "FC-B",
+      "run_id": "RUN-20261118T134514Z-fc-b-03",
+      "repeticion": "3",
+      "fase": "h2d_inicial",
+      "tipo_medicion": "evento_device",
+      "duracion_s": "0.05165132904052734"
+    },
+    {
+      "origen": "CUDA",
+      "modelo": "FC-B",
+      "run_id": "RUN-20261118T134514Z-fc-b-03",
+      "repeticion": "3",
+      "fase": "h2d_lotes",
+      "tipo_medicion": "evento_device",
+      "duracion_s": "1.8246472332477581"
+    },
+    {
+      "origen": "CUDA",
+      "modelo": "FC-B",
+      "run_id": "RUN-20261118T134514Z-fc-b-03",
+      "repeticion": "3",
+      "fase": "forward_loss",
+      "tipo_medicion": "evento_device",
+      "duracion_s": "3.0127940828800237"
+    },
+    {
+      "origen": "CUDA",
+      "modelo": "FC-B",
+      "run_id": "RUN-20261118T134514Z-fc-b-03",
+      "repeticion": "3",
+      "fase": "backward",
+      "tipo_medicion": "evento_device",
+      "duracion_s": "4.794546048879627"
+    },
+    {
+      "origen": "CUDA",
+      "modelo": "FC-B",
+      "run_id": "RUN-20261118T134514Z-fc-b-03",
+      "repeticion": "3",
+      "fase": "adam_metricas",
+      "tipo_medicion": "evento_device",
+      "duracion_s": "1.628329055905334"
+    },
+    {
+      "origen": "CUDA",
+      "modelo": "FC-B",
+      "run_id": "RUN-20261118T134514Z-fc-b-03",
+      "repeticion": "3",
+      "fase": "d2h_control",
+      "tipo_medicion": "evento_device",
+      "duracion_s": "0.13222646422125398"
+    },
+    {
+      "origen": "CUDA",
+      "modelo": "FC-B",
+      "run_id": "RUN-20261118T134514Z-fc-b-03",
+      "repeticion": "3",
+      "fase": "d2h_modelo",
+      "tipo_medicion": "evento_device",
+      "duracion_s": "0.08769916868209837"
+    },
+    {
+      "origen": "CUDA",
+      "modelo": "FC-B",
+      "run_id": "RUN-20261118T134514Z-fc-b-03",
+      "repeticion": "3",
+      "fase": "d2h_optimizador",
+      "tipo_medicion": "evento_device",
+      "duracion_s": "0.010114591598510742"
+    },
+    {
+      "origen": "CUDA",
+      "modelo": "FC-B",
+      "run_id": "RUN-20261118T134514Z-fc-b-03",
+      "repeticion": "3",
+      "fase": "evaluacion_FC-B",
+      "tipo_medicion": "pared",
+      "duracion_s": "0.5258163"
+    },
+    {
+      "origen": "CUDA",
+      "modelo": "FC-B",
+      "run_id": "RUN-20261118T134514Z-fc-b-04",
+      "repeticion": "4",
+      "fase": "preparacion_cpu",
+      "tipo_medicion": "pared",
+      "duracion_s": "8.299453199957497"
+    },
+    {
+      "origen": "CUDA",
+      "modelo": "FC-B",
+      "run_id": "RUN-20261118T134514Z-fc-b-04",
+      "repeticion": "4",
+      "fase": "entrenamiento_FC-B",
+      "tipo_medicion": "pared",
+      "duracion_s": "20.9591045"
+    },
+    {
+      "origen": "CUDA",
+      "modelo": "FC-B",
+      "run_id": "RUN-20261118T134514Z-fc-b-04",
+      "repeticion": "4",
+      "fase": "validacion_anidada_FC-B",
+      "tipo_medicion": "pared",
+      "duracion_s": "4.966635699849576"
+    },
+    {
+      "origen": "CUDA",
+      "modelo": "FC-B",
+      "run_id": "RUN-20261118T134514Z-fc-b-04",
+      "repeticion": "4",
+      "fase": "h2d_inicial",
+      "tipo_medicion": "evento_device",
+      "duracion_s": "0.051544960021972654"
+    },
+    {
+      "origen": "CUDA",
+      "modelo": "FC-B",
+      "run_id": "RUN-20261118T134514Z-fc-b-04",
+      "repeticion": "4",
+      "fase": "h2d_lotes",
+      "tipo_medicion": "evento_device",
+      "duracion_s": "1.8083039681315434"
+    },
+    {
+      "origen": "CUDA",
+      "modelo": "FC-B",
+      "run_id": "RUN-20261118T134514Z-fc-b-04",
+      "repeticion": "4",
+      "fase": "forward_loss",
+      "tipo_medicion": "evento_device",
+      "duracion_s": "2.971080606937402"
+    },
+    {
+      "origen": "CUDA",
+      "modelo": "FC-B",
+      "run_id": "RUN-20261118T134514Z-fc-b-04",
+      "repeticion": "4",
+      "fase": "backward",
+      "tipo_medicion": "evento_device",
+      "duracion_s": "4.727184665441514"
+    },
+    {
+      "origen": "CUDA",
+      "modelo": "FC-B",
+      "run_id": "RUN-20261118T134514Z-fc-b-04",
+      "repeticion": "4",
+      "fase": "adam_metricas",
+      "tipo_medicion": "evento_device",
+      "duracion_s": "1.6306997005939414"
+    },
+    {
+      "origen": "CUDA",
+      "modelo": "FC-B",
+      "run_id": "RUN-20261118T134514Z-fc-b-04",
+      "repeticion": "4",
+      "fase": "d2h_control",
+      "tipo_medicion": "evento_device",
+      "duracion_s": "0.12596118404716256"
+    },
+    {
+      "origen": "CUDA",
+      "modelo": "FC-B",
+      "run_id": "RUN-20261118T134514Z-fc-b-04",
+      "repeticion": "4",
+      "fase": "d2h_modelo",
+      "tipo_medicion": "evento_device",
+      "duracion_s": "0.08527596759796142"
+    },
+    {
+      "origen": "CUDA",
+      "modelo": "FC-B",
+      "run_id": "RUN-20261118T134514Z-fc-b-04",
+      "repeticion": "4",
+      "fase": "d2h_optimizador",
+      "tipo_medicion": "evento_device",
+      "duracion_s": "0.010168416023254395"
+    },
+    {
+      "origen": "CUDA",
+      "modelo": "FC-B",
+      "run_id": "RUN-20261118T134514Z-fc-b-04",
+      "repeticion": "4",
+      "fase": "evaluacion_FC-B",
+      "tipo_medicion": "pared",
+      "duracion_s": "0.5110136"
+    },
+    {
+      "origen": "CUDA",
+      "modelo": "FC-B",
+      "run_id": "RUN-20261118T134514Z-fc-b-05",
+      "repeticion": "5",
+      "fase": "preparacion_cpu",
+      "tipo_medicion": "pared",
+      "duracion_s": "8.04574940004386"
+    },
+    {
+      "origen": "CUDA",
+      "modelo": "FC-B",
+      "run_id": "RUN-20261118T134514Z-fc-b-05",
+      "repeticion": "5",
+      "fase": "entrenamiento_FC-B",
+      "tipo_medicion": "pared",
+      "duracion_s": "20.851751"
+    },
+    {
+      "origen": "CUDA",
+      "modelo": "FC-B",
+      "run_id": "RUN-20261118T134514Z-fc-b-05",
+      "repeticion": "5",
+      "fase": "validacion_anidada_FC-B",
+      "tipo_medicion": "pared",
+      "duracion_s": "4.9129269000841305"
+    },
+    {
+      "origen": "CUDA",
+      "modelo": "FC-B",
+      "run_id": "RUN-20261118T134514Z-fc-b-05",
+      "repeticion": "5",
+      "fase": "h2d_inicial",
+      "tipo_medicion": "evento_device",
+      "duracion_s": "0.051509822845458984"
+    },
+    {
+      "origen": "CUDA",
+      "modelo": "FC-B",
+      "run_id": "RUN-20261118T134514Z-fc-b-05",
+      "repeticion": "5",
+      "fase": "h2d_lotes",
+      "tipo_medicion": "evento_device",
+      "duracion_s": "1.8238447028398497"
+    },
+    {
+      "origen": "CUDA",
+      "modelo": "FC-B",
+      "run_id": "RUN-20261118T134514Z-fc-b-05",
+      "repeticion": "5",
+      "fase": "forward_loss",
+      "tipo_medicion": "evento_device",
+      "duracion_s": "3.0156960947513585"
+    },
+    {
+      "origen": "CUDA",
+      "modelo": "FC-B",
+      "run_id": "RUN-20261118T134514Z-fc-b-05",
+      "repeticion": "5",
+      "fase": "backward",
+      "tipo_medicion": "evento_device",
+      "duracion_s": "4.6408887348175005"
+    },
+    {
+      "origen": "CUDA",
+      "modelo": "FC-B",
+      "run_id": "RUN-20261118T134514Z-fc-b-05",
+      "repeticion": "5",
+      "fase": "adam_metricas",
+      "tipo_medicion": "evento_device",
+      "duracion_s": "1.6304373023509913"
+    },
+    {
+      "origen": "CUDA",
+      "modelo": "FC-B",
+      "run_id": "RUN-20261118T134514Z-fc-b-05",
+      "repeticion": "5",
+      "fase": "d2h_control",
+      "tipo_medicion": "evento_device",
+      "duracion_s": "0.12413910407759277"
+    },
+    {
+      "origen": "CUDA",
+      "modelo": "FC-B",
+      "run_id": "RUN-20261118T134514Z-fc-b-05",
+      "repeticion": "5",
+      "fase": "d2h_modelo",
+      "tipo_medicion": "evento_device",
+      "duracion_s": "0.0885301761627197"
+    },
+    {
+      "origen": "CUDA",
+      "modelo": "FC-B",
+      "run_id": "RUN-20261118T134514Z-fc-b-05",
+      "repeticion": "5",
+      "fase": "d2h_optimizador",
+      "tipo_medicion": "evento_device",
+      "duracion_s": "0.010111359596252442"
+    },
+    {
+      "origen": "CUDA",
+      "modelo": "FC-B",
+      "run_id": "RUN-20261118T134514Z-fc-b-05",
+      "repeticion": "5",
+      "fase": "evaluacion_FC-B",
+      "tipo_medicion": "pared",
+      "duracion_s": "0.5300321"
+    },
+    {
+      "origen": "CPU",
+      "modelo": "CNN-B",
+      "run_id": "RUN-20261117T171942Z-cpu-01",
+      "repeticion": "1",
+      "fase": "entrenamiento_CNN-B",
+      "tipo_medicion": "pared",
+      "duracion_s": "803.8474027"
+    },
+    {
+      "origen": "CPU",
+      "modelo": "CNN-B",
+      "run_id": "RUN-20261117T171942Z-cpu-01",
+      "repeticion": "1",
+      "fase": "validacion_anidada_CNN-B",
+      "tipo_medicion": "pared",
+      "duracion_s": "31.305076100106817"
+    },
+    {
+      "origen": "CPU",
+      "modelo": "CNN-B",
+      "run_id": "RUN-20261117T171942Z-cpu-01",
+      "repeticion": "1",
+      "fase": "evaluacion_CNN-B",
+      "tipo_medicion": "pared",
+      "duracion_s": "2.4449506"
+    },
+    {
+      "origen": "CPU",
+      "modelo": "FC-A",
+      "run_id": "RUN-20261117T171942Z-cpu-01",
+      "repeticion": "1",
+      "fase": "entrenamiento_FC-A",
+      "tipo_medicion": "pared",
+      "duracion_s": "48.5201096"
+    },
+    {
+      "origen": "CPU",
+      "modelo": "FC-A",
+      "run_id": "RUN-20261117T171942Z-cpu-01",
+      "repeticion": "1",
+      "fase": "validacion_anidada_FC-A",
+      "tipo_medicion": "pared",
+      "duracion_s": "2.303336599841714"
+    },
+    {
+      "origen": "CPU",
+      "modelo": "FC-A",
+      "run_id": "RUN-20261117T171942Z-cpu-01",
+      "repeticion": "1",
+      "fase": "evaluacion_FC-A",
+      "tipo_medicion": "pared",
+      "duracion_s": "0.3776047"
+    },
+    {
+      "origen": "CPU",
+      "modelo": "FC-B",
+      "run_id": "RUN-20261117T171942Z-cpu-01",
+      "repeticion": "1",
+      "fase": "entrenamiento_FC-B",
+      "tipo_medicion": "pared",
+      "duracion_s": "100.8252526"
+    },
+    {
+      "origen": "CPU",
+      "modelo": "FC-B",
+      "run_id": "RUN-20261117T171942Z-cpu-01",
+      "repeticion": "1",
+      "fase": "validacion_anidada_FC-B",
+      "tipo_medicion": "pared",
+      "duracion_s": "3.912954999774229"
+    },
+    {
+      "origen": "CPU",
+      "modelo": "FC-B",
+      "run_id": "RUN-20261117T171942Z-cpu-01",
+      "repeticion": "1",
+      "fase": "evaluacion_FC-B",
+      "tipo_medicion": "pared",
+      "duracion_s": "0.5102813"
+    },
+    {
+      "origen": "CPU",
+      "modelo": "CNN-B",
+      "run_id": "RUN-20261117T175407Z-cpu-02",
+      "repeticion": "2",
+      "fase": "entrenamiento_CNN-B",
+      "tipo_medicion": "pared",
+      "duracion_s": "806.8697056"
+    },
+    {
+      "origen": "CPU",
+      "modelo": "CNN-B",
+      "run_id": "RUN-20261117T175407Z-cpu-02",
+      "repeticion": "2",
+      "fase": "validacion_anidada_CNN-B",
+      "tipo_medicion": "pared",
+      "duracion_s": "32.11437999998452"
+    },
+    {
+      "origen": "CPU",
+      "modelo": "CNN-B",
+      "run_id": "RUN-20261117T175407Z-cpu-02",
+      "repeticion": "2",
+      "fase": "evaluacion_CNN-B",
+      "tipo_medicion": "pared",
+      "duracion_s": "2.2807966"
+    },
+    {
+      "origen": "CPU",
+      "modelo": "FC-A",
+      "run_id": "RUN-20261117T175407Z-cpu-02",
+      "repeticion": "2",
+      "fase": "entrenamiento_FC-A",
+      "tipo_medicion": "pared",
+      "duracion_s": "51.4950106"
+    },
+    {
+      "origen": "CPU",
+      "modelo": "FC-A",
+      "run_id": "RUN-20261117T175407Z-cpu-02",
+      "repeticion": "2",
+      "fase": "validacion_anidada_FC-A",
+      "tipo_medicion": "pared",
+      "duracion_s": "2.240286899905186"
+    },
+    {
+      "origen": "CPU",
+      "modelo": "FC-A",
+      "run_id": "RUN-20261117T175407Z-cpu-02",
+      "repeticion": "2",
+      "fase": "evaluacion_FC-A",
+      "tipo_medicion": "pared",
+      "duracion_s": "0.3729525"
+    },
+    {
+      "origen": "CPU",
+      "modelo": "FC-B",
+      "run_id": "RUN-20261117T175407Z-cpu-02",
+      "repeticion": "2",
+      "fase": "entrenamiento_FC-B",
+      "tipo_medicion": "pared",
+      "duracion_s": "100.3473252"
+    },
+    {
+      "origen": "CPU",
+      "modelo": "FC-B",
+      "run_id": "RUN-20261117T175407Z-cpu-02",
+      "repeticion": "2",
+      "fase": "validacion_anidada_FC-B",
+      "tipo_medicion": "pared",
+      "duracion_s": "3.9000230000237934"
+    },
+    {
+      "origen": "CPU",
+      "modelo": "FC-B",
+      "run_id": "RUN-20261117T175407Z-cpu-02",
+      "repeticion": "2",
+      "fase": "evaluacion_FC-B",
+      "tipo_medicion": "pared",
+      "duracion_s": "0.5173953"
+    },
+    {
+      "origen": "CPU",
+      "modelo": "CNN-B",
+      "run_id": "RUN-20261117T182835Z-cpu-03",
+      "repeticion": "3",
+      "fase": "entrenamiento_CNN-B",
+      "tipo_medicion": "pared",
+      "duracion_s": "802.3202022"
+    },
+    {
+      "origen": "CPU",
+      "modelo": "CNN-B",
+      "run_id": "RUN-20261117T182835Z-cpu-03",
+      "repeticion": "3",
+      "fase": "validacion_anidada_CNN-B",
+      "tipo_medicion": "pared",
+      "duracion_s": "31.500546200026292"
+    },
+    {
+      "origen": "CPU",
+      "modelo": "CNN-B",
+      "run_id": "RUN-20261117T182835Z-cpu-03",
+      "repeticion": "3",
+      "fase": "evaluacion_CNN-B",
+      "tipo_medicion": "pared",
+      "duracion_s": "2.2978886"
+    },
+    {
+      "origen": "CPU",
+      "modelo": "FC-A",
+      "run_id": "RUN-20261117T182835Z-cpu-03",
+      "repeticion": "3",
+      "fase": "entrenamiento_FC-A",
+      "tipo_medicion": "pared",
+      "duracion_s": "51.3782527"
+    },
+    {
+      "origen": "CPU",
+      "modelo": "FC-A",
+      "run_id": "RUN-20261117T182835Z-cpu-03",
+      "repeticion": "3",
+      "fase": "validacion_anidada_FC-A",
+      "tipo_medicion": "pared",
+      "duracion_s": "2.2903873999021016"
+    },
+    {
+      "origen": "CPU",
+      "modelo": "FC-A",
+      "run_id": "RUN-20261117T182835Z-cpu-03",
+      "repeticion": "3",
+      "fase": "evaluacion_FC-A",
+      "tipo_medicion": "pared",
+      "duracion_s": "0.376655"
+    },
+    {
+      "origen": "CPU",
+      "modelo": "FC-B",
+      "run_id": "RUN-20261117T182835Z-cpu-03",
+      "repeticion": "3",
+      "fase": "entrenamiento_FC-B",
+      "tipo_medicion": "pared",
+      "duracion_s": "108.0900143"
+    },
+    {
+      "origen": "CPU",
+      "modelo": "FC-B",
+      "run_id": "RUN-20261117T182835Z-cpu-03",
+      "repeticion": "3",
+      "fase": "validacion_anidada_FC-B",
+      "tipo_medicion": "pared",
+      "duracion_s": "3.7948783000465482"
+    },
+    {
+      "origen": "CPU",
+      "modelo": "FC-B",
+      "run_id": "RUN-20261117T182835Z-cpu-03",
+      "repeticion": "3",
+      "fase": "evaluacion_FC-B",
+      "tipo_medicion": "pared",
+      "duracion_s": "0.5257158"
+    },
+    {
+      "origen": "CPU",
+      "modelo": "CNN-B",
+      "run_id": "RUN-20261117T190250Z-cpu-04",
+      "repeticion": "4",
+      "fase": "entrenamiento_CNN-B",
+      "tipo_medicion": "pared",
+      "duracion_s": "809.3632467"
+    },
+    {
+      "origen": "CPU",
+      "modelo": "CNN-B",
+      "run_id": "RUN-20261117T190250Z-cpu-04",
+      "repeticion": "4",
+      "fase": "validacion_anidada_CNN-B",
+      "tipo_medicion": "pared",
+      "duracion_s": "31.29984659998445"
+    },
+    {
+      "origen": "CPU",
+      "modelo": "CNN-B",
+      "run_id": "RUN-20261117T190250Z-cpu-04",
+      "repeticion": "4",
+      "fase": "evaluacion_CNN-B",
+      "tipo_medicion": "pared",
+      "duracion_s": "2.3230361"
+    },
+    {
+      "origen": "CPU",
+      "modelo": "FC-A",
+      "run_id": "RUN-20261117T190250Z-cpu-04",
+      "repeticion": "4",
+      "fase": "entrenamiento_FC-A",
+      "tipo_medicion": "pared",
+      "duracion_s": "50.7415535"
+    },
+    {
+      "origen": "CPU",
+      "modelo": "FC-A",
+      "run_id": "RUN-20261117T190250Z-cpu-04",
+      "repeticion": "4",
+      "fase": "validacion_anidada_FC-A",
+      "tipo_medicion": "pared",
+      "duracion_s": "2.288548600045033"
+    },
+    {
+      "origen": "CPU",
+      "modelo": "FC-A",
+      "run_id": "RUN-20261117T190250Z-cpu-04",
+      "repeticion": "4",
+      "fase": "evaluacion_FC-A",
+      "tipo_medicion": "pared",
+      "duracion_s": "0.3883504"
+    },
+    {
+      "origen": "CPU",
+      "modelo": "FC-B",
+      "run_id": "RUN-20261117T190250Z-cpu-04",
+      "repeticion": "4",
+      "fase": "entrenamiento_FC-B",
+      "tipo_medicion": "pared",
+      "duracion_s": "102.501499"
+    },
+    {
+      "origen": "CPU",
+      "modelo": "FC-B",
+      "run_id": "RUN-20261117T190250Z-cpu-04",
+      "repeticion": "4",
+      "fase": "validacion_anidada_FC-B",
+      "tipo_medicion": "pared",
+      "duracion_s": "3.801508000062313"
+    },
+    {
+      "origen": "CPU",
+      "modelo": "FC-B",
+      "run_id": "RUN-20261117T190250Z-cpu-04",
+      "repeticion": "4",
+      "fase": "evaluacion_FC-B",
+      "tipo_medicion": "pared",
+      "duracion_s": "0.5098613"
+    },
+    {
+      "origen": "CPU",
+      "modelo": "CNN-B",
+      "run_id": "RUN-20261117T192509Z-cpu-05",
+      "repeticion": "5",
+      "fase": "entrenamiento_CNN-B",
+      "tipo_medicion": "pared",
+      "duracion_s": "805.8480713"
+    },
+    {
+      "origen": "CPU",
+      "modelo": "CNN-B",
+      "run_id": "RUN-20261117T192509Z-cpu-05",
+      "repeticion": "5",
+      "fase": "validacion_anidada_CNN-B",
+      "tipo_medicion": "pared",
+      "duracion_s": "32.35367280000355"
+    },
+    {
+      "origen": "CPU",
+      "modelo": "CNN-B",
+      "run_id": "RUN-20261117T192509Z-cpu-05",
+      "repeticion": "5",
+      "fase": "evaluacion_CNN-B",
+      "tipo_medicion": "pared",
+      "duracion_s": "2.2652769"
+    },
+    {
+      "origen": "CPU",
+      "modelo": "FC-A",
+      "run_id": "RUN-20261117T192509Z-cpu-05",
+      "repeticion": "5",
+      "fase": "entrenamiento_FC-A",
+      "tipo_medicion": "pared",
+      "duracion_s": "51.443373"
+    },
+    {
+      "origen": "CPU",
+      "modelo": "FC-A",
+      "run_id": "RUN-20261117T192509Z-cpu-05",
+      "repeticion": "5",
+      "fase": "validacion_anidada_FC-A",
+      "tipo_medicion": "pared",
+      "duracion_s": "2.332448899745941"
+    },
+    {
+      "origen": "CPU",
+      "modelo": "FC-A",
+      "run_id": "RUN-20261117T192509Z-cpu-05",
+      "repeticion": "5",
+      "fase": "evaluacion_FC-A",
+      "tipo_medicion": "pared",
+      "duracion_s": "0.3786459"
+    },
+    {
+      "origen": "CPU",
+      "modelo": "FC-B",
+      "run_id": "RUN-20261117T192509Z-cpu-05",
+      "repeticion": "5",
+      "fase": "entrenamiento_FC-B",
+      "tipo_medicion": "pared",
+      "duracion_s": "100.4413191"
+    },
+    {
+      "origen": "CPU",
+      "modelo": "FC-B",
+      "run_id": "RUN-20261117T192509Z-cpu-05",
+      "repeticion": "5",
+      "fase": "validacion_anidada_FC-B",
+      "tipo_medicion": "pared",
+      "duracion_s": "3.7525534999440424"
+    },
+    {
+      "origen": "CPU",
+      "modelo": "FC-B",
+      "run_id": "RUN-20261117T192509Z-cpu-05",
+      "repeticion": "5",
+      "fase": "evaluacion_FC-B",
+      "tipo_medicion": "pared",
+      "duracion_s": "0.5370794"
+    },
+    {
+      "origen": "CUDA",
+      "modelo": "CNN-B",
+      "run_id": "RUN-20261117T231628Z-gpu-01",
+      "repeticion": "1",
+      "fase": "entrenamiento_CNN-B",
+      "tipo_medicion": "pared",
+      "duracion_s": "415.4992941"
+    },
+    {
+      "origen": "CUDA",
+      "modelo": "CNN-B",
+      "run_id": "RUN-20261117T231628Z-gpu-01",
+      "repeticion": "1",
+      "fase": "validacion_anidada_CNN-B",
+      "tipo_medicion": "pared",
+      "duracion_s": "31.113583200087305"
+    },
+    {
+      "origen": "CUDA",
+      "modelo": "CNN-B",
+      "run_id": "RUN-20261117T231628Z-gpu-01",
+      "repeticion": "1",
+      "fase": "evaluacion_CNN-B",
+      "tipo_medicion": "pared",
+      "duracion_s": "2.168861"
+    },
+    {
+      "origen": "CUDA",
+      "modelo": "CNN-B",
+      "run_id": "RUN-20261117T232412Z-gpu-02",
+      "repeticion": "2",
+      "fase": "entrenamiento_CNN-B",
+      "tipo_medicion": "pared",
+      "duracion_s": "418.7970182"
+    },
+    {
+      "origen": "CUDA",
+      "modelo": "CNN-B",
+      "run_id": "RUN-20261117T232412Z-gpu-02",
+      "repeticion": "2",
+      "fase": "validacion_anidada_CNN-B",
+      "tipo_medicion": "pared",
+      "duracion_s": "32.53316230006749"
+    },
+    {
+      "origen": "CUDA",
+      "modelo": "CNN-B",
+      "run_id": "RUN-20261117T232412Z-gpu-02",
+      "repeticion": "2",
+      "fase": "evaluacion_CNN-B",
+      "tipo_medicion": "pared",
+      "duracion_s": "3.1449708"
+    },
+    {
+      "origen": "CUDA",
+      "modelo": "CNN-B",
+      "run_id": "RUN-20261117T233146Z-gpu-03",
+      "repeticion": "3",
+      "fase": "entrenamiento_CNN-B",
+      "tipo_medicion": "pared",
+      "duracion_s": "420.5088237"
+    },
+    {
+      "origen": "CUDA",
+      "modelo": "CNN-B",
+      "run_id": "RUN-20261117T233146Z-gpu-03",
+      "repeticion": "3",
+      "fase": "validacion_anidada_CNN-B",
+      "tipo_medicion": "pared",
+      "duracion_s": "33.53853300004266"
+    },
+    {
+      "origen": "CUDA",
+      "modelo": "CNN-B",
+      "run_id": "RUN-20261117T233146Z-gpu-03",
+      "repeticion": "3",
+      "fase": "evaluacion_CNN-B",
+      "tipo_medicion": "pared",
+      "duracion_s": "2.4784077"
+    },
+    {
+      "origen": "CUDA",
+      "modelo": "CNN-B",
+      "run_id": "RUN-20261117T233923Z-gpu-04",
+      "repeticion": "4",
+      "fase": "entrenamiento_CNN-B",
+      "tipo_medicion": "pared",
+      "duracion_s": "419.7718531"
+    },
+    {
+      "origen": "CUDA",
+      "modelo": "CNN-B",
+      "run_id": "RUN-20261117T233923Z-gpu-04",
+      "repeticion": "4",
+      "fase": "validacion_anidada_CNN-B",
+      "tipo_medicion": "pared",
+      "duracion_s": "32.14701139990939"
+    },
+    {
+      "origen": "CUDA",
+      "modelo": "CNN-B",
+      "run_id": "RUN-20261117T233923Z-gpu-04",
+      "repeticion": "4",
+      "fase": "evaluacion_CNN-B",
+      "tipo_medicion": "pared",
+      "duracion_s": "2.3137645"
+    },
+    {
+      "origen": "CUDA",
+      "modelo": "CNN-B",
+      "run_id": "RUN-20261117T234658Z-gpu-05",
+      "repeticion": "5",
+      "fase": "entrenamiento_CNN-B",
+      "tipo_medicion": "pared",
+      "duracion_s": "418.4614259"
+    },
+    {
+      "origen": "CUDA",
+      "modelo": "CNN-B",
+      "run_id": "RUN-20261117T234658Z-gpu-05",
+      "repeticion": "5",
+      "fase": "validacion_anidada_CNN-B",
+      "tipo_medicion": "pared",
+      "duracion_s": "32.285709000134375"
+    },
+    {
+      "origen": "CUDA",
+      "modelo": "CNN-B",
+      "run_id": "RUN-20261117T234658Z-gpu-05",
+      "repeticion": "5",
+      "fase": "evaluacion_CNN-B",
+      "tipo_medicion": "pared",
+      "duracion_s": "2.3549582"
+    }
+  ],
+  "quality": [
+    {
+      "modelo": "FC-A",
+      "origen": "CPU",
+      "n": "5",
+      "accuracy_media_pct": "53.0651330947876",
+      "accuracy_min_pct": "53.0651330947876",
+      "accuracy_max_pct": "53.0651330947876",
+      "loss_media": "1.5230441093444824"
+    },
+    {
+      "modelo": "FC-A",
+      "origen": "CUDA",
+      "n": "5",
+      "accuracy_media_pct": "51.724135875701904",
+      "accuracy_min_pct": "51.724135875701904",
+      "accuracy_max_pct": "51.724135875701904",
+      "loss_media": "1.5723273754119873"
+    },
+    {
+      "modelo": "FC-B",
+      "origen": "CPU",
+      "n": "5",
+      "accuracy_media_pct": "44.29118633270264",
+      "accuracy_min_pct": "44.29118633270264",
+      "accuracy_max_pct": "44.29118633270264",
+      "loss_media": "1.7380640506744385"
+    },
+    {
+      "modelo": "FC-B",
+      "origen": "CUDA",
+      "n": "5",
+      "accuracy_media_pct": "39.96168673038483",
+      "accuracy_min_pct": "39.96168673038483",
+      "accuracy_max_pct": "39.96168673038483",
+      "loss_media": "1.759406566619873"
+    },
+    {
+      "modelo": "CNN-B",
+      "origen": "CPU",
+      "n": 5,
+      "accuracy_media_pct": 96.88888788223267,
+      "accuracy_min_pct": 92.8735613822937,
+      "accuracy_max_pct": 98.88888597488403,
+      "loss_media": 0.10713976547122002
+    },
+    {
+      "modelo": "CNN-B",
+      "origen": "CUDA",
+      "n": 5,
+      "accuracy_media_pct": 98.62068891525269,
+      "accuracy_min_pct": 98.62068891525269,
+      "accuracy_max_pct": 98.62068891525269,
+      "loss_media": 0.061565157026052475
+    }
+  ],
+  "baseline": [
+    {
+      "fase": "preparacion_cpu",
+      "n": "5",
+      "media_s": "17.32450892",
+      "mediana_s": "17.2670301",
+      "desviacion_muestral_s": "0.41392605577336783",
+      "min_s": "16.8798983",
+      "max_s": "17.9630116",
+      "cv_pct": "2.389251306832239",
+      "ic95_inferior_s": "16.810551838627724",
+      "ic95_superior_s": "17.838466001372275",
+      "semiancho_relativo_ic95_pct": "2.9666473303548866",
+      "anidada": "False"
+    },
+    {
+      "fase": "entrenamiento_CNN-A",
+      "n": "5",
+      "media_s": "124.83926084",
+      "mediana_s": "123.7397138",
+      "desviacion_muestral_s": "2.5043327529871116",
+      "min_s": "123.1170825",
+      "max_s": "129.0776728",
+      "cv_pct": "2.006045803328478",
+      "ic95_inferior_s": "121.72972102109338",
+      "ic95_superior_s": "127.9488006589066",
+      "semiancho_relativo_ic95_pct": "2.49083485274072",
+      "anidada": "False"
+    },
+    {
+      "fase": "validacion_anidada_CNN-A",
+      "n": "5",
+      "media_s": "7.960290600010194",
+      "mediana_s": "7.928145100071561",
+      "desviacion_muestral_s": "0.20481390459683288",
+      "min_s": "7.749134800105821",
+      "max_s": "8.299905500025488",
+      "cv_pct": "2.572945070580345",
+      "ic95_inferior_s": "7.705980548340766",
+      "ic95_superior_s": "8.214600651679621",
+      "semiancho_relativo_ic95_pct": "3.1947332634954577",
+      "anidada": "True"
+    },
+    {
+      "fase": "evaluacion_CNN-A",
+      "n": "5",
+      "media_s": "0.80181956",
+      "mediana_s": "0.7850532",
+      "desviacion_muestral_s": "0.05835798316856914",
+      "min_s": "0.7594436",
+      "max_s": "0.9044508",
+      "cv_pct": "7.278194007710305",
+      "ic95_inferior_s": "0.7293585532918064",
+      "ic95_superior_s": "0.8742805667081935",
+      "semiancho_relativo_ic95_pct": "9.037071471316255",
+      "anidada": "False"
+    },
+    {
+      "fase": "entrenamiento_CNN-B",
+      "n": "5",
+      "media_s": "805.6497256999999",
+      "mediana_s": "805.8480713",
+      "desviacion_muestral_s": "2.722683652403696",
+      "min_s": "802.3202022",
+      "max_s": "809.3632467",
+      "cv_pct": "0.33794880896137025",
+      "ic95_inferior_s": "802.2690674303122",
+      "ic95_superior_s": "809.0303839696875",
+      "semiancho_relativo_ic95_pct": "0.41961886932317505",
+      "anidada": "False"
+    },
+    {
+      "fase": "validacion_anidada_CNN-B",
+      "n": "5",
+      "media_s": "31.714704340021125",
+      "mediana_s": "31.500546200026292",
+      "desviacion_muestral_s": "0.48831016637716257",
+      "min_s": "31.29984659998445",
+      "max_s": "32.35367280000355",
+      "cv_pct": "1.5396964169738727",
+      "ic95_inferior_s": "31.108387186473713",
+      "ic95_superior_s": "32.32102149356854",
+      "semiancho_relativo_ic95_pct": "1.9117856091197885",
+      "anidada": "True"
+    },
+    {
+      "fase": "evaluacion_CNN-B",
+      "n": "5",
+      "media_s": "2.3223897599999996",
+      "mediana_s": "2.2978886",
+      "desviacion_muestral_s": "0.07178745335086763",
+      "min_s": "2.2652769",
+      "max_s": "2.4449506",
+      "cv_pct": "3.0911027333701147",
+      "ic95_inferior_s": "2.233253863651495",
+      "ic95_superior_s": "2.411525656348504",
+      "semiancho_relativo_ic95_pct": "3.8381109787749206",
+      "anidada": "False"
+    },
+    {
+      "fase": "diagnostico_CNN-B",
+      "n": "4",
+      "media_s": "2.5079998",
+      "mediana_s": "2.5044909",
+      "desviacion_muestral_s": "0.029294127130649668",
+      "min_s": "2.4762786",
+      "max_s": "2.5467388",
+      "cv_pct": "1.1680274906979526",
+      "ic95_inferior_s": "2.461386306673276",
+      "ic95_superior_s": "2.5546132933267236",
+      "semiancho_relativo_ic95_pct": "1.8585923861207498",
+      "anidada": "False"
+    },
+    {
+      "fase": "entrenamiento_FC-A",
+      "n": "5",
+      "media_s": "50.715659880000004",
+      "mediana_s": "51.3782527",
+      "desviacion_muestral_s": "1.2646239249738433",
+      "min_s": "48.5201096",
+      "max_s": "51.4950106",
+      "cv_pct": "2.493557074809066",
+      "ic95_inferior_s": "49.145421881092844",
+      "ic95_superior_s": "52.285897878907164",
+      "semiancho_relativo_ic95_pct": "3.0961600472567077",
+      "anidada": "False"
+    },
+    {
+      "fase": "validacion_anidada_FC-A",
+      "n": "5",
+      "media_s": "2.2910016798879953",
+      "mediana_s": "2.2903873999021016",
+      "desviacion_muestral_s": "0.033348186358253824",
+      "min_s": "2.240286899905186",
+      "max_s": "2.332448899745941",
+      "cv_pct": "1.4556159714332546",
+      "ic95_inferior_s": "2.2495944374815617",
+      "ic95_superior_s": "2.332408922294429",
+      "semiancho_relativo_ic95_pct": "1.8073859469390712",
+      "anidada": "True"
+    },
+    {
+      "fase": "evaluacion_FC-A",
+      "n": "5",
+      "media_s": "0.3788417",
+      "mediana_s": "0.3776047",
+      "desviacion_muestral_s": "0.005732543411523356",
+      "min_s": "0.3729525",
+      "max_s": "0.3883504",
+      "cv_pct": "1.5131764564258252",
+      "ic95_inferior_s": "0.37172380722777126",
+      "ic95_superior_s": "0.38595959277222874",
+      "semiancho_relativo_ic95_pct": "1.878856728873494",
+      "anidada": "False"
+    },
+    {
+      "fase": "entrenamiento_FC-B",
+      "n": "5",
+      "media_s": "102.44108204",
+      "mediana_s": "100.8252526",
+      "desviacion_muestral_s": "3.275204580920838",
+      "min_s": "100.3473252",
+      "max_s": "108.0900143",
+      "cv_pct": "3.1971592994712554",
+      "ic95_inferior_s": "98.37437842511855",
+      "ic95_superior_s": "106.50778565488145",
+      "semiancho_relativo_ic95_pct": "3.9697975986758243",
+      "anidada": "False"
+    },
+    {
+      "fase": "validacion_anidada_FC-B",
+      "n": "5",
+      "media_s": "3.832383559970185",
+      "mediana_s": "3.801508000062313",
+      "desviacion_muestral_s": "0.07035558607566995",
+      "min_s": "3.7525534999440424",
+      "max_s": "3.912954999774229",
+      "cv_pct": "1.8358179700629262",
+      "ic95_inferior_s": "3.7450255616674997",
+      "ic95_superior_s": "3.9197415582728703",
+      "semiancho_relativo_ic95_pct": "2.279469080682651",
+      "anidada": "True"
+    },
+    {
+      "fase": "evaluacion_FC-B",
+      "n": "5",
+      "media_s": "0.5200666199999999",
+      "mediana_s": "0.5173953",
+      "desviacion_muestral_s": "0.01149331232008422",
+      "min_s": "0.5098613",
+      "max_s": "0.5370794",
+      "cv_pct": "2.2099692381880267",
+      "ic95_inferior_s": "0.5057957878720396",
+      "ic95_superior_s": "0.5343374521279602",
+      "semiancho_relativo_ic95_pct": "2.744039240195872",
+      "anidada": "False"
+    },
+    {
+      "fase": "pca",
+      "n": "5",
+      "media_s": "3.96348002",
+      "mediana_s": "3.9596083",
+      "desviacion_muestral_s": "0.04582597239423292",
+      "min_s": "3.9060118",
+      "max_s": "4.0245757",
+      "cv_pct": "1.156205459923901",
+      "ic95_inferior_s": "3.9065795598954014",
+      "ic95_superior_s": "4.020380480104598",
+      "semiancho_relativo_ic95_pct": "1.4356186941141327",
+      "anidada": "False"
+    },
+    {
+      "fase": "entrenamiento_RF-A",
+      "n": "5",
+      "media_s": "2.75271538",
+      "mediana_s": "2.7718287",
+      "desviacion_muestral_s": "0.073712184393708",
+      "min_s": "2.6310214",
+      "max_s": "2.8162688",
+      "cv_pct": "2.67779898093598",
+      "ic95_inferior_s": "2.6611896144093756",
+      "ic95_superior_s": "2.8442411455906247",
+      "semiancho_relativo_ic95_pct": "3.3249265890549338",
+      "anidada": "False"
+    },
+    {
+      "fase": "validacion_RF-A",
+      "n": "5",
+      "media_s": "0.05373922",
+      "mediana_s": "0.0534938",
+      "desviacion_muestral_s": "0.0009522693011958333",
+      "min_s": "0.052727",
+      "max_s": "0.0552305",
+      "cv_pct": "1.7720192090540825",
+      "ic95_inferior_s": "0.052556821492110474",
+      "ic95_superior_s": "0.05492161850788952",
+      "semiancho_relativo_ic95_pct": "2.2002524560079637",
+      "anidada": "False"
+    },
+    {
+      "fase": "entrenamiento_RF-B",
+      "n": "5",
+      "media_s": "8.025264660000001",
+      "mediana_s": "7.9486589",
+      "desviacion_muestral_s": "0.18658153047813456",
+      "min_s": "7.8394816",
+      "max_s": "8.3219919",
+      "cv_pct": "2.3249268202718008",
+      "ic95_inferior_s": "7.793593090875543",
+      "ic95_superior_s": "8.25693622912446",
+      "semiancho_relativo_ic95_pct": "2.886777931189848",
+      "anidada": "False"
+    },
+    {
+      "fase": "validacion_RF-B",
+      "n": "5",
+      "media_s": "0.139008",
+      "mediana_s": "0.139152",
+      "desviacion_muestral_s": "0.0011245720452687808",
+      "min_s": "0.137423",
+      "max_s": "0.1405478",
+      "cv_pct": "0.8089980758436787",
+      "ic95_inferior_s": "0.13761165937800338",
+      "ic95_superior_s": "0.1404043406219966",
+      "semiancho_relativo_ic95_pct": "1.004503785391214",
+      "anidada": "False"
+    },
+    {
+      "fase": "evaluacion_RF-B",
+      "n": "5",
+      "media_s": "0.13591462",
+      "mediana_s": "0.1400725",
+      "desviacion_muestral_s": "0.006809411213680663",
+      "min_s": "0.1275256",
+      "max_s": "0.1414975",
+      "cv_pct": "5.010065299583417",
+      "ic95_inferior_s": "0.12745961924700774",
+      "ic95_superior_s": "0.14436962075299228",
+      "semiancho_relativo_ic95_pct": "6.220817711142684",
+      "anidada": "False"
+    },
+    {
+      "fase": "entrenamiento_CNN-B+aug",
+      "n": "4",
+      "media_s": "830.735319775",
+      "mediana_s": "832.39429145",
+      "desviacion_muestral_s": "10.662331987270976",
+      "min_s": "816.399758",
+      "max_s": "841.7529382",
+      "cv_pct": "1.2834812404700464",
+      "ic95_inferior_s": "813.7691702557006",
+      "ic95_superior_s": "847.7014692942994",
+      "semiancho_relativo_ic95_pct": "2.0423050658174247",
+      "anidada": "False"
+    },
+    {
+      "fase": "validacion_anidada_CNN-B+aug",
+      "n": "4",
+      "media_s": "31.87050187503337",
+      "mediana_s": "31.905724700016435",
+      "desviacion_muestral_s": "0.4673609818656705",
+      "min_s": "31.361465300025884",
+      "max_s": "32.30909280007472",
+      "cv_pct": "1.4664374715472883",
+      "ic95_inferior_s": "31.126826260047284",
+      "ic95_superior_s": "32.61417749001945",
+      "semiancho_relativo_ic95_pct": "2.333429256627625",
+      "anidada": "True"
+    },
+    {
+      "fase": "evaluacion_CNN-B+aug",
+      "n": "4",
+      "media_s": "2.3453172249999996",
+      "mediana_s": "2.3363827500000003",
+      "desviacion_muestral_s": "0.0779059702841135",
+      "min_s": "2.2719042",
+      "max_s": "2.4365992",
+      "cv_pct": "3.321766857535168",
+      "ic95_inferior_s": "2.22135144135489",
+      "ic95_superior_s": "2.4692830086451094",
+      "semiancho_relativo_ic95_pct": "5.2856723313883345",
+      "anidada": "False"
+    },
+    {
+      "fase": "inferencia_grupo_aug_CNN-B_final_CNN-B",
+      "n": "4",
+      "media_s": "43.956588775",
+      "mediana_s": "43.986946450000005",
+      "desviacion_muestral_s": "0.6370872241757158",
+      "min_s": "43.2607143",
+      "max_s": "44.5917479",
+      "cv_pct": "1.449355470773143",
+      "ic95_inferior_s": "42.94284083363927",
+      "ic95_superior_s": "44.97033671636073",
+      "semiancho_relativo_ic95_pct": "2.306247981502359",
+      "anidada": "False"
+    },
+    {
+      "fase": "pipeline_total",
+      "n": "5",
+      "media_s": "1858.6165002599998",
+      "mediana_s": "2001.7737406",
+      "desviacion_muestral_s": "314.3656798976512",
+      "min_s": "1296.6097602",
+      "max_s": "2011.0948999",
+      "cv_pct": "16.91396153287539",
+      "ic95_inferior_s": "1468.2799532602376",
+      "ic95_superior_s": "2248.953047259762",
+      "semiancho_relativo_ic95_pct": "21.001457102374726",
+      "anidada": "False"
+    },
+    {
+      "fase": "diagnostico_CNN-A",
+      "n": "1",
+      "media_s": "0.8194009",
+      "mediana_s": "0.8194009",
+      "desviacion_muestral_s": "",
+      "min_s": "0.8194009",
+      "max_s": "0.8194009",
+      "cv_pct": "",
+      "ic95_inferior_s": "",
+      "ic95_superior_s": "",
+      "semiancho_relativo_ic95_pct": "",
+      "anidada": "False"
+    },
+    {
+      "fase": "entrenamiento_CNN-A+aug",
+      "n": "1",
+      "media_s": "147.4800043",
+      "mediana_s": "147.4800043",
+      "desviacion_muestral_s": "",
+      "min_s": "147.4800043",
+      "max_s": "147.4800043",
+      "cv_pct": "",
+      "ic95_inferior_s": "",
+      "ic95_superior_s": "",
+      "semiancho_relativo_ic95_pct": "",
+      "anidada": "False"
+    },
+    {
+      "fase": "validacion_anidada_CNN-A+aug",
+      "n": "1",
+      "media_s": "7.8054159002495",
+      "mediana_s": "7.8054159002495",
+      "desviacion_muestral_s": "",
+      "min_s": "7.8054159002495",
+      "max_s": "7.8054159002495",
+      "cv_pct": "",
+      "ic95_inferior_s": "",
+      "ic95_superior_s": "",
+      "semiancho_relativo_ic95_pct": "",
+      "anidada": "True"
+    },
+    {
+      "fase": "evaluacion_CNN-A+aug",
+      "n": "1",
+      "media_s": "0.9811853",
+      "mediana_s": "0.9811853",
+      "desviacion_muestral_s": "",
+      "min_s": "0.9811853",
+      "max_s": "0.9811853",
+      "cv_pct": "",
+      "ic95_inferior_s": "",
+      "ic95_superior_s": "",
+      "semiancho_relativo_ic95_pct": "",
+      "anidada": "False"
+    },
+    {
+      "fase": "inferencia_grupo_aug_CNN-A_final_CNN-A",
+      "n": "1",
+      "media_s": "24.7633166",
+      "mediana_s": "24.7633166",
+      "desviacion_muestral_s": "",
+      "min_s": "24.7633166",
+      "max_s": "24.7633166",
+      "cv_pct": "",
+      "ic95_inferior_s": "",
+      "ic95_superior_s": "",
+      "semiancho_relativo_ic95_pct": "",
+      "anidada": "False"
+    }
+  ],
+  "common": {
+    "fase": "referencia_comun",
+    "n": "5",
+    "media_s": "1119.9275622999999",
+    "mediana_s": "1119.7507971",
+    "desviacion_muestral_s": "2.7231840356073445",
+    "min_s": "1116.3892196",
+    "max_s": "1122.8687608",
+    "cv_pct": "0.24315715830894724",
+    "ic95_inferior_s": "1116.546282722503",
+    "ic95_superior_s": "1123.3088418774967",
+    "semiancho_relativo_ic95_pct": "0.30191948937775304",
+    "anidada": "False"
+  },
+  "commonruns": [
+    1119.7507971,
+    1118.2944064,
+    1122.8687608,
+    1122.3346276,
+    1116.3892196
+  ],
+  "phasecompare": [
+    {
+      "fase": "preparacion_cpu_s",
+      "descripcion": "Preparación CPU",
+      "n_cpu": "5",
+      "n_gpu": "5",
+      "media_cpu_s": "17.32450892",
+      "media_variante_cuda_s": "8.0343448",
+      "ahorro_s": "9.29016412",
+      "speedup": "2.156306376096779",
+      "reduccion_pct": "53.6244009160636"
+    },
+    {
+      "fase": "entrenamiento_s",
+      "descripcion": "Entrenamiento CNN-B",
+      "n_cpu": "5",
+      "n_gpu": "5",
+      "media_cpu_s": "805.6497257",
+      "media_variante_cuda_s": "418.607683",
+      "ahorro_s": "387.04204269999997",
+      "speedup": "1.9245937387632706",
+      "reduccion_pct": "48.04098237155273"
+    },
+    {
+      "fase": "evaluacion_cpu_s",
+      "descripcion": "Evaluación final CPU",
+      "n_cpu": "5",
+      "n_gpu": "5",
+      "media_cpu_s": "2.32238976",
+      "media_variante_cuda_s": "2.49219244",
+      "ahorro_s": "-0.1698026800000001",
+      "speedup": "0.9318661443335411",
+      "reduccion_pct": "-7.311549634114822"
+    },
+    {
+      "fase": "suma_comparable_s",
+      "descripcion": "Suma de tres fases",
+      "n_cpu": "5",
+      "n_gpu": "5",
+      "media_cpu_s": "825.29662438",
+      "media_variante_cuda_s": "429.13422024",
+      "ahorro_s": "396.16240414000004",
+      "speedup": "1.9231666584837723",
+      "reduccion_pct": "48.002426332182694"
+    }
+  ],
+  "breakdown": [
+    {
+      "modelo": "FC-A",
+      "pared_s": "15.122541380000001",
+      "validacion_cpu_s": "3.4813793402398003",
+      "h2d_eventos_s": "1.7331542650461198",
+      "d2h_eventos_s": "0.18566460148021585",
+      "matematica_intervalos_stream_s": "5.548886573064326",
+      "resto_host_s": "4.173456600169539"
+    },
+    {
+      "modelo": "FC-B",
+      "pared_s": "21.06199454",
+      "validacion_cpu_s": "5.008333280030638",
+      "h2d_eventos_s": "1.8638610230088233",
+      "d2h_eventos_s": "0.2226355392955244",
+      "matematica_intervalos_stream_s": "9.356507670712462",
+      "resto_host_s": "4.610657026952554"
+    }
+  ],
+  "cnn_breakdown": [
+    {
+      "componente": "computo_intervalos_stream_s",
+      "descripcion": "Cómputo: intervalos del stream",
+      "media_s": "340.8148799630702",
+      "porcentaje_entrenamiento": "81.41629831554482"
+    },
+    {
+      "componente": "h2d_eventos_s",
+      "descripcion": "H2D: eventos",
+      "media_s": "3.3129218248248113",
+      "porcentaje_entrenamiento": "0.7914144817128956"
+    },
+    {
+      "componente": "d2h_eventos_s",
+      "descripcion": "D2H: eventos",
+      "media_s": "0.21490079347863777",
+      "porcentaje_entrenamiento": "0.051337039955532245"
+    },
+    {
+      "componente": "validacion_anidada_s",
+      "descripcion": "Validación CPU anidada",
+      "media_s": "32.32359978004824",
+      "porcentaje_entrenamiento": "7.721692910268023"
+    },
+    {
+      "componente": "administracion_y_staging_s",
+      "descripcion": "Residuo de pared / staging / control",
+      "media_s": "41.94138063857808",
+      "porcentaje_entrenamiento": "10.019257252518722"
+    }
+  ],
+  "curves": [
+    {
+      "modelo": "CNN-B",
+      "origen": "CPU",
+      "epoca": 1,
+      "val_accuracy_pct": 20.643678307533264,
+      "val_loss": 11.57828197479248
+    },
+    {
+      "modelo": "CNN-B",
+      "origen": "CPU",
+      "epoca": 2,
+      "val_accuracy_pct": 52.57471263408661,
+      "val_loss": 2.956112790107727
+    },
+    {
+      "modelo": "CNN-B",
+      "origen": "CPU",
+      "epoca": 3,
+      "val_accuracy_pct": 64.55172419548035,
+      "val_loss": 1.84871826171875
+    },
+    {
+      "modelo": "CNN-B",
+      "origen": "CPU",
+      "epoca": 4,
+      "val_accuracy_pct": 80.22988438606262,
+      "val_loss": 0.9789945960044861
+    },
+    {
+      "modelo": "CNN-B",
+      "origen": "CPU",
+      "epoca": 5,
+      "val_accuracy_pct": 78.86589884757996,
+      "val_loss": 0.9488107204437256
+    },
+    {
+      "modelo": "CNN-B",
+      "origen": "CPU",
+      "epoca": 6,
+      "val_accuracy_pct": 86.81226015090942,
+      "val_loss": 0.6191243797540664
+    },
+    {
+      "modelo": "CNN-B",
+      "origen": "CPU",
+      "epoca": 7,
+      "val_accuracy_pct": 89.1034471988678,
+      "val_loss": 0.3982876241207123
+    },
+    {
+      "modelo": "CNN-B",
+      "origen": "CPU",
+      "epoca": 8,
+      "val_accuracy_pct": 94.83524918556213,
+      "val_loss": 0.20408490896224976
+    },
+    {
+      "modelo": "CNN-B",
+      "origen": "CPU",
+      "epoca": 9,
+      "val_accuracy_pct": 92.83524870872498,
+      "val_loss": 0.24831838756799698
+    },
+    {
+      "modelo": "CNN-B",
+      "origen": "CPU",
+      "epoca": 10,
+      "val_accuracy_pct": 93.64750862121582,
+      "val_loss": 0.23587343692779542
+    },
+    {
+      "modelo": "CNN-B",
+      "origen": "CPU",
+      "epoca": 11,
+      "val_accuracy_pct": 93.70114922523499,
+      "val_loss": 0.19909692406654358
+    },
+    {
+      "modelo": "CNN-B",
+      "origen": "CPU",
+      "epoca": 12,
+      "val_accuracy_pct": 97.33333349227905,
+      "val_loss": 0.09991313219070434
+    },
+    {
+      "modelo": "CNN-B",
+      "origen": "CPU",
+      "epoca": 13,
+      "val_accuracy_pct": 95.08812308311462,
+      "val_loss": 0.15459380447864532
+    },
+    {
+      "modelo": "CNN-B",
+      "origen": "CPU",
+      "epoca": 14,
+      "val_accuracy_pct": 95.63218593597412,
+      "val_loss": 0.14880216047167777
+    },
+    {
+      "modelo": "CNN-B",
+      "origen": "CPU",
+      "epoca": 15,
+      "val_accuracy_pct": 96.91954135894775,
+      "val_loss": 0.10005851201713085
+    },
+    {
+      "modelo": "CNN-B",
+      "origen": "CUDA",
+      "epoca": 1,
+      "val_accuracy_pct": 12.605364620685577,
+      "val_loss": 21.91301155090332
+    },
+    {
+      "modelo": "CNN-B",
+      "origen": "CUDA",
+      "epoca": 2,
+      "val_accuracy_pct": 37.04980909824371,
+      "val_loss": 8.168072700500488
+    },
+    {
+      "modelo": "CNN-B",
+      "origen": "CUDA",
+      "epoca": 3,
+      "val_accuracy_pct": 57.85440802574158,
+      "val_loss": 2.5862271785736084
+    },
+    {
+      "modelo": "CNN-B",
+      "origen": "CUDA",
+      "epoca": 4,
+      "val_accuracy_pct": 77.8927206993103,
+      "val_loss": 1.0154019594192505
+    },
+    {
+      "modelo": "CNN-B",
+      "origen": "CUDA",
+      "epoca": 5,
+      "val_accuracy_pct": 92.1072781085968,
+      "val_loss": 0.31078094244003296
+    },
+    {
+      "modelo": "CNN-B",
+      "origen": "CUDA",
+      "epoca": 6,
+      "val_accuracy_pct": 85.28735637664795,
+      "val_loss": 0.5141513347625732
+    },
+    {
+      "modelo": "CNN-B",
+      "origen": "CUDA",
+      "epoca": 7,
+      "val_accuracy_pct": 88.81226181983948,
+      "val_loss": 0.399549663066864
+    },
+    {
+      "modelo": "CNN-B",
+      "origen": "CUDA",
+      "epoca": 8,
+      "val_accuracy_pct": 91.99233651161194,
+      "val_loss": 0.37006038427352905
+    },
+    {
+      "modelo": "CNN-B",
+      "origen": "CUDA",
+      "epoca": 9,
+      "val_accuracy_pct": 83.0651342868805,
+      "val_loss": 0.6767783761024475
+    },
+    {
+      "modelo": "CNN-B",
+      "origen": "CUDA",
+      "epoca": 10,
+      "val_accuracy_pct": 94.90421414375305,
+      "val_loss": 0.19163855910301208
+    },
+    {
+      "modelo": "CNN-B",
+      "origen": "CUDA",
+      "epoca": 11,
+      "val_accuracy_pct": 91.99233651161194,
+      "val_loss": 0.26367589831352234
+    },
+    {
+      "modelo": "CNN-B",
+      "origen": "CUDA",
+      "epoca": 12,
+      "val_accuracy_pct": 91.9157087802887,
+      "val_loss": 0.24109329283237457
+    },
+    {
+      "modelo": "CNN-B",
+      "origen": "CUDA",
+      "epoca": 13,
+      "val_accuracy_pct": 97.62452244758606,
+      "val_loss": 0.09185357391834259
+    },
+    {
+      "modelo": "CNN-B",
+      "origen": "CUDA",
+      "epoca": 14,
+      "val_accuracy_pct": 96.20689749717712,
+      "val_loss": 0.13204194605350494
+    },
+    {
+      "modelo": "CNN-B",
+      "origen": "CUDA",
+      "epoca": 15,
+      "val_accuracy_pct": 98.58237504959106,
+      "val_loss": 0.04838373884558678
+    },
+    {
+      "modelo": "FC-A",
+      "origen": "CPU",
+      "epoca": 1,
+      "val_accuracy_pct": 7.586207240819931,
+      "val_loss": 3.2913665771484375
+    },
+    {
+      "modelo": "FC-A",
+      "origen": "CPU",
+      "epoca": 2,
+      "val_accuracy_pct": 15.402299165725708,
+      "val_loss": 3.0917515754699707
+    },
+    {
+      "modelo": "FC-A",
+      "origen": "CPU",
+      "epoca": 3,
+      "val_accuracy_pct": 21.149425208568573,
+      "val_loss": 2.8379244804382324
+    },
+    {
+      "modelo": "FC-A",
+      "origen": "CPU",
+      "epoca": 4,
+      "val_accuracy_pct": 25.40229856967926,
+      "val_loss": 2.584153652191162
+    },
+    {
+      "modelo": "FC-A",
+      "origen": "CPU",
+      "epoca": 5,
+      "val_accuracy_pct": 28.16092073917389,
+      "val_loss": 2.4021661281585693
+    },
+    {
+      "modelo": "FC-A",
+      "origen": "CPU",
+      "epoca": 6,
+      "val_accuracy_pct": 31.915709376335144,
+      "val_loss": 2.278627872467041
+    },
+    {
+      "modelo": "FC-A",
+      "origen": "CPU",
+      "epoca": 7,
+      "val_accuracy_pct": 33.40996205806732,
+      "val_loss": 2.1646840572357178
+    },
+    {
+      "modelo": "FC-A",
+      "origen": "CPU",
+      "epoca": 8,
+      "val_accuracy_pct": 37.43295073509216,
+      "val_loss": 2.0454258918762207
+    },
+    {
+      "modelo": "FC-A",
+      "origen": "CPU",
+      "epoca": 9,
+      "val_accuracy_pct": 38.16092014312744,
+      "val_loss": 1.965322732925415
+    },
+    {
+      "modelo": "FC-A",
+      "origen": "CPU",
+      "epoca": 10,
+      "val_accuracy_pct": 43.56321692466736,
+      "val_loss": 1.8268053531646729
+    },
+    {
+      "modelo": "FC-A",
+      "origen": "CPU",
+      "epoca": 11,
+      "val_accuracy_pct": 45.095786452293396,
+      "val_loss": 1.7391629219055176
+    },
+    {
+      "modelo": "FC-A",
+      "origen": "CPU",
+      "epoca": 12,
+      "val_accuracy_pct": 47.16475009918213,
+      "val_loss": 1.6864820718765259
+    },
+    {
+      "modelo": "FC-A",
+      "origen": "CPU",
+      "epoca": 13,
+      "val_accuracy_pct": 48.50574731826782,
+      "val_loss": 1.6325489282608032
+    },
+    {
+      "modelo": "FC-A",
+      "origen": "CPU",
+      "epoca": 14,
+      "val_accuracy_pct": 50.613027811050415,
+      "val_loss": 1.587450385093689
+    },
+    {
+      "modelo": "FC-A",
+      "origen": "CPU",
+      "epoca": 15,
+      "val_accuracy_pct": 52.91187763214111,
+      "val_loss": 1.5362921953201294
+    },
+    {
+      "modelo": "FC-A",
+      "origen": "CUDA",
+      "epoca": 1,
+      "val_accuracy_pct": 7.586207240819931,
+      "val_loss": 3.2670347690582275
+    },
+    {
+      "modelo": "FC-A",
+      "origen": "CUDA",
+      "epoca": 2,
+      "val_accuracy_pct": 18.160919845104218,
+      "val_loss": 3.051234483718872
+    },
+    {
+      "modelo": "FC-A",
+      "origen": "CUDA",
+      "epoca": 3,
+      "val_accuracy_pct": 22.720307111740112,
+      "val_loss": 2.749790668487549
+    },
+    {
+      "modelo": "FC-A",
+      "origen": "CUDA",
+      "epoca": 4,
+      "val_accuracy_pct": 24.59770143032074,
+      "val_loss": 2.5271878242492676
+    },
+    {
+      "modelo": "FC-A",
+      "origen": "CUDA",
+      "epoca": 5,
+      "val_accuracy_pct": 28.812259435653687,
+      "val_loss": 2.3656442165374756
+    },
+    {
+      "modelo": "FC-A",
+      "origen": "CUDA",
+      "epoca": 6,
+      "val_accuracy_pct": 30.459770560264587,
+      "val_loss": 2.312250852584839
+    },
+    {
+      "modelo": "FC-A",
+      "origen": "CUDA",
+      "epoca": 7,
+      "val_accuracy_pct": 35.86207032203674,
+      "val_loss": 2.1610734462738037
+    },
+    {
+      "modelo": "FC-A",
+      "origen": "CUDA",
+      "epoca": 8,
+      "val_accuracy_pct": 40.613025426864624,
+      "val_loss": 2.0055863857269287
+    },
+    {
+      "modelo": "FC-A",
+      "origen": "CUDA",
+      "epoca": 9,
+      "val_accuracy_pct": 40.689656138420105,
+      "val_loss": 1.926896572113037
+    },
+    {
+      "modelo": "FC-A",
+      "origen": "CUDA",
+      "epoca": 10,
+      "val_accuracy_pct": 43.065133690834045,
+      "val_loss": 1.895586609840393
+    },
+    {
+      "modelo": "FC-A",
+      "origen": "CUDA",
+      "epoca": 11,
+      "val_accuracy_pct": 47.24137783050537,
+      "val_loss": 1.7522492408752441
+    },
+    {
+      "modelo": "FC-A",
+      "origen": "CUDA",
+      "epoca": 12,
+      "val_accuracy_pct": 46.74329459667206,
+      "val_loss": 1.7136602401733398
+    },
+    {
+      "modelo": "FC-A",
+      "origen": "CUDA",
+      "epoca": 13,
+      "val_accuracy_pct": 49.27203059196472,
+      "val_loss": 1.6550549268722534
+    },
+    {
+      "modelo": "FC-A",
+      "origen": "CUDA",
+      "epoca": 14,
+      "val_accuracy_pct": 48.160919547080994,
+      "val_loss": 1.6590479612350464
+    },
+    {
+      "modelo": "FC-A",
+      "origen": "CUDA",
+      "epoca": 15,
+      "val_accuracy_pct": 49.27203059196472,
+      "val_loss": 1.6039336919784546
+    },
+    {
+      "modelo": "FC-B",
+      "origen": "CPU",
+      "epoca": 1,
+      "val_accuracy_pct": 5.363984778523445,
+      "val_loss": 3.348174810409546
+    },
+    {
+      "modelo": "FC-B",
+      "origen": "CPU",
+      "epoca": 2,
+      "val_accuracy_pct": 11.762452125549316,
+      "val_loss": 3.2416882514953613
+    },
+    {
+      "modelo": "FC-B",
+      "origen": "CPU",
+      "epoca": 3,
+      "val_accuracy_pct": 15.632183849811554,
+      "val_loss": 3.0324954986572266
+    },
+    {
+      "modelo": "FC-B",
+      "origen": "CPU",
+      "epoca": 4,
+      "val_accuracy_pct": 19.655172526836395,
+      "val_loss": 2.8383285999298096
+    },
+    {
+      "modelo": "FC-B",
+      "origen": "CPU",
+      "epoca": 5,
+      "val_accuracy_pct": 20.842911303043365,
+      "val_loss": 2.6961073875427246
+    },
+    {
+      "modelo": "FC-B",
+      "origen": "CPU",
+      "epoca": 6,
+      "val_accuracy_pct": 25.01915693283081,
+      "val_loss": 2.552922487258911
+    },
+    {
+      "modelo": "FC-B",
+      "origen": "CPU",
+      "epoca": 7,
+      "val_accuracy_pct": 28.429117798805237,
+      "val_loss": 2.4089784622192383
+    },
+    {
+      "modelo": "FC-B",
+      "origen": "CPU",
+      "epoca": 8,
+      "val_accuracy_pct": 30.53639829158783,
+      "val_loss": 2.278836250305176
+    },
+    {
+      "modelo": "FC-B",
+      "origen": "CPU",
+      "epoca": 9,
+      "val_accuracy_pct": 32.06896483898163,
+      "val_loss": 2.161579132080078
+    },
+    {
+      "modelo": "FC-B",
+      "origen": "CPU",
+      "epoca": 10,
+      "val_accuracy_pct": 36.47509515285492,
+      "val_loss": 2.0997698307037354
+    },
+    {
+      "modelo": "FC-B",
+      "origen": "CPU",
+      "epoca": 11,
+      "val_accuracy_pct": 36.62835359573364,
+      "val_loss": 2.0545992851257324
+    },
+    {
+      "modelo": "FC-B",
+      "origen": "CPU",
+      "epoca": 12,
+      "val_accuracy_pct": 39.34865891933441,
+      "val_loss": 1.925100326538086
+    },
+    {
+      "modelo": "FC-B",
+      "origen": "CPU",
+      "epoca": 13,
+      "val_accuracy_pct": 39.118772745132446,
+      "val_loss": 1.8425259590148926
+    },
+    {
+      "modelo": "FC-B",
+      "origen": "CPU",
+      "epoca": 14,
+      "val_accuracy_pct": 41.494253277778625,
+      "val_loss": 1.795507788658142
+    },
+    {
+      "modelo": "FC-B",
+      "origen": "CPU",
+      "epoca": 15,
+      "val_accuracy_pct": 44.214558601379395,
+      "val_loss": 1.7575657367706299
+    },
+    {
+      "modelo": "FC-B",
+      "origen": "CUDA",
+      "epoca": 1,
+      "val_accuracy_pct": 4.75095771253109,
+      "val_loss": 3.3247272968292236
+    },
+    {
+      "modelo": "FC-B",
+      "origen": "CUDA",
+      "epoca": 2,
+      "val_accuracy_pct": 8.160919696092606,
+      "val_loss": 3.245692253112793
+    },
+    {
+      "modelo": "FC-B",
+      "origen": "CUDA",
+      "epoca": 3,
+      "val_accuracy_pct": 13.946360349655151,
+      "val_loss": 3.0364584922790527
+    },
+    {
+      "modelo": "FC-B",
+      "origen": "CUDA",
+      "epoca": 4,
+      "val_accuracy_pct": 17.624521255493164,
+      "val_loss": 2.8100357055664062
+    },
+    {
+      "modelo": "FC-B",
+      "origen": "CUDA",
+      "epoca": 5,
+      "val_accuracy_pct": 23.0268195271492,
+      "val_loss": 2.60569429397583
+    },
+    {
+      "modelo": "FC-B",
+      "origen": "CUDA",
+      "epoca": 6,
+      "val_accuracy_pct": 22.835248708724976,
+      "val_loss": 2.513597011566162
+    },
+    {
+      "modelo": "FC-B",
+      "origen": "CUDA",
+      "epoca": 7,
+      "val_accuracy_pct": 27.471265196800232,
+      "val_loss": 2.3594553470611572
+    },
+    {
+      "modelo": "FC-B",
+      "origen": "CUDA",
+      "epoca": 8,
+      "val_accuracy_pct": 28.697317838668823,
+      "val_loss": 2.2711737155914307
+    },
+    {
+      "modelo": "FC-B",
+      "origen": "CUDA",
+      "epoca": 9,
+      "val_accuracy_pct": 31.30268156528473,
+      "val_loss": 2.193864583969116
+    },
+    {
+      "modelo": "FC-B",
+      "origen": "CUDA",
+      "epoca": 10,
+      "val_accuracy_pct": 35.63218414783478,
+      "val_loss": 2.0784318447113037
+    },
+    {
+      "modelo": "FC-B",
+      "origen": "CUDA",
+      "epoca": 11,
+      "val_accuracy_pct": 35.59387028217316,
+      "val_loss": 2.0321121215820312
+    },
+    {
+      "modelo": "FC-B",
+      "origen": "CUDA",
+      "epoca": 12,
+      "val_accuracy_pct": 38.35248947143555,
+      "val_loss": 1.9162896871566772
+    },
+    {
+      "modelo": "FC-B",
+      "origen": "CUDA",
+      "epoca": 13,
+      "val_accuracy_pct": 40.229883790016174,
+      "val_loss": 1.859998345375061
+    },
+    {
+      "modelo": "FC-B",
+      "origen": "CUDA",
+      "epoca": 14,
+      "val_accuracy_pct": 38.735631108284,
+      "val_loss": 1.8032516241073608
+    },
+    {
+      "modelo": "FC-B",
+      "origen": "CUDA",
+      "epoca": 15,
+      "val_accuracy_pct": 40.07662832736969,
+      "val_loss": 1.7751481533050537
+    }
+  ],
+  "resources": [
+    {
+      "modelo": "FC-A",
+      "repeticion": "1",
+      "muestras_training": "15",
+      "gpu_media_pct": "31.466666666666665",
+      "gpu_max_pct": "50.0",
+      "vram_max_mib": "111.0",
+      "cpu_media_pct": "121.71952728074956"
+    },
+    {
+      "modelo": "FC-A",
+      "repeticion": "2",
+      "muestras_training": "15",
+      "gpu_media_pct": "30.933333333333334",
+      "gpu_max_pct": "33.0",
+      "vram_max_mib": "111.0",
+      "cpu_media_pct": "120.47721643285958"
+    },
+    {
+      "modelo": "FC-A",
+      "repeticion": "3",
+      "muestras_training": "15",
+      "gpu_media_pct": "30.266666666666666",
+      "gpu_max_pct": "33.0",
+      "vram_max_mib": "111.0",
+      "cpu_media_pct": "123.1028169572067"
+    },
+    {
+      "modelo": "FC-A",
+      "repeticion": "4",
+      "muestras_training": "15",
+      "gpu_media_pct": "32.13333333333333",
+      "gpu_max_pct": "33.0",
+      "vram_max_mib": "111.0",
+      "cpu_media_pct": "122.82121759470134"
+    },
+    {
+      "modelo": "FC-A",
+      "repeticion": "5",
+      "muestras_training": "15",
+      "gpu_media_pct": "31.733333333333334",
+      "gpu_max_pct": "34.0",
+      "vram_max_mib": "111.0",
+      "cpu_media_pct": "123.8366614820971"
+    },
+    {
+      "modelo": "FC-B",
+      "repeticion": "1",
+      "muestras_training": "17",
+      "gpu_media_pct": "37.94117647058823",
+      "gpu_max_pct": "56.0",
+      "vram_max_mib": "187.0",
+      "cpu_media_pct": "147.5028297575025"
+    },
+    {
+      "modelo": "FC-B",
+      "repeticion": "2",
+      "muestras_training": "16",
+      "gpu_media_pct": "40.8125",
+      "gpu_max_pct": "55.0",
+      "vram_max_mib": "187.0",
+      "cpu_media_pct": "157.62095907165988"
+    },
+    {
+      "modelo": "FC-B",
+      "repeticion": "3",
+      "muestras_training": "16",
+      "gpu_media_pct": "38.625",
+      "gpu_max_pct": "52.0",
+      "vram_max_mib": "187.0",
+      "cpu_media_pct": "146.2237111178607"
+    },
+    {
+      "modelo": "FC-B",
+      "repeticion": "4",
+      "muestras_training": "15",
+      "gpu_media_pct": "43.266666666666666",
+      "gpu_max_pct": "55.0",
+      "vram_max_mib": "187.0",
+      "cpu_media_pct": "142.61653035599463"
+    },
+    {
+      "modelo": "FC-B",
+      "repeticion": "5",
+      "muestras_training": "15",
+      "gpu_media_pct": "43.13333333333333",
+      "gpu_max_pct": "53.0",
+      "vram_max_mib": "187.0",
+      "cpu_media_pct": "154.10916112010457"
+    }
+  ],
+  "cnnresources": [
+    {
+      "run_id": "RUN-20261117T231628Z-gpu-01",
+      "muestras_entrenamiento": "373",
+      "gpu_util_media_pct": "87.28686327077747",
+      "gpu_util_max_pct": "91.0",
+      "vram_max_mib": "1213.0",
+      "temperatura_max_c": "69.0"
+    },
+    {
+      "run_id": "RUN-20261117T232412Z-gpu-02",
+      "muestras_entrenamiento": "376",
+      "gpu_util_media_pct": "87.68882978723404",
+      "gpu_util_max_pct": "93.0",
+      "vram_max_mib": "1213.0",
+      "temperatura_max_c": "69.0"
+    },
+    {
+      "run_id": "RUN-20261117T233146Z-gpu-03",
+      "muestras_entrenamiento": "377",
+      "gpu_util_media_pct": "85.9761273209549",
+      "gpu_util_max_pct": "92.0",
+      "vram_max_mib": "1213.0",
+      "temperatura_max_c": "70.0"
+    },
+    {
+      "run_id": "RUN-20261117T233923Z-gpu-04",
+      "muestras_entrenamiento": "377",
+      "gpu_util_media_pct": "87.96021220159152",
+      "gpu_util_max_pct": "92.0",
+      "vram_max_mib": "1213.0",
+      "temperatura_max_c": "70.0"
+    },
+    {
+      "run_id": "RUN-20261117T234658Z-gpu-05",
+      "muestras_entrenamiento": "376",
+      "gpu_util_media_pct": "86.83510638297872",
+      "gpu_util_max_pct": "94.0",
+      "vram_max_mib": "1213.0",
+      "temperatura_max_c": "69.0"
+    }
+  ],
+  "images": {
+    "cpu": {
+      "path": "entregables/presentacion/recursos/captura-cpu.png",
+      "w": 900,
+      "h": 650,
+      "sha256": "53216db6006075c83a8a83041fb036a1773a9a359fc21e7e9af1daeb4e5a2536"
+    },
+    "cnn": {
+      "path": "entregables/presentacion/recursos/captura-cnn.png",
+      "w": 900,
+      "h": 650,
+      "sha256": "cc9433b5523356312ae674fb338415f7c2704c38744444efbc1377f024ce76cc"
+    },
+    "prep": {
+      "path": "entregables/presentacion/recursos/captura-prep.png",
+      "w": 900,
+      "h": 650,
+      "sha256": "7fddb48c9d5272d13785085fc9e9dc8f3181af1e0e7e03500d1d31b99a8aa07c"
+    },
+    "fcA": {
+      "path": "entregables/presentacion/recursos/captura-fcA.png",
+      "w": 900,
+      "h": 650,
+      "sha256": "e2c1549d0caf396785d6ba40ea717acf68500aa41eeea2c3a2968dd1655dda38"
+    },
+    "fcB": {
+      "path": "entregables/presentacion/recursos/captura-fcB.png",
+      "w": 900,
+      "h": 650,
+      "sha256": "28276f66ae9fda5c4e6e5471a8031f7fcf40645bc4835586c0a05a231ed81add"
+    },
+    "A": {
+      "path": "entregables/presentacion/recursos/ASL-A.jpg",
+      "w": 200,
+      "h": 200,
+      "sha256": "eb93a0bd3132c23f87cfee27755e2d181b9cf348106d57c383492df0de87d496",
+      "original": {
+        "dataset_id": "DAT-03-EXP-002",
+        "ruta_relativa": "asl_alphabet_train/asl_alphabet_train/A/A1139.jpg",
+        "sha256": "eb93a0bd3132c23f87cfee27755e2d181b9cf348106d57c383492df0de87d496",
+        "clase": "A",
+        "label_idx": "0",
+        "split": "train",
+        "orden": "22"
+      }
+    },
+    "B": {
+      "path": "entregables/presentacion/recursos/ASL-B.jpg",
+      "w": 200,
+      "h": 200,
+      "sha256": "cd799e998b9f82b3e7a2a30525797ba92c5c78dfb4404632a7ba67338b5a4098",
+      "original": {
+        "dataset_id": "DAT-03-EXP-002",
+        "ruta_relativa": "asl_alphabet_train/asl_alphabet_train/B/B783.jpg",
+        "sha256": "cd799e998b9f82b3e7a2a30525797ba92c5c78dfb4404632a7ba67338b5a4098",
+        "clase": "B",
+        "label_idx": "1",
+        "split": "train",
+        "orden": "48"
+      }
+    },
+    "C": {
+      "path": "entregables/presentacion/recursos/ASL-C.jpg",
+      "w": 200,
+      "h": 200,
+      "sha256": "a1bd35684447dd71a51c51b52cc0e26c22b4d6689594118b9b1d587f0cd90cf1",
+      "original": {
+        "dataset_id": "DAT-03-EXP-002",
+        "ruta_relativa": "asl_alphabet_train/asl_alphabet_train/C/C225.jpg",
+        "sha256": "a1bd35684447dd71a51c51b52cc0e26c22b4d6689594118b9b1d587f0cd90cf1",
+        "clase": "C",
+        "label_idx": "2",
+        "split": "train",
+        "orden": "16"
+      }
+    },
+    "M": {
+      "path": "entregables/presentacion/recursos/ASL-M.jpg",
+      "w": 200,
+      "h": 200,
+      "sha256": "0beb61f903deb6f87598754d9573d698382a5723e784db59fdaa6f98ee27ab2f",
+      "original": {
+        "dataset_id": "DAT-03-EXP-002",
+        "ruta_relativa": "asl_alphabet_train/asl_alphabet_train/M/M1490.jpg",
+        "sha256": "0beb61f903deb6f87598754d9573d698382a5723e784db59fdaa6f98ee27ab2f",
+        "clase": "M",
+        "label_idx": "12",
+        "split": "train",
+        "orden": "100"
+      }
+    },
+    "N": {
+      "path": "entregables/presentacion/recursos/ASL-N.jpg",
+      "w": 200,
+      "h": 200,
+      "sha256": "c20fb09415208866ff526ec98a0b70463fb8da4811a2ca313403c41ca63ea90b",
+      "original": {
+        "dataset_id": "DAT-03-EXP-002",
+        "ruta_relativa": "asl_alphabet_train/asl_alphabet_train/N/N2558.jpg",
+        "sha256": "c20fb09415208866ff526ec98a0b70463fb8da4811a2ca313403c41ca63ea90b",
+        "clase": "N",
+        "label_idx": "13",
+        "split": "train",
+        "orden": "40"
+      }
+    },
+    "S": {
+      "path": "entregables/presentacion/recursos/ASL-S.jpg",
+      "w": 200,
+      "h": 200,
+      "sha256": "42ad877833952d57fcfcdb0d83c028ce324720aad26c436e80235ac2d324b0a7",
+      "original": {
+        "dataset_id": "DAT-03-EXP-002",
+        "ruta_relativa": "asl_alphabet_train/asl_alphabet_train/S/S527.jpg",
+        "sha256": "42ad877833952d57fcfcdb0d83c028ce324720aad26c436e80235ac2d324b0a7",
+        "clase": "S",
+        "label_idx": "18",
+        "split": "train",
+        "orden": "25"
+      }
+    }
+  },
+  "capturemeta": {
+    "cpu": {
+      "tipo": "captura_original_monitor_en_vivo",
+      "captura_utc": "2026-11-18T04:17:00.614874+00:00",
+      "run_id": "RUN-20261118T041129Z-cpu-notebook-01",
+      "muestra_original": {
+        "utc": "2026-11-18T04:16:59.443605+00:00",
+        "transcurrido_s": "321.91136699996423",
+        "fase": "entrenamiento",
+        "modelo": "CNN-B",
+        "epoca": "3",
+        "cpu_procesos_pct": "507.27870165054566",
+        "rss_bytes": "3946213376",
+        "gpu_util_pct": "0.0",
+        "gpu_mem_util_pct": "0.0",
+        "gpu_mem_used_mib": "0.0",
+        "gpu_temperatura_c": "54.0",
+        "cpu_logico_00_pct": "91.9",
+        "cpu_logico_01_pct": "90.5",
+        "cpu_logico_02_pct": "93.8",
+        "cpu_logico_03_pct": "95.2",
+        "cpu_logico_04_pct": "88.7",
+        "cpu_logico_05_pct": "91.0",
+        "cpu_logico_06_pct": "95.3",
+        "cpu_logico_07_pct": "93.8",
+        "cpu_logico_08_pct": "95.3",
+        "cpu_logico_09_pct": "84.4",
+        "cpu_logico_10_pct": "84.4",
+        "cpu_logico_11_pct": "84.1"
+      },
+      "sha256": "53216db6006075c83a8a83041fb036a1773a9a359fc21e7e9af1daeb4e5a2536",
+      "capturador_sha256": "f9a9c8a78d1677f9d15cfa43355c1030aa94839a97d1c3ac7275041275d38c98"
+    },
+    "cnn": {
+      "tipo": "captura_original_monitor_en_vivo",
+      "captura_utc": "2026-11-18T04:47:18.130626+00:00",
+      "run_id": "RUN-20261118T041129Z-cuda-notebook-01",
+      "muestra_original": {
+        "utc": "2026-11-18T04:47:16.971783+00:00",
+        "transcurrido_s": "74.718877300038",
+        "fase": "entrenamiento_CNN-B",
+        "modelo": "",
+        "epoca": "2",
+        "cpu_procesos_pct": "98.91316195116735",
+        "rss_bytes": "2140184576",
+        "gpu_util_pct": "91.0",
+        "gpu_mem_util_pct": "28.0",
+        "gpu_mem_used_mib": "1213.0",
+        "gpu_temperatura_c": "65.0",
+        "cpu_logico_00_pct": "22.9",
+        "cpu_logico_01_pct": "0.0",
+        "cpu_logico_02_pct": "36.5",
+        "cpu_logico_03_pct": "1.6",
+        "cpu_logico_04_pct": "3.2",
+        "cpu_logico_05_pct": "0.0",
+        "cpu_logico_06_pct": "12.7",
+        "cpu_logico_07_pct": "4.7",
+        "cpu_logico_08_pct": "7.9",
+        "cpu_logico_09_pct": "4.6",
+        "cpu_logico_10_pct": "64.1",
+        "cpu_logico_11_pct": "6.3"
+      },
+      "sha256": "cc9433b5523356312ae674fb338415f7c2704c38744444efbc1377f024ce76cc",
+      "capturador_sha256": "f9a9c8a78d1677f9d15cfa43355c1030aa94839a97d1c3ac7275041275d38c98"
+    },
+    "prep": {
+      "tipo": "captura_pantalla_monitor_real",
+      "captura_utc": "2026-11-17T23:39:47.719327+00:00",
+      "run_id": "RUN-20261117T233923Z-gpu-04",
+      "recursos_csv": "resultados/paralelo/EXP-003/RUN-20261117T233923Z-gpu-04/recursos.csv",
+      "muestra_original": {
+        "utc": "2026-11-17T23:39:47.599926+00:00",
+        "fase": "preparacion_cpu",
+        "epoca": "",
+        "cpu_procesos_pct": "225.20394716544936",
+        "rss_bytes": "1164890112",
+        "cpu_sistema_pct": "23.674999999999997",
+        "ram_disponible_bytes": "5125967872",
+        "gpu_util_pct": "1.0",
+        "gpu_mem_util_pct": "0.0",
+        "gpu_mem_used_mib": "1213.0",
+        "gpu_temperatura_c": "58.0",
+        "gpu_power_w": "20.41",
+        "gpu_sm_mhz": "1785.0",
+        "cpu_logico_00_pct": "39.4",
+        "cpu_logico_01_pct": "6.2",
+        "cpu_logico_02_pct": "64.6",
+        "cpu_logico_03_pct": "6.2",
+        "cpu_logico_04_pct": "35.4",
+        "cpu_logico_05_pct": "12.3",
+        "cpu_logico_06_pct": "27.7",
+        "cpu_logico_07_pct": "9.2",
+        "cpu_logico_08_pct": "12.3",
+        "cpu_logico_09_pct": "36.9",
+        "cpu_logico_10_pct": "7.7",
+        "cpu_logico_11_pct": "26.2"
+      },
+      "screenshot_sha256": "7fddb48c9d5272d13785085fc9e9dc8f3181af1e0e7e03500d1d31b99a8aa07c",
+      "nota": "Ventana real que muestra la ultima muestra CPU/GPU; solo se captura su area"
+    },
+    "fcA": {
+      "tipo": "captura_original_monitor_en_vivo",
+      "captura_utc": "2026-11-18T13:43:59.413754+00:00",
+      "run_id": "RUN-20261118T134323Z-fc-a-01",
+      "muestra_original": {
+        "utc": "2026-11-18T13:43:58.471670+00:00",
+        "transcurrido_s": "18.318336199969053",
+        "fase": "entrenamiento_FC-A",
+        "modelo": "FC-A",
+        "epoca": "2",
+        "cpu_procesos_pct": "112.38345835593395",
+        "rss_bytes": "1991553024",
+        "gpu_util_pct": "50.0",
+        "gpu_mem_util_pct": "13.0",
+        "gpu_mem_used_mib": "111.0",
+        "gpu_temperatura_c": "49.0",
+        "cpu_logico_00_pct": "27.5",
+        "cpu_logico_01_pct": "15.6",
+        "cpu_logico_02_pct": "6.2",
+        "cpu_logico_03_pct": "32.3",
+        "cpu_logico_04_pct": "6.2",
+        "cpu_logico_05_pct": "7.8",
+        "cpu_logico_06_pct": "7.8",
+        "cpu_logico_07_pct": "3.1",
+        "cpu_logico_08_pct": "15.4",
+        "cpu_logico_09_pct": "3.1",
+        "cpu_logico_10_pct": "37.9",
+        "cpu_logico_11_pct": "21.9"
+      },
+      "sha256": "e2c1549d0caf396785d6ba40ea717acf68500aa41eeea2c3a2968dd1655dda38",
+      "capturador_sha256": "b076c03ed68e6d31ac12c26a85c1cd610bdf1422279d78a36bc9e6b09264ceae"
+    },
+    "fcB": {
+      "tipo": "captura_original_monitor_en_vivo",
+      "captura_utc": "2026-11-18T13:47:44.917977+00:00",
+      "run_id": "RUN-20261118T134514Z-fc-b-01",
+      "muestra_original": {
+        "utc": "2026-11-18T13:47:43.792611+00:00",
+        "transcurrido_s": "14.142536200000905",
+        "fase": "entrenamiento_FC-B",
+        "modelo": "FC-B",
+        "epoca": "2",
+        "cpu_procesos_pct": "185.17644303399393",
+        "rss_bytes": "2120122368",
+        "gpu_util_pct": "32.0",
+        "gpu_mem_util_pct": "14.0",
+        "gpu_mem_used_mib": "187.0",
+        "gpu_temperatura_c": "59.0",
+        "cpu_logico_00_pct": "37.0",
+        "cpu_logico_01_pct": "13.0",
+        "cpu_logico_02_pct": "44.8",
+        "cpu_logico_03_pct": "31.8",
+        "cpu_logico_04_pct": "18.2",
+        "cpu_logico_05_pct": "22.7",
+        "cpu_logico_06_pct": "19.4",
+        "cpu_logico_07_pct": "24.2",
+        "cpu_logico_08_pct": "21.2",
+        "cpu_logico_09_pct": "16.9",
+        "cpu_logico_10_pct": "13.6",
+        "cpu_logico_11_pct": "9.1"
+      },
+      "sha256": "28276f66ae9fda5c4e6e5471a8031f7fcf40645bc4835586c0a05a231ed81add",
+      "capturador_sha256": "b076c03ed68e6d31ac12c26a85c1cd610bdf1422279d78a36bc9e6b09264ceae"
+    }
+  }
+}

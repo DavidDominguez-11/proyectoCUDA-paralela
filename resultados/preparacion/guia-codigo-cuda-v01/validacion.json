@@ -1,0 +1,13 @@
+{
+  "estado": "aprobado",
+  "fecha_utc": "2026-11-18T23:01:24.118252+00:00",
+  "guia_sha256": "40aecbf306116578674cfe42df1d63991a42bd47a0dfc3c44bfdc49648423392",
+  "enlaces_locales": 104,
+  "anclas_linea": 82,
+  "bloques_python_sintaxis_valida": 5,
+  "ubicaciones_notebook_verificadas": 45,
+  "fuentes_sha256_sin_cambios": true,
+  "presentaciones_informes_notebooks_inalterados": true,
+  "entrenamientos_ejecutados": 0,
+  "limite": "Inspección estática y contraste de documentación API;no certifica una nueva ejecución GPU."
+}

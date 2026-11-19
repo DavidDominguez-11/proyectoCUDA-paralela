@@ -1,0 +1,386 @@
+[
+  {
+    "archivo": "src/asl_cuda/blas.py",
+    "simbolo": "Blas",
+    "inicio": 11,
+    "fin": 58
+  },
+  {
+    "archivo": "src/asl_cuda/blas.py",
+    "simbolo": "Blas.__init__",
+    "inicio": 12,
+    "fin": 33
+  },
+  {
+    "archivo": "src/asl_cuda/blas.py",
+    "simbolo": "Blas._signature",
+    "inicio": 35,
+    "fin": 37
+  },
+  {
+    "archivo": "src/asl_cuda/blas.py",
+    "simbolo": "Blas._call",
+    "inicio": 39,
+    "fin": 42
+  },
+  {
+    "archivo": "src/asl_cuda/blas.py",
+    "simbolo": "Blas.ptr",
+    "inicio": 45,
+    "fin": 46
+  },
+  {
+    "archivo": "src/asl_cuda/blas.py",
+    "simbolo": "Blas.gemm",
+    "inicio": 48,
+    "fin": 53
+  },
+  {
+    "archivo": "src/asl_cuda/blas.py",
+    "simbolo": "Blas.close",
+    "inicio": 55,
+    "fin": 58
+  },
+  {
+    "archivo": "src/asl_cuda/fc.py",
+    "simbolo": "finish_fc",
+    "inicio": 21,
+    "fin": 38
+  },
+  {
+    "archivo": "src/asl_cuda/fc.py",
+    "simbolo": "fc_reference",
+    "inicio": 41,
+    "fin": 73
+  },
+  {
+    "archivo": "src/asl_cuda/fc.py",
+    "simbolo": "FCNetwork",
+    "inicio": 76,
+    "fin": 186
+  },
+  {
+    "archivo": "src/asl_cuda/fc.py",
+    "simbolo": "FCNetwork.__init__",
+    "inicio": 77,
+    "fin": 157
+  },
+  {
+    "archivo": "src/asl_cuda/fc.py",
+    "simbolo": "FCNetwork.upload",
+    "inicio": 160,
+    "fin": 176
+  },
+  {
+    "archivo": "src/asl_cuda/fc.py",
+    "simbolo": "FCNetwork.reduce",
+    "inicio": 178,
+    "fin": 186
+  },
+  {
+    "archivo": "src/asl_cuda/kernels.py",
+    "simbolo": "_left",
+    "inicio": 12,
+    "fin": 38
+  },
+  {
+    "archivo": "src/asl_cuda/kernels.py",
+    "simbolo": "_right",
+    "inicio": 42,
+    "fin": 49
+  },
+  {
+    "archivo": "src/asl_cuda/kernels.py",
+    "simbolo": "_make_gemm",
+    "inicio": 52,
+    "fin": 84
+  },
+  {
+    "archivo": "src/asl_cuda/kernels.py",
+    "simbolo": "merge_partials",
+    "inicio": 91,
+    "fin": 96
+  },
+  {
+    "archivo": "src/asl_cuda/kernels.py",
+    "simbolo": "copy_flat",
+    "inicio": 100,
+    "fin": 102
+  },
+  {
+    "archivo": "src/asl_cuda/kernels.py",
+    "simbolo": "relu_backward",
+    "inicio": 106,
+    "fin": 109
+  },
+  {
+    "archivo": "src/asl_cuda/kernels.py",
+    "simbolo": "dropout",
+    "inicio": 113,
+    "fin": 115
+  },
+  {
+    "archivo": "src/asl_cuda/kernels.py",
+    "simbolo": "pool_forward",
+    "inicio": 119,
+    "fin": 132
+  },
+  {
+    "archivo": "src/asl_cuda/kernels.py",
+    "simbolo": "pool_backward",
+    "inicio": 136,
+    "fin": 143
+  },
+  {
+    "archivo": "src/asl_cuda/kernels.py",
+    "simbolo": "reduce_channels",
+    "inicio": 147,
+    "fin": 179
+  },
+  {
+    "archivo": "src/asl_cuda/kernels.py",
+    "simbolo": "finish_channels",
+    "inicio": 183,
+    "fin": 210
+  },
+  {
+    "archivo": "src/asl_cuda/kernels.py",
+    "simbolo": "bn_forward",
+    "inicio": 214,
+    "fin": 217
+  },
+  {
+    "archivo": "src/asl_cuda/kernels.py",
+    "simbolo": "bn_backward",
+    "inicio": 221,
+    "fin": 226
+  },
+  {
+    "archivo": "src/asl_cuda/kernels.py",
+    "simbolo": "softmax_loss",
+    "inicio": 230,
+    "fin": 269
+  },
+  {
+    "archivo": "src/asl_cuda/kernels.py",
+    "simbolo": "adam",
+    "inicio": 273,
+    "fin": 284
+  },
+  {
+    "archivo": "src/asl_cuda/kernels.py",
+    "simbolo": "finite_check",
+    "inicio": 288,
+    "fin": 291
+  },
+  {
+    "archivo": "src/asl_cuda/kernels.py",
+    "simbolo": "metrics",
+    "inicio": 295,
+    "fin": 313
+  },
+  {
+    "archivo": "src/asl_cuda/kernels.py",
+    "simbolo": "advance_step",
+    "inicio": 317,
+    "fin": 319
+  },
+  {
+    "archivo": "src/asl_cuda/kernels.py",
+    "simbolo": "im2col",
+    "inicio": 323,
+    "fin": 333
+  },
+  {
+    "archivo": "src/asl_cuda/kernels.py",
+    "simbolo": "col2im_gather",
+    "inicio": 337,
+    "fin": 349
+  },
+  {
+    "archivo": "src/asl_cuda/kernels.py",
+    "simbolo": "bias_activation",
+    "inicio": 353,
+    "fin": 358
+  },
+  {
+    "archivo": "src/asl_cuda/model.py",
+    "simbolo": "cpu_reference",
+    "inicio": 20,
+    "fin": 57
+  },
+  {
+    "archivo": "src/asl_cuda/model.py",
+    "simbolo": "grid",
+    "inicio": 60,
+    "fin": 61
+  },
+  {
+    "archivo": "src/asl_cuda/model.py",
+    "simbolo": "compiled_resources",
+    "inicio": 64,
+    "fin": 74
+  },
+  {
+    "archivo": "src/asl_cuda/model.py",
+    "simbolo": "Network",
+    "inicio": 77,
+    "fin": 377
+  },
+  {
+    "archivo": "src/asl_cuda/model.py",
+    "simbolo": "Network.__init__",
+    "inicio": 78,
+    "fin": 154
+  },
+  {
+    "archivo": "src/asl_cuda/model.py",
+    "simbolo": "Network.alloc",
+    "inicio": 156,
+    "fin": 159
+  },
+  {
+    "archivo": "src/asl_cuda/model.py",
+    "simbolo": "Network.param",
+    "inicio": 161,
+    "fin": 166
+  },
+  {
+    "archivo": "src/asl_cuda/model.py",
+    "simbolo": "Network.restore",
+    "inicio": 168,
+    "fin": 181
+  },
+  {
+    "archivo": "src/asl_cuda/model.py",
+    "simbolo": "Network.timed",
+    "inicio": 184,
+    "fin": 189
+  },
+  {
+    "archivo": "src/asl_cuda/model.py",
+    "simbolo": "Network.drain_events",
+    "inicio": 191,
+    "fin": 197
+  },
+  {
+    "archivo": "src/asl_cuda/model.py",
+    "simbolo": "Network.gemm",
+    "inicio": 199,
+    "fin": 220
+  },
+  {
+    "archivo": "src/asl_cuda/model.py",
+    "simbolo": "Network.reduce",
+    "inicio": 222,
+    "fin": 231
+  },
+  {
+    "archivo": "src/asl_cuda/model.py",
+    "simbolo": "Network.upload",
+    "inicio": 233,
+    "fin": 249
+  },
+  {
+    "archivo": "src/asl_cuda/model.py",
+    "simbolo": "Network.forward",
+    "inicio": 251,
+    "fin": 274
+  },
+  {
+    "archivo": "src/asl_cuda/model.py",
+    "simbolo": "Network.backward",
+    "inicio": 276,
+    "fin": 320
+  },
+  {
+    "archivo": "src/asl_cuda/model.py",
+    "simbolo": "Network.update",
+    "inicio": 322,
+    "fin": 331
+  },
+  {
+    "archivo": "src/asl_cuda/model.py",
+    "simbolo": "Network.train_step",
+    "inicio": 333,
+    "fin": 346
+  },
+  {
+    "archivo": "src/asl_cuda/model.py",
+    "simbolo": "Network.reset_metrics",
+    "inicio": 348,
+    "fin": 349
+  },
+  {
+    "archivo": "src/asl_cuda/model.py",
+    "simbolo": "Network.export",
+    "inicio": 351,
+    "fin": 377
+  },
+  {
+    "archivo": "src/asl_cuda/runtime.py",
+    "simbolo": "configure",
+    "inicio": 8,
+    "fin": 16
+  },
+  {
+    "archivo": "src/asl_cuda/runtime.py",
+    "simbolo": "device_info",
+    "inicio": 29,
+    "fin": 38
+  },
+  {
+    "archivo": "scripts/benchmark_cuda.py",
+    "simbolo": "locations",
+    "inicio": 28,
+    "fin": 31
+  },
+  {
+    "archivo": "scripts/benchmark_cuda.py",
+    "simbolo": "prepare",
+    "inicio": 34,
+    "fin": 86
+  },
+  {
+    "archivo": "scripts/benchmark_cuda.py",
+    "simbolo": "load_manifest",
+    "inicio": 89,
+    "fin": 99
+  },
+  {
+    "archivo": "scripts/benchmark_cuda.py",
+    "simbolo": "load_images",
+    "inicio": 102,
+    "fin": 128
+  },
+  {
+    "archivo": "scripts/benchmark_cuda.py",
+    "simbolo": "worker",
+    "inicio": 131,
+    "fin": 330
+  },
+  {
+    "archivo": "scripts/benchmark_cuda.py",
+    "simbolo": "monitor",
+    "inicio": 333,
+    "fin": 378
+  },
+  {
+    "archivo": "scripts/benchmark_cuda.py",
+    "simbolo": "run_series",
+    "inicio": 381,
+    "fin": 444
+  },
+  {
+    "archivo": "scripts/benchmark_cuda.py",
+    "simbolo": "main",
+    "inicio": 447,
+    "fin": 465
+  },
+  {
+    "archivo": "scripts/validar_cuda_fc.py",
+    "simbolo": "main",
+    "inicio": 13,
+    "fin": 79
+  }
+]

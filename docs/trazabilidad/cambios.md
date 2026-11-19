@@ -346,3 +346,38 @@ La primera corrida FC-A EXP-011 terminó entrenamiento, test, checkpoint y monit
 ## Cierre CAM-012
 
 Ampliación FC implementada y medida, código aditivo src/asl_cuda/fc.py; fuentes CNN-B congeladas intactas. Notebook GPU y DOCX actualizados conservando identidades previas y diseño del usuario. [Trazabilidad completa](ampliacion-fc.md).
+
+
+## CAM-013 — Presentación y material de exposición
+
+Trabajo aditivo: entregables/Presentacion_Proyecto_3_CUDA.pptx, fuentes/guion/recursos en entregables/presentacion y QA en resultados/preparacion/presentacion-v01. Identidades previas de informe PDF/DOCX, notebooks y habilidad registradas. El informe actual tiene ediciones posteriores del usuario y se conserva íntegro.
+
+
+## Cierre CAM-013
+
+Añadidos PPTX,guion,fuentes,recursos,validación yvista previa. Informe actual delusuario,PDF ynotebooks inalterados. [Detalle](presentacion.md).
+
+
+## CAM-014 — Copia corta de15diapositivas
+
+Salida nueva Presentacion_Proyecto_3_CUDA_Corta.pptx,guion yvista previa propios. Identidades previas delPPTX31actual,PDF/DOCXynotebooks registradas;no se modifican. Copia creada yrecortada mediante PowerPointlocal para preservar las ediciones delusuario.
+
+
+## Cierre CAM-014
+
+Añadida versión corta independiente;presentaciónlarga yotrosentregables intactos. [Detalle](presentacion-corta.md).
+
+
+## CAM-015 — Guía de exposición del código
+
+Añadir entregables/Guia_Codigo_CUDA.md yfuentes/validación en resultados/preparacion/guia-codigo-cuda-v01. Código,notebooks,informes ypresentaciones permanecenintactos;identidades previas conservadas.
+
+
+## Cierre CAM-015
+
+Añadida guíaMD eíndices/validación estática. No se modificó códigoCUDA,notebooks,informes nipresentaciones. [Detalle](guia-codigo-cuda.md).
+
+
+## CAM-016 — Tabla breve de archivos CUDA
+
+2026-11-19T00:13:26.663264+00:00. Tabla breve de archivos CUDA guardada en entregables/Tabla_Archivos_CUDA.md, con sincronización y orden de exposición. Solo documentación; sin modificar código ni ejecutar entrenamientos. [Documento](../../entregables/Tabla_Archivos_CUDA.md).

@@ -432,3 +432,33 @@ La primera corrida FC-A EXP-011 terminó entrenamiento, test, checkpoint y monit
 ## Cierre DEC-027
 
 Aceptada e implementada para FC-A y FC-B. Se reutilizaron CPU/CNN-B previas y la primera FC-A ya guardada. Diez corridas completas FC, sin reoptimizar la métrica predictiva. Uso de GPU demostrado con capturas reales; no se fuerza saturación. [Resultados y reservas](ampliacion-fc.md).
+
+
+## DEC-028 — Presentación visual del proyecto
+
+Crear PPTX local editable con los seis pasos y ampliación FC, tablas/gráficas nativas, capturas originales y notas del expositor. Aplicar entregables/SKILL-P.md. Reutilizar resultados existentes sin entrenar ni modificar DOCX/PDF/notebooks. Verificar archivo y renderizar con PowerPoint local. Las herramientas auxiliares mencionadas en la habilidad no están incluidas; se sustituyen por validación OOXML y revisión nativa equivalentes. No se requiere otra campaña experimental.
+
+
+## Cierre DEC-028
+
+Presentación visual creada:datos reales,notas separadas,gráficas/tablas editables,anexos yverificación conPowerPoint. ReferenciaCPUhistórica yreservas de calidad/recursos visibles. [Detalle](presentacion.md).
+
+
+## DEC-029 — Versión corta independiente
+
+El usuario solicita una segunda presentación más corta y conservar intacta la actual. Seleccionar15diapositivas esenciales de la versión actual editada por el usuario, preservando su estilo, tablas/gráficas nativas, capturas ynotas. Sin regenerar ni sobrescribir la presentación larga. Mantener los seis pasos ypriorizar resultados;sin experimentos nuevos.
+
+
+## Cierre DEC-029
+
+Seleccionadas15láminasesenciales;seconservaelestiloactualdelusuario yla versióncompleta comorespaldo. [Validación](presentacion-corta.md).
+
+
+## DEC-030 — Guía técnica para defender el código CUDA
+
+Crear Markdown con localización exacta por archivo/función/líneas ycelda delnotebook;guionliteral para exponer,prioridad asincronización,streams,transferencias,memoria,jerarquía ybackend realmente medido. Inspección estática ycontraste condocumentación oficial;sinentrenar ni modificarel código.
+
+
+## Cierre DEC-030
+
+Guía basada en fuentes actuales,con distinción entrebarreras/stream/espera host,ruta medida yalternativa,mapeo de notebook yguionparaexponer. [Entrega](guia-codigo-cuda.md).

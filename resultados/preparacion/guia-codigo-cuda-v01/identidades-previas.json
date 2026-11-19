@@ -1,0 +1,26 @@
+{
+  "entregables/Presentacion_Proyecto_3_CUDA.pptx": {
+    "bytes": 688672,
+    "sha256": "4dfbf8fa08dccf6db2186064332f46ec87ad8dff3bd8c2c8505c61afa65c5f0c"
+  },
+  "entregables/Presentacion_Proyecto_3_CUDA_Corta.pptx": {
+    "bytes": 373569,
+    "sha256": "35f546cd4a89bc1bee829e7eeed200e0ea8e08313e8ba7a80ecfbf0328bfebd3"
+  },
+  "entregables/Informe_Proyecto_3_CUDA.docx": {
+    "bytes": 1184316,
+    "sha256": "9cc503a87cb0d038863b70a3e1a6ef9e5fdb51a468eac16abe0df81a54e00294"
+  },
+  "entregables/InformeFinal_Proyecto_3_CUDA.pdf": {
+    "bytes": 1300582,
+    "sha256": "20fe7d1933ca32f471cba816787c113a60af1828cd051051de55f64913b56ed7"
+  },
+  "entregables/notebooks/ASL_Secuencial.ipynb": {
+    "bytes": 5307986,
+    "sha256": "201e6dff41312e2b921349ba5c066ca3abd9d25dcae7fb7206a2fd5d29646692"
+  },
+  "entregables/notebooks/ASL_CUDA.ipynb": {
+    "bytes": 6025977,
+    "sha256": "4e9c6b7787cf3dd4ebe3113006d5f1e21350745ab0ea54464b30e067b813a897"
+  }
+}

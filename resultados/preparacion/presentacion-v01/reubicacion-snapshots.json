@@ -1,0 +1,22 @@
+[
+  {
+    "antes": "resultados/preparacion/presentacion-v01/antecedentes/bitacora.md",
+    "ahora": "resultados/preparacion/presentacion-v01/antecedentes/bitacora.md.bak",
+    "sha256": "c245879e8accdf15537908724d20054dd31ad7faa85656bd224185e820c22b99"
+  },
+  {
+    "antes": "resultados/preparacion/presentacion-v01/antecedentes/cambios.md",
+    "ahora": "resultados/preparacion/presentacion-v01/antecedentes/cambios.md.bak",
+    "sha256": "e2b76847a53d2dbc587ba993e1c4d20b7cb301a3a7fb657b93c965c9511acc02"
+  },
+  {
+    "antes": "resultados/preparacion/presentacion-v01/antecedentes/decisiones.md",
+    "ahora": "resultados/preparacion/presentacion-v01/antecedentes/decisiones.md.bak",
+    "sha256": "35ae0e06ef3549abcc9f1875b908b80ab31648aabf015936c6eec5048b3bff4d"
+  },
+  {
+    "antes": "resultados/preparacion/presentacion-v01/antecedentes/README.md",
+    "ahora": "resultados/preparacion/presentacion-v01/antecedentes/README.md.bak",
+    "sha256": "e467627b1d273edb59ed34466aebc739923ed56036469cef45d47f8f74c9dfc9"
+  }
+]

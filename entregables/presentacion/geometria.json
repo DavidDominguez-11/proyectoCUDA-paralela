@@ -1,0 +1,2486 @@
+{
+  "ancho": 13.333333,
+  "alto": 7.5,
+  "elementos": [
+    {
+      "slide": 1,
+      "type": "text",
+      "text": "Reconocimiento ASL · del archivo a la predicción",
+      "x": 0.65,
+      "y": 1.4,
+      "w": 10,
+      "h": 0.5
+    },
+    {
+      "slide": 1,
+      "type": "text",
+      "text": "3 redes entrenadas en GPU",
+      "x": 0.65,
+      "y": 3.6,
+      "w": 10,
+      "h": 0.6
+    },
+    {
+      "slide": 1,
+      "type": "text",
+      "text": "1.92×",
+      "x": 0.65,
+      "y": 4.43,
+      "w": 3.7,
+      "h": 0.8
+    },
+    {
+      "slide": 1,
+      "type": "text",
+      "text": "CNN-B",
+      "x": 0.65,
+      "y": 5.31,
+      "w": 3.7,
+      "h": 0.53
+    },
+    {
+      "slide": 1,
+      "type": "text",
+      "text": "CPU / CUDA · media de 5 pruebas",
+      "x": 0.65,
+      "y": 5.91,
+      "w": 3.7,
+      "h": 0.62
+    },
+    {
+      "slide": 1,
+      "type": "text",
+      "text": "3.35×",
+      "x": 4.7,
+      "y": 4.43,
+      "w": 3.7,
+      "h": 0.8
+    },
+    {
+      "slide": 1,
+      "type": "text",
+      "text": "FC-A",
+      "x": 4.7,
+      "y": 5.31,
+      "w": 3.7,
+      "h": 0.53
+    },
+    {
+      "slide": 1,
+      "type": "text",
+      "text": "CPU / CUDA · media de 5 pruebas",
+      "x": 4.7,
+      "y": 5.91,
+      "w": 3.7,
+      "h": 0.62
+    },
+    {
+      "slide": 1,
+      "type": "text",
+      "text": "4.86×",
+      "x": 8.75,
+      "y": 4.43,
+      "w": 3.7,
+      "h": 0.8
+    },
+    {
+      "slide": 1,
+      "type": "text",
+      "text": "FC-B",
+      "x": 8.75,
+      "y": 5.31,
+      "w": 3.7,
+      "h": 0.53
+    },
+    {
+      "slide": 1,
+      "type": "text",
+      "text": "CPU / CUDA · media de 5 pruebas",
+      "x": 8.75,
+      "y": 5.91,
+      "w": 3.7,
+      "h": 0.62
+    },
+    {
+      "slide": 1,
+      "type": "text",
+      "text": "David Domínguez 23712  ·  Jonathan Diaz 23873  ·  Luis Padilla 23663",
+      "x": 0.65,
+      "y": 6.65,
+      "w": 11.7,
+      "h": 0.25
+    },
+    {
+      "slide": 2,
+      "type": "text",
+      "text": "01",
+      "x": 0.86,
+      "y": 1.87,
+      "w": 0.48,
+      "h": 0.4
+    },
+    {
+      "slide": 2,
+      "type": "text",
+      "text": "Analizar",
+      "x": 1.42,
+      "y": 1.8900000000000001,
+      "w": 2.9,
+      "h": 0.4
+    },
+    {
+      "slide": 2,
+      "type": "text",
+      "text": "Flujo y operaciones",
+      "x": 0.87,
+      "y": 2.43,
+      "w": 3.45,
+      "h": 0.3
+    },
+    {
+      "slide": 2,
+      "type": "text",
+      "text": "02",
+      "x": 4.96,
+      "y": 1.87,
+      "w": 0.48,
+      "h": 0.4
+    },
+    {
+      "slide": 2,
+      "type": "text",
+      "text": "Medir CPU",
+      "x": 5.52,
+      "y": 1.8900000000000001,
+      "w": 2.9,
+      "h": 0.4
+    },
+    {
+      "slide": 2,
+      "type": "text",
+      "text": "5 corridas equivalentes",
+      "x": 4.97,
+      "y": 2.43,
+      "w": 3.45,
+      "h": 0.3
+    },
+    {
+      "slide": 2,
+      "type": "text",
+      "text": "03",
+      "x": 9.059999999999999,
+      "y": 1.87,
+      "w": 0.48,
+      "h": 0.4
+    },
+    {
+      "slide": 2,
+      "type": "text",
+      "text": "Seleccionar",
+      "x": 9.62,
+      "y": 1.8900000000000001,
+      "w": 2.9,
+      "h": 0.4
+    },
+    {
+      "slide": 2,
+      "type": "text",
+      "text": "Matemática repetitiva",
+      "x": 9.069999999999999,
+      "y": 2.43,
+      "w": 3.45,
+      "h": 0.3
+    },
+    {
+      "slide": 2,
+      "type": "text",
+      "text": "04",
+      "x": 0.86,
+      "y": 3.97,
+      "w": 0.48,
+      "h": 0.4
+    },
+    {
+      "slide": 2,
+      "type": "text",
+      "text": "Diseñar",
+      "x": 1.42,
+      "y": 3.99,
+      "w": 2.9,
+      "h": 0.4
+    },
+    {
+      "slide": 2,
+      "type": "text",
+      "text": "Threads · blocks · grids",
+      "x": 0.87,
+      "y": 4.53,
+      "w": 3.45,
+      "h": 0.3
+    },
+    {
+      "slide": 2,
+      "type": "text",
+      "text": "05",
+      "x": 4.96,
+      "y": 3.97,
+      "w": 0.48,
+      "h": 0.4
+    },
+    {
+      "slide": 2,
+      "type": "text",
+      "text": "Implementar",
+      "x": 5.52,
+      "y": 3.99,
+      "w": 2.9,
+      "h": 0.4
+    },
+    {
+      "slide": 2,
+      "type": "text",
+      "text": "CUDA Python y cuBLAS",
+      "x": 4.97,
+      "y": 4.53,
+      "w": 3.45,
+      "h": 0.3
+    },
+    {
+      "slide": 2,
+      "type": "text",
+      "text": "06",
+      "x": 9.059999999999999,
+      "y": 3.97,
+      "w": 0.48,
+      "h": 0.4
+    },
+    {
+      "slide": 2,
+      "type": "text",
+      "text": "Comparar",
+      "x": 9.62,
+      "y": 3.99,
+      "w": 2.9,
+      "h": 0.4
+    },
+    {
+      "slide": 2,
+      "type": "text",
+      "text": "Tiempo · speedup · calidad",
+      "x": 9.069999999999999,
+      "y": 4.53,
+      "w": 3.45,
+      "h": 0.3
+    },
+    {
+      "slide": 2,
+      "type": "text",
+      "text": "Misma carga de trabajo → mediciones conservadas → resultados verificables",
+      "x": 0.7,
+      "y": 6.35,
+      "w": 12,
+      "h": 0.32
+    },
+    {
+      "slide": 3,
+      "type": "text",
+      "text": "A",
+      "x": 0.7,
+      "y": 3.43,
+      "w": 1.75,
+      "h": 0.3
+    },
+    {
+      "slide": 3,
+      "type": "text",
+      "text": "B",
+      "x": 2.75,
+      "y": 3.43,
+      "w": 1.75,
+      "h": 0.3
+    },
+    {
+      "slide": 3,
+      "type": "text",
+      "text": "C",
+      "x": 4.8,
+      "y": 3.43,
+      "w": 1.75,
+      "h": 0.3
+    },
+    {
+      "slide": 3,
+      "type": "text",
+      "text": "M",
+      "x": 6.85,
+      "y": 3.43,
+      "w": 1.75,
+      "h": 0.3
+    },
+    {
+      "slide": 3,
+      "type": "text",
+      "text": "N",
+      "x": 8.899999999999999,
+      "y": 3.43,
+      "w": 1.75,
+      "h": 0.3
+    },
+    {
+      "slide": 3,
+      "type": "text",
+      "text": "S",
+      "x": 10.95,
+      "y": 3.43,
+      "w": 1.75,
+      "h": 0.3
+    },
+    {
+      "slide": 3,
+      "type": "text",
+      "text": "29",
+      "x": 0.7,
+      "y": 4,
+      "w": 2.8,
+      "h": 0.8
+    },
+    {
+      "slide": 3,
+      "type": "text",
+      "text": "clases",
+      "x": 0.7,
+      "y": 4.88,
+      "w": 2.8,
+      "h": 0.53
+    },
+    {
+      "slide": 3,
+      "type": "text",
+      "text": "600 imágenes por clase",
+      "x": 0.7,
+      "y": 5.48,
+      "w": 2.8,
+      "h": 0.62
+    },
+    {
+      "slide": 3,
+      "type": "text",
+      "text": "17,400",
+      "x": 4.65,
+      "y": 4,
+      "w": 3.8,
+      "h": 0.8
+    },
+    {
+      "slide": 3,
+      "type": "text",
+      "text": "imágenes seleccionadas",
+      "x": 4.65,
+      "y": 4.88,
+      "w": 3.8,
+      "h": 0.53
+    },
+    {
+      "slide": 3,
+      "type": "text",
+      "text": "RGB · 64×64 · float32",
+      "x": 4.65,
+      "y": 5.48,
+      "w": 3.8,
+      "h": 0.62
+    },
+    {
+      "slide": 3,
+      "type": "text",
+      "text": "/255 → [0,1]",
+      "x": 9.5,
+      "y": 4.2,
+      "w": 2.85,
+      "h": 0.5
+    },
+    {
+      "slide": 3,
+      "type": "text",
+      "text": "Mismos tensores CPU / GPU",
+      "x": 9.5,
+      "y": 4.92,
+      "w": 2.85,
+      "h": 0.46
+    },
+    {
+      "slide": 3,
+      "type": "chart",
+      "x": 0.7,
+      "y": 5.78,
+      "w": 11.9,
+      "h": 0.7
+    },
+    {
+      "slide": 3,
+      "type": "text",
+      "text": "Train 12,180   ·   Validación 2,610   ·   Test 2,610",
+      "x": 0.85,
+      "y": 6.55,
+      "w": 11.8,
+      "h": 0.32
+    },
+    {
+      "slide": 4,
+      "type": "text",
+      "text": "01",
+      "x": 0.86,
+      "y": 1.7200000000000002,
+      "w": 0.48,
+      "h": 0.4
+    },
+    {
+      "slide": 4,
+      "type": "text",
+      "text": "Archivos JPEG",
+      "x": 1.42,
+      "y": 1.7400000000000002,
+      "w": 2.85,
+      "h": 0.4
+    },
+    {
+      "slide": 4,
+      "type": "text",
+      "text": "Dataset local",
+      "x": 0.87,
+      "y": 2.2800000000000002,
+      "w": 3.4000000000000004,
+      "h": 0.3
+    },
+    {
+      "slide": 4,
+      "type": "text",
+      "text": "02",
+      "x": 4.94,
+      "y": 1.7200000000000002,
+      "w": 0.48,
+      "h": 0.4
+    },
+    {
+      "slide": 4,
+      "type": "text",
+      "text": "Preparación",
+      "x": 5.5,
+      "y": 1.7400000000000002,
+      "w": 2.85,
+      "h": 0.4
+    },
+    {
+      "slide": 4,
+      "type": "text",
+      "text": "RGB → 64×64 → /255",
+      "x": 4.95,
+      "y": 2.2800000000000002,
+      "w": 3.4000000000000004,
+      "h": 0.3
+    },
+    {
+      "slide": 4,
+      "type": "text",
+      "text": "03",
+      "x": 9.02,
+      "y": 1.7200000000000002,
+      "w": 0.48,
+      "h": 0.4
+    },
+    {
+      "slide": 4,
+      "type": "text",
+      "text": "Particiones",
+      "x": 9.58,
+      "y": 1.7400000000000002,
+      "w": 2.85,
+      "h": 0.4
+    },
+    {
+      "slide": 4,
+      "type": "text",
+      "text": "Train / val / test",
+      "x": 9.03,
+      "y": 2.2800000000000002,
+      "w": 3.4000000000000004,
+      "h": 0.3
+    },
+    {
+      "slide": 4,
+      "type": "text",
+      "text": "CNN-A / CNN-B",
+      "x": 0.9,
+      "y": 3.9,
+      "w": 3.3,
+      "h": 0.34
+    },
+    {
+      "slide": 4,
+      "type": "text",
+      "text": "Convoluciones",
+      "x": 0.9,
+      "y": 4.32,
+      "w": 3.3,
+      "h": 0.25
+    },
+    {
+      "slide": 4,
+      "type": "text",
+      "text": "FC-A / FC-B",
+      "x": 4.98,
+      "y": 3.9,
+      "w": 3.3,
+      "h": 0.34
+    },
+    {
+      "slide": 4,
+      "type": "text",
+      "text": "Capas densas",
+      "x": 4.98,
+      "y": 4.32,
+      "w": 3.3,
+      "h": 0.25
+    },
+    {
+      "slide": 4,
+      "type": "text",
+      "text": "PCA + RF",
+      "x": 9.06,
+      "y": 3.9,
+      "w": 3.3,
+      "h": 0.34
+    },
+    {
+      "slide": 4,
+      "type": "text",
+      "text": "Modelos clásicos",
+      "x": 9.06,
+      "y": 4.32,
+      "w": 3.3,
+      "h": 0.25
+    },
+    {
+      "slide": 4,
+      "type": "text",
+      "text": "Evaluar → comparar → aumento de imágenes → guardar → predecir",
+      "x": 1.65,
+      "y": 5.78,
+      "w": 10,
+      "h": 0.33
+    },
+    {
+      "slide": 4,
+      "type": "text",
+      "text": "La versión original también usa paralelismo interno de librerías CPU; “secuencial” identifica la referencia",
+      "x": 0.65,
+      "y": 6.62,
+      "w": 12,
+      "h": 0.32
+    },
+    {
+      "slide": 5,
+      "type": "text",
+      "text": "182,700 imágenes vistas durante entrenamiento",
+      "x": 0.82,
+      "y": 6.42,
+      "w": 7.76,
+      "h": 0.23
+    },
+    {
+      "slide": 6,
+      "type": "text",
+      "text": "01",
+      "x": 0.86,
+      "y": 1.77,
+      "w": 0.48,
+      "h": 0.4
+    },
+    {
+      "slide": 6,
+      "type": "text",
+      "text": "Verificar",
+      "x": 1.42,
+      "y": 1.79,
+      "w": 2.9,
+      "h": 0.4
+    },
+    {
+      "slide": 6,
+      "type": "text",
+      "text": "Datos + estado inicial",
+      "x": 0.87,
+      "y": 2.33,
+      "w": 3.45,
+      "h": 0.3
+    },
+    {
+      "slide": 6,
+      "type": "text",
+      "text": "02",
+      "x": 4.96,
+      "y": 1.77,
+      "w": 0.48,
+      "h": 0.4
+    },
+    {
+      "slide": 6,
+      "type": "text",
+      "text": "Calentar",
+      "x": 5.52,
+      "y": 1.79,
+      "w": 2.9,
+      "h": 0.4
+    },
+    {
+      "slide": 6,
+      "type": "text",
+      "text": "Restaurar después",
+      "x": 4.97,
+      "y": 2.33,
+      "w": 3.45,
+      "h": 0.3
+    },
+    {
+      "slide": 6,
+      "type": "text",
+      "text": "03",
+      "x": 9.06,
+      "y": 1.77,
+      "w": 0.48,
+      "h": 0.4
+    },
+    {
+      "slide": 6,
+      "type": "text",
+      "text": "Cronometrar",
+      "x": 9.620000000000001,
+      "y": 1.79,
+      "w": 2.9,
+      "h": 0.4
+    },
+    {
+      "slide": 6,
+      "type": "text",
+      "text": "perf_counter_ns",
+      "x": 9.07,
+      "y": 2.33,
+      "w": 3.45,
+      "h": 0.3
+    },
+    {
+      "slide": 6,
+      "type": "text",
+      "text": "1119.93 s",
+      "x": 6.95,
+      "y": 3.18,
+      "w": 5,
+      "h": 0.8
+    },
+    {
+      "slide": 6,
+      "type": "text",
+      "text": "media de la referencia común",
+      "x": 6.95,
+      "y": 4.0600000000000005,
+      "w": 5,
+      "h": 0.53
+    },
+    {
+      "slide": 6,
+      "type": "text",
+      "text": "DE 2.72 s  ·  CV 0.24%  ·  n=5",
+      "x": 6.95,
+      "y": 4.66,
+      "w": 5,
+      "h": 0.62
+    },
+    {
+      "slide": 6,
+      "type": "text",
+      "text": "15 épocas fijas · batch 128 · FP32",
+      "x": 7.07,
+      "y": 5.5200000000000005,
+      "w": 4.81,
+      "h": 0.23
+    },
+    {
+      "slide": 6,
+      "type": "text",
+      "text": "El total adaptativo (1,858.62 s) se conserva aparte: no se utiliza para calcular speedup",
+      "x": 0.75,
+      "y": 6.55,
+      "w": 12,
+      "h": 0.32
+    },
+    {
+      "slide": 7,
+      "type": "chart",
+      "x": 0.65,
+      "y": 1.65,
+      "w": 6.15,
+      "h": 4.8
+    },
+    {
+      "slide": 7,
+      "type": "text",
+      "text": "71.94%",
+      "x": 2.13,
+      "y": 3.15,
+      "w": 3.15,
+      "h": 0.8
+    },
+    {
+      "slide": 7,
+      "type": "text",
+      "text": "CNN-B",
+      "x": 2.6,
+      "y": 4,
+      "w": 2.2,
+      "h": 0.4
+    },
+    {
+      "slide": 7,
+      "type": "text",
+      "text": "Prioridad inicial: CNN-B\nAmpliación final: FC-A y FC-B",
+      "x": 7.1,
+      "y": 5.52,
+      "w": 5.5,
+      "h": 0.82
+    },
+    {
+      "slide": 8,
+      "type": "text",
+      "text": "CNN-B + FC-A + FC-B: entrenamiento completo en GPU",
+      "x": 0.82,
+      "y": 6.32,
+      "w": 10.66,
+      "h": 0.23
+    },
+    {
+      "slide": 9,
+      "type": "text",
+      "text": "CPU / HOST",
+      "x": 0.95,
+      "y": 2.05,
+      "w": 2.8,
+      "h": 0.5
+    },
+    {
+      "slide": 9,
+      "type": "text",
+      "text": "Archivos y decodificación",
+      "x": 0.95,
+      "y": 2.82,
+      "w": 2.9,
+      "h": 0.38
+    },
+    {
+      "slide": 9,
+      "type": "text",
+      "text": "RGB / resize / normalización",
+      "x": 0.95,
+      "y": 3.34,
+      "w": 2.9,
+      "h": 0.38
+    },
+    {
+      "slide": 9,
+      "type": "text",
+      "text": "6 workers",
+      "x": 0.95,
+      "y": 3.86,
+      "w": 2.9,
+      "h": 0.38
+    },
+    {
+      "slide": 9,
+      "type": "text",
+      "text": "Lotes y máscaras Dropout",
+      "x": 0.95,
+      "y": 4.38,
+      "w": 2.9,
+      "h": 0.38
+    },
+    {
+      "slide": 9,
+      "type": "text",
+      "text": "GPU / DEVICE",
+      "x": 5.4,
+      "y": 2.05,
+      "w": 2.7,
+      "h": 0.5
+    },
+    {
+      "slide": 9,
+      "type": "text",
+      "text": "Forward + pérdida",
+      "x": 5.4,
+      "y": 2.9,
+      "w": 2.7,
+      "h": 0.4
+    },
+    {
+      "slide": 9,
+      "type": "text",
+      "text": "Backward / gradientes",
+      "x": 5.4,
+      "y": 3.4699999999999998,
+      "w": 2.7,
+      "h": 0.4
+    },
+    {
+      "slide": 9,
+      "type": "text",
+      "text": "Adam + métricas",
+      "x": 5.4,
+      "y": 4.04,
+      "w": 2.7,
+      "h": 0.4
+    },
+    {
+      "slide": 9,
+      "type": "text",
+      "text": "CPU / EVALUAR",
+      "x": 9.85,
+      "y": 2.05,
+      "w": 2.55,
+      "h": 0.5
+    },
+    {
+      "slide": 9,
+      "type": "text",
+      "text": "Validación cada época",
+      "x": 9.85,
+      "y": 2.92,
+      "w": 2.55,
+      "h": 0.42
+    },
+    {
+      "slide": 9,
+      "type": "text",
+      "text": "Test final",
+      "x": 9.85,
+      "y": 3.4899999999999998,
+      "w": 2.55,
+      "h": 0.42
+    },
+    {
+      "slide": 9,
+      "type": "text",
+      "text": "Métricas / guardado",
+      "x": 9.85,
+      "y": 4.06,
+      "w": 2.55,
+      "h": 0.42
+    },
+    {
+      "slide": 9,
+      "type": "text",
+      "text": "H2D",
+      "x": 4.12,
+      "y": 2.7,
+      "w": 0.85,
+      "h": 0.3
+    },
+    {
+      "slide": 9,
+      "type": "text",
+      "text": "D2H",
+      "x": 8.5,
+      "y": 2.7,
+      "w": 0.85,
+      "h": 0.3
+    },
+    {
+      "slide": 9,
+      "type": "text",
+      "text": "Por época: 96 lotes → exportar → validar en CPU → continuar hasta 15 épocas",
+      "x": 0.9,
+      "y": 5.95,
+      "w": 11.4,
+      "h": 0.32
+    },
+    {
+      "slide": 10,
+      "type": "text",
+      "text": "CNN-B",
+      "x": 0.8999999999999999,
+      "y": 1.82,
+      "w": 3.3,
+      "h": 0.5
+    },
+    {
+      "slide": 10,
+      "type": "text",
+      "text": "64×64×3",
+      "x": 1.02,
+      "y": 2.61,
+      "w": 3.06,
+      "h": 0.24
+    },
+    {
+      "slide": 10,
+      "type": "text",
+      "text": "Conv 32 → Conv 32",
+      "x": 1.02,
+      "y": 3.04,
+      "w": 3.06,
+      "h": 0.24
+    },
+    {
+      "slide": 10,
+      "type": "text",
+      "text": "Pool → Conv 64 → Conv 64",
+      "x": 1.02,
+      "y": 3.4699999999999998,
+      "w": 3.06,
+      "h": 0.24
+    },
+    {
+      "slide": 10,
+      "type": "text",
+      "text": "Pool → Conv 128 → Pool",
+      "x": 1.02,
+      "y": 3.9,
+      "w": 3.06,
+      "h": 0.24
+    },
+    {
+      "slide": 10,
+      "type": "text",
+      "text": "Flatten → Dense 256",
+      "x": 1.02,
+      "y": 4.33,
+      "w": 3.06,
+      "h": 0.24
+    },
+    {
+      "slide": 10,
+      "type": "text",
+      "text": "Softmax 29",
+      "x": 1.02,
+      "y": 4.76,
+      "w": 3.06,
+      "h": 0.24
+    },
+    {
+      "slide": 10,
+      "type": "text",
+      "text": "2,245,245",
+      "x": 0.8999999999999999,
+      "y": 5.4,
+      "w": 3.3,
+      "h": 0.4
+    },
+    {
+      "slide": 10,
+      "type": "text",
+      "text": "parámetros entrenables",
+      "x": 0.8999999999999999,
+      "y": 5.87,
+      "w": 3.3,
+      "h": 0.25
+    },
+    {
+      "slide": 10,
+      "type": "text",
+      "text": "5 Conv · 3 Pool · BN momentum 0.9",
+      "x": 0.7,
+      "y": 6.4,
+      "w": 3.9,
+      "h": 0.32
+    },
+    {
+      "slide": 10,
+      "type": "text",
+      "text": "FC-A",
+      "x": 4.98,
+      "y": 1.82,
+      "w": 3.3,
+      "h": 0.5
+    },
+    {
+      "slide": 10,
+      "type": "text",
+      "text": "64×64×3",
+      "x": 5.1000000000000005,
+      "y": 2.61,
+      "w": 3.06,
+      "h": 0.24
+    },
+    {
+      "slide": 10,
+      "type": "text",
+      "text": "Flatten 12,288",
+      "x": 5.1000000000000005,
+      "y": 3.04,
+      "w": 3.06,
+      "h": 0.24
+    },
+    {
+      "slide": 10,
+      "type": "text",
+      "text": "BatchNormalization",
+      "x": 5.1000000000000005,
+      "y": 3.4699999999999998,
+      "w": 3.06,
+      "h": 0.24
+    },
+    {
+      "slide": 10,
+      "type": "text",
+      "text": "Dense 128 → Dense 64",
+      "x": 5.1000000000000005,
+      "y": 3.9,
+      "w": 3.06,
+      "h": 0.24
+    },
+    {
+      "slide": 10,
+      "type": "text",
+      "text": "Dropout 0.3 por capa oculta",
+      "x": 5.1000000000000005,
+      "y": 4.33,
+      "w": 3.06,
+      "h": 0.24
+    },
+    {
+      "slide": 10,
+      "type": "text",
+      "text": "Softmax 29",
+      "x": 5.1000000000000005,
+      "y": 4.76,
+      "w": 3.06,
+      "h": 0.24
+    },
+    {
+      "slide": 10,
+      "type": "text",
+      "text": "1,607,709",
+      "x": 4.98,
+      "y": 5.4,
+      "w": 3.3,
+      "h": 0.4
+    },
+    {
+      "slide": 10,
+      "type": "text",
+      "text": "parámetros entrenables",
+      "x": 4.98,
+      "y": 5.87,
+      "w": 3.3,
+      "h": 0.25
+    },
+    {
+      "slide": 10,
+      "type": "text",
+      "text": "BN de entrada · momentum 0.99",
+      "x": 4.78,
+      "y": 6.4,
+      "w": 3.9,
+      "h": 0.32
+    },
+    {
+      "slide": 10,
+      "type": "text",
+      "text": "FC-B",
+      "x": 9.059999999999999,
+      "y": 1.82,
+      "w": 3.3,
+      "h": 0.5
+    },
+    {
+      "slide": 10,
+      "type": "text",
+      "text": "64×64×3",
+      "x": 9.18,
+      "y": 2.61,
+      "w": 3.06,
+      "h": 0.24
+    },
+    {
+      "slide": 10,
+      "type": "text",
+      "text": "Flatten 12,288",
+      "x": 9.18,
+      "y": 3.04,
+      "w": 3.06,
+      "h": 0.24
+    },
+    {
+      "slide": 10,
+      "type": "text",
+      "text": "BatchNormalization",
+      "x": 9.18,
+      "y": 3.4699999999999998,
+      "w": 3.06,
+      "h": 0.24
+    },
+    {
+      "slide": 10,
+      "type": "text",
+      "text": "Dense 512 → 256 → 128",
+      "x": 9.18,
+      "y": 3.9,
+      "w": 3.06,
+      "h": 0.24
+    },
+    {
+      "slide": 10,
+      "type": "text",
+      "text": "Dropout 0.4 por capa oculta",
+      "x": 9.18,
+      "y": 4.33,
+      "w": 3.06,
+      "h": 0.24
+    },
+    {
+      "slide": 10,
+      "type": "text",
+      "text": "Softmax 29",
+      "x": 9.18,
+      "y": 4.76,
+      "w": 3.06,
+      "h": 0.24
+    },
+    {
+      "slide": 10,
+      "type": "text",
+      "text": "6,484,509",
+      "x": 9.059999999999999,
+      "y": 5.4,
+      "w": 3.3,
+      "h": 0.4
+    },
+    {
+      "slide": 10,
+      "type": "text",
+      "text": "parámetros entrenables",
+      "x": 9.059999999999999,
+      "y": 5.87,
+      "w": 3.3,
+      "h": 0.25
+    },
+    {
+      "slide": 10,
+      "type": "text",
+      "text": "BN de entrada · momentum 0.99",
+      "x": 8.86,
+      "y": 6.4,
+      "w": 3.9,
+      "h": 0.32
+    },
+    {
+      "slide": 11,
+      "type": "text",
+      "text": "THREADS",
+      "x": 0.85,
+      "y": 2.88,
+      "w": 2.5,
+      "h": 0.35
+    },
+    {
+      "slide": 11,
+      "type": "text",
+      "text": "elementos independientes",
+      "x": 0.85,
+      "y": 3.34,
+      "w": 3,
+      "h": 0.4
+    },
+    {
+      "slide": 11,
+      "type": "text",
+      "text": "BLOCKS",
+      "x": 4.55,
+      "y": 2.88,
+      "w": 2.6,
+      "h": 0.35
+    },
+    {
+      "slide": 11,
+      "type": "text",
+      "text": "hilos agrupados",
+      "x": 4.55,
+      "y": 3.34,
+      "w": 3,
+      "h": 0.4
+    },
+    {
+      "slide": 11,
+      "type": "text",
+      "text": "GRID",
+      "x": 8.6,
+      "y": 2.88,
+      "w": 2.6,
+      "h": 0.35
+    },
+    {
+      "slide": 11,
+      "type": "text",
+      "text": "todos los bloques del kernel",
+      "x": 8.6,
+      "y": 3.34,
+      "w": 3.8,
+      "h": 0.4
+    },
+    {
+      "slide": 12,
+      "type": "text",
+      "text": "Numba-CUDA",
+      "x": 0.9,
+      "y": 1.85,
+      "w": 3.3,
+      "h": 0.4
+    },
+    {
+      "slide": 12,
+      "type": "text",
+      "text": "Kernels Python explícitos",
+      "x": 0.9,
+      "y": 2.4,
+      "w": 3.3,
+      "h": 0.25
+    },
+    {
+      "slide": 12,
+      "type": "text",
+      "text": "cuBLAS SGEMM",
+      "x": 4.98,
+      "y": 1.85,
+      "w": 3.3,
+      "h": 0.4
+    },
+    {
+      "slide": 12,
+      "type": "text",
+      "text": "Matrices FP32 · modo PEDANTIC",
+      "x": 4.98,
+      "y": 2.4,
+      "w": 3.3,
+      "h": 0.25
+    },
+    {
+      "slide": 12,
+      "type": "text",
+      "text": "TensorFlow / Keras",
+      "x": 9.06,
+      "y": 1.85,
+      "w": 3.3,
+      "h": 0.4
+    },
+    {
+      "slide": 12,
+      "type": "text",
+      "text": "Solo CPU: validar y guardar",
+      "x": 9.06,
+      "y": 2.4,
+      "w": 3.3,
+      "h": 0.25
+    },
+    {
+      "slide": 12,
+      "type": "text",
+      "text": "Fuera del entrenamiento medido",
+      "x": 0.82,
+      "y": 3.3299999999999996,
+      "w": 4.21,
+      "h": 0.23
+    },
+    {
+      "slide": 12,
+      "type": "text",
+      "text": "Warmup → restaurar → preparar imágenes",
+      "x": 5.5,
+      "y": 3.3,
+      "w": 7.1,
+      "h": 0.4
+    },
+    {
+      "slide": 12,
+      "type": "text",
+      "text": "Staging / máscaras",
+      "x": 0.95,
+      "y": 4.43,
+      "w": 2.35,
+      "h": 0.55
+    },
+    {
+      "slide": 12,
+      "type": "text",
+      "text": "H2D",
+      "x": 3.65,
+      "y": 4.43,
+      "w": 0.65,
+      "h": 0.55
+    },
+    {
+      "slide": 12,
+      "type": "text",
+      "text": "Forward / backward / Adam",
+      "x": 4.6,
+      "y": 4.43,
+      "w": 3.85,
+      "h": 0.55
+    },
+    {
+      "slide": 12,
+      "type": "text",
+      "text": "D2H",
+      "x": 8.8,
+      "y": 4.43,
+      "w": 0.65,
+      "h": 0.55
+    },
+    {
+      "slide": 12,
+      "type": "text",
+      "text": "Validación CPU",
+      "x": 9.65,
+      "y": 4.43,
+      "w": 2.6,
+      "h": 0.55
+    },
+    {
+      "slide": 12,
+      "type": "text",
+      "text": "← Tiempo pared sincronizado: todo el bloque está incluido →",
+      "x": 0.95,
+      "y": 5.65,
+      "w": 11.4,
+      "h": 0.4
+    },
+    {
+      "slide": 12,
+      "type": "text",
+      "text": "Después: test CPU cronometrado aparte; guardado y gráficas fuera de fit",
+      "x": 0.7,
+      "y": 6.3,
+      "w": 12,
+      "h": 0.32
+    },
+    {
+      "slide": 13,
+      "type": "text",
+      "text": "51",
+      "x": 0.8,
+      "y": 1.8,
+      "w": 5.5,
+      "h": 0.8
+    },
+    {
+      "slide": 13,
+      "type": "text",
+      "text": "pruebas de operadores CNN-B",
+      "x": 0.8,
+      "y": 2.68,
+      "w": 5.5,
+      "h": 0.53
+    },
+    {
+      "slide": 13,
+      "type": "text",
+      "text": "Tolerancias locales verificadas",
+      "x": 0.8,
+      "y": 3.2800000000000002,
+      "w": 5.5,
+      "h": 0.62
+    },
+    {
+      "slide": 13,
+      "type": "text",
+      "text": "78",
+      "x": 7.05,
+      "y": 1.8,
+      "w": 5.5,
+      "h": 0.8
+    },
+    {
+      "slide": 13,
+      "type": "text",
+      "text": "adjuntos / gradientes CNN-B",
+      "x": 7.05,
+      "y": 2.68,
+      "w": 5.5,
+      "h": 0.53
+    },
+    {
+      "slide": 13,
+      "type": "text",
+      "text": "Activaciones y dY compartidos",
+      "x": 7.05,
+      "y": 3.2800000000000002,
+      "w": 5.5,
+      "h": 0.62
+    },
+    {
+      "slide": 13,
+      "type": "text",
+      "text": "4",
+      "x": 0.8,
+      "y": 4.03,
+      "w": 5.5,
+      "h": 0.8
+    },
+    {
+      "slide": 13,
+      "type": "text",
+      "text": "casos FC-A / FC-B",
+      "x": 0.8,
+      "y": 4.91,
+      "w": 5.5,
+      "h": 0.53
+    },
+    {
+      "slide": 13,
+      "type": "text",
+      "text": "Lotes 20 y 128 · error probabilidades ≤1.67×10⁻⁶",
+      "x": 0.8,
+      "y": 5.51,
+      "w": 5.5,
+      "h": 0.62
+    },
+    {
+      "slide": 13,
+      "type": "text",
+      "text": "1,440",
+      "x": 7.05,
+      "y": 4.03,
+      "w": 5.5,
+      "h": 0.8
+    },
+    {
+      "slide": 13,
+      "type": "text",
+      "text": "pasos Adam por corrida",
+      "x": 7.05,
+      "y": 4.91,
+      "w": 5.5,
+      "h": 0.53
+    },
+    {
+      "slide": 13,
+      "type": "text",
+      "text": "Checkpoint real · valores finitos",
+      "x": 7.05,
+      "y": 5.51,
+      "w": 5.5,
+      "h": 0.62
+    },
+    {
+      "slide": 13,
+      "type": "text",
+      "text": "Pruebas numéricas locales aprobadas ≠ trayectoria completa CPU/GPU idéntica",
+      "x": 0.8,
+      "y": 6.55,
+      "w": 11.8,
+      "h": 0.32
+    },
+    {
+      "slide": 14,
+      "type": "text",
+      "text": "507.3%",
+      "x": 9.6,
+      "y": 2,
+      "w": 3,
+      "h": 0.8
+    },
+    {
+      "slide": 14,
+      "type": "text",
+      "text": "CPU proceso + hijos",
+      "x": 9.6,
+      "y": 2.88,
+      "w": 3,
+      "h": 0.53
+    },
+    {
+      "slide": 14,
+      "type": "text",
+      "text": "100% equivale a un núcleo",
+      "x": 9.6,
+      "y": 3.48,
+      "w": 3,
+      "h": 0.62
+    },
+    {
+      "slide": 14,
+      "type": "text",
+      "text": "0%",
+      "x": 9.6,
+      "y": 4.4,
+      "w": 3,
+      "h": 0.8
+    },
+    {
+      "slide": 14,
+      "type": "text",
+      "text": "GPU en esta muestra",
+      "x": 9.6,
+      "y": 5.28,
+      "w": 3,
+      "h": 0.53
+    },
+    {
+      "slide": 14,
+      "type": "text",
+      "text": "Captura durante CPU",
+      "x": 9.6,
+      "y": 5.880000000000001,
+      "w": 3,
+      "h": 0.62
+    },
+    {
+      "slide": 14,
+      "type": "text",
+      "text": "Monitor en vivo · lectura original psutil / nvidia-smi · muestra sostenida, época 3",
+      "x": 0.65,
+      "y": 6.62,
+      "w": 12,
+      "h": 0.32
+    },
+    {
+      "slide": 15,
+      "type": "text",
+      "text": "91%",
+      "x": 9.6,
+      "y": 1.93,
+      "w": 3,
+      "h": 0.8
+    },
+    {
+      "slide": 15,
+      "type": "text",
+      "text": "actividad GPU",
+      "x": 9.6,
+      "y": 2.81,
+      "w": 3,
+      "h": 0.53
+    },
+    {
+      "slide": 15,
+      "type": "text",
+      "text": "Agregado nvidia-smi",
+      "x": 9.6,
+      "y": 3.41,
+      "w": 3,
+      "h": 0.62
+    },
+    {
+      "slide": 15,
+      "type": "text",
+      "text": "1,213",
+      "x": 9.6,
+      "y": 4.35,
+      "w": 3,
+      "h": 0.8
+    },
+    {
+      "slide": 15,
+      "type": "text",
+      "text": "MiB de VRAM",
+      "x": 9.6,
+      "y": 5.2299999999999995,
+      "w": 3,
+      "h": 0.53
+    },
+    {
+      "slide": 15,
+      "type": "text",
+      "text": "29.6% de los 4,096 MiB",
+      "x": 9.6,
+      "y": 5.83,
+      "w": 3,
+      "h": 0.62
+    },
+    {
+      "slide": 15,
+      "type": "text",
+      "text": "Actividad GPU ≠ ocupación por SM; VRAM utilizada ≠ saturación de toda la memoria",
+      "x": 0.65,
+      "y": 6.62,
+      "w": 12,
+      "h": 0.32
+    },
+    {
+      "slide": 16,
+      "type": "text",
+      "text": "FC-A  ·  50% GPU  ·  111 MiB",
+      "x": 0.85,
+      "y": 5.98,
+      "w": 5.5,
+      "h": 0.45
+    },
+    {
+      "slide": 16,
+      "type": "text",
+      "text": "FC-B  ·  32% GPU  ·  187 MiB",
+      "x": 7.05,
+      "y": 5.98,
+      "w": 5.5,
+      "h": 0.45
+    },
+    {
+      "slide": 16,
+      "type": "text",
+      "text": "Capturas puntuales reales; los promedios y máximos del monitor están en el anexo",
+      "x": 0.65,
+      "y": 6.62,
+      "w": 12,
+      "h": 0.32
+    },
+    {
+      "slide": 17,
+      "type": "text",
+      "text": "CNN-B",
+      "x": 0.7,
+      "y": 1.52,
+      "w": 3.7,
+      "h": 0.4
+    },
+    {
+      "slide": 17,
+      "type": "chart",
+      "x": 0.7,
+      "y": 2,
+      "w": 3.7,
+      "h": 2.9
+    },
+    {
+      "slide": 17,
+      "type": "text",
+      "text": "FC-A",
+      "x": 4.78,
+      "y": 1.52,
+      "w": 3.7,
+      "h": 0.4
+    },
+    {
+      "slide": 17,
+      "type": "chart",
+      "x": 4.78,
+      "y": 2,
+      "w": 3.7,
+      "h": 2.9
+    },
+    {
+      "slide": 17,
+      "type": "text",
+      "text": "FC-B",
+      "x": 8.86,
+      "y": 1.52,
+      "w": 3.7,
+      "h": 0.4
+    },
+    {
+      "slide": 17,
+      "type": "chart",
+      "x": 8.86,
+      "y": 2,
+      "w": 3.7,
+      "h": 2.9
+    },
+    {
+      "slide": 17,
+      "type": "text",
+      "text": "Escalas distintas por panel · Speedup = media CPU / media CUDA · n=5 · DE muestral",
+      "x": 0.7,
+      "y": 6.7,
+      "w": 12,
+      "h": 0.32
+    },
+    {
+      "slide": 18,
+      "type": "text",
+      "text": "0.46%",
+      "x": 0.75,
+      "y": 4.98,
+      "w": 3.8,
+      "h": 0.8
+    },
+    {
+      "slide": 18,
+      "type": "text",
+      "text": "CNN-B · CV CUDA",
+      "x": 0.75,
+      "y": 5.86,
+      "w": 3.8,
+      "h": 0.53
+    },
+    {
+      "slide": 18,
+      "type": "text",
+      "text": "2.20%",
+      "x": 4.83,
+      "y": 4.98,
+      "w": 3.8,
+      "h": 0.8
+    },
+    {
+      "slide": 18,
+      "type": "text",
+      "text": "FC-A · CV CUDA",
+      "x": 4.83,
+      "y": 5.86,
+      "w": 3.8,
+      "h": 0.53
+    },
+    {
+      "slide": 18,
+      "type": "text",
+      "text": "0.96%",
+      "x": 8.91,
+      "y": 4.98,
+      "w": 3.8,
+      "h": 0.8
+    },
+    {
+      "slide": 18,
+      "type": "text",
+      "text": "FC-B · CV CUDA",
+      "x": 8.91,
+      "y": 5.86,
+      "w": 3.8,
+      "h": 0.53
+    },
+    {
+      "slide": 18,
+      "type": "text",
+      "text": "Tiempos en segundos · 15 épocas por red y corrida · sin mezclar las observaciones adicionales n=1",
+      "x": 0.7,
+      "y": 6.7,
+      "w": 12,
+      "h": 0.32
+    },
+    {
+      "slide": 19,
+      "type": "text",
+      "text": "958.81 s",
+      "x": 0.8,
+      "y": 5,
+      "w": 5.8,
+      "h": 0.8
+    },
+    {
+      "slide": 19,
+      "type": "text",
+      "text": "suma de tres entrenamientos CPU",
+      "x": 0.8,
+      "y": 5.88,
+      "w": 5.8,
+      "h": 0.53
+    },
+    {
+      "slide": 19,
+      "type": "text",
+      "text": "Comparación derivada del mismo alcance",
+      "x": 0.8,
+      "y": 6.48,
+      "w": 5.8,
+      "h": 0.62
+    },
+    {
+      "slide": 19,
+      "type": "text",
+      "text": "454.79 s",
+      "x": 7.05,
+      "y": 5,
+      "w": 5.5,
+      "h": 0.8
+    },
+    {
+      "slide": 19,
+      "type": "text",
+      "text": "suma con entrenamiento CUDA",
+      "x": 7.05,
+      "y": 5.88,
+      "w": 5.5,
+      "h": 0.53
+    },
+    {
+      "slide": 19,
+      "type": "text",
+      "text": "Cociente agregado: 2.108×",
+      "x": 7.05,
+      "y": 6.48,
+      "w": 5.5,
+      "h": 0.62
+    },
+    {
+      "slide": 20,
+      "type": "chart",
+      "x": 0.7,
+      "y": 1.6,
+      "w": 11.95,
+      "h": 2.45
+    },
+    {
+      "slide": 20,
+      "type": "text",
+      "text": "Componentes anidados: NO se suman otra vez al tiempo total · Stream ≠ cómputo activo exclusivo",
+      "x": 0.65,
+      "y": 6.62,
+      "w": 12,
+      "h": 0.32
+    },
+    {
+      "slide": 21,
+      "type": "chart",
+      "x": 0.6,
+      "y": 1.65,
+      "w": 6.05,
+      "h": 4.55
+    },
+    {
+      "slide": 21,
+      "type": "chart",
+      "x": 6.75,
+      "y": 1.65,
+      "w": 5.95,
+      "h": 4.55
+    },
+    {
+      "slide": 21,
+      "type": "text",
+      "text": "Media de 5 corridas por implementación · pesos iniciales iguales · RNG interno distinto",
+      "x": 0.75,
+      "y": 6.45,
+      "w": 12,
+      "h": 0.32
+    },
+    {
+      "slide": 22,
+      "type": "chart",
+      "x": 0.6,
+      "y": 1.45,
+      "w": 6.05,
+      "h": 2.45
+    },
+    {
+      "slide": 22,
+      "type": "chart",
+      "x": 6.75,
+      "y": 1.45,
+      "w": 5.95,
+      "h": 2.45
+    },
+    {
+      "slide": 22,
+      "type": "chart",
+      "x": 0.6,
+      "y": 4,
+      "w": 6.05,
+      "h": 2.45
+    },
+    {
+      "slide": 22,
+      "type": "chart",
+      "x": 6.75,
+      "y": 4,
+      "w": 5.95,
+      "h": 2.45
+    },
+    {
+      "slide": 22,
+      "type": "text",
+      "text": "Azul: CPU histórica  ·  Naranja: CUDA nueva  ·  15 épocas fijas; no EarlyStopping",
+      "x": 0.75,
+      "y": 6.72,
+      "w": 12,
+      "h": 0.32
+    },
+    {
+      "slide": 23,
+      "type": "chart",
+      "x": 0.7,
+      "y": 1.55,
+      "w": 7.15,
+      "h": 4.8
+    },
+    {
+      "slide": 23,
+      "type": "text",
+      "text": "98.62%",
+      "x": 8.35,
+      "y": 1.9,
+      "w": 4,
+      "h": 0.8
+    },
+    {
+      "slide": 23,
+      "type": "text",
+      "text": "test CNN-B CUDA",
+      "x": 8.35,
+      "y": 2.78,
+      "w": 4,
+      "h": 0.53
+    },
+    {
+      "slide": 23,
+      "type": "text",
+      "text": "Modelo con mejor desempeño de estas redes",
+      "x": 8.35,
+      "y": 3.38,
+      "w": 4,
+      "h": 0.62
+    },
+    {
+      "slide": 23,
+      "type": "text",
+      "text": "FC-A: −1.34 pp\nFC-B: −4.33 pp",
+      "x": 8.35,
+      "y": 4.5,
+      "w": 4.1,
+      "h": 1.1
+    },
+    {
+      "slide": 23,
+      "type": "text",
+      "text": "Diferencia vs. media CPU",
+      "x": 8.35,
+      "y": 5.8,
+      "w": 4,
+      "h": 0.32
+    },
+    {
+      "slide": 23,
+      "type": "text",
+      "text": "La comparación usa CPU histórica; no son trayectorias CPU/GPU pareadas",
+      "x": 0.65,
+      "y": 6.62,
+      "w": 12,
+      "h": 0.32
+    },
+    {
+      "slide": 24,
+      "type": "text",
+      "text": "CPU: archivos",
+      "x": 0.95,
+      "y": 2.8,
+      "w": 3.2,
+      "h": 0.55
+    },
+    {
+      "slide": 24,
+      "type": "text",
+      "text": "Rutas y sistema de archivos",
+      "x": 0.95,
+      "y": 3.65,
+      "w": 3.2,
+      "h": 0.42
+    },
+    {
+      "slide": 24,
+      "type": "text",
+      "text": "Decodificar y redimensionar",
+      "x": 0.95,
+      "y": 4.18,
+      "w": 3.2,
+      "h": 0.42
+    },
+    {
+      "slide": 24,
+      "type": "text",
+      "text": "6 imágenes/tareas a la vez",
+      "x": 0.95,
+      "y": 4.71,
+      "w": 3.2,
+      "h": 0.42
+    },
+    {
+      "slide": 24,
+      "type": "text",
+      "text": "17.32 s → 8.03 s",
+      "x": 0.95,
+      "y": 5.24,
+      "w": 3.2,
+      "h": 0.42
+    },
+    {
+      "slide": 24,
+      "type": "text",
+      "text": "GPU: matemática",
+      "x": 5.03,
+      "y": 2.8,
+      "w": 3.2,
+      "h": 0.55
+    },
+    {
+      "slide": 24,
+      "type": "text",
+      "text": "Matrices y tensores grandes",
+      "x": 5.03,
+      "y": 3.65,
+      "w": 3.2,
+      "h": 0.42
+    },
+    {
+      "slide": 24,
+      "type": "text",
+      "text": "Muchos cálculos independientes",
+      "x": 5.03,
+      "y": 4.18,
+      "w": 3.2,
+      "h": 0.42
+    },
+    {
+      "slide": 24,
+      "type": "text",
+      "text": "Numba-CUDA + cuBLAS",
+      "x": 5.03,
+      "y": 4.71,
+      "w": 3.2,
+      "h": 0.42
+    },
+    {
+      "slide": 24,
+      "type": "text",
+      "text": "1.92× · 3.35× · 4.86×",
+      "x": 5.03,
+      "y": 5.24,
+      "w": 3.2,
+      "h": 0.42
+    },
+    {
+      "slide": 24,
+      "type": "text",
+      "text": "Límites reales",
+      "x": 9.11,
+      "y": 2.8,
+      "w": 3.2,
+      "h": 0.55
+    },
+    {
+      "slide": 24,
+      "type": "text",
+      "text": "H2D / D2H y sincronización",
+      "x": 9.11,
+      "y": 3.65,
+      "w": 3.2,
+      "h": 0.42
+    },
+    {
+      "slide": 24,
+      "type": "text",
+      "text": "Validación todavía en CPU",
+      "x": 9.11,
+      "y": 4.18,
+      "w": 3.2,
+      "h": 0.42
+    },
+    {
+      "slide": 24,
+      "type": "text",
+      "text": "Menos trabajo por lote en FC",
+      "x": 9.11,
+      "y": 4.71,
+      "w": 3.2,
+      "h": 0.42
+    },
+    {
+      "slide": 24,
+      "type": "text",
+      "text": "RNG y referencia histórica",
+      "x": 9.11,
+      "y": 5.24,
+      "w": 3.2,
+      "h": 0.42
+    },
+    {
+      "slide": 24,
+      "type": "text",
+      "text": "Tiempo menor es una medición; la causa microarquitectónica exacta requeriría un profiler",
+      "x": 0.75,
+      "y": 6.48,
+      "w": 12,
+      "h": 0.32
+    },
+    {
+      "slide": 25,
+      "type": "text",
+      "text": "Datos",
+      "x": 0.85,
+      "y": 2.02,
+      "w": 1.8,
+      "h": 0.35
+    },
+    {
+      "slide": 25,
+      "type": "text",
+      "text": "SHA-256",
+      "x": 0.85,
+      "y": 2.55,
+      "w": 1.8,
+      "h": 0.25
+    },
+    {
+      "slide": 25,
+      "type": "text",
+      "text": "Configuración",
+      "x": 3.3000000000000003,
+      "y": 2.02,
+      "w": 1.8,
+      "h": 0.35
+    },
+    {
+      "slide": 25,
+      "type": "text",
+      "text": "EXP + semillas",
+      "x": 3.3000000000000003,
+      "y": 2.55,
+      "w": 1.8,
+      "h": 0.25
+    },
+    {
+      "slide": 25,
+      "type": "text",
+      "text": "Ejecución",
+      "x": 5.750000000000001,
+      "y": 2.02,
+      "w": 1.8,
+      "h": 0.35
+    },
+    {
+      "slide": 25,
+      "type": "text",
+      "text": "RUN + logs",
+      "x": 5.750000000000001,
+      "y": 2.55,
+      "w": 1.8,
+      "h": 0.25
+    },
+    {
+      "slide": 25,
+      "type": "text",
+      "text": "Resultado",
+      "x": 8.200000000000001,
+      "y": 2.02,
+      "w": 1.8,
+      "h": 0.35
+    },
+    {
+      "slide": 25,
+      "type": "text",
+      "text": "CSV + modelo",
+      "x": 8.200000000000001,
+      "y": 2.55,
+      "w": 1.8,
+      "h": 0.25
+    },
+    {
+      "slide": 25,
+      "type": "text",
+      "text": "Evidencia",
+      "x": 10.65,
+      "y": 2.02,
+      "w": 1.8,
+      "h": 0.35
+    },
+    {
+      "slide": 25,
+      "type": "text",
+      "text": "Capturas + notebook",
+      "x": 10.65,
+      "y": 2.55,
+      "w": 1.8,
+      "h": 0.25
+    },
+    {
+      "slide": 25,
+      "type": "text",
+      "text": "Notebook CPU",
+      "x": 0.95,
+      "y": 4.07,
+      "w": 5.2,
+      "h": 0.5
+    },
+    {
+      "slide": 25,
+      "type": "text",
+      "text": "37 celdas de código  ·  10 imágenes",
+      "x": 0.95,
+      "y": 4.8,
+      "w": 5.2,
+      "h": 0.4
+    },
+    {
+      "slide": 25,
+      "type": "text",
+      "text": "Conservado sin reentrenar",
+      "x": 0.95,
+      "y": 5.35,
+      "w": 5.2,
+      "h": 0.25
+    },
+    {
+      "slide": 25,
+      "type": "text",
+      "text": "Notebook CUDA",
+      "x": 7.1,
+      "y": 4.07,
+      "w": 5.2,
+      "h": 0.5
+    },
+    {
+      "slide": 25,
+      "type": "text",
+      "text": "92 celdas de código  ·  30 imágenes",
+      "x": 7.1,
+      "y": 4.8,
+      "w": 5.2,
+      "h": 0.4
+    },
+    {
+      "slide": 25,
+      "type": "text",
+      "text": "CNN-B + FC-A + FC-B · salidas reales",
+      "x": 7.1,
+      "y": 5.35,
+      "w": 5.2,
+      "h": 0.25
+    },
+    {
+      "slide": 25,
+      "type": "text",
+      "text": "Tiempos, gráficas y capturas reutilizados: esta presentación no ejecuta entrenamiento",
+      "x": 0.75,
+      "y": 6.4,
+      "w": 12,
+      "h": 0.32
+    },
+    {
+      "slide": 26,
+      "type": "text",
+      "text": "1.92×",
+      "x": 0.75,
+      "y": 2,
+      "w": 3.75,
+      "h": 0.8
+    },
+    {
+      "slide": 26,
+      "type": "text",
+      "text": "CNN-B",
+      "x": 0.75,
+      "y": 2.88,
+      "w": 3.75,
+      "h": 0.53
+    },
+    {
+      "slide": 26,
+      "type": "text",
+      "text": "48.04% menos tiempo",
+      "x": 0.75,
+      "y": 3.48,
+      "w": 3.75,
+      "h": 0.62
+    },
+    {
+      "slide": 26,
+      "type": "text",
+      "text": "3.35×",
+      "x": 4.83,
+      "y": 2,
+      "w": 3.75,
+      "h": 0.8
+    },
+    {
+      "slide": 26,
+      "type": "text",
+      "text": "FC-A",
+      "x": 4.83,
+      "y": 2.88,
+      "w": 3.75,
+      "h": 0.53
+    },
+    {
+      "slide": 26,
+      "type": "text",
+      "text": "70.18% menos tiempo",
+      "x": 4.83,
+      "y": 3.48,
+      "w": 3.75,
+      "h": 0.62
+    },
+    {
+      "slide": 26,
+      "type": "text",
+      "text": "4.86×",
+      "x": 8.91,
+      "y": 2,
+      "w": 3.75,
+      "h": 0.8
+    },
+    {
+      "slide": 26,
+      "type": "text",
+      "text": "FC-B",
+      "x": 8.91,
+      "y": 2.88,
+      "w": 3.75,
+      "h": 0.53
+    },
+    {
+      "slide": 26,
+      "type": "text",
+      "text": "79.44% menos tiempo",
+      "x": 8.91,
+      "y": 3.48,
+      "w": 3.75,
+      "h": 0.62
+    },
+    {
+      "slide": 26,
+      "type": "text",
+      "text": "CPU prepara  →  GPU entrena  →  CPU evalúa",
+      "x": 0.75,
+      "y": 4.75,
+      "w": 11.7,
+      "h": 0.7
+    },
+    {
+      "slide": 26,
+      "type": "text",
+      "text": "Aceleración real · transferencias incluidas · calidad y límites visibles",
+      "x": 0.75,
+      "y": 5.85,
+      "w": 11.7,
+      "h": 0.6
+    },
+    {
+      "slide": 28,
+      "type": "text",
+      "text": "Total común: 1,119.928 s · las validaciones anidadas NO se suman de nuevo",
+      "x": 0.75,
+      "y": 6.75,
+      "w": 12,
+      "h": 0.32
+    },
+    {
+      "slide": 29,
+      "type": "text",
+      "text": "No se implementó inferencia GPU en este alcance",
+      "x": 0.95,
+      "y": 5.48,
+      "w": 11.45,
+      "h": 0.4
+    },
+    {
+      "slide": 30,
+      "type": "text",
+      "text": "Preparación CPU",
+      "x": 7.35,
+      "y": 4.05,
+      "w": 5,
+      "h": 0.5
+    },
+    {
+      "slide": 30,
+      "type": "text",
+      "text": "6 workers · hasta 12 tareas pendientes",
+      "x": 7.35,
+      "y": 4.8,
+      "w": 5,
+      "h": 0.5
+    },
+    {
+      "slide": 30,
+      "type": "text",
+      "text": "17.325 s → 8.034 s  |  2.156×",
+      "x": 7.35,
+      "y": 5.53,
+      "w": 5,
+      "h": 0.5
+    },
+    {
+      "slide": 30,
+      "type": "text",
+      "text": "¹ Media de porcentajes medios por RUN; muestreo 1 s · actividad agregada, no ocupación SM",
+      "x": 0.7,
+      "y": 6.72,
+      "w": 12,
+      "h": 0.32
+    },
+    {
+      "slide": 31,
+      "type": "text",
+      "text": "Akash · ASL Alphabet",
+      "x": 0.92,
+      "y": 1.8,
+      "w": 5.75,
+      "h": 0.3
+    },
+    {
+      "slide": 31,
+      "type": "text",
+      "text": "Kaggle · dataset de imágenes",
+      "x": 0.92,
+      "y": 2.2,
+      "w": 5.75,
+      "h": 0.2
+    },
+    {
+      "slide": 31,
+      "type": "text",
+      "text": "NVIDIA · CUDA Python / Numba",
+      "x": 0.92,
+      "y": 2.9000000000000004,
+      "w": 5.75,
+      "h": 0.3
+    },
+    {
+      "slide": 31,
+      "type": "text",
+      "text": "Jerarquía y kernels explícitos",
+      "x": 0.92,
+      "y": 3.3000000000000003,
+      "w": 5.75,
+      "h": 0.2
+    },
+    {
+      "slide": 31,
+      "type": "text",
+      "text": "NVIDIA · cuBLAS 13.1",
+      "x": 0.92,
+      "y": 4,
+      "w": 5.75,
+      "h": 0.3
+    },
+    {
+      "slide": 31,
+      "type": "text",
+      "text": "SGEMM y biblioteca GPU",
+      "x": 0.92,
+      "y": 4.4,
+      "w": 5.75,
+      "h": 0.2
+    },
+    {
+      "slide": 31,
+      "type": "text",
+      "text": "NVIDIA · nvidia-smi",
+      "x": 0.92,
+      "y": 5.1000000000000005,
+      "w": 5.75,
+      "h": 0.3
+    },
+    {
+      "slide": 31,
+      "type": "text",
+      "text": "Monitorización de actividad y VRAM",
+      "x": 0.92,
+      "y": 5.5,
+      "w": 5.75,
+      "h": 0.2
+    },
+    {
+      "slide": 31,
+      "type": "text",
+      "text": "Datos experimentales propios · citas completas y enlaces en notas del presentador",
+      "x": 0.7,
+      "y": 6.55,
+      "w": 12,
+      "h": 0.32
+    }
+  ]
+}

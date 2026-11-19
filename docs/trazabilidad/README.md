@@ -119,3 +119,18 @@ Word;la exportaciónPDF queda a cargo del usuario,según su instrucción.
 ## Ampliación vigente
 
 [FC-A yFC-B implementadas,cinco mediciones por red,capturas reales yentregables actualizados](ampliacion-fc.md). Sustituye el alcance inicial exclusivamenteCNN-B, sin invalidar ni sobrescribir sus evidencias.
+
+
+## Presentación visual
+
+[Presentación del proyecto yguion de exposición](presentacion.md):31diapositivas conresultados detresredes,capturas,diagramas y13gráficas editables;sin repetirentrenamientos ni modificar elinforme.
+
+
+## Presentación corta independiente
+
+[Versión de15diapositivas](presentacion-corta.md),sin modificarla de31. Incluye los seis pasos ylos resultadosprincipales.
+
+
+## Guía para defender el código
+
+[Qué mostrar yqué decir sobre CUDA](guia-codigo-cuda.md):ubicaciones exactas,sincronización,memoria,kernels,cuBLAS,FC ymedición;sin ejecutar modelos.

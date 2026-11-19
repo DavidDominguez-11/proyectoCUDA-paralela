@@ -1,0 +1,21 @@
+{
+  "estado": "aprobado",
+  "fecha_utc": "2026-11-18T22:30:55.464574+00:00",
+  "comando": [
+    "C:\\Python314\\python.exe",
+    "scripts/revisar_presentacion_corta.py"
+  ],
+  "pptx_sha256": "e071f3379a70e18b21f60e5539ee18565bc8b0c419a51185df64081eabfa0c1c",
+  "diapositivas": 15,
+  "graficas_nativas": 7,
+  "notas": 15,
+  "relaciones_xml_validas": true,
+  "colores_validos": true,
+  "ejes_validos": true,
+  "sin_objetos_fuera": true,
+  "powerpoint_abierto_y_renderizado": true,
+  "diapositivas_renderizadas": 15,
+  "posibles_desbordes": [],
+  "documentos_previos_inalterados": true,
+  "pdf_generado": false
+}
